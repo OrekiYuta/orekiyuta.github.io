@@ -230,6 +230,145 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/28/CrackRefain/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yuta">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Canoe">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/05/28/CrackRefain/" itemprop="url">CrackRefain</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-05-28T11:15:44+08:00">
+                2019-05-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <ol>
+<li>在局域网内先扫描端口</li>
+<li>看开启了哪些服务</li>
+<li>搜索看哪些服务可以利用(window smb ,数据库)</li>
+<li>尝试破解,漏洞不需要</li>
+<li>进入成功.查询命令想干啥就干啥</li>
+</ol>
+<h4 id="mysql"><a href="#mysql" class="headerlink" title="mysql"></a>mysql</h4><ol>
+<li>登录 mysql -h#ip地址# -u#用户名# -p#密码#</li>
+<li>自己的 mysql -u#root(默认)# -p密码</li>
+<li>select * from mysql.user; 查询系统用户表</li>
+<li>由于host=’localhost’,所以别人连不进来; 修改host=’%’,就是所有人都可以连进来;<br> update mysql.user set host=’%’ where  user=’root’;</li>
+<li>修改完毕后 刷新 flsuh privileges;</li>
+<li><p>可以重新登录mysql 查看修改后情况</p>
+</li>
+<li><p>查看任务进程 tasklist</p>
+</li>
+<li>关闭任务进程 taskkill /f /pid #pid号#</li>
+<li>启动mysql服务 net start mysql 停止mysql服务 net stop mysql</li>
+</ol>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/27/FieldworkDaily/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -301,7 +440,10 @@
       
         
           
-            <h3 id="Days-01-190527-10-35AM"><a href="#Days-01-190527-10-35AM" class="headerlink" title="Days-01-190527;10:35AM"></a>Days-01-190527;10:35AM</h3><p>今日は初めでのじつしゅうひ、朝07：50そとでる。くろまで1時間半ががりました、30ぶんちこくました。ここにきでがら、いつものよに、なにもかんじない。んんんんんんんんんんんんんんん<br>べんきょしよ…</p>
+            <h3 id="Days-01-190527-10-35AM"><a href="#Days-01-190527-10-35AM" class="headerlink" title="Days-01-190527;10:35AM"></a>Days-01-190527;10:35AM</h3><p>&emsp;&emsp;今日は初めでのじつしゅうひ、朝07：50そとでる。くろまで1時間半ががりました、30ぶんちこくました。ここにきでがら、いつものよに、なにもかんじない。んんんんんんんんんんんんんんん</p>
+<p>べんきょしよ…</p>
+<h3 id="Days-01-190528-11-39AM"><a href="#Days-01-190528-11-39AM" class="headerlink" title="Days-01-190528;11:39AM"></a>Days-01-190528;11:39AM</h3><p>&emsp;&emsp;きょうのあさ、07：45おきろ。さくやははやくねます、ねでかぜをひいた、あさおきてけりをします。そのあと,いつものよに。バスとてでんしゃ…45ぶんぐらいががりました。さくじつよりずいぶんはやくなりました。けさもまたスキヤンポートためしました、MySQLサーバーをとうろくしました、MySQLサービスつうじてほかのりとのコンピューターをせいぎょしてコンピューターめいれいをじつこうしました。いるいるを勉強しました。</p>
+<p>きょうのごごはEasyUIをよく勉強するつもりです。</p>
 
           
         
@@ -921,7 +1063,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -934,7 +1076,7 @@
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">tags</span>
                 
               </div>
