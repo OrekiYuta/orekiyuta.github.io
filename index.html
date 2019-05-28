@@ -306,20 +306,17 @@
 <li>看开启了哪些服务</li>
 <li>搜索看哪些服务可以利用(window smb ,数据库)</li>
 <li>尝试破解,漏洞不需要</li>
-<li>进入成功.查询命令想干啥就干啥</li>
+<li>进入成功.执行命令想干啥就干啥</li>
 </ol>
 <h4 id="mysql"><a href="#mysql" class="headerlink" title="mysql"></a>mysql</h4><ol>
-<li>登录 mysql -h#ip地址# -u#用户名# -p#密码#</li>
-<li>自己的 mysql -u#root(默认)# -p密码</li>
-<li>select * from mysql.user; 查询系统用户表</li>
-<li>由于host=’localhost’,所以别人连不进来; 修改host=’%’,就是所有人都可以连进来;<br> update mysql.user set host=’%’ where  user=’root’;</li>
-<li>修改完毕后 刷新 flsuh privileges;</li>
-<li><p>可以重新登录mysql 查看修改后情况</p>
+<li><p>登录 <figure class="highlight plain"><figcaption><span>-h#ip地址# -u#用户名# -p#密码#```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">2. 自己的 ```mysql -u#root(默认)# -p密码</span><br></pre></td></tr></table></figure></p>
 </li>
-<li><p>查看任务进程 tasklist</p>
+<li><figure class="highlight plain"><figcaption><span>* from mysql.user;``` 查询系统用户表</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">4. 由于host=&apos;localhost&apos;,所以别人连不进来; 修改host=&apos;%&apos;,就是所有人都可以连进来;</span><br><span class="line">    ```update mysql.user set host=&apos;%&apos; where  user=&apos;root&apos;;</span><br></pre></td></tr></table></figure>
 </li>
-<li>关闭任务进程 taskkill /f /pid #pid号#</li>
-<li>启动mysql服务 net start mysql 停止mysql服务 net stop mysql</li>
+<li><p>修改完毕后 刷新 <figure class="highlight plain"><figcaption><span>privileges;```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">6. 可以重新登录mysql 查看修改后情况</span><br><span class="line"></span><br><span class="line">7. 查看任务进程 ```tasklist</span><br></pre></td></tr></table></figure></p>
+</li>
+<li><p>关闭任务进程 <figure class="highlight plain"><figcaption><span>/f</span><a href="/pid">#pid号#```</a></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">9. 启动mysql服务 ```net start mysql``` 停止mysql服务 ```net stop mysql</span><br></pre></td></tr></table></figure></p>
+</li>
 </ol>
 
           
