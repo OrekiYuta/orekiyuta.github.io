@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Java,Maven,Xpath,Selenium,ChromeDriver,">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="0x01 Create a projectCreate New Project =&amp;gt; Maven =&amp;gt; Next =&amp;gt; for (Fill in information =&amp;gt; Next) =&amp;gt; Finish     0x02 Environment and Tools Java环境 JDK IDEA  准备好ChromeDriver http://npm.taobao">
+<meta name="keywords" content="Java,Maven,Xpath,Selenium,ChromeDriver">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java-ArtificialSimulation">
+<meta property="og:url" content="http://yoursite.com/2019/06/10/Java-ArtificialSimulation/index.html">
+<meta property="og:site_name" content="Canoe">
+<meta property="og:description" content="0x01 Create a projectCreate New Project =&amp;gt; Maven =&amp;gt; Next =&amp;gt; for (Fill in information =&amp;gt; Next) =&amp;gt; Finish     0x02 Environment and Tools Java环境 JDK IDEA  准备好ChromeDriver http://npm.taobao">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="http://yoursite.com/2019/06/10/images/0x011.png">
+<meta property="og:image" content="http://yoursite.com/2019/06/10/images/0x012.png">
+<meta property="og:image" content="http://yoursite.com/2019/06/10/images/0x013.png">
+<meta property="og:image" content="http://yoursite.com/2019/06/10/images/0x014.png">
+<meta property="og:image" content="http://yoursite.com/2019/06/10/images/0x044.png">
+<meta property="og:image" content="http://yoursite.com/2019/06/10/images/0x046.png">
+<meta property="og:image" content="http://yoursite.com/2019/06/10/images/0x071.png">
+<meta property="og:image" content="http://yoursite.com/2019/06/10/images/0x072.png">
+<meta property="og:image" content="http://yoursite.com/2019/06/10/images/0x073.png">
+<meta property="og:image" content="http://yoursite.com/2019/06/10/images/0x081.png">
+<meta property="og:updated_time" content="2019-06-10T06:34:07.341Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Java-ArtificialSimulation">
+<meta name="twitter:description" content="0x01 Create a projectCreate New Project =&amp;gt; Maven =&amp;gt; Next =&amp;gt; for (Fill in information =&amp;gt; Next) =&amp;gt; Finish     0x02 Environment and Tools Java环境 JDK IDEA  准备好ChromeDriver http://npm.taobao">
+<meta name="twitter:image" content="http://yoursite.com/2019/06/10/images/0x011.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2019/06/10/Java-ArtificialSimulation/">
+
+
+
+
+
+  <title>Java-ArtificialSimulation | Canoe</title>
+  
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="default">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Canoe</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">Testament</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/06/10/Java-ArtificialSimulation/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yuta">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Canoe">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Java-ArtificialSimulation</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-06-10T09:50:57+08:00">
+                2019-06-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h3 id="0x01-Create-a-project"><a href="#0x01-Create-a-project" class="headerlink" title="0x01 Create a project"></a>0x01 Create a project</h3><p>Create New Project =&gt; Maven =&gt; Next =&gt; for (Fill in information =&gt; Next) =&gt; Finish<br> <img src="../images/0x011.png" alt><br> <img src="../images/0x012.png" alt><br> <img src="../images/0x013.png" alt><br> <img src="../images/0x014.png" alt></p>
+<h3 id="0x02-Environment-and-Tools"><a href="#0x02-Environment-and-Tools" class="headerlink" title="0x02 Environment and Tools"></a>0x02 Environment and Tools</h3><ol>
+<li>Java环境 JDK</li>
+<li>IDEA </li>
+<li>准备好ChromeDriver <a href="http://npm.taobao.org/mirrors/chromedriver/" target="_blank" rel="noopener">http://npm.taobao.org/mirrors/chromedriver/</a><br>选择好对应版本(我这里选择的是74.0.3729.68 win)</li>
+<li>Selenium 依赖<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependencies&gt;</span><br><span class="line">    &lt;dependency&gt;</span><br><span class="line">        &lt;groupId&gt;org.seleniumhq.selenium&lt;/groupId&gt;</span><br><span class="line">        &lt;artifactId&gt;selenium-server&lt;/artifactId&gt;</span><br><span class="line">        &lt;version&gt;3.141.59&lt;/version&gt;</span><br><span class="line">    &lt;/dependency&gt;</span><br><span class="line">&lt;/dependencies&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h3 id="0x03-Get-set"><a href="#0x03-Get-set" class="headerlink" title="0x03 Get set"></a>0x03 Get set</h3><ol>
+<li>在pom.xml中导入Selenium依赖 =&gt; 等待下载</li>
+<li>在src-&gt;main-&gt;java中创建Java类,创建main方法.—-<em>在IDEA中输入psvm+回车_快速创建main方法</em></li>
+<li>把准备好的ChromeDriver.exe放在src-&gt;main-&gt;resources目录中</li>
+</ol>
+<h3 id="0x04-Codeing"><a href="#0x04-Codeing" class="headerlink" title="0x04 Codeing"></a>0x04 Codeing</h3><ol>
+<li><p>设置webdriver路径</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">System.setProperty(<span class="string">"webdriver.chrome.driver"</span>,Scan.class.getClassLoader().getResource(<span class="string">"chromedriver.exe"</span>).getPath());</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>创建webdriver对象</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">WebDriver webDriver =<span class="keyword">new</span> ChromeDriver();</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>打开页面(这里我以<a href="http://www.lagou.com为操作对象" target="_blank" rel="noopener">www.lagou.com为操作对象</a>)</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">webDriver.get(<span class="string">"https://www.lagou.com/zhaopin/Java/?labelWords=label"</span>);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>审查网页元素<br>在模拟人工操作前,需要先分析页面对象的元素组成,观察到我们需要模拟点击的导航条”工作经验”是在<code>&lt;li class=&quot;muti-chosen&quot;&gt;</code>内的<code>&lt;span&gt;</code>之间,这样就确定了第一层筛选,然后再从<code>&lt;span&gt;</code>中筛选出<code>&lt;a&gt;</code>,根据<code>Text()</code>确定了元素位置.<br><img src="../images/0x044.png" alt></p>
+</li>
+<li><p>选择根据页面结构获取对象(我这里选择了Xpath)</p>
+<ul>
+<li>首先获取第一层筛选<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">webDriver.findElement(By.xpath(<span class="string">"//li[@class='multi-chosen']//span[contains(text(),'工作经验')]"</span>));</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<ul>
+<li><p>然后选择上面的代码提取成对象—-<em>IDEA快捷键(ctrl+alt+V)</em></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">WebElement chosenElement = webDriver.findElement(By.xpath(<span class="string">"//li[@class='multi-chosen']//span[contains(text(),'工作经验')]"</span>))</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>接着同样的操作,写出第二层筛选和点击事件</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">WebElement chosenElement = webDriver.findElement(By.xpath(<span class="string">"//li[@class='multi-chosen']//span[contains(text(),'工作经验')]"</span>));</span><br><span class="line">WebElement optionElement = chosenElement.findElement(By.xpath(<span class="string">"../a[contains(text(),'应届毕业生')]"</span>));</span><br><span class="line">optionElement.click();</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>再次观察页面,发现各个导航条只有文本描述差异,所以接下来把上面两个文本对象抽成变量(选中”工作经验”和”应届毕业生”)</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">String chosenTitle = <span class="string">"工作经验"</span>;</span><br><span class="line">String optionTitle = <span class="string">"应届毕业生"</span>; <span class="comment">//移动代码位置(先选择该行ctrl+shift+↑or↓)</span></span><br><span class="line"></span><br><span class="line">WebElement chosenElement = webDriver.findElement(By.xpath(<span class="string">"//li[@class='multi-chosen']//span[contains(text(),'"</span> + chosenTitle + <span class="string">"')]"</span>));</span><br><span class="line">WebElement optionElement = chosenElement.findElement(By.xpath(<span class="string">"../a[contains(text(),'"</span> + optionTitle + <span class="string">"')]"</span>));</span><br><span class="line">optionElement.click();</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>然后思考,把上面三行抽成方法,之后只需传递两个参数就可以控制了(选中上面三行代码抽成方法—-<em>IDEA快捷键(ctrl+alt+M)</em>,该操作前需要做第二步的提取变量</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">String chosenTitle = <span class="string">"工作经验"</span>;</span><br><span class="line">String optionTitle = <span class="string">"应届毕业生"</span>;</span><br><span class="line">clickOption(webDriver, chosenTitle, optionTitle);</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">clickOption</span><span class="params">(WebDriver webDriver, String chosenTitle, String optionTitle)</span> </span>&#123;</span><br><span class="line">WebElement chosenElement = webDriver.findElement(By.xpath(<span class="string">"//li[@class='multi-chosen']//span[contains(text(),'"</span> + chosenTitle + <span class="string">"')]"</span>));</span><br><span class="line">WebElement optionElement = chosenElement.findElement(By.xpath(<span class="string">"../a[contains(text(),'"</span> + optionTitle + <span class="string">"')]"</span>));</span><br><span class="line">optionElement.click();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>写到这里观察上面变量和方法形参,合并一下优化代码.把文本传回方法参数里.—-<em>IDEA快捷键(ctrl+alt+N)</em> (选中方法里的参数)</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">clickOption(webDriver, <span class="string">"工作经验"</span>, <span class="string">"应届毕业生"</span>);<span class="comment">//接着分析页面,执行五个操作</span></span><br><span class="line">clickOption(webDriver, <span class="string">"学历要求"</span>, <span class="string">"本科"</span>);</span><br><span class="line">clickOption(webDriver, <span class="string">"融资阶段"</span>, <span class="string">"不限"</span>);</span><br><span class="line">clickOption(webDriver, <span class="string">"公司规模"</span>, <span class="string">"不限"</span>);</span><br><span class="line">clickOption(webDriver, <span class="string">"行业领域"</span>, <span class="string">"移动互联网"</span>);</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>解析单页元素<br> <img src="../images/0x046.png" alt></p>
+<ul>
+<li><p>观察页面元素发现主要信息都是在<code>&lt;li class=&quot;con_list_item default_list&quot;&gt;</code>中</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">webDriver.findElements(By.className(<span class="string">"con_list_item"</span>));</span><br></pre></td></tr></table></figure>
+<p>这里findElements是因为有多个元素,上面的findElement是只有一个元素<br>接着依然是抽取变量—-<em>IDEA快捷键(ctrl+alt+V)</em></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">List&lt;WebElement&gt; jobElements = webDriver.findElements(By.className(<span class="string">"con_list_item"</span>));</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>页面有多组信息就要用循环了咯,循环遍历对象JobElements;—-<em>在IDEA中输入<code>jobElemnets.for</code>+回车_就会补全语法</em></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (WebElement jobElement : jobElements) &#123;</span><br><span class="line">    WebElement moneyElement = jobElement.findElement(By.className(<span class="string">"position"</span>)).findElement(By.className(<span class="string">"money"</span>));</span><br><span class="line">    System.out.println(moneyElement.getText());</span><br><span class="line">    String companyName = jobElement.findElement(By.className(<span class="string">"company_name"</span>)).getText();<span class="comment">//在IDEA中输入sout+回车_快速创建打印方法</span></span><br><span class="line">    System.out.println(companyName);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>优化一下代码_把上面代码抽成方法</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"> extractJobsByPagination(webDriver);</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">extractJobsByPagination</span><span class="params">(WebDriver webDriver)</span> </span>&#123;</span><br><span class="line">List&lt;WebElement&gt; jobElements = webDriver.findElements(By.className(<span class="string">"con_list_item"</span>));</span><br><span class="line"><span class="keyword">for</span> (WebElement jobElement : jobElements) &#123;</span><br><span class="line">    WebElement moneyElement = jobElement.findElement(By.className(<span class="string">"position"</span>)).findElement(By.className(<span class="string">"money"</span>));</span><br><span class="line">    String companyName = jobElement.findElement(By.className(<span class="string">"company_name"</span>)).getText();</span><br><span class="line">    System.out.println(companyName + <span class="string">" : "</span> + moneyElement.getText());</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>写到这里可以尝试运行一下了,观察下输出结果.</p>
+</li>
+</ul>
+</li>
+<li><p>解析分页元素<br><img src="../images/0x071.png" alt><br><img src="../images/0x072.png" alt></p>
+<ul>
+<li>观察下一页按钮可点击和不可点击时的变化<br><img src="../images/0x073.png" alt></li>
+<li>测试下按钮事件</li>
+<li><p>进行逻辑判断,然后触发点击事件.最后在if里进行递归调用</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">WebElement nextPageBtn = webDriver.findElement(By.className(<span class="string">"pager_next"</span>));</span><br><span class="line"><span class="keyword">if</span>(!nextPageBtn.getAttribute(<span class="string">"class"</span>).contains(<span class="string">"pager_next_disabled"</span>))&#123;</span><br><span class="line">    nextPageBtn.click();</span><br><span class="line">    System.out.println(<span class="string">"--------下一页---------"</span>);</span><br><span class="line">    <span class="comment">//然后这里让线程睡眠一秒钟,以免跳转响应时间不够,再来个异常处理</span></span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">            Thread.sleep(<span class="number">1000L</span>);</span><br><span class="line">    &#125; <span class="keyword">catch</span> (InterruptedException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">    &#125;</span><br><span class="line">     extractJobsByPagination(webDriver);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="0x05-Running"><a href="#0x05-Running" class="headerlink" title="0x05 Running"></a>0x05 Running</h3><p><img src="../images/0x081.png" alt></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Java/" rel="tag"># Java</a>
+          
+            <a href="/tags/Maven/" rel="tag"># Maven</a>
+          
+            <a href="/tags/Xpath/" rel="tag"># Xpath</a>
+          
+            <a href="/tags/Selenium/" rel="tag"># Selenium</a>
+          
+            <a href="/tags/ChromeDriver/" rel="tag"># ChromeDriver</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/05/28/CrackRefain/" rel="next" title="CrackRefain">
+                <i class="fa fa-chevron-left"></i> CrackRefain
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Yuta</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-name">tags</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#0x01-Create-a-project"><span class="nav-number">1.</span> <span class="nav-text">0x01 Create a project</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#0x02-Environment-and-Tools"><span class="nav-number">2.</span> <span class="nav-text">0x02 Environment and Tools</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#0x03-Get-set"><span class="nav-number">3.</span> <span class="nav-text">0x03 Get set</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#0x04-Codeing"><span class="nav-number">4.</span> <span class="nav-text">0x04 Codeing</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#0x05-Running"><span class="nav-number">5.</span> <span class="nav-text">0x05 Running</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Yuta</span>
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"scale":0.4,"hHeadPos":0,"vHeadPos":0,"jsonPath":"/live2dw/assets/haru01.model.json"},"display":{"superSample":2,"width":600,"height":800,"position":"left","hOffset":-100,"vOffset":-100},"mobile":{"show":true,"scale":0.4},"react":{"opacityDefault":0.7,"opacityOnHover":0.2},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>
