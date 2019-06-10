@@ -362,10 +362,9 @@
 <ul>
 <li><p>首先获取第一层筛选</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">webDriver.findElement(By.xpath(<span class="string">"//li[@class='multi-chosen']//span[contains(text(),'工作经验')]"</span>));</span><br></pre></td></tr></table></figure>
-<ul>
-<li>然后选择上面的代码提取成对象—-<em>IDEA快捷键(ctrl+alt+V)</em><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">WebElement chosenElement = webDriver.findElement(By.xpath(<span class="string">"//li[@class='multi-chosen']//span[contains(text(),'工作经验')]"</span>))</span><br></pre></td></tr></table></figure>
 </li>
-</ul>
+<li><p>然后选择上面的代码提取成对象—-<em>IDEA快捷键(ctrl+alt+V)</em></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">WebElement chosenElement = webDriver.findElement(By.xpath(<span class="string">"//li[@class='multi-chosen']//span[contains(text(),'工作经验')]"</span>))</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>接着同样的操作,写出第二层筛选和点击事件</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">WebElement chosenElement = webDriver.findElement(By.xpath(<span class="string">"//li[@class='multi-chosen']//span[contains(text(),'工作经验')]"</span>));</span><br><span class="line">WebElement optionElement = chosenElement.findElement(By.xpath(<span class="string">"../a[contains(text(),'应届毕业生')]"</span>));</span><br><span class="line">optionElement.click();</span><br></pre></td></tr></table></figure>
@@ -403,7 +402,8 @@
 <li>解析分页元素<br><img src="../images/0x071.png" alt><br><img src="../images/0x072.png" alt></li>
 </ol>
 <ul>
-<li>观察下一页按钮可点击和不可点击时的变化<br><img src="../images/0x073.png" alt><br>测试下按钮事件</li>
+<li>观察下一页按钮可点击和不可点击时的变化<br><img src="../images/0x073.png" alt></li>
+<li>测试下按钮事件</li>
 <li>进行逻辑判断,然后触发点击事件.最后在if里进行递归调用</li>
 </ul>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">WebElement nextPageBtn = webDriver.findElement(By.className(<span class="string">"pager_next"</span>));</span><br><span class="line"><span class="keyword">if</span>(!nextPageBtn.getAttribute(<span class="string">"class"</span>).contains(<span class="string">"pager_next_disabled"</span>))&#123;</span><br><span class="line">nextPageBtn.click();</span><br><span class="line">System.out.println(<span class="string">"--------下一页---------"</span>);</span><br><span class="line"><span class="comment">//然后这里让线程睡眠一秒钟,以免跳转响应时间不够,再来个异常处理</span></span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">            hread.sleep(<span class="number">1000L</span>);</span><br><span class="line">    &#125; <span class="keyword">catch</span> (InterruptedException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">    &#125;</span><br><span class="line">        extractJobsByPagination(webDriver);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
