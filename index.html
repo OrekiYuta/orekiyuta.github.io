@@ -333,9 +333,9 @@
           
             <h3 id="0x01-Create-a-project"><a href="#0x01-Create-a-project" class="headerlink" title="0x01 Create a project"></a>0x01 Create a project</h3><p>Create New Project =&gt; Maven =&gt; Next =&gt; for (Fill in information =&gt; Next) =&gt; Finish<br> <img src="../images/0x011.png" alt><br> <img src="../images/0x012.png" alt><br> <img src="../images/0x013.png" alt><br> <img src="../images/0x014.png" alt></p>
 <h3 id="0x02-Environment-and-Tools"><a href="#0x02-Environment-and-Tools" class="headerlink" title="0x02 Environment and Tools"></a>0x02 Environment and Tools</h3><ol>
-<li>Java环境 JDK</li>
-<li>IDEA </li>
-<li>准备好ChromeDriver <a href="http://npm.taobao.org/mirrors/chromedriver/" target="_blank" rel="noopener">http://npm.taobao.org/mirrors/chromedriver/</a><br>选择好对应版本(我这里选择的是74.0.3729.68 win)</li>
+<li>Java环境 JDK <a href="https://www.oracle.com/technetwork/java/javase/downloads/index.html" target="_blank" rel="noopener">下载</a></li>
+<li>IDEA  <a href="https://www.jetbrains.com/idea/" target="_blank" rel="noopener">下载</a></li>
+<li>准备好ChromeDriver <a href="http://npm.taobao.org/mirrors/chromedriver/" target="_blank" rel="noopener">下载</a><br>选择好对应版本(我这里选择的是74.0.3729.68 win)</li>
 <li>Selenium 依赖<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependencies&gt;</span><br><span class="line">    &lt;dependency&gt;</span><br><span class="line">        &lt;groupId&gt;org.seleniumhq.selenium&lt;/groupId&gt;</span><br><span class="line">        &lt;artifactId&gt;selenium-server&lt;/artifactId&gt;</span><br><span class="line">        &lt;version&gt;3.141.59&lt;/version&gt;</span><br><span class="line">    &lt;/dependency&gt;</span><br><span class="line">&lt;/dependencies&gt;</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
@@ -351,26 +351,28 @@
 <li><p>创建webdriver对象</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">WebDriver webDriver =<span class="keyword">new</span> ChromeDriver();</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>打开页面(这里我以<a href="http://www.lagou.com为操作对象" target="_blank" rel="noopener">www.lagou.com为操作对象</a>)</p>
+<li><p>打开页面(这里我以<code>www.lagou.com</code>为操作对象)</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">webDriver.get(<span class="string">"https://www.lagou.com/zhaopin/Java/?labelWords=label"</span>);</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>审查网页元素<br>在模拟人工操作前,需要先分析页面对象的元素组成,观察到我们需要模拟点击的导航条”工作经验”是在<code>&lt;li class=&quot;muti-chosen&quot;&gt;</code>内的<code>&lt;span&gt;</code>之间,这样就确定了第一层筛选,然后再从<code>&lt;span&gt;</code>中筛选出<code>&lt;a&gt;</code>,根据<code>Text()</code>确定了元素位置.<br><img src="../images/0x044.png" alt></p>
 </li>
 <li><p>选择根据页面结构获取对象(我这里选择了Xpath)</p>
+</li>
+</ol>
 <ul>
-<li>首先获取第一层筛选<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">webDriver.findElement(By.xpath(<span class="string">"//li[@class='multi-chosen']//span[contains(text(),'工作经验')]"</span>));</span><br></pre></td></tr></table></figure>
+<li><p>首先获取第一层筛选</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">webDriver.findElement(By.xpath(<span class="string">"//li[@class='multi-chosen']//span[contains(text(),'工作经验')]"</span>));</span><br></pre></td></tr></table></figure>
+<ul>
+<li>然后选择上面的代码提取成对象—-<em>IDEA快捷键(ctrl+alt+V)</em><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">WebElement chosenElement = webDriver.findElement(By.xpath(<span class="string">"//li[@class='multi-chosen']//span[contains(text(),'工作经验')]"</span>))</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<ul>
-<li><p>然后选择上面的代码提取成对象—-<em>IDEA快捷键(ctrl+alt+V)</em></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">WebElement chosenElement = webDriver.findElement(By.xpath(<span class="string">"//li[@class='multi-chosen']//span[contains(text(),'工作经验')]"</span>))</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>接着同样的操作,写出第二层筛选和点击事件</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">WebElement chosenElement = webDriver.findElement(By.xpath(<span class="string">"//li[@class='multi-chosen']//span[contains(text(),'工作经验')]"</span>));</span><br><span class="line">WebElement optionElement = chosenElement.findElement(By.xpath(<span class="string">"../a[contains(text(),'应届毕业生')]"</span>));</span><br><span class="line">optionElement.click();</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>再次观察页面,发现各个导航条只有文本描述差异,所以接下来把上面两个文本对象抽成变量(选中”工作经验”和”应届毕业生”)</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">String chosenTitle = <span class="string">"工作经验"</span>;</span><br><span class="line">String optionTitle = <span class="string">"应届毕业生"</span>; <span class="comment">//移动代码位置(先选择该行ctrl+shift+↑or↓)</span></span><br><span class="line"></span><br><span class="line">WebElement chosenElement = webDriver.findElement(By.xpath(<span class="string">"//li[@class='multi-chosen']//span[contains(text(),'"</span> + chosenTitle + <span class="string">"')]"</span>));</span><br><span class="line">WebElement optionElement = chosenElement.findElement(By.xpath(<span class="string">"../a[contains(text(),'"</span> + optionTitle + <span class="string">"')]"</span>));</span><br><span class="line">optionElement.click();</span><br></pre></td></tr></table></figure>
-<ul>
+</li>
 <li><p>然后思考,把上面三行抽成方法,之后只需传递两个参数就可以控制了(选中上面三行代码抽成方法—-<em>IDEA快捷键(ctrl+alt+M)</em>,该操作前需要做第二步的提取变量</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">String chosenTitle = <span class="string">"工作经验"</span>;</span><br><span class="line">String optionTitle = <span class="string">"应届毕业生"</span>;</span><br><span class="line">clickOption(webDriver, chosenTitle, optionTitle);</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">clickOption</span><span class="params">(WebDriver webDriver, String chosenTitle, String optionTitle)</span> </span>&#123;</span><br><span class="line">WebElement chosenElement = webDriver.findElement(By.xpath(<span class="string">"//li[@class='multi-chosen']//span[contains(text(),'"</span> + chosenTitle + <span class="string">"')]"</span>));</span><br><span class="line">WebElement optionElement = chosenElement.findElement(By.xpath(<span class="string">"../a[contains(text(),'"</span> + optionTitle + <span class="string">"')]"</span>));</span><br><span class="line">optionElement.click();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
@@ -378,36 +380,33 @@
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">clickOption(webDriver, <span class="string">"工作经验"</span>, <span class="string">"应届毕业生"</span>);<span class="comment">//接着分析页面,执行五个操作</span></span><br><span class="line">clickOption(webDriver, <span class="string">"学历要求"</span>, <span class="string">"本科"</span>);</span><br><span class="line">clickOption(webDriver, <span class="string">"融资阶段"</span>, <span class="string">"不限"</span>);</span><br><span class="line">clickOption(webDriver, <span class="string">"公司规模"</span>, <span class="string">"不限"</span>);</span><br><span class="line">clickOption(webDriver, <span class="string">"行业领域"</span>, <span class="string">"移动互联网"</span>);</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-</li>
-</ul>
-</li>
-<li><p>解析单页元素<br> <img src="../images/0x046.png" alt></p>
+<ol start="6">
+<li>解析单页元素<br><img src="../images/0x046.png" alt></li>
+</ol>
 <ul>
 <li><p>观察页面元素发现主要信息都是在<code>&lt;li class=&quot;con_list_item default_list&quot;&gt;</code>中</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">webDriver.findElements(By.className(<span class="string">"con_list_item"</span>));</span><br></pre></td></tr></table></figure>
-<p>这里findElements是因为有多个元素,上面的findElement是只有一个元素<br>接着依然是抽取变量—-<em>IDEA快捷键(ctrl+alt+V)</em></p>
+</li>
+<li><p>这里findElements是因为有多个元素,上面的findElement是只有一个元素,接着依然是抽取变量—-<em>IDEA快捷键(ctrl+alt+V)</em></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">List&lt;WebElement&gt; jobElements = webDriver.findElements(By.className(<span class="string">"con_list_item"</span>));</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>页面有多组信息就要用循环了咯,循环遍历对象JobElements;—-<em>在IDEA中输入<code>jobElemnets.for</code>+回车_就会补全语法</em></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (WebElement jobElement : jobElements) &#123;</span><br><span class="line">    WebElement moneyElement = jobElement.findElement(By.className(<span class="string">"position"</span>)).findElement(By.className(<span class="string">"money"</span>));</span><br><span class="line">    System.out.println(moneyElement.getText());</span><br><span class="line">    String companyName = jobElement.findElement(By.className(<span class="string">"company_name"</span>)).getText();<span class="comment">//在IDEA中输入sout+回车_快速创建打印方法</span></span><br><span class="line">    System.out.println(companyName);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (WebElement jobElement : jobElements) &#123;</span><br><span class="line">    WebElement moneyElement = jobElement.findElement(By.className(<span class="string">"position"</span>)).findElement(By.className(<span class="string">"money"</span>));</span><br><span class="line">    System.out.println(moneyElement.getText());</span><br><span class="line">    String companyName = jobElement.findElement(By.className(<span class="string">"company_name"</span>)).getText();<span class="comment">//在IDEA中输入sout+回车_快速创建打印方法</span></span><br><span class="line">    System.out.println(companyName);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>优化一下代码_把上面代码抽成方法</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"> extractJobsByPagination(webDriver);</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">extractJobsByPagination</span><span class="params">(WebDriver webDriver)</span> </span>&#123;</span><br><span class="line">List&lt;WebElement&gt; jobElements = webDriver.findElements(By.className(<span class="string">"con_list_item"</span>));</span><br><span class="line"><span class="keyword">for</span> (WebElement jobElement : jobElements) &#123;</span><br><span class="line">    WebElement moneyElement = jobElement.findElement(By.className(<span class="string">"position"</span>)).findElement(By.className(<span class="string">"money"</span>));</span><br><span class="line">    String companyName = jobElement.findElement(By.className(<span class="string">"company_name"</span>)).getText();</span><br><span class="line">    System.out.println(companyName + <span class="string">" : "</span> + moneyElement.getText());</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">extractJobsByPagination(webDriver);</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">extractJobsByPagination</span><span class="params">(WebDriver webDriver)</span> </span>&#123;</span><br><span class="line">List&lt;WebElement&gt; jobElements = webDriver.findElements(By.className(<span class="string">"con_list_item"</span>));</span><br><span class="line"><span class="keyword">for</span> (WebElement jobElement : jobElements) &#123;</span><br><span class="line">    WebElement moneyElement = jobElement.findElement(By.className(<span class="string">"position"</span>)).findElement(By.className(<span class="string">"money"</span>));</span><br><span class="line">    String companyName = jobElement.findElement(By.className(<span class="string">"company_name"</span>)).getText();</span><br><span class="line">    System.out.println(companyName + <span class="string">" : "</span> + moneyElement.getText());</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>写到这里可以尝试运行一下了,观察下输出结果.</p>
 </li>
 </ul>
-</li>
-<li><p>解析分页元素<br><img src="../images/0x071.png" alt><br><img src="../images/0x072.png" alt></p>
-<ul>
-<li>观察下一页按钮可点击和不可点击时的变化<br><img src="../images/0x073.png" alt></li>
-<li>测试下按钮事件</li>
-<li><p>进行逻辑判断,然后触发点击事件.最后在if里进行递归调用</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">WebElement nextPageBtn = webDriver.findElement(By.className(<span class="string">"pager_next"</span>));</span><br><span class="line"><span class="keyword">if</span>(!nextPageBtn.getAttribute(<span class="string">"class"</span>).contains(<span class="string">"pager_next_disabled"</span>))&#123;</span><br><span class="line">    nextPageBtn.click();</span><br><span class="line">    System.out.println(<span class="string">"--------下一页---------"</span>);</span><br><span class="line">    <span class="comment">//然后这里让线程睡眠一秒钟,以免跳转响应时间不够,再来个异常处理</span></span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">            Thread.sleep(<span class="number">1000L</span>);</span><br><span class="line">    &#125; <span class="keyword">catch</span> (InterruptedException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">    &#125;</span><br><span class="line">     extractJobsByPagination(webDriver);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-</li>
+<ol start="7">
+<li>解析分页元素<br><img src="../images/0x071.png" alt><br><img src="../images/0x072.png" alt></li>
 </ol>
+<ul>
+<li>观察下一页按钮可点击和不可点击时的变化<br><img src="../images/0x073.png" alt><br>测试下按钮事件</li>
+<li>进行逻辑判断,然后触发点击事件.最后在if里进行递归调用</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">WebElement nextPageBtn = webDriver.findElement(By.className(<span class="string">"pager_next"</span>));</span><br><span class="line"><span class="keyword">if</span>(!nextPageBtn.getAttribute(<span class="string">"class"</span>).contains(<span class="string">"pager_next_disabled"</span>))&#123;</span><br><span class="line">nextPageBtn.click();</span><br><span class="line">System.out.println(<span class="string">"--------下一页---------"</span>);</span><br><span class="line"><span class="comment">//然后这里让线程睡眠一秒钟,以免跳转响应时间不够,再来个异常处理</span></span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">            hread.sleep(<span class="number">1000L</span>);</span><br><span class="line">    &#125; <span class="keyword">catch</span> (InterruptedException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">    &#125;</span><br><span class="line">        extractJobsByPagination(webDriver);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
 <h3 id="0x05-Running"><a href="#0x05-Running" class="headerlink" title="0x05 Running"></a>0x05 Running</h3><p><img src="../images/0x081.png" alt></p>
 
           
