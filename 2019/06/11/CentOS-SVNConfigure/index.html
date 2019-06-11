@@ -87,15 +87,15 @@
 <meta property="og:site_name" content="Canoe">
 <meta property="og:description" content="CentOS:SVNConfigure  ssh root@47.107.175.196   //通过SSH连接我的阿里云服务器 svn                      //先查看是否安装了svn yum install svn         //安装svn svn --version          //查看svn版本 输入svn按Tab补全  ; 会出现很多以svn开头的,可以">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="http://yoursite.com/2019/06/11/images/CentOSSVNConfigure/01.png">
-<meta property="og:image" content="http://yoursite.com/2019/06/11/images/CentOSSVNConfigure/02.png">
-<meta property="og:image" content="http://yoursite.com/2019/06/11/images/CentOSSVNConfigure/03.png">
-<meta property="og:image" content="http://yoursite.com/2019/06/11/images/CentOSSVNConfigure/04.png">
-<meta property="og:updated_time" content="2019-06-11T11:44:20.017Z">
+<meta property="og:image" content="http://yoursite.com/images/CentOSSVNConfigure/01.png">
+<meta property="og:image" content="http://yoursite.com/images/CentOSSVNConfigure/02.png">
+<meta property="og:image" content="http://yoursite.com/images/CentOSSVNConfigure/03.png">
+<meta property="og:image" content="http://yoursite.com/images/CentOSSVNConfigure/04.png">
+<meta property="og:updated_time" content="2019-06-11T12:16:40.045Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CentOS:SVN Configure">
 <meta name="twitter:description" content="CentOS:SVNConfigure  ssh root@47.107.175.196   //通过SSH连接我的阿里云服务器 svn                      //先查看是否安装了svn yum install svn         //安装svn svn --version          //查看svn版本 输入svn按Tab补全  ; 会出现很多以svn开头的,可以">
-<meta name="twitter:image" content="http://yoursite.com/2019/06/11/images/CentOSSVNConfigure/01.png">
+<meta name="twitter:image" content="http://yoursite.com/images/CentOSSVNConfigure/01.png">
 
 
 
@@ -193,36 +193,6 @@
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
             
             Home
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-about">
-          <a href="/about/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
-            
-            About
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
-            
-            Tags
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-categories">
-          <a href="/categories/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
-            
-            Categories
           </a>
         </li>
       
@@ -347,11 +317,11 @@
 <li><code>svnserve -d -r /opt/svn/916213802/</code>   //启动svn服务</li>
 <li><code>ps -ef | grep svnserve</code>   //查看svnserve 是否启动</li>
 <li><code>netstat -an | grep 3690</code>   //3690是svn默认端口,查看是否开放</li>
-<li>由于阿里云安全组步不开放该端口,所以要去阿里云服务器开启<em>3690</em> 端口<br><img src="../images/CentOSSVNConfigure/01.png" alt></li>
+<li>由于阿里云安全组步不开放该端口,所以要去阿里云服务器开启<em>3690</em> 端口<br><img src="/images/CentOSSVNConfigure/01.png" alt></li>
 <li><code>cd /opt/svn/916213802/conf/</code>  //进入仓库查看配置文件        </li>
-<li><code>vim authz</code>   //设置用户<br><img src="../images/CentOSSVNConfigure/02.png" alt></li>
-<li><code>vim passwd</code>  //设置用户和密码<br><img src="../images/CentOSSVNConfigure/03.png" alt></li>
-<li><code>vim svnserve.conf</code>  //设置其他参数<br><img src="../images/CentOSSVNConfigure/04.png" alt></li>
+<li><code>vim authz</code>   //设置用户<br><img src="/images/CentOSSVNConfigure/02.png" alt></li>
+<li><code>vim passwd</code>  //设置用户和密码<br><img src="/images/CentOSSVNConfigure/03.png" alt></li>
+<li><code>vim svnserve.conf</code>  //设置其他参数<br><img src="/images/CentOSSVNConfigure/04.png" alt></li>
 <li><code>killall svn</code>   //关闭svn进程也可以在12的基础上<code>killall pid</code></li>
 <li><code>svnserve -d -r /opt/svn/916213802</code>  //再次启动svnserve服务</li>
 <li><code>svn checkout svn://47.107.175.196/916213802 --username 91621380205 --password 91621380205</code><br>//本地连接服务器SVN ,执行后下载svn上的项目到本地当前目录,可不用–username和–password</li>
