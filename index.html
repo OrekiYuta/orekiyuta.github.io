@@ -260,6 +260,154 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/06/11/CentOS-SVNConfigure/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yuta">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Canoe">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/06/11/CentOS-SVNConfigure/" itemprop="url">CentOS:SVNConfigure</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-06-11T19:36:49+08:00">
+                2019-06-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p> CentOS:SVNConfigure</p>
+<ol>
+<li><code>ssh root@47.107.175.196</code>   //通过SSH连接我的阿里云服务器</li>
+<li><code>svn</code>                      //先查看是否安装了svn</li>
+<li><code>yum install svn</code>         //安装svn</li>
+<li><code>svn --version</code>          //查看svn版本</li>
+<li>输入<code>svn</code>按Tab补全  ; 会出现很多以svn开头的,可以选择使用</li>
+<li><code>svnadmin create /opt/svn/916213802</code>      //在根目录下创建SVN仓库</li>
+<li><code>svnserve -d -r /opt/svn/916213802/</code>   //启动svn服务</li>
+<li><code>ps -ef | grep svnserve</code>   //查看svnserve 是否启动</li>
+<li><code>netstat -an | grep 3690</code>   //3690是svn默认端口,查看是否开放</li>
+<li>由于阿里云安全组步不开放该端口,所以要去阿里云服务器开启<em>3690</em>端口<br><img src="../images/CentOSSVNConfigure/01.png" alt></li>
+<li><code>cd /opt/svn/916213802/conf/</code>  //进入仓库查看配置文件        </li>
+<li><code>vim authz</code>   //设置用户<br><img src="../images/CentOSSVNConfigure/02.png" alt></li>
+<li><code>vim passwd</code>  //设置用户和密码<br><img src="../images/CentOSSVNConfigure/03.png" alt></li>
+<li><code>vim svnserve.conf</code>  //设置其他参数<br><img src="../images/CentOSSVNConfigure/04.png" alt></li>
+<li><code>killall svn</code>   //关闭svn进程也可以在12的基础上<code>killall pid</code></li>
+<li><code>svnserve -d -r /opt/svn/916213802</code>  //再次启动svnserve服务</li>
+<li><code>svn checkout svn://47.107.175.196/916213802 --username 91621380205 --password 91621380205</code><br>//本地连接服务器SVN ,执行后下载svn上的项目到本地当前目录,可不用–username和–password</li>
+</ol>
+<hr>
+<ul>
+<li><code>pwd</code>   //查看当前目录</li>
+<li><code>cd /</code>  //进入根目录</li>
+<li><code>ls</code> 查看当前目录下文件</li>
+<li><code>ll</code> 查看当前目录下文件</li>
+<li>执行第<em>7</em>步后,再执行第<em>17</em>步测试连接,如果连接得上就不用操作步骤<em>8-10</em>;</li>
+<li>部署项目的话把项目放在本地checkout下来的文件夹里,<em>同步</em>上去就可以了.</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/06/10/Java-ArtificialSimulation/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -532,7 +680,7 @@
 <li>看开启了哪些服务</li>
 <li>搜索看哪些服务可以利用(window smb ,数据库)</li>
 <li>尝试破解,漏洞不需要</li>
-<li>进入成功.执行命令想干啥就干啥</li>
+<li>进入成功.执行命令操作</li>
 </ol>
 <h4 id="MySQL"><a href="#MySQL" class="headerlink" title="MySQL"></a>MySQL</h4><ol>
 <li>登录 <code>mysql -h#ip地址# -u#用户名# -p#密码#</code></li>
@@ -545,7 +693,13 @@
 <li><p>查看任务进程 <code>tasklist</code></p>
 </li>
 <li>关闭任务进程 <code>taskkill /f /pid #pid号#</code></li>
-<li>启动mysql服务 <code>net start mysql</code> 停止mysql服务 <code>net stop mysql</code></li>
+<li><p>启动mysql服务 <code>net start mysql</code> 停止mysql服务 <code>net stop mysql</code></p>
+</li>
+<li><p>进去别人的MySQL 首先看下数据库<code>show databases;</code></p>
+</li>
+<li>选择数据库 use xxx; </li>
+<li>看下表 show tables;</li>
+<li>执行表操作 select * from xxx;</li>
 </ol>
 
           
@@ -675,6 +829,7 @@
 <h3 id="Days-06-190603-09-56AM"><a href="#Days-06-190603-09-56AM" class="headerlink" title="Days-06-190603;09:56AM"></a>Days-06-190603;09:56AM</h3><p>&emsp;&emsp;こんしゅうのじっしゅうはまたはじまりました。すごいひとがおおすぎて、じぶんはなにむわがりません。これがら1時にきぎょうにけんがくにいきます、けんがくしてがっこうにがえります。きょうのじっしゅうはこれでおわります。</p>
 <h3 id="Days-07-190604-09-33AM"><a href="#Days-07-190604-09-33AM" class="headerlink" title="Days-07-190604;09:33AM"></a>Days-07-190604;09:33AM</h3><p>&emsp;&emsp;きのうのごご、がっこうにかえるついでに、スーパーによっておかしをたくさんかいいました。いまこうざをきいています。</p>
 <h3 id="Days-08-190605-15-22PM"><a href="#Days-08-190605-15-22PM" class="headerlink" title="Days-08-190605;15:22PM"></a>Days-08-190605;15:22PM</h3><p>&emsp;&emsp;きのうははれ、きょはあめ。つまらない、つかれる。</p>
+<h3 id="Days-10-190610-20-49PM"><a href="#Days-10-190610-20-49PM" class="headerlink" title="Days-10-190610;20:49PM"></a>Days-10-190610;20:49PM</h3><p>&emsp;&emsp;さくやJavaウェブサイトのはちゅうるいのちいさいプロジェクトをかんせいしました。そしてきょうはブログをかきました。いいかんじ、きょうはSVNについてまたしらべました。わるくない…</p>
 
           
         
@@ -1294,7 +1449,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -1307,7 +1462,7 @@
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-count">12</span>
                   <span class="site-state-item-name">tags</span>
                 
               </div>
