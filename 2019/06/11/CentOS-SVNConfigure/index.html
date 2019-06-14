@@ -79,22 +79,22 @@
 
 
 
-<meta name="description" content="CentOS:SVNConfigure  ssh root@47.107.175.196   //通过SSH连接我的阿里云服务器 svn                      //先查看是否安装了svn yum install svn         //安装svn svn --version          //查看svn版本 输入svn按Tab补全  ; 会出现很多以svn开头的,可以">
+<meta name="description" content="ssh root@47.107.175.196   //通过SSH连接我的阿里云服务器 svn                      //先查看是否安装了svn yum install svn         //安装svn svn --version          //查看svn版本 输入svn按Tab补全  ; 会出现很多以svn开头的,可以选择使用 svnadmin create">
 <meta name="keywords" content="CentOS,Linux,SVN">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CentOS:SVN Configure">
 <meta property="og:url" content="http://yoursite.com/2019/06/11/CentOS-SVNConfigure/index.html">
 <meta property="og:site_name" content="Canoe">
-<meta property="og:description" content="CentOS:SVNConfigure  ssh root@47.107.175.196   //通过SSH连接我的阿里云服务器 svn                      //先查看是否安装了svn yum install svn         //安装svn svn --version          //查看svn版本 输入svn按Tab补全  ; 会出现很多以svn开头的,可以">
+<meta property="og:description" content="ssh root@47.107.175.196   //通过SSH连接我的阿里云服务器 svn                      //先查看是否安装了svn yum install svn         //安装svn svn --version          //查看svn版本 输入svn按Tab补全  ; 会出现很多以svn开头的,可以选择使用 svnadmin create">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://yoursite.com/images/CentOSSVNConfigure/01.png">
 <meta property="og:image" content="http://yoursite.com/images/CentOSSVNConfigure/02.png">
 <meta property="og:image" content="http://yoursite.com/images/CentOSSVNConfigure/03.png">
 <meta property="og:image" content="http://yoursite.com/images/CentOSSVNConfigure/04.png">
-<meta property="og:updated_time" content="2019-06-11T12:16:40.045Z">
+<meta property="og:updated_time" content="2019-06-12T11:59:05.775Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CentOS:SVN Configure">
-<meta name="twitter:description" content="CentOS:SVNConfigure  ssh root@47.107.175.196   //通过SSH连接我的阿里云服务器 svn                      //先查看是否安装了svn yum install svn         //安装svn svn --version          //查看svn版本 输入svn按Tab补全  ; 会出现很多以svn开头的,可以">
+<meta name="twitter:description" content="ssh root@47.107.175.196   //通过SSH连接我的阿里云服务器 svn                      //先查看是否安装了svn yum install svn         //安装svn svn --version          //查看svn版本 输入svn按Tab补全  ; 会出现很多以svn开头的,可以选择使用 svnadmin create">
 <meta name="twitter:image" content="http://yoursite.com/images/CentOSSVNConfigure/01.png">
 
 
@@ -306,8 +306,7 @@
       
 
       
-        <p> CentOS:SVNConfigure</p>
-<ol>
+        <ol>
 <li><code>ssh root@47.107.175.196</code>   //通过SSH连接我的阿里云服务器</li>
 <li><code>svn</code>                      //先查看是否安装了svn</li>
 <li><code>yum install svn</code>         //安装svn</li>
@@ -317,7 +316,7 @@
 <li><code>svnserve -d -r /opt/svn/916213802/</code>   //启动svn服务</li>
 <li><code>ps -ef | grep svnserve</code>   //查看svnserve 是否启动</li>
 <li><code>netstat -an | grep 3690</code>   //3690是svn默认端口,查看是否开放</li>
-<li>由于阿里云安全组步不开放该端口,所以要去阿里云服务器开启<em>3690</em> 端口<br><img src="/images/CentOSSVNConfigure/01.png" alt></li>
+<li>由于阿里云安全组不开放该端口,所以要去阿里云服务器开启<em>3690</em> 端口<br><img src="/images/CentOSSVNConfigure/01.png" alt></li>
 <li><code>cd /opt/svn/916213802/conf/</code>  //进入仓库查看配置文件        </li>
 <li><code>vim authz</code>   //设置用户<br><img src="/images/CentOSSVNConfigure/02.png" alt></li>
 <li><code>vim passwd</code>  //设置用户和密码<br><img src="/images/CentOSSVNConfigure/03.png" alt></li>
