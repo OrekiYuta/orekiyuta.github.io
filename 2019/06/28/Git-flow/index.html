@@ -165,7 +165,7 @@
 <meta property="og:image" content="http://yoursite.com/images/Git/75.png">
 <meta property="og:image" content="http://yoursite.com/images/Git/76.png">
 <meta property="og:image" content="http://yoursite.com/images/Git/77.png">
-<meta property="og:updated_time" content="2019-06-27T17:36:04.333Z">
+<meta property="og:updated_time" content="2019-06-28T09:28:30.320Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git flow">
 <meta name="twitter:description" content="01. Git工作流Git flow :  for ( =&amp;gt; local-code =&amp;gt; submit to local-repository =&amp;gt; submit to server-repository =&amp;gt; from remote-repository update code =&amp;gt; ) Detail :  localfolder -&amp;gt; git Stage -">
@@ -450,7 +450,7 @@
 <p>  <img src="/images/Git/14.png" alt></p>
 <p>  //和数字组合用法,查看最近一次更改的详细信息</p>
 <p>  <img src="/images/Git/15.png" alt></p>
-<p>  //加上online,对比上图可见头部信息缩短了</p>
+<p>  //加上oneline,对比上图可见头部信息缩短了</p>
 <p>  <img src="/images/Git/16.png" alt></p>
 </li>
 <li><p><code>git log --stat</code> //对每次的提交的内容进行统计的信息</p>
@@ -585,8 +585,8 @@
 </li>
 </ol>
 <hr>
-<h3 id="10-⭐分支使用"><a href="#10-⭐分支使用" class="headerlink" title="10. ⭐分支使用"></a>10. ⭐分支使用</h3><p>&emsp;&emsp;以上的操作都是在主分支上执行的,但是在实际应用中不应该多次在主分支操作。</p>
-<p>&emsp;&emsp;在项目中每个人都有自己的要执行的任务,每个人执行的任务都不同,<br>那么就需要在主分支上建立自己的分支,在自己的分支上不断的完善后再向主分支进行合并。</p>
+<h3 id="10-分支使用⭐"><a href="#10-分支使用⭐" class="headerlink" title="10. 分支使用⭐"></a>10. 分支使用⭐</h3><p>&emsp;&emsp;以上的操作都是在主分支上执行的,但是在实际应用中不应该多次在主分支操作。</p>
+<p>&emsp;&emsp;在项目中每个人都有自己的要执行的任务,每个人执行的任务都不同,那么就需要在主分支上建立自己的分支,在自己的分支上不断的完善后再向主分支进行合并。</p>
 <p><img src="/images/Git/gitbranch.png" alt></p>
 <p><code>git branch 分支名</code>  //建立新分支</p>
 <p><code>git checkout 分支名</code>  //切换分支</p>
@@ -595,7 +595,7 @@
 <p> <img src="/images/Git/50.png" alt></p>
 </li>
 <li><p>建立分支，切换分支</p>
-<p> //建立的分支拥有的内容 与 在建立分支的那个时刻的主分支的内容一致</p>
+<p> //建立的分支拥有的内容 与 在建立分支的那个时刻的主分支(被分支的分支)的内容一致</p>
 <p> <img src="/images/Git/51.png" alt></p>
 </li>
 <li><p>添加文件，提交记录</p>
@@ -613,8 +613,8 @@
 <p>  <img src="/images/Git/55.png" alt></p>
 </li>
 <li><p>通过git在本地创建仓库，切换分支时另外一个分支的内容在哪里?</p>
-<pre><code>项目文件都保存在.git目录下，始终存在，包括历史的各种版本，只不过不能从文件名字搜索到，因为Git是Content Addresing的。每次切换到一个分支，或者是check out一个历史版本，Git就从数据库（就是.git目录）中把这个版本的文件和目录都找出来，Copy一份放这当前的项目目录下。
-</code></pre></li>
+<p>  &emsp;&emsp;项目文件都保存在.git目录下，始终存在，包括历史的各种版本，只不过不能从文件名字搜索到，因为Git是Content Addresing的。每次切换到一个分支，或者是check out一个历史版本，Git就从数据库（就是.git目录）中把这个版本的文件和目录都找出来，Copy一份放这当前的项目目录下。</p>
+</li>
 </ul>
 <hr>
 <h3 id="11-合并分支"><a href="#11-合并分支" class="headerlink" title="11. 合并分支"></a>11. 合并分支</h3><ol>
@@ -879,7 +879,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#01-Git工作流"><span class="nav-number">1.</span> <span class="nav-text">01. Git工作流</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#02-基础配置"><span class="nav-number">2.</span> <span class="nav-text">02. 基础配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#02-提交本地仓库"><span class="nav-number">3.</span> <span class="nav-text">02. 提交本地仓库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#03-查看提交日志"><span class="nav-number">4.</span> <span class="nav-text">03. 查看提交日志</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#04-工作状态回退"><span class="nav-number">5.</span> <span class="nav-text">04. 工作状态回退</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#05-比较修改内容"><span class="nav-number">6.</span> <span class="nav-text">05. 比较修改内容</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#06-文件操作"><span class="nav-number">7.</span> <span class="nav-text">06. 文件操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#07-忽略管理"><span class="nav-number">8.</span> <span class="nav-text">07. 忽略管理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#08-更新最后的提交记录"><span class="nav-number">9.</span> <span class="nav-text">08. 更新最后的提交记录</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#09-版本回退-切换"><span class="nav-number">10.</span> <span class="nav-text">09. 版本回退/切换</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10-⭐分支使用"><span class="nav-number">11.</span> <span class="nav-text">10. ⭐分支使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#11-合并分支"><span class="nav-number">12.</span> <span class="nav-text">11. 合并分支</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12-分支冲突"><span class="nav-number">13.</span> <span class="nav-text">12. 分支冲突</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#13-使用Tag标签"><span class="nav-number">14.</span> <span class="nav-text">13. 使用Tag标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#14-使用别名"><span class="nav-number">15.</span> <span class="nav-text">14. 使用别名</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#15-GitHub"><span class="nav-number">16.</span> <span class="nav-text">15. GitHub</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#01-Git工作流"><span class="nav-number">1.</span> <span class="nav-text">01. Git工作流</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#02-基础配置"><span class="nav-number">2.</span> <span class="nav-text">02. 基础配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#02-提交本地仓库"><span class="nav-number">3.</span> <span class="nav-text">02. 提交本地仓库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#03-查看提交日志"><span class="nav-number">4.</span> <span class="nav-text">03. 查看提交日志</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#04-工作状态回退"><span class="nav-number">5.</span> <span class="nav-text">04. 工作状态回退</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#05-比较修改内容"><span class="nav-number">6.</span> <span class="nav-text">05. 比较修改内容</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#06-文件操作"><span class="nav-number">7.</span> <span class="nav-text">06. 文件操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#07-忽略管理"><span class="nav-number">8.</span> <span class="nav-text">07. 忽略管理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#08-更新最后的提交记录"><span class="nav-number">9.</span> <span class="nav-text">08. 更新最后的提交记录</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#09-版本回退-切换"><span class="nav-number">10.</span> <span class="nav-text">09. 版本回退/切换</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10-分支使用⭐"><span class="nav-number">11.</span> <span class="nav-text">10. 分支使用⭐</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#11-合并分支"><span class="nav-number">12.</span> <span class="nav-text">11. 合并分支</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12-分支冲突"><span class="nav-number">13.</span> <span class="nav-text">12. 分支冲突</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#13-使用Tag标签"><span class="nav-number">14.</span> <span class="nav-text">13. 使用Tag标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#14-使用别名"><span class="nav-number">15.</span> <span class="nav-text">14. 使用别名</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#15-GitHub"><span class="nav-number">16.</span> <span class="nav-text">15. GitHub</span></a></li></ol></div>
             
 
           </div>
