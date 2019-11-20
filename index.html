@@ -301,7 +301,52 @@
       
         
           
-            <h3 id="Date-2019-11-08-17-06-50"><a href="#Date-2019-11-08-17-06-50" class="headerlink" title="Date: 2019-11-08 17:06:50"></a>Date: 2019-11-08 17:06:50</h3><ul>
+            <h3 id="Date-2019-11-20-22-01-04"><a href="#Date-2019-11-20-22-01-04" class="headerlink" title="Date: 2019-11-20 22:01:04"></a>Date: 2019-11-20 22:01:04</h3><ul>
+<li>Pro Environment Deployment Review<ul>
+<li>服务器端用git pull 拉取开发环境提交的最新代码</li>
+<li>修改配置文件信息;👉<a href="https://maven.apache.org/guides/introduction/introduction-to-profiles.html" target="_blank" rel="noopener">Maven官方文档</a><ul>
+<li>环境分离,Maven提供在本地使用Pom配置</li>
+<li>服务端用.m2/setting.xml 配置文件  </li>
+</ul>
+</li>
+<li>配置jdk,maven环境<ul>
+<li>用flyway工具按脚本生成数据库表 <code>mvn clean cpmpile flyway:migrate -Ppro</code> pro是在配置中 profiles节点自定义的名称  </li>
+<li>配置了环境分离的话,可以在开发环境和服务端分别按配置构建数据库连接进行便利开发,因为开发环境的配置不能随意填写</li>
+<li>开发环境最好和服务部署环境保持一致性</li>
+</ul>
+</li>
+<li>用 <code>mvn clean compile</code> <code>mvn package</code> 构建jar包</li>
+<li>运行jar包即可 <code>java -jar target/xxxx-0.0.1 -SNAPSHOT.jar</code></li>
+<li>访问服务端即可</li>
+</ul>
+<hr>
+<ul>
+<li>在服务器部署方面采用docker会更方便后续工作</li>
+<li>docker主要步骤为:   拉取镜像/构建镜像→构建容器→运行容器</li>
+<li>首先得安装docker,运行 <code>service docker start</code></li>
+<li>在这里以MySQL为例:</li>
+<li><code>docker image pull mysql</code> 首先会从本地查看有没有mysql镜像,没有再去docker仓库拉取</li>
+<li><code>docker image ls</code></li>
+<li><code>docker container run mysql</code> 生成的容器会持久化存在，不需要可删除</li>
+<li><code>docker ps</code> <code>docker container ls -all</code></li>
+<li><code>docker run -it --name mysql -e MYSQL_ROOT_PASSWORD=123456 -p 3306:3306 -v xx/xx : xx/xx mysql</code> 端口映射,文件夹映射</li>
+<li>需要深入了解网络IP</li>
+<li><code>docker exec -it mysql /bin/bash</code> 进入容器启动容器命令行</li>
+<li><code>docker exec -it mysql -h localhost -u root -p</code></li>
+</ul>
+<hr>
+<ul>
+<li>对于项目而言可以采用 dockerFile 方式把环境和项目和操作步骤写入dockerFile文件里</li>
+<li>然后构建项目镜像,就可以方便的在不同环境利用docker部署</li>
+<li>也可以把项目容器和数据库容器等多个容器用docker compose 方式构建</li>
+<li>多下点功夫去看官方英文文档</li>
+</ul>
+</li>
+</ul>
+<h3 id="Date-2019-11-15-17-06-49"><a href="#Date-2019-11-15-17-06-49" class="headerlink" title="Date: 2019-11-15 17:06:49"></a>Date: 2019-11-15 17:06:49</h3><ul>
+<li>Ctrl + shift + U 选中内容小写</li>
+</ul>
+<h3 id="Date-2019-11-08-17-06-50"><a href="#Date-2019-11-08-17-06-50" class="headerlink" title="Date: 2019-11-08 17:06:50"></a>Date: 2019-11-08 17:06:50</h3><ul>
 <li>Ctrl + Alt + M 把选中代码提取成方法</li>
 <li>Ctrl + Alt + P 把选择代码提取成形式参数</li>
 </ul>
@@ -380,7 +425,9 @@
 <li><p>H2数据库仅支持单链接，执行相关内容，需要关闭之前的链接</p>
 </li>
 </ul>
-<h3 id="Date-2019-10-11-16-04-50"><a href="#Date-2019-10-11-16-04-50" class="headerlink" title="Date: 2019-10-11 16:04:50"></a>Date: 2019-10-11 16:04:50</h3><p>-Crtl+E 切换最近编辑的窗口</p>
+<h3 id="Date-2019-10-11-16-04-50"><a href="#Date-2019-10-11-16-04-50" class="headerlink" title="Date: 2019-10-11 16:04:50"></a>Date: 2019-10-11 16:04:50</h3><ul>
+<li>Crtl+E 切换最近编辑的窗口</li>
+</ul>
 <h3 id="Date-2019-10-10-20-38-00"><a href="#Date-2019-10-10-20-38-00" class="headerlink" title="Date: 2019-10-10 20:38:00"></a>Date: 2019-10-10 20:38:00</h3><ul>
 <li><p>Alt+Enter 提示添加jar包或其它</p>
 </li>
@@ -2364,5 +2411,5 @@
 
   
 
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"scale":0.4,"hHeadPos":0,"vHeadPos":0,"jsonPath":"/live2dw/assets/tororo.model.json"},"display":{"superSample":2,"width":600,"height":800,"position":"left","hOffset":-100,"vOffset":-100},"mobile":{"show":true,"scale":0.4},"react":{"opacityDefault":0.7,"opacityOnHover":0.2},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"scale":0.4,"hHeadPos":0,"vHeadPos":0,"jsonPath":"/live2dw/assets/tororo.model.json"},"display":{"superSample":2,"width":600,"height":800,"position":"left","hOffset":-100,"vOffset":-100},"mobile":{"show":false,"scale":0.4},"react":{"opacityDefault":0.7,"opacityOnHover":0.2},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 </html>
