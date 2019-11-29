@@ -1514,6 +1514,9 @@ pre .javascript .function {
   font-size: 14px;
   margin-top: 2px;
 }
+.post-wordcount {
+  display: inline-block;
+}
 .post-meta-divider {
   margin: 0 0.5em;
 }
@@ -1642,6 +1645,13 @@ pre .javascript .function {
 .fancybox-close:hover {
   border: none;
 }
+.post-copyright {
+  margin: 2em 0 0;
+  padding: 0.5em 1em;
+  border-left: 3px solid #ff1700;
+  background-color: #f9f9f9;
+  list-style: none;
+}
 .rtl.post-body p,
 .rtl.post-body a,
 .rtl.post-body h1,
@@ -1741,13 +1751,21 @@ pre .javascript .function {
   padding: 2px;
   max-width: 120px;
   height: auto;
-  border: 1px solid #eee;
+  border: none;
+}
+.site-author-image:hover {
+  -webkit-animation: heartBeat 1s;
+  animation: heartBeat 1s;
 }
 .site-author-name {
   margin: 0;
   text-align: center;
   color: #222;
   font-weight: 600;
+}
+.site-author-name:hover {
+  -webkit-animation: wobble 1s;
+  animation: wobble 1s;
 }
 .site-description {
   margin-top: 0;
@@ -1823,7 +1841,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff8345;
+  background: #e0ffbf;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3120,4 +3138,14 @@ pre .javascript .function {
   .pagination {
     margin: 8px 0 0;
   }
+}
+.post {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding: 25px;
+  -webkit-box-shadow: 0 0 10px rgba(202,203,203,0.5);
+  -moz-box-shadow: 0 0 10px rgba(202,203,204,0.5);
+}
+.post-block {
+  background: rgba(225,222,222,0.478);
 }
