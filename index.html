@@ -90,13 +90,16 @@
 
 
 
+<meta name="description" content="Orekiyuta`s blog">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Canoe">
-<meta property="og:url" content="http://orekiyuta.cn/index.html">
+<meta property="og:url" content="http://www.orekiyuta.cn/index.html">
 <meta property="og:site_name" content="Canoe">
+<meta property="og:description" content="Orekiyuta`s blog">
 <meta property="og:locale" content="default">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Canoe">
+<meta name="twitter:description" content="Orekiyuta`s blog">
 
 
 
@@ -126,11 +129,11 @@
 
 
 
-  <link rel="canonical" href="http://orekiyuta.cn/">
+  <link rel="canonical" href="http://www.orekiyuta.cn/">
 
 
 
-
+<meta name="baidu-site-verification" content="8G4c26ZmVj">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   <title>Canoe</title>
@@ -312,9 +315,9 @@
 .carousel-inner > .item {
   display: none;
   position: relative;
-  -webkit-transition: 0.6s ease-in-out left;
-  -o-transition: 0.6s ease-in-out left;
-  transition: 0.6s ease-in-out left;
+  -webkit-transition: 1s ease-in-out left;
+  -o-transition: 1s ease-in-out left;
+  transition: 1s ease-in-out left;
 }
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
@@ -322,10 +325,10 @@
 }
 @media all and (transform-3d), (-webkit-transform-3d) {
   .carousel-inner > .item {
-    -webkit-transition: -webkit-transform 0.6s ease-in-out;
-    -moz-transition: -moz-transform 0.6s ease-in-out;
-    -o-transition: -o-transform 0.6s ease-in-out;
-    transition: transform 0.6s ease-in-out;
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    -moz-transition: -moz-transform 1s ease-in-out;
+    -o-transition: -o-transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     backface-visibility: hidden;
@@ -524,39 +527,27 @@
   .carousel-indicators {
     bottom: 20px;
   }
+      /*添加淡入淡出的css*/
+  .carousel-fade .carousel-inner .item{ opacity:0.7; -webkit-transition-property:opacity;-moz-transition-property:opacity ; -ms-transition-property:opacity;-o-transition-property:opacity;transition-property:opacity ;}
+  .carousel-fade .carousel-inner .active{ opacity: 1;}
+  .carousel-fade .carousel-inner .active.left,.carousel-fade .carousel-inner .active.right{left: 0;opacity: 0;}
+  .carousel-fade .carousel-inner .next.left,
+  .carousel-fade .carousel-inner .prev.right {opacity: 1;}
+
 }
 </style>
-<div width="100%" height="320px" style="border: 0px; overflow: hidden; border-radius: 10px;" scrolling="no">
+<div class="carousel-fade" width="100%" height="320px" style="border: 0px; overflow: hidden; border-radius: 10px;" scrolling="no">
             
-    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3500">
-        <!-- 轮播（Carousel）指标 -->
-        <ol class="carousel-indicators">
-        
-        
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="5000">
 
-            <li data-target="#myCarousel" data-slide-to="0"></li>
-            
-
-        
-
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            
-
-        
-
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-            
-
-        
-        </ol>
         <!-- 轮播（Carousel）项目 -->
         <div class="carousel-inner" style="height: 280px; border-radius: 10px; width: 100%;">
-
         
          
         
             
-                <a class="item active" href="/" target="_blank" style="height: 100%;">
+               
+                 <a class="item active" target="_blank" style="height: 100%;">
                     <img class="nofancybox" src="http://ark.cn-bj.ufileos.com/0f1b9895-47d3-47b6-a67c-e606402a8808.png?UCloudPublicKey=TOKEN_ad6e85ae-f493-4774-b326-e3d9cea9f843&Signature=04Z6P5i0t%2FlN%2FExqXdytsFsARTk%3D&Expires=1890648228" style="width: 100%; height: 100%">
                 </a>
                 
@@ -565,7 +556,7 @@
         
         
             
-                    <a class="item" href="/" target="_blank" style="height: 100%;">
+                    <a class="item" target="_blank" style="height: 100%;">
                         <img class="nofancybox" src="http://ark.cn-bj.ufileos.com/61ec9c88-4f3d-4e42-931d-1a245dedbf7a.png?UCloudPublicKey=TOKEN_ad6e85ae-f493-4774-b326-e3d9cea9f843&Signature=tYe6f3EwkZRmePAleMGnmctFhfg%3D&Expires=1890648266" style="width: 100%; height: 100%;">
                     </a>
             
@@ -573,22 +564,14 @@
         
         
             
-                    <a class="item" href="/" target="_blank" style="height: 100%;">
+                    <a class="item" target="_blank" style="height: 100%;">
                         <img class="nofancybox" src="http://ark.cn-bj.ufileos.com/7fe32a43-6c96-45e4-8cea-b1b54bb94fec.png?UCloudPublicKey=TOKEN_ad6e85ae-f493-4774-b326-e3d9cea9f843&Signature=aWUUVgeiBXITlajCq%2B%2BnbdGGH5k%3D&Expires=1890648247" style="width: 100%; height: 100%;">
                     </a>
             
 
         
-
-     
         </div>
-        <!-- 轮播（Carousel）导航 -->
-        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        </a>
+       
     </div> 
 
 </div>
@@ -609,7 +592,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://orekiyuta.cn/2019/10/10/Ark-exploit-log/">
+    <link itemprop="mainEntityOfPage" href="http://www.orekiyuta.cn/Ark-exploit-log/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Orekiyuta">
@@ -628,7 +611,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/10/10/Ark-exploit-log/" itemprop="url">Ark.exploit.log</a></h1>
+                <a class="post-title-link" href="/Ark-exploit-log/" itemprop="url">Ark.exploit.log</a></h1>
         
 
         <div class="post-meta">
@@ -745,7 +728,7 @@
 <li>多下点功夫去看官方英文文档
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2019/10/10/Ark-exploit-log/#more" rel="contents">
+            <a class="btn" href="/Ark-exploit-log/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -798,7 +781,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://orekiyuta.cn/2019/09/19/Hexo-Install-Migrate/">
+    <link itemprop="mainEntityOfPage" href="http://www.orekiyuta.cn/Hexo-Install-Migrate/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Orekiyuta">
@@ -817,7 +800,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/09/19/Hexo-Install-Migrate/" itemprop="url">Hexo-Install+Migrate</a></h1>
+                <a class="post-title-link" href="/Hexo-Install-Migrate/" itemprop="url">Hexo-Install+Migrate</a></h1>
         
 
         <div class="post-meta">
@@ -895,7 +878,7 @@
 <p><img src="/images/Hexo-IM/02.png" alt><br>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2019/09/19/Hexo-Install-Migrate/#more" rel="contents">
+            <a class="btn" href="/Hexo-Install-Migrate/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -948,7 +931,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://orekiyuta.cn/2019/06/28/Git-flow/">
+    <link itemprop="mainEntityOfPage" href="http://www.orekiyuta.cn/Git-flow/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Orekiyuta">
@@ -967,7 +950,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/06/28/Git-flow/" itemprop="url">Git flow</a></h1>
+                <a class="post-title-link" href="/Git-flow/" itemprop="url">Git flow</a></h1>
         
 
         <div class="post-meta">
@@ -1057,7 +1040,7 @@
 <hr>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2019/06/28/Git-flow/#more" rel="contents">
+            <a class="btn" href="/Git-flow/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -1110,7 +1093,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://orekiyuta.cn/2019/06/11/CentOS-SVNConfigure/">
+    <link itemprop="mainEntityOfPage" href="http://www.orekiyuta.cn/CentOS-SVNConfigure/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Orekiyuta">
@@ -1129,7 +1112,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/06/11/CentOS-SVNConfigure/" itemprop="url">CentOS:SVN Configure</a></h1>
+                <a class="post-title-link" href="/CentOS-SVNConfigure/" itemprop="url">CentOS:SVN Configure</a></h1>
         
 
         <div class="post-meta">
@@ -1212,7 +1195,7 @@
 <li><code>ps -ef | grep svnserve</code>   //查看svnserve 是否启动
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2019/06/11/CentOS-SVNConfigure/#more" rel="contents">
+            <a class="btn" href="/CentOS-SVNConfigure/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -1265,7 +1248,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://orekiyuta.cn/2019/06/10/Java-ArtificialSimulation/">
+    <link itemprop="mainEntityOfPage" href="http://www.orekiyuta.cn/Java-ArtificialSimulation/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Orekiyuta">
@@ -1284,7 +1267,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/06/10/Java-ArtificialSimulation/" itemprop="url">Java-ArtificialSimulation</a></h1>
+                <a class="post-title-link" href="/Java-ArtificialSimulation/" itemprop="url">Java-ArtificialSimulation</a></h1>
         
 
         <div class="post-meta">
@@ -1366,7 +1349,7 @@
 </ol>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2019/06/10/Java-ArtificialSimulation/#more" rel="contents">
+            <a class="btn" href="/Java-ArtificialSimulation/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -1419,7 +1402,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://orekiyuta.cn/2019/05/28/CrackRefrain/">
+    <link itemprop="mainEntityOfPage" href="http://www.orekiyuta.cn/CrackRefrain/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Orekiyuta">
@@ -1438,7 +1421,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/05/28/CrackRefrain/" itemprop="url">CrackRefrain</a></h1>
+                <a class="post-title-link" href="/CrackRefrain/" itemprop="url">CrackRefrain</a></h1>
         
 
         <div class="post-meta">
@@ -1519,7 +1502,7 @@
 </ol>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2019/05/28/CrackRefrain/#more" rel="contents">
+            <a class="btn" href="/CrackRefrain/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -1572,7 +1555,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://orekiyuta.cn/2019/05/27/FieldworkDaily/">
+    <link itemprop="mainEntityOfPage" href="http://www.orekiyuta.cn/FieldworkDaily/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Orekiyuta">
@@ -1591,7 +1574,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/05/27/FieldworkDaily/" itemprop="url">FieldworkDaily</a></h1>
+                <a class="post-title-link" href="/FieldworkDaily/" itemprop="url">FieldworkDaily</a></h1>
         
 
         <div class="post-meta">
@@ -1669,7 +1652,7 @@
 <p>きょうのごごはEasyUIをよく勉強するつもりです。<br>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2019/05/27/FieldworkDaily/#more" rel="contents">
+            <a class="btn" href="/FieldworkDaily/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -1722,7 +1705,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://orekiyuta.cn/2019/05/16/JapNote-01/">
+    <link itemprop="mainEntityOfPage" href="http://www.orekiyuta.cn/JapNote-01/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Orekiyuta">
@@ -1741,7 +1724,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/05/16/JapNote-01/" itemprop="url">は or が ?</a></h1>
+                <a class="post-title-link" href="/JapNote-01/" itemprop="url">は or が ?</a></h1>
         
 
         <div class="post-meta">
@@ -1826,7 +1809,7 @@
 <p>一般就是自我介绍,或者初次见面.强调了自己的名字.</p>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2019/05/16/JapNote-01/#more" rel="contents">
+            <a class="btn" href="/JapNote-01/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -1879,7 +1862,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://orekiyuta.cn/2019/05/13/AzureLaneCrack/">
+    <link itemprop="mainEntityOfPage" href="http://www.orekiyuta.cn/AzureLaneCrack/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Orekiyuta">
@@ -1898,7 +1881,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/05/13/AzureLaneCrack/" itemprop="url">AzureLaneCrack</a></h1>
+                <a class="post-title-link" href="/AzureLaneCrack/" itemprop="url">AzureLaneCrack</a></h1>
         
 
         <div class="post-meta">
@@ -1980,7 +1963,7 @@
 <p>(4)    点击Export-All assets 导出全部资源文件到一个新文件夹里.<br> <img src="/images/AzureLaneCrack/image4.png" alt><br>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2019/05/13/AzureLaneCrack/#more" rel="contents">
+            <a class="btn" href="/AzureLaneCrack/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -2033,7 +2016,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://orekiyuta.cn/2019/05/01/JapNote-00/">
+    <link itemprop="mainEntityOfPage" href="http://www.orekiyuta.cn/JapNote-00/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Orekiyuta">
@@ -2052,7 +2035,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/05/01/JapNote-00/" itemprop="url">インデックス</a></h1>
+                <a class="post-title-link" href="/JapNote-00/" itemprop="url">インデックス</a></h1>
         
 
         <div class="post-meta">
@@ -2127,7 +2110,7 @@
           <p>&emsp;&emsp;きょうはれいわがんねんのはじまりで、しがもしよにちである。<br>ずつとまえからブログをがこうとおもつでいましたが、<br>あまりにもなまけでいたので、ながながはちめられませんでした。<br>このいちがけつがん、おおくのネットちしきをしり、<br>さいこにGitHubにでんがいするというがたちになりました。<br>このようなけいしきはわたしのサーバーのしげんをせつやくしました、<br>がんりもべんりでし。<br>このブロクをかくのはじつはおもなどうりょくはやはりしごとをさがすためです、<br>りれきしよにてんじできるがらです。<br>プログラムぎじゅつをがくいがいに、ここでじぶんのしゅみをがきます。<br>じぶんのせいかつのいちぶをここにきるくしで、<br>こんかいはちゅうとはんばではないこをねがいます。<br>わたしはなにもてんじできるものがなくで、<br>せいこうしたけいけんがありません。<br>ものごころがつくから、しっぱいばかりでした。<br>つまり、いまのわたしはしっぱいしゃです。<br>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2019/05/01/JapNote-00/#more" rel="contents">
+            <a class="btn" href="/JapNote-00/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -2472,7 +2455,7 @@ if(canvas.getContext){
               <img class="site-author-image" itemprop="image" src="/images/uploads/avatar.png" alt="Orekiyuta">
             
               <p class="site-author-name" itemprop="name">Orekiyuta</p>
-              <p class="site-description motion-element" itemprop="description"></p>
+              <p class="site-description motion-element" itemprop="description">Orekiyuta`s blog</p>
           </div>
 
           <nav class="site-state motion-element">
@@ -3119,7 +3102,16 @@ if(canvas.getContext){
 
   
 
+  
 
+  <script src="/js/src/activate-power-mode.min.js"></script>
+  <script>
+    POWERMODE.colorful = true;
+    POWERMODE.shake = falase;
+    document.body.addEventListener('input', POWERMODE);
+  </script>
+
+  
   
    <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;"></canvas> 
    <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 

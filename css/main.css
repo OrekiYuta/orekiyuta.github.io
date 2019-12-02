@@ -1841,7 +1841,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #e96ee0;
+  background: #f7e5e0;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3212,15 +3212,15 @@ a:hover {
 }
 .back-to-top.back-to-top-on {
   bottom: unset;
-  top: calc(100vh - 900px - 200px);
+  top: calc(100vh - 1300px - 200px);
 }
 .back-to-top {
   width: 70px;
-  height: 360px;
+  height: 900px;
   top: -900px;
   bottom: unset;
   transition: all 0.5s ease-in-out;
-  background: url("https://site-1258928558.cos.ap-guangzhou.myqcloud.com/scroll.png");
+  background: url("/images/uploads/scroll.png");
   box-sizing: border-box;
   position: fixed;
   z-index: 1050;
