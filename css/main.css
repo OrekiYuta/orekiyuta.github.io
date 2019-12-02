@@ -1841,7 +1841,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #40ffa2;
+  background: #e96ee0;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3212,7 +3212,7 @@ a:hover {
 }
 .back-to-top.back-to-top-on {
   bottom: unset;
-  top: calc(100vh - 745px - 200px);
+  top: calc(100vh - 900px - 200px);
 }
 .back-to-top {
   width: 70px;
