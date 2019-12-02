@@ -5,9 +5,9 @@
   <subtitle>「ろくでなし」</subtitle>
   <link href="/rss.xml" rel="self"/>
   
-  <link href="http://orekiyuta.cn/"/>
+  <link href="http://www.orekiyuta.cn/"/>
   <updated>2019-11-29T12:55:40.957Z</updated>
-  <id>http://orekiyuta.cn/</id>
+  <id>http://www.orekiyuta.cn/</id>
   
   <author>
     <name>Orekiyuta</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Ark.exploit.log</title>
-    <link href="http://orekiyuta.cn/2019/10/10/Ark-exploit-log/"/>
-    <id>http://orekiyuta.cn/2019/10/10/Ark-exploit-log/</id>
+    <link href="http://www.orekiyuta.cn/Ark-exploit-log/"/>
+    <id>http://www.orekiyuta.cn/Ark-exploit-log/</id>
     <published>2019-10-10T03:47:18.000Z</published>
     <updated>2019-11-29T12:55:40.957Z</updated>
     
@@ -75,14 +75,14 @@
     
     
     
-      <category term="Springboot" scheme="http://orekiyuta.cn/tags/Springboot/"/>
+      <category term="Springboot" scheme="http://www.orekiyuta.cn/tags/Springboot/"/>
     
   </entry>
   
   <entry>
     <title>Hexo-Install+Migrate</title>
-    <link href="http://orekiyuta.cn/2019/09/19/Hexo-Install-Migrate/"/>
-    <id>http://orekiyuta.cn/2019/09/19/Hexo-Install-Migrate/</id>
+    <link href="http://www.orekiyuta.cn/Hexo-Install-Migrate/"/>
+    <id>http://www.orekiyuta.cn/Hexo-Install-Migrate/</id>
     <published>2019-09-19T11:20:12.000Z</published>
     <updated>2019-11-29T12:00:20.247Z</updated>
     
@@ -99,14 +99,14 @@
     
     
     
-      <category term="Hexo" scheme="http://orekiyuta.cn/tags/Hexo/"/>
+      <category term="Hexo" scheme="http://www.orekiyuta.cn/tags/Hexo/"/>
     
   </entry>
   
   <entry>
     <title>Git flow</title>
-    <link href="http://orekiyuta.cn/2019/06/28/Git-flow/"/>
-    <id>http://orekiyuta.cn/2019/06/28/Git-flow/</id>
+    <link href="http://www.orekiyuta.cn/Git-flow/"/>
+    <id>http://www.orekiyuta.cn/Git-flow/</id>
     <published>2019-06-27T17:29:36.000Z</published>
     <updated>2019-11-29T12:00:12.018Z</updated>
     
@@ -135,14 +135,14 @@
     
     
     
-      <category term="Git" scheme="http://orekiyuta.cn/tags/Git/"/>
+      <category term="Git" scheme="http://www.orekiyuta.cn/tags/Git/"/>
     
   </entry>
   
   <entry>
     <title>CentOS:SVN Configure</title>
-    <link href="http://orekiyuta.cn/2019/06/11/CentOS-SVNConfigure/"/>
-    <id>http://orekiyuta.cn/2019/06/11/CentOS-SVNConfigure/</id>
+    <link href="http://www.orekiyuta.cn/CentOS-SVNConfigure/"/>
+    <id>http://www.orekiyuta.cn/CentOS-SVNConfigure/</id>
     <published>2019-06-11T11:36:49.000Z</published>
     <updated>2019-11-29T12:00:31.278Z</updated>
     
@@ -164,18 +164,18 @@
     
     
     
-      <category term="CentOS" scheme="http://orekiyuta.cn/tags/CentOS/"/>
+      <category term="CentOS" scheme="http://www.orekiyuta.cn/tags/CentOS/"/>
     
-      <category term="Linux" scheme="http://orekiyuta.cn/tags/Linux/"/>
+      <category term="Linux" scheme="http://www.orekiyuta.cn/tags/Linux/"/>
     
-      <category term="SVN" scheme="http://orekiyuta.cn/tags/SVN/"/>
+      <category term="SVN" scheme="http://www.orekiyuta.cn/tags/SVN/"/>
     
   </entry>
   
   <entry>
     <title>Java-ArtificialSimulation</title>
-    <link href="http://orekiyuta.cn/2019/06/10/Java-ArtificialSimulation/"/>
-    <id>http://orekiyuta.cn/2019/06/10/Java-ArtificialSimulation/</id>
+    <link href="http://www.orekiyuta.cn/Java-ArtificialSimulation/"/>
+    <id>http://www.orekiyuta.cn/Java-ArtificialSimulation/</id>
     <published>2019-06-10T01:50:57.000Z</published>
     <updated>2019-11-29T13:36:45.849Z</updated>
     
@@ -196,22 +196,22 @@
     
     
     
-      <category term="Java" scheme="http://orekiyuta.cn/tags/Java/"/>
+      <category term="Java" scheme="http://www.orekiyuta.cn/tags/Java/"/>
     
-      <category term="Maven" scheme="http://orekiyuta.cn/tags/Maven/"/>
+      <category term="Maven" scheme="http://www.orekiyuta.cn/tags/Maven/"/>
     
-      <category term="Xpath" scheme="http://orekiyuta.cn/tags/Xpath/"/>
+      <category term="Xpath" scheme="http://www.orekiyuta.cn/tags/Xpath/"/>
     
-      <category term="Selenium" scheme="http://orekiyuta.cn/tags/Selenium/"/>
+      <category term="Selenium" scheme="http://www.orekiyuta.cn/tags/Selenium/"/>
     
-      <category term="ChromeDriver" scheme="http://orekiyuta.cn/tags/ChromeDriver/"/>
+      <category term="ChromeDriver" scheme="http://www.orekiyuta.cn/tags/ChromeDriver/"/>
     
   </entry>
   
   <entry>
     <title>CrackRefrain</title>
-    <link href="http://orekiyuta.cn/2019/05/28/CrackRefrain/"/>
-    <id>http://orekiyuta.cn/2019/05/28/CrackRefrain/</id>
+    <link href="http://www.orekiyuta.cn/CrackRefrain/"/>
+    <id>http://www.orekiyuta.cn/CrackRefrain/</id>
     <published>2019-05-28T03:15:44.000Z</published>
     <updated>2019-11-29T11:59:59.103Z</updated>
     
@@ -231,14 +231,14 @@
     
     
     
-      <category term="Crack" scheme="http://orekiyuta.cn/tags/Crack/"/>
+      <category term="Crack" scheme="http://www.orekiyuta.cn/tags/Crack/"/>
     
   </entry>
   
   <entry>
     <title>FieldworkDaily</title>
-    <link href="http://orekiyuta.cn/2019/05/27/FieldworkDaily/"/>
-    <id>http://orekiyuta.cn/2019/05/27/FieldworkDaily/</id>
+    <link href="http://www.orekiyuta.cn/FieldworkDaily/"/>
+    <id>http://www.orekiyuta.cn/FieldworkDaily/</id>
     <published>2019-05-27T02:35:50.000Z</published>
     <updated>2019-11-29T12:20:29.943Z</updated>
     
@@ -255,14 +255,14 @@
     
     
     
-      <category term="jnote" scheme="http://orekiyuta.cn/tags/jnote/"/>
+      <category term="jnote" scheme="http://www.orekiyuta.cn/tags/jnote/"/>
     
   </entry>
   
   <entry>
     <title>は or が ?</title>
-    <link href="http://orekiyuta.cn/2019/05/16/JapNote-01/"/>
-    <id>http://orekiyuta.cn/2019/05/16/JapNote-01/</id>
+    <link href="http://www.orekiyuta.cn/JapNote-01/"/>
+    <id>http://www.orekiyuta.cn/JapNote-01/</id>
     <published>2019-05-16T09:11:06.000Z</published>
     <updated>2019-11-29T12:19:48.691Z</updated>
     
@@ -286,14 +286,14 @@
     
     
     
-      <category term="jnote" scheme="http://orekiyuta.cn/tags/jnote/"/>
+      <category term="jnote" scheme="http://www.orekiyuta.cn/tags/jnote/"/>
     
   </entry>
   
   <entry>
     <title>AzureLaneCrack</title>
-    <link href="http://orekiyuta.cn/2019/05/13/AzureLaneCrack/"/>
-    <id>http://orekiyuta.cn/2019/05/13/AzureLaneCrack/</id>
+    <link href="http://www.orekiyuta.cn/AzureLaneCrack/"/>
+    <id>http://www.orekiyuta.cn/AzureLaneCrack/</id>
     <published>2019-05-12T16:40:33.000Z</published>
     <updated>2019-11-29T13:38:07.912Z</updated>
     
@@ -314,14 +314,14 @@
     
     
     
-      <category term="AzureLane" scheme="http://orekiyuta.cn/tags/AzureLane/"/>
+      <category term="AzureLane" scheme="http://www.orekiyuta.cn/tags/AzureLane/"/>
     
   </entry>
   
   <entry>
     <title>インデックス</title>
-    <link href="http://orekiyuta.cn/2019/05/01/JapNote-00/"/>
-    <id>http://orekiyuta.cn/2019/05/01/JapNote-00/</id>
+    <link href="http://www.orekiyuta.cn/JapNote-00/"/>
+    <id>http://www.orekiyuta.cn/JapNote-00/</id>
     <published>2019-05-01T14:03:23.000Z</published>
     <updated>2019-11-29T12:19:33.314Z</updated>
     
@@ -335,7 +335,7 @@
     
     
     
-      <category term="jnote" scheme="http://orekiyuta.cn/tags/jnote/"/>
+      <category term="jnote" scheme="http://www.orekiyuta.cn/tags/jnote/"/>
     
   </entry>
   
