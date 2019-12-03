@@ -1,0 +1,109 @@
+
+// Custom styles.
+// 主页文章添加阴影效果
+ .post {
+   margin-top: 10px;
+   margin-bottom: 10px;
+   padding: 25px;
+   -webkit-box-shadow: 0 0 10px rgba(202, 203, 203, .5);
+   -moz-box-shadow: 0 0 10px rgba(202, 203, 204, .5);
+  }
+.post-block{
+    background:#e1dede7a;
+}
+
+/*标签云*/
+div#posts.posts-expand .tag-cloud a{
+  background-color: #000000ab;
+  border-radius: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 18px;
+  color: #000;
+
+}
+
+.tag-cloud a{
+  background-color: #f5f7f1;
+  border-radius: 4px;
+  padding-right: 5px;
+  padding-left: 5px;
+  margin-right: 5px;
+  margin-left: 0px;
+  color: #000;
+  margin-top: 8px;
+  margin-bottom: 0px;
+
+}
+
+.tag-cloud a:before{
+     content: "🔖";
+}
+
+a:hover {
+    border-color: green;
+}
+
+/*更好的侧边滚动条*/
+::-webkit-scrollbar {
+  width: 20px;
+  height: 10px;
+  
+}
+::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+}
+::-webkit-scrollbar-button:start:increment,::-webkit-scrollbar-button:end:decrement {
+  display: none;
+}
+::-webkit-scrollbar-corner {
+  display: block;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: rgba(0,0,0,.2);
+}
+::-webkit-scrollbar-thumb:hover {
+  border-radius: 8px;
+  background-color: rgba(0,0,0,.5);
+}
+::-webkit-scrollbar-track,::-webkit-scrollbar-thumb {
+  border-right: 1px solid transparent;
+  border-left: 1px solid transparent;
+}
+::-webkit-scrollbar-track:hover {
+  background-color: rgba(0,0,0,.15);
+}
+::-webkit-scrollbar-button:start {
+  width: 20px;
+  height: 80px;
+  background: url(../images/boll.png) ; /*可以添加滚动条样式*/
+}
+
+/*back-to-top按钮美化*/
+.back-to-top.back-to-top-on {
+    bottom: unset;
+    top: calc(100vh - 1300px - 200px);
+}
+
+.back-to-top {
+    width: 70px;
+    height: 900px;
+    top: -900px;
+    bottom: unset;
+    transition: all 0.5s ease-in-out;
+    background: url("/images/uploads/scroll.png");
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 1050;
+    padding: 0 6px;
+    font-size: 12px;
+    opacity: 1;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+
