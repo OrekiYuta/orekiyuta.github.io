@@ -3,7 +3,7 @@ title: Git flow
 date: 2019-06-28 01:29:36
 tags: Git
 ---
-### 01. Git工作流
+### Git工作流
 
 Git flow : 
 
@@ -17,7 +17,7 @@ localfolder -> git Stage -> git local -> git remote
 
  ---
 
-### 02. 基础配置
+### 基础配置
 
 `git init`        //初始化
 
@@ -39,7 +39,7 @@ localfolder -> git Stage -> git local -> git remote
 
 --- 
 <!-- more -->
-### 02. 提交本地仓库
+### 提交本地仓库
 
 1. `mkdir mygit` //建立本地工作文件夹
 0. `cd mygit`    //进入文件夹
@@ -71,7 +71,7 @@ localfolder -> git Stage -> git local -> git remote
     ![](/images/Git/06.png) 
 
 ---
-### 03. 查看提交日志
+### 查看提交日志
 
 1. 首先修改下原有文件内容 `nano test.htm` 
 
@@ -123,7 +123,7 @@ localfolder -> git Stage -> git local -> git remote
    
 ---
 
-### 04. 工作状态回退
+### 工作状态回退
 
 * 未添加到索引区
  
@@ -163,7 +163,7 @@ localfolder -> git Stage -> git local -> git remote
 
 ---
 
-### 05. 比较修改内容
+### 比较修改内容
 
 1. `git diff` //比较工作文件夹
 
@@ -175,7 +175,7 @@ localfolder -> git Stage -> git local -> git remote
 
 ---
 
-### 06. 文件操作
+### 文件操作
 
 1. 执行多个操作（修改内容，添加文件）
 
@@ -208,7 +208,7 @@ localfolder -> git Stage -> git local -> git remote
 
 ---
 
-### 07. 忽略管理
+### 忽略管理
 
 设置Git忽略的文件，这些文件不参与Git库的提交和管理。（动态文件，比如Node.js的 node_modules 文件夹）
 
@@ -234,7 +234,7 @@ localfolder -> git Stage -> git local -> git remote
 
 ---
 
-### 08. 更新最后的提交记录
+### 更新最后的提交记录
 
 在上次提交过一次记录，后来发现内容有误，需要修改下内容但是又不想再提交一条修改记录，而是添加到上次提交的记录中去。
 
@@ -256,7 +256,7 @@ localfolder -> git Stage -> git local -> git remote
 
 ---
 
-### 09. 版本回退/切换
+### 版本回退/切换
 
 `git reset --hard HEAD` //回退到最新提交版本
 
@@ -290,7 +290,7 @@ localfolder -> git Stage -> git local -> git remote
 
 ---
 
-### 10. 分支使用⭐
+### 分支使用⭐
 
 &emsp;&emsp;以上的操作都是在主分支上执行的,但是在实际应用中不应该多次在主分支操作。
 
@@ -336,7 +336,7 @@ localfolder -> git Stage -> git local -> git remote
 
 ---
 
-### 11. 合并分支
+### 合并分支
 
 1. `git merge 分支名` //先得切换到主分支，再进行合并
 
@@ -348,7 +348,7 @@ localfolder -> git Stage -> git local -> git remote
 
 ---
 
-### 12. 分支冲突
+### 分支冲突
 
 1. `git checkout -b 分支名` //建立分支并切换到该分支
 
@@ -386,7 +386,7 @@ localfolder -> git Stage -> git local -> git remote
 
 ---
 
-### 13. 使用Tag标签
+### 使用Tag标签
 
 * 版本号: 1.1.4   （NNN.abc.xxx）
 
@@ -414,7 +414,7 @@ localfolder -> git Stage -> git local -> git remote
 
 ---
 
-### 14. 使用别名 
+### 使用别名 
 
 在Git中可以将经常使用的命令以别名缩写的方式简化使用,根据个人习惯或者开发组规范吧。
 
@@ -429,7 +429,7 @@ localfolder -> git Stage -> git local -> git remote
 
 ---
 
-### 15. GitHub
+### GitHub
 
 1. 创建Github仓库
 

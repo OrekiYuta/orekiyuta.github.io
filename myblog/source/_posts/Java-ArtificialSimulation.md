@@ -4,7 +4,7 @@ date: 2019-06-10 09:50:57
 tags: [Java,Maven,Xpath,Selenium,ChromeDriver]
 ---
 
-### 0x01 Create a project
+### Create a project
 Create New Project => Maven => Next => for (Fill in information => Next) => Finish
  ![](/images/Java-AS/0x011.png)
  ![](/images/Java-AS/0x012.png)
@@ -12,7 +12,7 @@ Create New Project => Maven => Next => for (Fill in information => Next) => Fini
  ![](/images/Java-AS/0x014.png)
 
 
-### 0x02 Environment and Tools
+### Environment and Tools
 1. Java环境 JDK [下载](https://www.oracle.com/technetwork/java/javase/downloads/index.html)
 2. IDEA  [下载](https://www.jetbrains.com/idea/)
 3. 准备好ChromeDriver [下载](http://npm.taobao.org/mirrors/chromedriver/)
@@ -28,12 +28,12 @@ Create New Project => Maven => Next => for (Fill in information => Next) => Fini
     </dependencies>
 ```
 <!-- more -->
-### 0x03 Get set
+### Get set
 1. 在pom.xml中导入Selenium依赖 => 等待下载
 2. 在src->main->java中创建Java类,创建main方法.----*在IDEA中输入psvm+回车_快速创建main方法*
 3. 把准备好的ChromeDriver.exe放在src->main->resources目录中
 
-### 0x04 Codeing
+### Codeing
 1. 设置webdriver路径
 ``` Java
 System.setProperty("webdriver.chrome.driver",Scan.class.getClassLoader().getResource("chromedriver.exe").getPath());
@@ -149,5 +149,5 @@ System.out.println("--------下一页---------");
         extractJobsByPagination(webDriver);
     }
 ```
-### 0x05 Running
+### Running
 ![](/images/Java-AS/0x081.png)

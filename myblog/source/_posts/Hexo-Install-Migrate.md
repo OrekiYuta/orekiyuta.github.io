@@ -4,11 +4,11 @@ date: 2019-09-19 19:20:12
 tags: Hexo
 ---
 
-### 01.安装Git,Node
+### 安装Git,Node
 
 ![](/images/Hexo-IM/01.png)
 
-### 02.安装Hexo
+### 安装Hexo
 
 先创建一个文件夹，然后cd到这个目录下
 
@@ -17,8 +17,9 @@ npm install -g hexo-cli  //安装
 hexo -v   //查看版本
 ```
 ![](/images/Hexo-IM/02.png)
+
 <!-- more -->
-### 03.初始化Hexo
+### 初始化Hexo
 
 ```
 Hexo init myblog  //任意文件夹名 myblog
@@ -26,7 +27,7 @@ Hexo init myblog  //任意文件夹名 myblog
 ![](/images/Hexo-IM/03.png)
 
 
-### 04.启动服务
+### 启动服务
 
 进入myblog文件夹 启动服务
 
@@ -38,13 +39,13 @@ hexo server
 ![](/images/Hexo-IM/04.png)
 
 
-### 05.检查页面；迁移设备
+### 检查页面；迁移设备
 
 在浏览器输入`localhost:4000`,即可看到页面
 
 * 迁移更新设备的话，做到这一步，把原来的博客文件复制到此替换即可
 
-### 06.连接Github
+### 连接Github
 
 * 创建Github仓库，命名 `xxx.github.io`
 
@@ -70,7 +71,7 @@ hexo server
     
     ![](/images/Hexo-IM/09.png)
 
-### 07.Hexo部署到GitHub
+### Hexo部署到GitHub
 
 * 修改配置文件 `_config.yml`
 
