@@ -3,7 +3,7 @@ title: 'CentOS:SVN Configure'
 date: 2019-06-11 19:36:49
 tags: [CentOS,Linux,SVN]
 ---
- 1. `ssh root@47.107.xxx.xxx`   //通过SSH连接我的阿里云服务器
+ 1. `ssh root@xx.xxx.xxx.xxx`   //通过SSH连接服务器
  2. `svn`                      //先查看是否安装了svn
  3. `yum install svn`         //安装svn
  4. `svn --version`          //查看svn版本

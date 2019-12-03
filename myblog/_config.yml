@@ -15,7 +15,7 @@ timezone:
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://www.orekiyuta.cn
 root: /
-permalink: :title/
+permalink: :category/:title/
 permalink_defaults:
 
 # Directory
@@ -54,7 +54,7 @@ index_generator:
   order_by: -date
   
 # Category & Tag
-default_category: uncategorized
+default_category: archives
 category_map:
 tag_map:
 
