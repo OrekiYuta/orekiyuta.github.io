@@ -46,51 +46,35 @@
 #}</div>
 {% endif %}
 
-<!--访问数-->
-<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
 <!--添加网站的运行时间-->
-
-<script language="javascript">
-	function siteTime(){
-		window.setTimeout("siteTime()", 1000);
-		var seconds = 1000
-		var minutes = seconds * 60
-		var hours = minutes * 60
-		var days = hours * 24
-		var years = days * 365
-
-		var today = new Date()
-		var todayYear = today.getFullYear()
-		var todayMonth = today.getMonth()
-		var todayDate = today.getDate()
-		var todayHour = today.getHours()
-		var todayMinute = today.getMinutes()
-		var todaySecond = today.getSeconds()
-		var t1 = Date.UTC(2018,11,12,00,00,00)
-		var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond)
-		var diff = t2-t1
-
-		var diffYears = Math.floor(diff/years)
-		var diffDays = Math.floor((diff/days)-diffYears*365)
-		var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours)
-		var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes)
-		var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds)
-		document.getElementById("sitetime").innerHTML=" Run -> "+diffYears+"Y : "+diffDays+"D : "+diffHours+"h : "+diffMinutes+"m : "+diffSeconds+"s"
-	}
-	siteTime()
-</script>
 <div>
-  <i class="fa fa-cog fa-spin"></i>
-  <span id="sitetime"></span>&nbsp;|&nbsp;
-	<i class="fa fa-street-view"></i>
-	<span id="busuanzi_container_site_uv">
-	  Visitors:<span id="busuanzi_value_site_uv"></span>
-	</span>&nbsp;|&nbsp;
-	<i class="fa fa-eye"></i>
-	<span id="busuanzi_container_site_pv">
-	  Views:<span id="busuanzi_value_site_pv"></span>
-	</span>
+<i class="fa fa-cog fa-spin"></i>&nbsp;&nbsp;
+<span id="days"></span>
 </div>
-	
-
-
+<script>
+function show_date_time(){
+    window.setTimeout("show_date_time()", 1000);
+    BirthDay=new Date("11/12/2018 00:00:00");
+    today=new Date();
+    timeold=(today.getTime()-BirthDay.getTime());
+    sectimeold=timeold/1000
+    secondsold=Math.floor(sectimeold);
+    msPerDay=24*60*60*1000
+    e_daysold=timeold/msPerDay
+    daysold=Math.floor(e_daysold);
+    e_hrsold=(e_daysold-daysold)*24;
+    hrsold=setzero(Math.floor(e_hrsold));
+    e_minsold=(e_hrsold-hrsold)*60;
+    minsold=setzero(Math.floor((e_hrsold-hrsold)*60));
+    seconds=setzero(Math.floor((e_minsold-minsold)*60));
+    document.getElementById('days').innerHTML="Run -> "+daysold+" dd :"+hrsold+" hh :"+minsold+" mm :"+seconds+" ss";
+}
+function setzero(i) {
+    if (i<10) {
+        i="0" + i
+    };
+    return i;
+}
+show_date_time();
+</script>
