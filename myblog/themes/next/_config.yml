@@ -694,8 +694,8 @@ pace: true
 #pace-theme-mac-osx
 #pace-theme-minimal
 # For example
-# pace_theme: pace-theme-center-simple
-pace_theme: pace-theme-fill-left
+pace_theme: pace-theme-corner-indicator
+# pace_theme: pace-theme-fill-left
 
 # Canvas-nest
 canvas_nest: true
@@ -824,7 +824,7 @@ fireworks: true
 
 #Home carousel map, from means link, img means picture
 carousel:
-  enable: true
+  enable: false
   item: [
     {
       'link': '',

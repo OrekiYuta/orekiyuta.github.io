@@ -324,7 +324,7 @@ tags: Vue.js
 ### 给组件传递变量
 ![](/images/Vue/27.png)
 
-- 首先是用 v-model 给 input 的值绑定了 myApp 的 data 属性中的 myname 对象 
+- 首先是用 v-model 给 input 的值绑定了 myApp 的 data 方法中的 myname 对象 
 
 - 然后在自定义的组件中用 `:pname` 把 myname 对象和组件中的 props 属性中的 pname 值进行绑定
 
