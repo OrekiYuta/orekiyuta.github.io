@@ -123,6 +123,5 @@ search:
   format: html
   limit: 10000
 
-
-
-    
+tagcanvascloud:
+  enable: true

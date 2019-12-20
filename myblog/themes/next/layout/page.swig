@@ -29,13 +29,21 @@
       <div class="post-body{% if theme.han %} han-init-context{% endif %}{% if page.direction && page.direction.toLowerCase() === 'rtl' %} rtl{% endif %}">
         {# tagcloud page support #}
         {% if page.type === "tags" %}
+        {#标签云在这里,他的算法tagcloud()在/node_modules/hexo/lib/plugins/helper/tagcloud.js里#}
           <div class="tag-cloud">
+           {#
             <div class="tag-cloud-title">
                 {{ _p('counter.tag_cloud', site.tags.length) }}
             </div>
+            #}
+            <!--标签云-->
             <div class="tag-cloud-tags">
-              {{ tagcloud({min_font: 12, max_font: 30, amount: 300, color: true, start_color: '#ccc', end_color: '#111'}) }}
+            {{ tagcloud({min_font: 15, max_font: 30, amount: 999, color: true, start_color: '#827878', end_color: '#000000'}) }}
             </div>
+
+            <!--tagcanvascloud标签云-->
+            {% include '_macro/tagcanvascloud.swig'%}
+
           </div>
         {% elif page.type === 'categories' %}
           <div class="category-all-page">

@@ -7,7 +7,7 @@
 
 {% block content %}
 
-  {#################}
+  {###############这里是Tag标签页点击之后进来的标签集合页##}
   {### TAG BLOCK ###}
   {#################}
   <div class="post-block tag">
@@ -30,7 +30,7 @@
   {### END TAG BLOCK ###}
   {#####################}
 
-  {% include '_partials/pagination.swig' %}
+  
 {% endblock %}
 
 {% block sidebar %}
