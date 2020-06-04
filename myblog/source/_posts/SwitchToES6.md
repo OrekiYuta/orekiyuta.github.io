@@ -4,7 +4,7 @@ date: 2019-12-13 20:01:02
 tags: [ES6,ECMAScript]
 ---
 
-### <center>let</center>
+### <center>Let</center>
 
 #### 变量i的作用域
 ```js
