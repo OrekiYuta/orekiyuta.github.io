@@ -100,7 +100,7 @@ menu:
   # schedule: /schedule/ || calendar
   # sitemap: /sitemap.xml || sitemap
   # commonweal: /404/ || heartbeat
-
+  Elib: https://elib.orekiyuta.cn || book
   
 
 # Enable/Disable menu icons.
@@ -113,10 +113,10 @@ menu_icons:
 # ---------------------------------------------------------------
 
 # Schemes
-# scheme: Muse
+scheme: Muse
 # scheme: Mist
 # scheme: Pisces
-scheme: Gemini
+# scheme: Gemini
 
 
 # ---------------------------------------------------------------
