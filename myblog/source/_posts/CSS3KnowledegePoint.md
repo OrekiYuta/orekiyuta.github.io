@@ -2,7 +2,7 @@
 layout: css3
 title: CSS3 Knowledge Point
 date: 2019-12-15 19:19:05
-tags:
+tags: CSS
 ---
 
 ### <center>属性是否可继承</center>
