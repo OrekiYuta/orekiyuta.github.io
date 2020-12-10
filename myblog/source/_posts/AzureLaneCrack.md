@@ -18,7 +18,7 @@ tags: AzureLane
 GitHub地址：https://github.com/Perfare/AssetStudio  
 点击release,下载最新版本.   
  ![](/images/AzureLaneCrack/image1.png)
-
+<!-- more -->
 (2)	点击File-Load folder 选择资源名为Painting的文件夹(安装包和增量更新的操作都是一样的),等待载入.  
  ![](/images/AzureLaneCrack/image2.png)
  
@@ -27,7 +27,7 @@ GitHub地址：https://github.com/Perfare/AssetStudio
 
 (4)	点击Export-All assets 导出全部资源文件到一个新文件夹里.  
  ![](/images/AzureLaneCrack/image4.png)
-<!-- more -->
+
 (5)	Mesh文件夹里面是立绘的骨骼序列, Texture2D是文件夹里是加密后的立绘.  
  ![](/images/AzureLaneCrack/image5.png)
 

@@ -47,7 +47,7 @@ tags: Hexo
 
     ![](/images/Hexo-IM/05.png)
 
-* 生成SHH
+* 生成SSH
 
     - `git config --global user.name "yourname"`
     - `git config --global user.email "youremail"`
