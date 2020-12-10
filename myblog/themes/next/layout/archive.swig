@@ -29,7 +29,7 @@
           {% endif %}
           {{ __('cheers.' + cheers) }}! {{ _p("counter.archive_posts", site.posts.length) }} {{ __('keep_on') }}
         #}
-        {{_p('ともにいこうなまのないかいぶかいぶ')}}{{_p('___________₍˄·͈༝·͈˄₎◞ ̑̑ ')}}
+        {{_p('A white bird drifting alone , blending neither into the blue of the sky nor the blue of the sea.')}}
       </span>
 
       {% for post in page.posts %}
@@ -49,7 +49,7 @@
         {{ post_template.render(post) }}
 
       {% endfor %}
-
+      {{_p('- Flying on the white wings with you to the tropical island between the two blue worlds.')}}
     </div>
   </div>
   {#########################}
