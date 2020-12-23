@@ -45,30 +45,11 @@ tags: Windows
 - [https://chocolatey.org/install](https://chocolatey.org/install)
 - At CMD
     - `@powershell Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))`
-     
-### .bat Get admin
-- ```bat
-    >NUL 2>&1 REG.exe query "HKU\S-1-5-19" || (
-        ECHO SET UAC = CreateObject^("Shell.Application"^) > "%TEMP%\Getadmin.vbs"
-        ECHO UAC.ShellExecute "%~f0", "%1", "", "runas", 1 >> "%TEMP%\Getadmin.vbs"
-        "%TEMP%\Getadmin.vbs"
-        DEL /f /q "%TEMP%\Getadmin.vbs" 2>NUL
-        Exit /b
-    )
-  ```
-- ```bat
-    >nul 2>&1 "%SYSTEMROOT%\system32\cacls.exe" "%SYSTEMROOT%\system32\config\system"
-    if '%errorlevel%' NEQ '0' (
-    goto UACPrompt
-    ) else ( goto gotAdmin )
-    :UACPrompt
-    echo Set UAC = CreateObject^("Shell.Application"^) > "%temp%\getadmin.vbs"
-    echo UAC.ShellExecute "%~s0", "", "", "runas", 1 >> "%temp%\getadmin.vbs"
-    "%temp%\getadmin.vbs"
-    exit /B
-    :gotAdmin
-    if exist "%temp%\getadmin.vbs" ( del "%temp%\getadmin.vbs" )
-  ```
+
+## Choco 
+- `choco list -lo` 查看用 chocolatey 安装的软件
+- `choco list -li` 查看所有已安装的软件
+- `choco uninstall [name]` 卸载软件
 
 ## Nslookup
 - `nslookup www.baidu.com` 查看域名当前 IP
@@ -89,3 +70,18 @@ tags: Windows
 ## &&
 - `ipconfig && arp -a` 连接多个命令，只有前面一个执行成功，后面的才执行
 - & 一个一个执行
+- PowerShell 不支持
+
+## VSCode Column edit
+- Shift + Alt + 左键
+
+## Google Clean up cache
+- Shift + ctrl + R
+
+## Comfortable colors
+
+- #39ff70
+
+## The Lost Worlds 
+- `telnet towel.blinkenlights.nl`
+![](/images/Windows/blinkenlights/Snipaste_2020-12-13_02-50-40.png)
