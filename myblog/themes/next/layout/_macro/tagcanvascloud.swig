@@ -21,7 +21,7 @@
     try {
       TagCanvas.Start('my3DTags','tags',{
             textColour: '#000000',
-            outlineColour: '#fff',
+            outlineColour: '#0039FF ',
             reverse: true,
             depth: 0.8,
             maxSpeed: 0.03,

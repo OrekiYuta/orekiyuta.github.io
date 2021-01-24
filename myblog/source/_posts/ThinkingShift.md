@@ -1,7 +1,7 @@
 ---
 title: Thinking Shift
 date: 2019-12-16 01:17:36
-tags: get
+tags: Hexo
 ---
 
 ### <center>一次编程思想的转变</center>
