@@ -1,7 +1,7 @@
 ---
 title: AzureLaneCrack
 date: 2019-05-13 00:40:33
-tags: AzureLane
+tags: 
 ---
 
 [资源](#资源获取) | [提取立绘](#立绘) | [提取语音](#语音) | [提取SD小人](#SD小人)

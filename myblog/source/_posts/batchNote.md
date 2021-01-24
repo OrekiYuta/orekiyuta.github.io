@@ -1,7 +1,7 @@
 ---
 title: Batch Note
 date: 2020-12-13 01:17:13
-tags: batch
+tags: Batch
 ---
 
 ### 搜索当前目录下的所有文件
