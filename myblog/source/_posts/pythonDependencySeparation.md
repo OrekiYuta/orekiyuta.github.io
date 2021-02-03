@@ -21,6 +21,7 @@ tags: Python
 
 ### venv
 - 使用 python 的虚拟环境
+    <!-- more -->
     - `python -m venv -h`
     - `python -m venv venvdemo` 创建虚拟环境
     - 找到虚拟环境的文件夹，进入 Scripts 目录
