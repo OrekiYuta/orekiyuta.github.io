@@ -122,3 +122,11 @@ tags: Windows
 - 👉 [Windows10 MYSQL Installer 安装（mysql-installer-community-5.7.19.0.msi）](https://www.runoob.com/w3cnote/windows10-mysql-installer.html)
 - 👉 [解决Navicat for MySQL 连接 Mysql 8.0.11 出现1251- Client does not support authentication protocol 错误](https://blog.csdn.net/seventopalsy/article/details/80195246)
 - 👉 [配置mysql允许远程连接的方法](https://www.cnblogs.com/linjiqin/p/5270938.html)
+
+### Show wifi info histroy
+```ss
+[cc lang="php"]
+for /f "skip=9 tokens=1,2 delims=:" %i in ('netsh wlan show profiles') do @echo %j | findstr -i -v echo | netsh wlan show profiles %j key=clear
+[/cc]
+
+```
