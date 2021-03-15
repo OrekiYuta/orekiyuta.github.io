@@ -1,7 +1,7 @@
 ---
-title: One Line
+title: We must go
 date: 2020-12-02 21:04:30
-tags:
+tags: Mood
 ---
 
 - We've always fooled around together since we were kids.
