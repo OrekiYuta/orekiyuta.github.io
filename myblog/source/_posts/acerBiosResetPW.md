@@ -7,16 +7,17 @@ tags: Windows
 ## Scene
 - Acer 主板进入 bios 需要密码，但是又不知道密码
 <!-- more -->
+
 ## Solution
 - ![](/images/acerBiosResetPW/01.jpg)
-    - 先输入三次任意密码，然后出现下面的选项
+- 先输入三次任意密码，然后出现下面的选项
 - ![](/images/acerBiosResetPW/02.jpg)
-    - 进入第一个选项
+- 进入第一个选项
 - 然后看到 Enter Unlock Password(key:xxxxx)
 - 进入 [https://bios-pw.org/](https://bios-pw.org/) 
-    - 输入上面的 key
+- 输入上面的 key
 - ![](/images/acerBiosResetPW/04.png)
-    - 取得对应的 code 并输入
+- 取得对应的 code 并输入
 
 ### 取消 bios 密码
 - ![](/images/acerBiosResetPW/03.jpg)
