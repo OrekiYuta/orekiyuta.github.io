@@ -1,11 +1,12 @@
 ---
-title: Virtual Disk Mapping
+title: Vritual Disk Mapping
 date: 2021-04-10 17:38:55
 tags: Batch
 ---
 
 ## Create Vritual Disk Mapping
 - 将物理盘符中的目录映射到虚拟盘符，能够在一定的场景发挥作用
+
 ```bat
     @echo off
     ::在物理盘符下创建文件夹

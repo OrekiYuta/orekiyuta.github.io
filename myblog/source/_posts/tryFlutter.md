@@ -20,10 +20,10 @@ tags: Flutter
 - `flutter create projectname`
 - `code ./` open by vscode
 - `flutter doctor` re-examined
-Snipaste_2021-04-10_01-17-04.png
+- ![](/images/tryflutter/Snipaste_2021-04-10_01-17-04.png)
 - `flutter emulator` check emulator
-Snipaste_2021-04-10_01-18-32.png
+- ![](/images/tryflutter/Snipaste_2021-04-10_01-18-32.png)
 - `flutter emulators --launch Pixel_3a_API_30_x86` run the emulator
-Snipaste_2021-04-10_01-19-50.png
+- ![](/images/tryflutter/Snipaste_2021-04-10_01-19-50.png)
 - `flutter run` or `flutter run -d <emulatorId>`
-Snipaste_2021-04-10_01-27-37.png
+- ![](/images/tryflutter/Snipaste_2021-04-10_01-27-37.png)
