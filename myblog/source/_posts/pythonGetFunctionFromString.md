@@ -20,7 +20,7 @@ tags: Python
 
 <!-- more -->
 ## 使用场景
-- 从变量从读取函数名并执行,提高复用度
+- 从变量中读取函数名并执行,提高复用度
 ```python
 config = [{'name': 'qncyw', 'url': 'https://www.qncyw.com/site/signup',
            'parser': 'selector',
