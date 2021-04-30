@@ -27,3 +27,22 @@ tags: Flutter
 - ![](/images/tryflutter/Snipaste_2021-04-10_01-19-50.png)
 - `flutter run` or `flutter run -d <emulatorId>`
 - ![](/images/tryflutter/Snipaste_2021-04-10_01-27-37.png)
+
+## Get lib
+- 👉[pub.dev](https://pub.dev/)
+- 在项目目录下 pubspec.yaml 里加入依赖和版本号
+```yaml
+dependencies:
+  flutter:
+    sdk: flutter
+  intl: ^0.17.0
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+```
+- 保存即可，或者到 console 执行 `flutter packages get`
