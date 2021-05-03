@@ -46,3 +46,10 @@ dev_dependencies:
     sdk: flutter
 ```
 - 保存即可，或者到 console 执行 `flutter packages get`
+
+## In process
+### Could not receive a message from the daemon.
+- ![](/images/tryflutter/Snipaste_2021-05-03_00-54-16.png)
+- 关闭共享的网络即可 👉[Could not receive a message from the daemon](https://stackoverflow.com/questions/49609313/could-not-receive-a-message-from-the-daemon)
+- ![](/images/tryflutter/Snipaste_2021-05-03_00-58-11.png)
+

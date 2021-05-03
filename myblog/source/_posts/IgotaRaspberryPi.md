@@ -209,7 +209,71 @@ tags: [RaspberryPi,Linux,Nginx]
 
 - 最终要使两者版本一致
 
-## Docker 安装界面
+
+## 设置静态ip
+- `route -n` 找到网关
+- `cat /etc/resolv.conf` 找到 DNS
+- `sudo nano /etc/dhcpcd.conf` 在末尾写入
+```
+    interface eth0
+    inform 192.168.137.200/24
+    static routers=192.168.137.1
+    static domain_name_servers=192.168.137.1
+    noipv6
+```
+- 还可以点击桌面右上角的网络连接进去设置
+
+## 设置 wifi 连接
+- Pi 4B - 'No wireless interfaces found'
+- 找不到 wifi 图标
+- `sudo apt-get install wicd`
+- `sudo reboot`
+- 进入桌面设置 wifi 连接
+- ![](/images/IgotaRaspberryPi/Snipaste_2021-01-19_22-13-01.png)
+- 👉 [Raspberry Pi 3 - WiFi Stopped Working - How to debug and fix without restarting](https://raspberrypi.stackexchange.com/questions/46622/raspberry-pi-3-wifi-stopped-working-how-to-debug-and-fix-without-restarting)
+
+## Docker 安装 mongodb
+- `docker search rpi-mongodb3`
+- `docker pull andresvidal/rpi3-mongodb3`
+- `mkdir ~/db/mongo` 创建数据目录
+- `docker run -d --name rpi-mongodb3 -v /home/pi/db/mongo:/data.db -p 27017:27017 andresvidal/rpi3-mongodb3 mongod`
+
+## 重装 raspberry 系统
+- 👉 [写入系统工具](https://www.raspberrypi.org/software/)
+- 👉 [系统](https://www.raspberrypi.org/software/operating-systems/#raspberry-pi-os-32-bit)
+
+## 换下载源
+- 👉 [根据架构和版本更换源](https://mirror.tuna.tsinghua.edu.cn/help/raspbian/)
+
+## SSH 认证更新
+```
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ECDSA key sent by the remote host is
+SHA256:wFyPv88OeUwo1eUnjPQTUB1PR/O/XLlJMip3BVX5mPU.
+Please contact your system administrator.
+Add correct host key in C:\\Users\\OrekiYuta/.ssh/known_hosts to get rid of this message.
+Offending ECDSA key in C:\\Users\\OrekiYuta/.ssh/known_hosts:14
+ECDSA host key for 192.168.1.201 has changed and you have requested strict checking.
+Host key verification failed.
+```
+- 到对应目录下把当前 SSH 要访问的地址信息删除，重新连接即可
+
+## 修改 host
+- `sudo nano /etc/hosts`
+- 查看域名对应 IP 👉 [ipaddress](https://www.ipaddress.com/)
+```
+199.232.68.133 raw.githubusercontent.com
+```
+
+
+## <hr>
+
+## Portainer 
 ```
 sudo curl -sSL https://get.docker.com | sh
 sudo docker pull portainer/portainer
@@ -226,30 +290,15 @@ sudo docker run -d -p 9000:9000 --name portainer --restart always -v /var/run/do
 - 浏览器输入 ip:1024
 - 👉 [一行命令部署pi dashboard](https://blog.nocode.site/2018/03/25/docker-pi-dashboard.html)
 
-## 设置静态ip
-- `route -n` 找到网关
-- `cat /etc/resolv.conf` 找到 DNS
-- `sudo nano /etc/dhcpcd.conf` 在末尾写入
+##  netdata
 ```
-    interface eth0
-    inform 192.168.137.200/24
-    static routers=192.168.137.1
-    static domain_name_servers=192.168.137.1
-    noipv6
+docker run -d --name=netdata \
+  -p 19999:19999 \
+  -v /proc:/host/proc:ro \
+  -v /sys:/host/sys:ro \
+  -v /var/run/docker.sock:/var/run/docker.sock:ro \
+  --cap-add SYS_PTRACE \
+  --security-opt apparmor=unconfined \
+  netdata/netdata
 ```
-- 还可以点击桌面的网络连接进去设置
 
-## 设置 wifi 连接
-- Pi 4B - 'No wireless interfaces found'
-- 找不到 wifi 图标
-- `sudo apt-get install wicd`
-- `sudo reboot`
-- 进入桌面设置 wifi 连接
-- ![](/images/IgotaRaspberryPi/Snipaste_2021-01-19_22-13-01.png)
-- 👉 [Raspberry Pi 3 - WiFi Stopped Working - How to debug and fix without restarting](https://raspberrypi.stackexchange.com/questions/46622/raspberry-pi-3-wifi-stopped-working-how-to-debug-and-fix-without-restarting)
-
-## Docker 安装 mongodb
-- `docker search rpi-mongodb3`
-- `docker pull andresvidal/rpi3-mongodb3`
-- `mkdir ~/db/mongo` 创建数据目录
-- `docker run -d --name rpi-mongodb3 -v /home/pi/db/mongo:/data.db -p 27017:27017 andresvidal/rpi3-mongodb3 mongod`
