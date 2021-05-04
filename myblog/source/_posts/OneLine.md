@@ -9,5 +9,5 @@ tags: Mood
     - No one can stay a kid forever.
     - Time moves on, and people grow up.
     - We must go our separate ways.
-    - You keep going even after Im gone.
+    - You must keep going even after I'm gone.
 

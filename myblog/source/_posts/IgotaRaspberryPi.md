@@ -79,6 +79,10 @@ tags: [RaspberryPi,Linux,Nginx]
 👉 [解决MariaDB无法远程连接](https://blog.csdn.net/Co_zy/article/details/73923962)
 
 ## 开启远程 FTP
+- `sudo apt-get install vsftpd`
+- `sudo service vsftpd start`
+- `sudo nano /etc/vsftpd.conf` 赋予上传权限 "write_enable=YES"
+- `sudo /etc/init.d/vsftpd restart`
 
 👉 [FTP连接树莓派（Linux）进行文件传输](https://blog.csdn.net/madrabbit1987/article/details/53750272)
 
@@ -276,6 +280,9 @@ Host key verification failed.
 ## Portainer 
 ```
 sudo curl -sSL https://get.docker.com | sh
+or 
+sudo curl -sSL https://get.daocloud.io/docker | sh
+
 sudo docker pull portainer/portainer
 sudo docker volume create portainer_data
 sudo docker run -d -p 9000:9000 --name portainer --restart always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer
@@ -292,7 +299,7 @@ sudo docker run -d -p 9000:9000 --name portainer --restart always -v /var/run/do
 
 ##  netdata
 ```
-docker run -d --name=netdata \
+sudo docker run -d --name=netdata \
   -p 19999:19999 \
   -v /proc:/host/proc:ro \
   -v /sys:/host/sys:ro \
