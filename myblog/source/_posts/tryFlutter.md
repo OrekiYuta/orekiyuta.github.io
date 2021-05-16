@@ -53,3 +53,14 @@ dev_dependencies:
 - 关闭共享的网络即可 👉[Could not receive a message from the daemon](https://stackoverflow.com/questions/49609313/could-not-receive-a-message-from-the-daemon)
 - ![](/images/tryflutter/Snipaste_2021-05-03_00-58-11.png)
 
+## Other
+### 异常关闭 emulator 导致再次启动黑屏
+- 原因是因为 emulator 启动采用的是热启动，下次启动会采用上次关闭保存的状态
+- 解决方法：用 Android Studio 打开 emulator 设置,用 Cold boot now 即可，下次启动用回原本的启动方式即可
+- ![](/images/tryflutter/Snipaste_2021-05-16_16-27-58.png)
+- bat 启动脚本
+  ```bat
+  call C:\Users\[userName]\AppData\Local\Android\Sdk\emulator\emulator.exe  -netspeed full -avd Pixel_2_API_30
+
+  rem avd 默认目录 C:\Users\[userName]\.android\avd
+  ```
