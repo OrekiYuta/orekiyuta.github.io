@@ -82,3 +82,13 @@ tags: Hexo
 - `hexo g`            编译生成静态文件      
 - `hexo d`            部署到远端服务器
 - `hexo s --debug`    启动服务并执行本地调试模式
+
+## <center>Other</center>
+- fatal: unable to access "xxx": OpenSSL SSL_read: Connection was aborted, errno 10053
+    - `git config --global http.sslVerify "false"`
+
+- tag/ 目录下 git 推送后 大小写问题
+    ```
+        cd .deploy_git
+        git config core.ignorecase false
+    ```
