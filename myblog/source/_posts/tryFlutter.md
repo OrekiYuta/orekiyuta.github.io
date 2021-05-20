@@ -64,3 +64,5 @@ dev_dependencies:
 
   rem avd 默认目录 C:\Users\[userName]\.android\avd
   ```
+## 包依赖冲突
+- 👉 [Resolving package version conflicts in Dart](https://iiro.dev/resolving-dart-package-version-conflicts/)
