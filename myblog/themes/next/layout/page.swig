@@ -36,13 +36,14 @@
                 {{ _p('counter.tag_cloud', site.tags.length) }}
             </div>
             #}
-            <!--标签云-->
-            <div class="tag-cloud-tags">
-            {{ tagcloud({min_font: 15, max_font: 30, amount: 999, color: true, start_color: '#827878', end_color: '#000000'}) }}
-            </div>
 
             <!--tagcanvascloud标签云-->
             {% include '_macro/tagcanvascloud.swig'%}
+
+            <!--标签云-->
+            <div class="tag-cloud-tags">
+            {{ tagcloud({min_font: 15, max_font: 30, amount: 999, color: true, start_color: '#827878', end_color: '#000000'}) }}
+            </div>      
 
           </div>
         {% elif page.type === 'categories' %}
