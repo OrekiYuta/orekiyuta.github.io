@@ -40,6 +40,14 @@ tags: [Flask,Python]
     def elias():
         return 'Hello, elias!'
 
+    @app.route('/name/<username>')  #<>内默认 String
+    def elias(username):
+        return 'Hello, %s!' % username
+
+    # @app.route('/name/<float:a>') #float
+    @app.route('/name/<int:a>') # int
+    def elias(a):
+        return 'Hello, %s!' % (a + a)
 
     @app.route('/login', methods=['GET', 'POST'])
     def login():
@@ -51,4 +59,5 @@ tags: [Flask,Python]
 
 
 ## Reference
+- [flask教程](https://github.com/BeyondLam/bili/blob/master/%E6%96%87%E6%A1%A3%E8%B5%84%E6%96%99%E5%8F%82%E8%80%83/flask%E6%95%99%E7%A8%8B.md)
 - 👉[Flask](https://flask.palletsprojects.com/en/1.1.x/)
