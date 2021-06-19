@@ -297,7 +297,7 @@ sudo docker run -d -p 9000:9000 --name portainer --restart always -v /var/run/do
 - 浏览器输入 ip:1024
 - 👉 [一行命令部署pi dashboard](https://blog.nocode.site/2018/03/25/docker-pi-dashboard.html)
 
-##  netdata
+##  Netdata
 ```
 sudo docker run -d --name=netdata \
   -p 19999:19999 \
@@ -308,4 +308,19 @@ sudo docker run -d --name=netdata \
   --security-opt apparmor=unconfined \
   netdata/netdata
 ```
+## Docker ARM MySQL
 
+- docker pull hypriot/rpi-mysql
+- docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=1234 -d -p 12345:3306 hypriot/rpi-mysql
+- root,1234 登录
+
+## Redis
+- `sudo apt-get install redis-server`
+- `sudo vim /etc/redis/redis.conf` 注释掉 `bind 127.0.0.1 ::1` 即可远程连接
+- 找到 `requirepass ` 设置密码, 如 `requirepass elias`
+- `/etc/init.d/redis-server restart` 重启 redis
+- `redis-cli` 进入 redis
+- `auth elias` 验证密码
+- `keys *` 成功进入
+- 👉 [树莓派安装redis](https://zhuanlan.zhihu.com/p/83983237)
+- 👉 [Another Redis Desktop Manager](https://github.com/qishibo/AnotherRedisDesktopManager/releases/tag/v1.4.5)
