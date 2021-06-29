@@ -12,8 +12,11 @@ tags: MySQL
 - unkown collation:'utf8mb4_0900_ai_ci'
 ## Solution
 - 这是因为 数据库版本 不一致 导致的
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> back-up
 ```SQL
 -- old db
 mysql>  select version();
