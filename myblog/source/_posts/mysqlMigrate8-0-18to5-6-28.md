@@ -14,27 +14,26 @@ tags: MySQL
 - 这是因为 数据库版本 不一致 导致的
 <!-- more -->
 ```SQL
--- old db
-mysql>  select version();
-+-----------+
-| version() |
-+-----------+
-| 8.0.18    |
-+-----------+
-1 row in set (0.04 sec)
+    -- old db
+    mysql>  select version();
+    +-----------+
+    | version() |
+    +-----------+
+    | 8.0.18    |
+    +-----------+
+    1 row in set (0.04 sec)
 ```
-```SQL
--- new db
-mysql>  select version();
-+--------------------+
-| version()          |
-+--------------------+
-| 5.6.28-cdb2016-log |
-+--------------------+
-1 row in set (0.06 sec)
 
-mysql> 
-```
+    ```SQL
+        -- new db
+        mysql>  select version();
+        +--------------------+
+        | version()          |
+        +--------------------+
+        | 5.6.28-cdb2016-log |
+        +--------------------+
+        1 row in set (0.06 sec)
+    ```
 - 把转储 SQL 文件中的所有的 utf8mb4_0900_ai_ci 替换为 utf8_general_ci 
 - 把转储 SQL 文件中的所有的 utf8mb4 替换为 utf8
 - 再次导入即可
