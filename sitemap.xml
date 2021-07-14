@@ -58,13 +58,6 @@
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/vritualDiskMapping/</loc>
-    
-    <lastmod>2021-07-13T12:25:28.042Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.orekiyuta.cn/archives/Usakizaki/</loc>
     
     <lastmod>2021-07-13T12:25:28.042Z</lastmod>
@@ -72,14 +65,21 @@
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/ThinkingShift/</loc>
+    <loc>http://www.orekiyuta.cn/archives/vritualDiskMapping/</loc>
+    
+    <lastmod>2021-07-13T12:25:28.042Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.orekiyuta.cn/archives/TmuxManual/</loc>
     
     <lastmod>2021-07-13T12:25:28.040Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/TmuxManual/</loc>
+    <loc>http://www.orekiyuta.cn/archives/ThinkingShift/</loc>
     
     <lastmod>2021-07-13T12:25:28.040Z</lastmod>
     
@@ -212,14 +212,14 @@
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/mysqlMigrate8-0-18to5-6-28/</loc>
+    <loc>http://www.orekiyuta.cn/archives/MySQLCrashCourse/</loc>
     
     <lastmod>2021-07-13T12:25:28.012Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/MySQLCrashCourse/</loc>
+    <loc>http://www.orekiyuta.cn/archives/mysqlMigrate8-0-18to5-6-28/</loc>
     
     <lastmod>2021-07-13T12:25:28.012Z</lastmod>
     
