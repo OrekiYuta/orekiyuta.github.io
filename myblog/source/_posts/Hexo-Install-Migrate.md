@@ -1,7 +1,7 @@
 ---
 title: Hexo-Install+Migrate
 date: 2019-09-19 19:20:12
-tags: Hexo
+tags: [Hexo,Git]
 ---
 
 ## <center>安装Git , Node</center>

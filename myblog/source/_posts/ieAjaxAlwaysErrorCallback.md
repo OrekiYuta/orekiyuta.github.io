@@ -49,4 +49,4 @@ tags: [Ajax,Network]
 
 ## Other
 - `jQuery.support.cors` 查看当前 jQuery 在当前浏览器是否支持跨域
-- ![](/images/Snipaste_2021-07-08_14-41-10.png)
+- ![](/images/ieAjaxAlwaysErrorCallback/Snipaste_2021-07-08_14-41-10.png)
