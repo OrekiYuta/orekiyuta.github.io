@@ -1,0 +1,2337 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-corner-indicator.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/uploads/favicon.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/uploads/favicon.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/uploads/favicon.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/uploads/favicon.png?v=5.1.4" color="#222">
+
+
+  <link rel="manifest" href="/images/uploads/favicon.a">
+
+
+
+
+  <meta name="keywords" content="MySQL,">
+
+
+
+
+
+  <link rel="alternate" href="/rss.xml" title="Canoe" type="application/atom+xml">
+
+
+
+
+
+
+<meta name="description" content="Remarks columnName = cN tableName = tN  检索数据use / show use databaseName; show databases; show tables; show columns from tN;  select / distinct select cN,cN2 from tN; select * from tN; select distinct">
+<meta name="keywords" content="MySQL">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MySQL Crash Course &#x2F; After reading">
+<meta property="og:url" content="http://www.orekiyuta.cn/archives/MySQLCrashCourse/index.html">
+<meta property="og:site_name" content="Canoe">
+<meta property="og:description" content="Remarks columnName = cN tableName = tN  检索数据use / show use databaseName; show databases; show tables; show columns from tN;  select / distinct select cN,cN2 from tN; select * from tN; select distinct">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="http://www.orekiyuta.cn/images/MySQLCrashCourse/01.png">
+<meta property="og:image" content="http://www.orekiyuta.cn/images/MySQLCrashCourse/02.png">
+<meta property="og:image" content="http://www.orekiyuta.cn/images/MySQLCrashCourse/03.png">
+<meta property="og:image" content="http://www.orekiyuta.cn/images/MySQLCrashCourse/04.png">
+<meta property="og:image" content="http://www.orekiyuta.cn/images/MySQLCrashCourse/05.png">
+<meta property="og:image" content="http://www.orekiyuta.cn/images/MySQLCrashCourse/06.png">
+<meta property="og:image" content="http://www.orekiyuta.cn/images/MySQLCrashCourse/07.png">
+<meta property="og:image" content="http://www.orekiyuta.cn/images/MySQLCrashCourse/08.png">
+<meta property="og:image" content="http://www.orekiyuta.cn/images/MySQLCrashCourse/09.png">
+<meta property="og:image" content="http://www.orekiyuta.cn/images/MySQLCrashCourse/10.png">
+<meta property="og:image" content="http://www.orekiyuta.cn/images/MySQLCrashCourse/11.png">
+<meta property="og:image" content="http://www.orekiyuta.cn/images/MySQLCrashCourse/12.png">
+<meta property="og:image" content="http://www.orekiyuta.cn/images/MySQLCrashCourse/13.png">
+<meta property="og:image" content="http://www.orekiyuta.cn/images/MySQLCrashCourse/14.png">
+<meta property="og:image" content="http://www.orekiyuta.cn/images/MySQLCrashCourse/15.png">
+<meta property="og:image" content="http://www.orekiyuta.cn/images/MySQLCrashCourse/16.png">
+<meta property="og:image" content="http://www.orekiyuta.cn/images/MySQLCrashCourse/17.png">
+<meta property="og:image" content="http://www.orekiyuta.cn/images/MySQLCrashCourse/18.png">
+<meta property="og:image" content="http://www.orekiyuta.cn/images/MySQLCrashCourse/19.png">
+<meta property="og:image" content="http://www.orekiyuta.cn/images/MySQLCrashCourse/20.png">
+<meta property="og:image" content="http://www.orekiyuta.cn/images/MySQLCrashCourse/21.png">
+<meta property="og:image" content="http://www.orekiyuta.cn/images/MySQLCrashCourse/22.png">
+<meta property="og:image" content="http://www.orekiyuta.cn/images/MySQLCrashCourse/23.png">
+<meta property="og:image" content="http://www.orekiyuta.cn/images/MySQLCrashCourse/24.png">
+<meta property="og:image" content="http://www.orekiyuta.cn/images/MySQLCrashCourse/25.png">
+<meta property="og:image" content="http://www.orekiyuta.cn/images/MySQLCrashCourse/26.png">
+<meta property="og:image" content="http://www.orekiyuta.cn/images/MySQLCrashCourse/27.png">
+<meta property="og:image" content="http://www.orekiyuta.cn/images/MySQLCrashCourse/28.png">
+<meta property="og:image" content="http://www.orekiyuta.cn/images/MySQLCrashCourse/29.png">
+<meta property="og:image" content="http://www.orekiyuta.cn/images/MySQLCrashCourse/30.png">
+<meta property="og:image" content="http://www.orekiyuta.cn/images/MySQLCrashCourse/31.png">
+<meta property="og:image" content="http://www.orekiyuta.cn/images/MySQLCrashCourse/32.png">
+<meta property="og:image" content="http://www.orekiyuta.cn/images/MySQLCrashCourse/33.png">
+<meta property="og:image" content="http://www.orekiyuta.cn/images/MySQLCrashCourse/34.png">
+<meta property="og:image" content="http://www.orekiyuta.cn/images/MySQLCrashCourse/35.png">
+<meta property="og:image" content="http://www.orekiyuta.cn/images/MySQLCrashCourse/36.png">
+<meta property="og:image" content="http://www.orekiyuta.cn/images/MySQLCrashCourse/37.png">
+<meta property="og:image" content="http://www.orekiyuta.cn/images/MySQLCrashCourse/38.png">
+<meta property="og:image" content="http://www.orekiyuta.cn/images/MySQLCrashCourse/39.png">
+<meta property="og:image" content="http://www.orekiyuta.cn/images/MySQLCrashCourse/40.png">
+<meta property="og:image" content="http://www.orekiyuta.cn/images/MySQLCrashCourse/41.png">
+<meta property="og:image" content="http://www.orekiyuta.cn/images/MySQLCrashCourse/42.png">
+<meta property="og:image" content="http://www.orekiyuta.cn/images/MySQLCrashCourse/43.png">
+<meta property="og:image" content="http://www.orekiyuta.cn/images/MySQLCrashCourse/44.png">
+<meta property="og:image" content="http://www.orekiyuta.cn/images/MySQLCrashCourse/45.png">
+<meta property="og:image" content="http://www.orekiyuta.cn/images/MySQLCrashCourse/46.png">
+<meta property="og:image" content="http://www.orekiyuta.cn/images/MySQLCrashCourse/47.png">
+<meta property="og:image" content="http://www.orekiyuta.cn/images/MySQLCrashCourse/48.png">
+<meta property="og:image" content="http://www.orekiyuta.cn/images/MySQLCrashCourse/49.png">
+<meta property="og:image" content="http://www.orekiyuta.cn/images/MySQLCrashCourse/50.png">
+<meta property="og:updated_time" content="2021-07-13T12:25:28.012Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="MySQL Crash Course &#x2F; After reading">
+<meta name="twitter:description" content="Remarks columnName = cN tableName = tN  检索数据use / show use databaseName; show databases; show tables; show columns from tN;  select / distinct select cN,cN2 from tN; select * from tN; select distinct">
+<meta name="twitter:image" content="http://www.orekiyuta.cn/images/MySQLCrashCourse/01.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://www.orekiyuta.cn/archives/MySQLCrashCourse/">
+
+
+
+<meta name="baidu-site-verification" content="aNZ4sAxC7g">
+<meta name="google-site-verification" content="UVhJF4cXYZJhCM6uaJWsNQktr-Y59XRhX_AIGiqUv3E">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <title>MySQL Crash Course / After reading | Canoe</title>
+  
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="default">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+      <a href="https://github.com/OrekiYuta" class="github-corner" aria-label="View source on GitHub" style><svg width="80" height="80" viewbox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Canoe</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">「ろくでなし」</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+           
+  </div>
+
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-elib">
+          <a href="https://elib.orekiyuta.cn" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-book"></i> <br>
+            
+            Elib
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            Search
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="Searching..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ 
+      </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.orekiyuta.cn/archives/MySQLCrashCourse/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Orekiyuta">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Canoe">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">MySQL Crash Course / After reading</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-06-12T00:45:25+08:00">
+                2020-06-12 => 00:45:25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                  <span class="post-meta-divider">|</span>
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                
+                <span title="Words count in article">
+                  8.2k
+                </span>
+              
+
+              
+
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="Remarks"><a href="#Remarks" class="headerlink" title="Remarks"></a><center>Remarks<center></center></center></h2><ol>
+<li>columnName = cN</li>
+<li>tableName = tN</li>
+</ol>
+<h2 id="检索数据"><a href="#检索数据" class="headerlink" title="检索数据"></a><center>检索数据</center></h2><h3 id="use-show"><a href="#use-show" class="headerlink" title="use / show"></a>use / show</h3><ul>
+<li><code>use databaseName;</code></li>
+<li><code>show databases;</code></li>
+<li><code>show tables;</code></li>
+<li><code>show columns from tN;</code></li>
+</ul>
+<h3 id="select-distinct"><a href="#select-distinct" class="headerlink" title="select / distinct"></a>select / distinct</h3><ul>
+<li><code>select cN,cN2 from tN;</code></li>
+<li><code>select * from tN;</code></li>
+<li><code>select distinct cN from tN;</code></li>
+</ul>
+<h3 id="limit"><a href="#limit" class="headerlink" title="limit"></a>limit</h3><ul>
+<li><code>select cN from tN limit 3;</code>    返回3行</li>
+<li><code>select cN from tN limit 3,4;</code>返回第3行后面的4行（第一个数为开始的位置，第二个为要检索的行数）</li>
+<li><code>limit 3,4</code> 等同于 <code>limit 4 offset 3</code> 都是从第3行后面开始取4行</li>
+</ul>
+<h3 id="order"><a href="#order" class="headerlink" title="order"></a>order</h3><ul>
+<li><code>select tNX.cN from databaseName.tNX;</code>   完全限定列名、表名</li>
+<li><code>select cN from tN order by cN;</code>    按照指定列名排序</li>
+<li><code>select cN1,cN2,cN3 from tN order by cN2,cN3;</code>   按指定多个列名的顺序排序（只有在指定的前面的列值相同情况下，再对后面的列值排序）<a id="more"></a>
+</li>
+</ul>
+<h3 id="desc-asc"><a href="#desc-asc" class="headerlink" title="desc / asc"></a>desc / asc</h3><ul>
+<li><code>select cN1,cN2 from tN order by cN2 desc;</code> 降序排列，默认情况是升序 asc</li>
+<li><code>select cN1,cN2 from tN order by cN1 desc ,cN2;</code>   desc只对它前面的列名生效（先按照 cN1 降序，再按照 cN2 默认的升序）</li>
+<li><code>select cN1,cN2 from tN order by cN2 desc limit 1;</code></li>
+</ul>
+<h2 id="过滤数据"><a href="#过滤数据" class="headerlink" title="过滤数据"></a><center>过滤数据</center></h2><h3 id="where"><a href="#where" class="headerlink" title="where"></a>where</h3><ul>
+<li><code>select cN1,cN2 from tN where cN1 = 2;</code></li>
+<li><code>select cN1,cN2 from tN where cN2 = &#39;value&#39;;</code></li>
+</ul>
+<p><img src="/images/MySQLCrashCourse/01.png" alt> </p>
+<h3 id="between-is-null"><a href="#between-is-null" class="headerlink" title="between / is null"></a>between / is null</h3><ul>
+<li><code>select cN1,cN2 from tN where cN1 between 3 and 10;</code></li>
+<li><code>select cN1,cN2 from tN where cN2 is null;</code>    返回 cN2 为 空值 的行</li>
+</ul>
+<h3 id="and-or-运算符"><a href="#and-or-运算符" class="headerlink" title="and / or / ( ) / 运算符"></a>and / or / ( ) / 运算符</h3><ul>
+<li><code>select cN1,cN2,cN3 from tN where cN1 = 2 and cN3 &lt;= 19;</code></li>
+<li><code>select cN1,cN2,cN3 from tN where cN1 = 2 or cN3 &lt;= 19;</code></li>
+<li><code>select cN1,cN2,cN3 from tN where cN1 = 2 or cN2 = &#39;value&#39; and cN3 &lt;= 19;</code> and的优先级高于or</li>
+<li>这句就理解为 cN2 等于 value 且 cN3 小于（含）19 或者 cN1 = 2   </li>
+<li><u>cN1 = 2 </u>   or  <u>cN2 = ‘value’ and cN3 &lt;= 19</u> </li>
+<li><code>select cN1,cN2,cN3 from tN where (cN1 = 2 or cN2 = &#39;value&#39;) and cN3 &lt;= 19;</code>   用括号提高优先级</li>
+</ul>
+<h3 id="in"><a href="#in" class="headerlink" title="in"></a>in</h3><ul>
+<li><code>select cN1,cN2 from tN where cN2 in (&#39;value&#39;,&#39;value2&#39;);</code></li>
+<li><code>select cN1,cN2 from tN where cN1 in (2,4,5);</code></li>
+<li><code>in (4,5)</code>等同于<code>cN1 = 4 or cN1 =5</code></li>
+<li>优点：in 更直观方便，执行快，还可以包括 where 子句</li>
+</ul>
+<h3 id="not"><a href="#not" class="headerlink" title="not"></a>not</h3><ul>
+<li><code>select cN1,cN2 from tN where cN1 not in (2,4,5);</code>     否定后面的条件</li>
+</ul>
+<h3 id="like-通配符"><a href="#like-通配符" class="headerlink" title="like / 通配符"></a>like / 通配符</h3><ul>
+<li><code>select cN1,cN2 from tN where cN2 like &#39;val%&#39;;</code>    % 表示任何字符出现任意次数</li>
+<li><code>select cN1,cN2 from tN where cN2 like &#39;%al%&#39;;</code>    % 无法匹配到 null</li>
+<li><code>select cN1,cN2 from tN where cN2 like &#39;v%e&#39;;</code> </li>
+<li><code>select cN1,cN2 from tN where cN2 like &#39;valu_&#39;;</code>  _ 只匹配一个字符</li>
+<li>通配符处理更花时间，尽量用其他操作符，尽量不要把通配符用在搜索模式的开始处，影响效率</li>
+</ul>
+<h3 id="正则表达式-regexp"><a href="#正则表达式-regexp" class="headerlink" title="正则表达式 regexp"></a>正则表达式 regexp</h3><ul>
+<li><code>select cN1,cN2 from tN where cN2 regexp &#39;value&#39;;</code>  regexp 后面跟的内容作为正则表达式</li>
+<li><code>select cN1,cN2 from tN where cN1 regexp &#39;1&#39;;</code></li>
+</ul>
+<h3 id="like-和-regexp-的区别"><a href="#like-和-regexp-的区别" class="headerlink" title="like 和 regexp 的区别"></a>like 和 regexp 的区别</h3><ul>
+<li><code>like &#39;value&#39;</code> 和 <code>regexp &#39;value&#39;</code> 返回内容一样</li>
+<li><code>like &#39;alue&#39;</code> 和 <code>regexp &#39;alue&#39;</code>  like 没有返回内容， regexp 返回含有 value 值的行</li>
+<li>like 匹配整个列，regexp 还对列值内进行匹配</li>
+<li>这里没有列值为 alue 的行，所以 like 没有返回内容，而 regexp 对列值内匹配，所以有返回内容</li>
+</ul>
+<h3 id><a href="#" class="headerlink" title="|"></a>|</h3><ul>
+<li><code>select cN1,cN2 from tN where cN2 regexp &#39;value1|value2&#39;;</code></li>
+<li><code>select cN1,cN2 from tN where cN2 regexp &#39;value1|2&#39;;</code>  匹配含有 value1 或者 2 的值</li>
+<li><code>select cN1,cN2 from tN where cN1 regexp &#39;1|2|3|4&#39;;</code></li>
+</ul>
+<h3 id="-1"><a href="#-1" class="headerlink" title="[ ] / [^ ]"></a>[ ] / [^ ]</h3><ul>
+<li><code>select cN1,cN2 from tN where cN2 regexp &#39;value[123]&#39;;</code>    匹配特定字符，返回 value1,value2,value3</li>
+<li>[]其实是另一种形式的 or ; [123]是[1|2|3]的缩写</li>
+<li><code>select cN1,cN2 from tN where cN2 regexp &#39;value[^123]&#39;;</code>   否定[123],匹配这些字符以外的任意字符</li>
+</ul>
+<h3 id="0-9-a-z"><a href="#0-9-a-z" class="headerlink" title="[0-9] / [a-z]"></a>[0-9] / [a-z]</h3><ul>
+<li><code>select cN1,cN2 from tN where cN2 regexp &#39;value[1-3]&#39;;</code> </li>
+<li><code>value[1-3]</code>等同于<code>value[123]</code>    [a-z]还可以匹配人以字母</li>
+</ul>
+<h3 id="转义字符"><a href="#转义字符" class="headerlink" title="转义字符 \"></a>转义字符 \</h3><ul>
+<li><code>select cN1,cN2 from tN where cN2 regexp &#39;.&#39;;</code> . 匹配任意字符</li>
+<li><code>select cN1,cN2 from tN where cN2 regexp &#39;\\.&#39;;</code> 匹配 .</li>
+<li><code>select cN1,cN2 from tN where cN2 regexp &#39;\\-&#39;;</code> 匹配 -</li>
+<li>\\双反斜杠转义 ，用于匹配特殊字符</li>
+</ul>
+<p><img src="/images/MySQLCrashCourse/02.png" alt> </p>
+<ul>
+<li>多数正则表达式实现使用单个反斜杠转义特殊字符；但是MySQL使用两个反斜杠，MySQL自己解释一个，正则表达式库解释另外一个</li>
+</ul>
+<h3 id="预定义字符集"><a href="#预定义字符集" class="headerlink" title="预定义字符集"></a>预定义字符集</h3><ul>
+<li><code>select cN1,cN2 from tN where cN2 regexp &#39;[:alnum:]&#39;;</code> 使用预定义字符集</li>
+</ul>
+<p><img src="/images/MySQLCrashCourse/03.png" alt> </p>
+<h3 id="重复元字符"><a href="#重复元字符" class="headerlink" title="重复元字符"></a>重复元字符</h3><ul>
+<li><code>select cN1,cN2 from tN where cN2 regexp &#39;valu?&#39;;</code> 匹配多个实例，匹配具体的字符次数</li>
+</ul>
+<p><img src="/images/MySQLCrashCourse/04.png" alt> </p>
+<h3 id="定位符"><a href="#定位符" class="headerlink" title="定位符"></a>定位符</h3><ul>
+<li><code>select cN1,cN2 from tN where cN2 regexp &#39;^[v123]&#39;;</code>   匹配特定位置的字符</li>
+</ul>
+<p><img src="/images/MySQLCrashCourse/05.png" alt> </p>
+<ul>
+<li>^ 在集合中 [] 表否定该集合，否则表示串的起点</li>
+<li>正如前面所说 like 匹配整个串，regexp 匹配子串</li>
+<li>利用 ^ 和 $ 就可使 regexp 起到 like 的作用</li>
+<li><code>select cN1,cN2 from tN where cN2 rehexp &#39;^value$&#39;;</code>  等同于 <code>select cN1,cN2 from tN where cN2 like &#39;value&#39;;</code> </li>
+</ul>
+<h2 id="计算字段"><a href="#计算字段" class="headerlink" title="计算字段"></a><center>计算字段</center></h2><ul>
+<li>直接从数据库中检索出转换、计算或格式化过的数据</li>
+<li>计算字段是运行时在 select 语句内创建的</li>
+</ul>
+<h3 id="拼接字段"><a href="#拼接字段" class="headerlink" title="拼接字段"></a>拼接字段</h3><ul>
+<li>把值联结到一起构成单个值</li>
+<li><code>select Concat(cN1,cN2) from tN;</code> 返回结果为 cN1 和 cN2 的值构成的一个新值 </li>
+<li><code>select Concat(cN1,RTrim(cN2)) from tN;</code>  RTrim()去掉值右边的所有空格</li>
+<li><code>select Concat(cN1,LTrim(cN2)) from tN;</code>  RTrim()去掉值左边的所有空格</li>
+<li><code>select Concat(cN1,Trim(cN2)) from tN;</code>  RTrim()去掉值左右两边的所有空格</li>
+<li><code>select Concat(cN1,cN2) as NewcN from tN;</code> 形成的新值没有名称，需要赋予它一个字段名</li>
+</ul>
+<h3 id="算数计算"><a href="#算数计算" class="headerlink" title="算数计算"></a>算数计算</h3><ul>
+<li><code>select cN1,cN2,cN3,cN1+cN3 as SumcN from tN;;</code> 同样可以用括号来提高优先级</li>
+</ul>
+<p><img src="/images/MySQLCrashCourse/06.png" alt> </p>
+<h2 id="函数处理"><a href="#函数处理" class="headerlink" title="函数处理"></a><center>函数处理</center></h2><h3 id="文本"><a href="#文本" class="headerlink" title="文本"></a>文本</h3><ul>
+<li><code>select cN1,Upper(cN2) from tN;</code> 大写转换</li>
+</ul>
+<p><img src="/images/MySQLCrashCourse/07.png" alt> </p>
+<p><img src="/images/MySQLCrashCourse/08.png" alt> </p>
+<p><img src="/images/MySQLCrashCourse/09.png" alt> </p>
+<h3 id="时间"><a href="#时间" class="headerlink" title="时间"></a>时间</h3><p><img src="/images/MySQLCrashCourse/10.png" alt> </p>
+<h3 id="数值"><a href="#数值" class="headerlink" title="数值"></a>数值</h3><p><img src="/images/MySQLCrashCourse/11.png" alt> </p>
+<h3 id="聚集"><a href="#聚集" class="headerlink" title="聚集"></a>聚集</h3><ul>
+<li><code>select cN1,AVG(cN2) from tN;</code> 平均值，AVG()函数忽略列值为 null 的行，同理 count(),max(),min(),sum()也是忽略 null 的行</li>
+</ul>
+<p><img src="/images/MySQLCrashCourse/12.png" alt> </p>
+<ul>
+<li><code>select count(*) from tN;</code>  行数目计数，无论是否 null 都会计数</li>
+<li><code>select count(cN2) from tN;</code> 列值为 null 的行会被忽略 </li>
+<li><code>select cN1,AVG(distinct cN2) from tN;</code> 忽略相同的列值</li>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="keyword">count</span>(*) <span class="keyword">as</span> NewcN1,</span><br><span class="line">      <span class="keyword">min</span>(cN3) <span class="keyword">as</span> NewcN2,</span><br><span class="line">      <span class="keyword">max</span>(cN3) <span class="keyword">as</span> NewcN3,</span><br><span class="line">      <span class="keyword">avg</span>(cN3) <span class="keyword">as</span> NewcN4,</span><br><span class="line"><span class="keyword">from</span> tN;</span><br></pre></td></tr></table></figure></div>
+</li>
+</ul>
+<h2 id="分组"><a href="#分组" class="headerlink" title="分组"></a><center>分组</center></h2><h3 id="group-by"><a href="#group-by" class="headerlink" title="group by"></a>group by</h3><ul>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> cN1,<span class="keyword">count</span>(*) <span class="keyword">as</span> NewcN </span><br><span class="line"><span class="keyword">from</span> tN </span><br><span class="line"><span class="keyword">group</span> <span class="keyword">by</span> cN1;</span><br></pre></td></tr></table></figure></div>
+</li>
+</ul>
+<p><img src="/images/MySQLCrashCourse/13.png" alt> </p>
+<h3 id="having"><a href="#having" class="headerlink" title="having"></a>having</h3><ul>
+<li>where 过滤指定行并且没有分组的概念</li>
+<li>where 过滤行，having 过滤分组</li>
+<li>having 支持所有 where 操作符</li>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> cN1,<span class="keyword">count</span>(*) <span class="keyword">as</span> NewcN </span><br><span class="line"><span class="keyword">from</span> tN </span><br><span class="line"><span class="keyword">group</span> <span class="keyword">by</span> cN1</span><br><span class="line"><span class="keyword">having</span> <span class="keyword">count</span>(*) &gt;= <span class="number">2</span>;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>也可以理解为 where 在 group by 前过滤，having 在 group by 后过滤</p>
+</li>
+</ul>
+<h3 id="group-by-与-order-by"><a href="#group-by-与-order-by" class="headerlink" title="group by 与 order by"></a>group by 与 order by</h3><p><img src="/images/MySQLCrashCourse/14.png" alt> </p>
+<ul>
+<li>group by 以分组的顺序输出，但是有时候需要以不同于分组默认的顺序输出</li>
+<li>这种情况就需要提供 order by 子句 ，以明确输出的顺序方式</li>
+</ul>
+<h3 id="select-子句顺序"><a href="#select-子句顺序" class="headerlink" title="select 子句顺序"></a>select 子句顺序</h3><ul>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span></span><br><span class="line"><span class="keyword">from</span></span><br><span class="line"><span class="keyword">where</span></span><br><span class="line"><span class="keyword">group</span> <span class="keyword">by</span></span><br><span class="line"><span class="keyword">having</span> </span><br><span class="line"><span class="keyword">order</span> <span class="keyword">by</span></span><br><span class="line"><span class="keyword">limit</span></span><br></pre></td></tr></table></figure></div>
+</li>
+</ul>
+<p><img src="/images/MySQLCrashCourse/15.png" alt> </p>
+<p><img src="/images/MySQLCrashCourse/16.png" alt> </p>
+<h2 id="子查询"><a href="#子查询" class="headerlink" title="子查询"></a><center>子查询</center></h2><ul>
+<li>子查询总是从内向外处理</li>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> cN1,cN2</span><br><span class="line"><span class="keyword">from</span> tN</span><br><span class="line"><span class="keyword">where</span> cN5 <span class="keyword">in</span> (<span class="keyword">select</span> cN5</span><br><span class="line">              <span class="keyword">from</span> tN2</span><br><span class="line">              <span class="keyword">where</span> cN7 <span class="keyword">in</span> (<span class="keyword">select</span> cN7</span><br><span class="line">                            <span class="keyword">from</span> tN3</span><br><span class="line">                            <span class="keyword">where</span> cN9 = <span class="string">'v'</span></span><br><span class="line">                            )</span><br><span class="line">              );</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>作为计算字段使用子查询</p>
+</li>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> cN1,</span><br><span class="line">       cN2,</span><br><span class="line">       (<span class="keyword">select</span> <span class="keyword">count</span>(*)</span><br><span class="line">        <span class="keyword">from</span> tN2</span><br><span class="line">        <span class="keyword">where</span> tN2.cN1 = tN.cN1) <span class="keyword">as</span> NewcN</span><br><span class="line"><span class="keyword">from</span> tN;</span><br></pre></td></tr></table></figure></div>
+</li>
+</ul>
+<h2 id="联结表"><a href="#联结表" class="headerlink" title="联结表"></a><center>联结表</center></h2><ul>
+<li>关系表：各表通过某些常用值互相关联；在A表中建立了B表中某些字段的列，把两个表联系起来</li>
+<li>外键：某个表中的一列，它包含另外一个表的主键值，定义了两个表之间的关系</li>
+</ul>
+<h3 id="内部联结-inner-join"><a href="#内部联结-inner-join" class="headerlink" title="内部联结 inner join"></a>内部联结 inner join</h3><ul>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> cN2,cN3</span><br><span class="line"><span class="keyword">from</span> tN1,tN2</span><br><span class="line"><span class="keyword">where</span> tN1.cN1 = tN2.cN1</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>以上的联结称为 等值联结，基于两个表之间的相等测试，也成为 内部联结</p>
+</li>
+<li>可以用以下更为标准的联结语法</li>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> cN2,cN3</span><br><span class="line"><span class="keyword">from</span> tN1 <span class="keyword">inner</span> <span class="keyword">join</span> tN2</span><br><span class="line"><span class="keyword">on</span> tN1.cN1 = tN2.cN1</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>联结表的数目没有限制，但是这种处理非常消耗资源，联结的表越多，性能下降越厉害</p>
+</li>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> cN2,cN3,cN4</span><br><span class="line"><span class="keyword">from</span> tN1,tN2,tN3,tN4</span><br><span class="line"><span class="keyword">where</span> tN1.cN1 = tN2.cN1</span><br><span class="line">  <span class="keyword">and</span> tN3.cN1 = tN1.cN1</span><br><span class="line">  <span class="keyword">and</span> tN4.cN1 = tN1.cN1</span><br></pre></td></tr></table></figure></div>
+</li>
+</ul>
+<h3 id="使用别名"><a href="#使用别名" class="headerlink" title="使用别名"></a>使用别名</h3><ul>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> cN2,cN3</span><br><span class="line"><span class="keyword">from</span> tN1 <span class="keyword">as</span> a,tN2 <span class="keyword">as</span> b</span><br><span class="line"><span class="keyword">where</span> a.cN1 = b.cN1</span><br></pre></td></tr></table></figure></div>
+</li>
+</ul>
+<h3 id="自联结"><a href="#自联结" class="headerlink" title="自联结"></a>自联结</h3><ul>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> cN2,cN3</span><br><span class="line"><span class="keyword">from</span> tN1</span><br><span class="line"><span class="keyword">where</span> cN1 = (<span class="keyword">select</span> cN1</span><br><span class="line">             <span class="keyword">from</span> tN1</span><br><span class="line">             <span class="keyword">where</span> cN2=<span class="string">'x'</span></span><br><span class="line">             );</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>从同一个表从查询内容，上面用了子查询，分了两步进行操作</p>
+</li>
+<li>下面用联结的方式进行相同查询</li>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> cN2,cN3</span><br><span class="line"><span class="keyword">from</span> tN1 <span class="keyword">as</span> a , tN1 <span class="keyword">as</span> b</span><br><span class="line"><span class="keyword">where</span> a.cN1 = b.cN1</span><br><span class="line">  <span class="keyword">and</span> b.cN2 = <span class="string">'x'</span>;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>因为对一个表自己进行联结，相当于每个字段出现了两次，所以要用别名把表的字段给区分开</p>
+</li>
+</ul>
+<h3 id="自然联结"><a href="#自然联结" class="headerlink" title="自然联结"></a>自然联结</h3><ul>
+<li>无论何时对表进行联结，都会出现至少一个列出现在不止一个表中。</li>
+<li>自然联结可以排除多次出现，使每个列只返回一次</li>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> a.*,b.cN2,b.cN3</span><br><span class="line"><span class="keyword">from</span> tN1 <span class="keyword">as</span> a , tN2 <span class="keyword">as</span> b</span><br><span class="line"><span class="keyword">where</span> a.cN1 = b.cN1;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>对表 a 使用通配符全部检索列，对表 b 明确指出列</p>
+</li>
+</ul>
+<h3 id="外部联结-left-right-outer-join"><a href="#外部联结-left-right-outer-join" class="headerlink" title="外部联结 left/right outer join"></a>外部联结 left/right outer join</h3><ul>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> cN2,cN3</span><br><span class="line"><span class="keyword">from</span> tN1 <span class="keyword">left</span> <span class="keyword">outer</span> <span class="keyword">join</span> tN2</span><br><span class="line"><span class="keyword">where</span> tN1.cN1 = tN2.cN1;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>内部联结是把满足条件的两个表的所有行组合起来，</p>
+</li>
+<li>外部联结主要区别在于（1）把满足条件的两个表的所有行组合起来（2）还要把未满足条件的 左/右 表的行也要附加组合进去</li>
+<li><code>tN1 left outer join tN2;</code> 左外部联结</li>
+<li><code>tN1 right outer join tN2;</code>    右外部联结</li>
+<li><p>左/右 外部联结可以通过颠倒 from 中的表顺序转换，两种类型联结用哪种完全看方便而定</p>
+</li>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> cN2,</span><br><span class="line">       cN3</span><br><span class="line"><span class="keyword">from</span> tN1 <span class="keyword">left</span> <span class="keyword">outer</span> <span class="keyword">join</span> tN2</span><br><span class="line"><span class="keyword">where</span> tN1.cN1 = tN2.cN1;</span><br></pre></td></tr></table></figure></div>
+</li>
+</ul>
+<h2 id="组合查询"><a href="#组合查询" class="headerlink" title="组合查询"></a><center>组合查询</center></h2><h3 id="union"><a href="#union" class="headerlink" title="union"></a>union</h3><ul>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> cN1,cN2,cN3</span><br><span class="line"><span class="keyword">from</span> tN1</span><br><span class="line"><span class="keyword">union</span></span><br><span class="line"><span class="keyword">select</span> cN1,cN2,cN3</span><br><span class="line"><span class="keyword">from</span> tN2;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>union 组合的 select 语句出现的字段必须一致，顺序无所谓</p>
+</li>
+<li>union 组合查询出来的结果为各个查询语句按先后查询的顺序组合</li>
+<li>union 的查询结果会自动去重，保留先查询出的行，去除后面查询出的重复的行</li>
+</ul>
+<h3 id="union-all"><a href="#union-all" class="headerlink" title="union all"></a>union all</h3><ul>
+<li>如果想全部保留查询组合结果可使用 union all</li>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> cN1,cN2,cN3</span><br><span class="line"><span class="keyword">from</span> tN1</span><br><span class="line"><span class="keyword">union</span> <span class="keyword">all</span></span><br><span class="line"><span class="keyword">select</span> cN1,cN2,cN3</span><br><span class="line"><span class="keyword">from</span> tN2;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>union 几乎总是完成与多个 where 条件相同的工作</p>
+</li>
+<li>union all 可以完成匹配全部（包括重复行），而 where 就不行</li>
+</ul>
+<h3 id="对组合查询结果排序"><a href="#对组合查询结果排序" class="headerlink" title="对组合查询结果排序"></a>对组合查询结果排序</h3><ul>
+<li>只能用一条 order by 子句，并且必须出现在最后一条 select 语句之后</li>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> cN1,cN2,cN3</span><br><span class="line"><span class="keyword">from</span> tN1</span><br><span class="line"><span class="keyword">union</span> <span class="keyword">all</span></span><br><span class="line"><span class="keyword">select</span> cN1,cN2,cN3</span><br><span class="line"><span class="keyword">from</span> tN2</span><br><span class="line"><span class="keyword">order</span> <span class="keyword">by</span> cN1;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>order by 子句放在最后，是对组合查询的整个结果进行排序</p>
+</li>
+</ul>
+<h2 id="全文本搜索"><a href="#全文本搜索" class="headerlink" title="全文本搜索"></a><center>全文本搜索</center></h2><h3 id="启用"><a href="#启用" class="headerlink" title="启用"></a>启用</h3><ul>
+<li>一般在创建表的时候启用 全文本搜索</li>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> tN</span><br><span class="line">(</span><br><span class="line">  <span class="keyword">id</span>          <span class="built_in">int</span>       <span class="keyword">not</span> <span class="literal">null</span> auto_increment,</span><br><span class="line">  title       <span class="built_in">char</span>(<span class="number">10</span>)  <span class="keyword">not</span> <span class="literal">null</span>,</span><br><span class="line">  note_text   <span class="built_in">text</span>      <span class="literal">null</span>,</span><br><span class="line">  primary <span class="keyword">key</span>(<span class="keyword">id</span>),</span><br><span class="line">  fulltext(note_text)  </span><br><span class="line">)<span class="keyword">engine</span>=MyISAM;</span><br></pre></td></tr></table></figure></div>
+</li>
+</ul>
+<h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><ul>
+<li>Match()指定被搜索的列，Against()指定要使用的搜索表达式</li>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> note_text</span><br><span class="line"><span class="keyword">from</span> tN</span><br><span class="line"><span class="keyword">where</span> <span class="keyword">Match</span>(note_text) Against(<span class="string">'value'</span>);</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>查询结果为 note_text 列中带有 value 值的行</p>
+</li>
+<li>全文本搜索不区分大小写</li>
+</ul>
+<hr>
+<ul>
+<li>下面的 like 子句也可查询同样的结果</li>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> note_text</span><br><span class="line"><span class="keyword">from</span> tN</span><br><span class="line"><span class="keyword">where</span> note_text <span class="keyword">like</span> <span class="string">'%value%'</span>;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>全文本搜索返回的结果行顺序和 like 子句返回的行顺序稍有区别</p>
+</li>
+<li>全文本搜索返回的结果按照 词的出现的次序等级 对每个结果行进行排序（比如：value 出现在第一个词比出现在第三个词的等级高） ；具有较高等级的行先出现，排在前面</li>
+<li>等级由MySQL根据行中词的数目、唯一词的数目、整个索引中词的总数以及包含该词的行的数目计算出来</li>
+<li>like 子句以不是特别有用的顺序返回数据</li>
+</ul>
+<hr>
+<ul>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> note_text</span><br><span class="line">       <span class="keyword">Match</span>(note_text) Against(<span class="string">'value'</span>) <span class="keyword">as</span> <span class="keyword">rank</span></span><br><span class="line"><span class="keyword">from</span> tN；</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>如果在 select 子句中使用 Match() 和 Against(),则会返回一个计算列</p>
+</li>
+<li>计算列的值就是词的等级值，不包含检索值的等级值为 0</li>
+<li>这些值帮助全文本搜索如何排除行（等级为0的行），如何排序结果（按等级降序排列）</li>
+<li>由于数据是索引的，全文本搜索速度还比较快</li>
+</ul>
+<h3 id="查询扩展"><a href="#查询扩展" class="headerlink" title="查询扩展"></a>查询扩展</h3><ul>
+<li><code>with query expansion</code>  用来放宽返回文本的搜索结果的范围</li>
+<li>比如想查询包含 value 和其他包含相关信息的行，即使其它行中不包含 value </li>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> note_text</span><br><span class="line"><span class="keyword">from</span> tN</span><br><span class="line"><span class="keyword">where</span> <span class="keyword">Match</span>(note_text) Against(<span class="string">'value'</span> <span class="keyword">with</span> <span class="keyword">query</span> expansion);</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>查询扩展的执行顺序：</p>
+<ol>
+<li>先执行基本全文本搜索，找出与条件匹配的所有行</li>
+<li>其次，MySQL检查这些匹配行并选择与条件词相关的有用词</li>
+<li>最后，MySQL再次执行全文本搜索，这次不仅使用原来的条件，还附带了相关有用词的条件</li>
+</ol>
+</li>
+<li>利用查询扩展，能够尽可能的查询出相关结果，即使它们不是很精确</li>
+</ul>
+<h3 id="布尔文本搜索"><a href="#布尔文本搜索" class="headerlink" title="布尔文本搜索"></a>布尔文本搜索</h3><ul>
+<li><code>in boolean mode</code></li>
+</ul>
+<p><img src="/images/MySQLCrashCourse/17.png" alt> </p>
+<ul>
+<li>没有指定操作符，搜索结果匹配 value 或 key 中至少一个词的行</li>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> note_text</span><br><span class="line"><span class="keyword">from</span> tN</span><br><span class="line"><span class="keyword">where</span> <span class="keyword">Match</span>(note_text) Against(<span class="string">'value key'</span> <span class="keyword">in</span> <span class="built_in">boolean</span> <span class="keyword">mode</span>);</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>搜索结果匹配 value key 短语的行</p>
+</li>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> note_text</span><br><span class="line"><span class="keyword">from</span> tN</span><br><span class="line"><span class="keyword">where</span> <span class="keyword">Match</span>(note_text) Against(<span class="string">'"value key"'</span> <span class="keyword">in</span> <span class="built_in">boolean</span> <span class="keyword">mode</span>);</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>搜索结果匹配包含 value 排除 key 的行</p>
+</li>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> note_text</span><br><span class="line"><span class="keyword">from</span> tN</span><br><span class="line"><span class="keyword">where</span> <span class="keyword">Match</span>(note_text) Against(<span class="string">'"+value -key"'</span> <span class="keyword">in</span> <span class="built_in">boolean</span> <span class="keyword">mode</span>);</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>在布尔方式中，不按等级值降序返回的行</p>
+</li>
+</ul>
+<p><img src="/images/MySQLCrashCourse/18.png" alt> </p>
+<p><img src="/images/MySQLCrashCourse/19.png" alt> </p>
+<h2 id="插入数据"><a href="#插入数据" class="headerlink" title="插入数据"></a><center>插入数据</center></h2><h3 id="insert-into"><a href="#insert-into" class="headerlink" title="insert into"></a>insert into</h3><ul>
+<li><code>insert into tN values(&#39;key&#39;,&#39;value&#39;,&#39;null&#39;);</code> </li>
+<li>每个列字段必须提供值，没有值可提供 null 值 （假设该列允许为空值）</li>
+<li>上面的写法简单，但并不安全，极度依赖表字段的次序</li>
+<li>应该用以下的标准写法</li>
+<li><code>insert into tN(cN2,cN1，cN3) values(&#39;value&#39;,&#39;key&#39;,&#39;x&#39;);</code> </li>
+<li>这种写法不依赖表字段次序，按照自定的列字段次序填充即可</li>
+</ul>
+<h3 id="insert-low-priority-into"><a href="#insert-low-priority-into" class="headerlink" title="insert low_priority into"></a>insert low_priority into</h3><ul>
+<li>降低 insert 语句优先级，因为 insert 操作可以很耗时，而且它可能降低等待处理的 select 语句的性能</li>
+<li><code>insert low_priority into tN(cN2,cN1，cN3) values(&#39;value&#39;,&#39;key&#39;,&#39;x&#39;);</code> </li>
+<li>同样使用于 update 和 delete 语句</li>
+</ul>
+<h3 id="插入多行"><a href="#插入多行" class="headerlink" title="插入多行"></a>插入多行</h3><ul>
+<li>使用多条 insert 语句，最后一次提交即可</li>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> tN(cN2,cN1，cN3) <span class="keyword">values</span>(<span class="string">'value'</span>,<span class="string">'key'</span>,<span class="string">'x'</span>);</span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> tN(cN2,cN1，cN3) <span class="keyword">values</span>(<span class="string">'value1'</span>,<span class="string">'key1'</span>,<span class="string">'x1'</span>);</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>如果插入同一个表，并且结构相同，也可以用以下方式</p>
+</li>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> tN(cN2,cN1，cN3) </span><br><span class="line"><span class="keyword">values</span>(<span class="string">'value'</span>,<span class="string">'key'</span>,<span class="string">'x'</span>)</span><br><span class="line">      (<span class="string">'value1'</span>,<span class="string">'key1'</span>,<span class="string">'x1'</span>)</span><br><span class="line">      (<span class="string">'value2'</span>,<span class="string">'key2'</span>,<span class="string">'x2'</span>);</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>MySQL用单条 insert 语句处理多个插入 比 使用多条 insert 语句快</p>
+</li>
+</ul>
+<h3 id="插入检索出的数据-insert-select"><a href="#插入检索出的数据-insert-select" class="headerlink" title="插入检索出的数据 insert select"></a>插入检索出的数据 insert select</h3><ul>
+<li>可以从其他表导入数据</li>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> tN(cN2,cN1，cN3) </span><br><span class="line"><span class="keyword">select</span> cN1,cN2,cN3</span><br><span class="line"><span class="keyword">from</span> tN2;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>select 语句的每个列对应插入 insert 语句的每个列中</p>
+</li>
+<li>还可以添加 where 子句等条件</li>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> tN(cN2,cN1，cN3) </span><br><span class="line"><span class="keyword">select</span> cN1,cN2,cN3</span><br><span class="line"><span class="keyword">from</span> tN2</span><br><span class="line"><span class="keyword">where</span> cN1 &gt; <span class="number">2</span>;</span><br></pre></td></tr></table></figure></div>
+</li>
+</ul>
+<h2 id="更新-删除-数据"><a href="#更新-删除-数据" class="headerlink" title="更新/删除 数据"></a><center>更新/删除 数据</center></h2><h3 id="update-set"><a href="#update-set" class="headerlink" title="update set"></a>update set</h3><ul>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">update</span> tN</span><br><span class="line"><span class="keyword">set</span> cN2 = <span class="string">'value'</span></span><br><span class="line"><span class="keyword">where</span> cN1 = <span class="number">1</span>;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">update</span> tN</span><br><span class="line"><span class="keyword">set</span> cN2 = <span class="string">'value'</span>,</span><br><span class="line"><span class="keyword">set</span> cN3 = <span class="string">'key'</span></span><br><span class="line"><span class="keyword">where</span> cN1 = <span class="number">1</span>;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>删除列值，可以把它设为 null （假设该列允许为空值）</p>
+</li>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">update</span> tN</span><br><span class="line"><span class="keyword">set</span> cN2 = <span class="string">'null'</span></span><br><span class="line"><span class="keyword">where</span> cN1 = <span class="number">1</span>;</span><br></pre></td></tr></table></figure></div>
+</li>
+</ul>
+<h3 id="delete"><a href="#delete" class="headerlink" title="delete"></a>delete</h3><ul>
+<li><code>delete from tN where cN1 = 1;</code> 删除行</li>
+<li><code>delete from tN</code> 删除表所有内容/删除表中所有行</li>
+</ul>
+<h2 id="操纵表"><a href="#操纵表" class="headerlink" title="操纵表"></a><center>操纵表</center></h2><h3 id="create-table"><a href="#create-table" class="headerlink" title="create table"></a>create table</h3><ul>
+<li>建立新表，指定的表名必须不存在，否则需要先手工删除已存在同名的表</li>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> tN(</span><br><span class="line">  cN1 <span class="built_in">int</span>       <span class="keyword">not</span> <span class="literal">null</span> auto_increment,</span><br><span class="line">  cN2 <span class="built_in">char</span>(<span class="number">10</span>)  <span class="keyword">not</span> <span class="literal">null</span> ,</span><br><span class="line">  cN3 <span class="built_in">char</span>(<span class="number">19</span>)  <span class="literal">null</span>,</span><br><span class="line">  primary <span class="keyword">key</span> (cN1)</span><br><span class="line">);</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>如果仅想在一个表不存在时创建它，可以在表名后给出 <code>if not exists</code></p>
+</li>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> tN <span class="keyword">if</span> <span class="keyword">not</span> <span class="keyword">exists</span>(</span><br><span class="line">  cN1 <span class="built_in">int</span>       <span class="keyword">not</span> <span class="literal">null</span> auto_increment,</span><br><span class="line">  cN2 <span class="built_in">char</span>(<span class="number">10</span>)  <span class="keyword">not</span> <span class="literal">null</span> ,</span><br><span class="line">  cN3 <span class="built_in">char</span>(<span class="number">19</span>)  <span class="literal">null</span>,</span><br><span class="line">  cN4 <span class="built_in">int</span>       <span class="literal">null</span> <span class="keyword">default</span> <span class="number">20</span></span><br><span class="line">  primary <span class="keyword">key</span> (cN1)</span><br><span class="line">)<span class="keyword">ENGINE</span> = <span class="keyword">InnoDB</span>;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>MySQL 语句中忽略空格</p>
+</li>
+</ul>
+<p><img src="/images/MySQLCrashCourse/20.png" alt> </p>
+<ul>
+<li><code>select last_insert_id()</code> 这个函数可以获取最后插入行的自增id值 </li>
+</ul>
+<h3 id="引擎类型"><a href="#引擎类型" class="headerlink" title="引擎类型"></a>引擎类型</h3><ul>
+<li>MySQL 有具体管理和处理数据的内部引擎</li>
+<li>当使用<code>create table</code>时，该引擎具体创建表；当使用<code>select</code>等语句时，处理数据库操作请求</li>
+<li>一般在 <code>ENGINE =</code>中表明使用的引擎类型</li>
+<li>InnoDB是一个可靠的事务处理引擎，它不支持全文本搜索</li>
+<li>MyISAM是一个性能极高的引擎，它支持全文本搜索，但不支持事务处理</li>
+<li>MEMORY在功能上等同于MyISAM,但由于数据存储在内存中，速度很快（特别适合于临时表）</li>
+<li>引擎类型可以混用，在不同的表选用适合的引擎</li>
+<li>外键不能跨引擎</li>
+</ul>
+<h3 id="alter-table"><a href="#alter-table" class="headerlink" title="alter table"></a>alter table</h3><ul>
+<li>增加列</li>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">alter</span> <span class="keyword">table</span> tN</span><br><span class="line"><span class="keyword">add</span> cN5 <span class="built_in">int</span>;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>删除列</p>
+</li>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">alter</span> <span class="keyword">table</span> tN</span><br><span class="line"><span class="keyword">drop</span> cN5 <span class="built_in">int</span>;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p><code>alter table</code> 常用来定义外键</p>
+</li>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">alter</span> <span class="keyword">table</span> tN</span><br><span class="line"><span class="keyword">add</span> <span class="keyword">constraint</span> fk_tN_tN1  </span><br><span class="line"><span class="keyword">foreign</span> <span class="keyword">key</span> (cN9) <span class="keyword">references</span> tN1 (cN9)</span><br></pre></td></tr></table></figure></div>
+</li>
+</ul>
+<h3 id="drop-table"><a href="#drop-table" class="headerlink" title="drop table"></a>drop table</h3><ul>
+<li><code>drop table tN</code> 删除表</li>
+</ul>
+<h3 id="rename-table"><a href="#rename-table" class="headerlink" title="rename table"></a>rename table</h3><ul>
+<li><code>rename table tN to NewtN</code>  重命名表</li>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">rename</span> <span class="keyword">table</span> tN1 <span class="keyword">to</span> NewtN1,</span><br><span class="line">             tN2 <span class="keyword">to</span> NewtN2,</span><br><span class="line">             tN3 <span class="keyword">to</span> NewtN3;</span><br></pre></td></tr></table></figure></div>
+</li>
+</ul>
+<h2 id="视图"><a href="#视图" class="headerlink" title="视图"></a><center>视图</center></h2><ul>
+<li>视图是虚拟的表，视图只包含使用时动态检索数据的查询</li>
+<li>视图本身不包含数据，它们返回的数据是从其他表中检索出来的</li>
+<li>视图相当于把 select 语句给封装起来，简化数据处理以及重新格式化基础数据或保护基础数据</li>
+</ul>
+<p><img src="/images/MySQLCrashCourse/21.png" alt> </p>
+<ul>
+<li>视图不能被索引，也不能有关联的触发器或默认值</li>
+<li>视图可以和表一起使用</li>
+</ul>
+<h3 id="简化复杂联结"><a href="#简化复杂联结" class="headerlink" title="简化复杂联结"></a>简化复杂联结</h3><ul>
+<li>视图的最常见应用之一是隐藏复杂的SQL</li>
+<li>就是把复杂的查询结果作为视图，然后提供给之后的查询使用，提高便利和复用性</li>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">view</span> viewName <span class="keyword">as</span></span><br><span class="line"><span class="keyword">select</span> cN1,cN2,cN3</span><br><span class="line"><span class="keyword">from</span> tN1,tN2,tN3</span><br><span class="line"><span class="keyword">where</span> tN1.cN1 = tN2.cN1</span><br><span class="line">  <span class="keyword">and</span> tn3.cN1 = tN2.cN1;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>有了上面的视图创建之后，下面就可以很方便的利用已经创建好的视图，简化SQL</p>
+</li>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> cN1,cN2</span><br><span class="line"><span class="keyword">form</span> viewName</span><br><span class="line"><span class="keyword">where</span> cN1 = <span class="number">2</span>;</span><br></pre></td></tr></table></figure></div>
+</li>
+</ul>
+<h3 id="重新格式化已检索的数据"><a href="#重新格式化已检索的数据" class="headerlink" title="重新格式化已检索的数据"></a>重新格式化已检索的数据</h3><ul>
+<li>视图另一常见的用途是重新格式化检索出的数据</li>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="keyword">Concat</span>(<span class="keyword">RTrim</span>(cN1),<span class="string">'('</span>,<span class="keyword">RTrim</span>(cN2),<span class="string">')'</span>) <span class="keyword">as</span> NewcN</span><br><span class="line"><span class="keyword">from</span> tN2</span><br><span class="line"><span class="keyword">order</span> <span class="keyword">by</span> cN1;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>如果经常会用到以上的格式的查询结果时，可以把这个结果创建成视图，就不必每次都执行联结</p>
+</li>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">view</span> viewName <span class="keyword">as</span></span><br><span class="line"><span class="keyword">select</span> <span class="keyword">Concat</span>(<span class="keyword">RTrim</span>(cN1),<span class="string">'('</span>,<span class="keyword">RTrim</span>(cN2),<span class="string">')'</span>) <span class="keyword">as</span> NewcN</span><br><span class="line"><span class="keyword">from</span> tN2</span><br><span class="line"><span class="keyword">order</span> <span class="keyword">by</span> cN1;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>然后就可以很方便的利用它了</p>
+</li>
+<li><code>select * from viewName</code> 返回和上面一样的结果</li>
+</ul>
+<h3 id="过滤数据-1"><a href="#过滤数据-1" class="headerlink" title="过滤数据"></a>过滤数据</h3><ul>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">view</span> viewName <span class="keyword">as</span></span><br><span class="line"><span class="keyword">select</span> cN1,cN2</span><br><span class="line"><span class="keyword">from</span> tN</span><br><span class="line"><span class="keyword">where</span> cN2 <span class="keyword">is</span> <span class="keyword">not</span> <span class="literal">null</span>;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>上面的可以理解为把 <code>select cN1,cN2 from tN</code>创建成视图 viewName</p>
+</li>
+<li>然后在 viewName 视图中使用 where 子句过滤</li>
+<li>视图在处理 where 子句时，会把 where 子句添加到内部语句<code>select cN1,cN2 from tN</code>中，形成<code>select cN1,cN2 from tN where cN2 is not null;</code>进行查询，以便正确的过滤数据</li>
+</ul>
+<h3 id="计算字段-1"><a href="#计算字段-1" class="headerlink" title="计算字段"></a>计算字段</h3><ul>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> cN1,cN2,cN3,cN1*cN3 <span class="keyword">as</span> NewcN</span><br><span class="line"><span class="keyword">from</span> tN</span><br><span class="line"><span class="keyword">where</span> cN2 = <span class="string">'value'</span>;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">view</span> viewName <span class="keyword">as</span></span><br><span class="line"><span class="keyword">select</span> cN1,cN2,cN3,cN1*cN3 <span class="keyword">as</span> NewcN</span><br><span class="line"><span class="keyword">from</span> tN;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> * </span><br><span class="line"><span class="keyword">from</span> viewName  </span><br><span class="line"><span class="keyword">where</span> cN2 = <span class="string">'value'</span>;</span><br></pre></td></tr></table></figure></div>
+</li>
+</ul>
+<h3 id="更新视图"><a href="#更新视图" class="headerlink" title="更新视图"></a>更新视图</h3><ul>
+<li>视图没有数据，对视图进行增加或删除行，实际上是对其表的增加或删除行</li>
+<li>通常，视图是可以更新的（insert/update/delete）,但是，并非所有视图都可以更新</li>
+<li>也就是说，如果MySQL不能正确地确定被更新的基数据，则不允许更新</li>
+<li>如果视图定义中有以下操作，则不能进行视图的更新<ol>
+<li>分组 group by /having</li>
+<li>联结</li>
+<li>子查询</li>
+<li>并</li>
+<li>聚集函数</li>
+<li>distinct</li>
+<li>导出（计算）列</li>
+</ol>
+</li>
+<li>换句话说，多数视图都是不可更新的</li>
+<li>一般来说，应该将视图用于检索，而不用于更新</li>
+</ul>
+<h2 id="存储过程"><a href="#存储过程" class="headerlink" title="存储过程"></a><center>存储过程</center></h2><ul>
+<li>存储过程简单来说，就是为以后的使用而保存的一条或多条MySQL语句的集合</li>
+<li>为什么要使用存储过程<ol>
+<li>把处理封装在容易使用的单元中，简化复杂操作</li>
+<li>开发人员都一起用一套存储过程，保证了数据的完整性</li>
+<li>简化对变动的管理，只需要修改存储过程的代码即可</li>
+<li>提高性能，使用存储过程比使用单独的SQL语句要快</li>
+<li>存在一些只能使用在单个请求中的MySQL元素和特性，存储过程可以使用它们来编写功能更强更灵活的代码</li>
+</ol>
+</li>
+</ul>
+<h3 id="执行存储过程"><a href="#执行存储过程" class="headerlink" title="执行存储过程"></a>执行存储过程</h3><ul>
+<li>MySQL称存储过程的执行为调用，因此执行存储过程的语句为 call</li>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">call</span> productpricing(@pricelow,</span><br><span class="line">                    @pricehigh,</span><br><span class="line">                    @priceaverage);</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>执行名为 productpricing 的存储过程，返回最低、最高、平均价格</p>
+</li>
+<li>存储过程的结果可以显示，也可以不显示</li>
+</ul>
+<h3 id="创建存储过程"><a href="#创建存储过程" class="headerlink" title="创建存储过程"></a>创建存储过程</h3><ul>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">procedure</span> productpricing()</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  <span class="keyword">select</span> avh(prod_price) <span class="keyword">as</span> priceaverage</span><br><span class="line">  <span class="keyword">from</span> products;</span><br><span class="line"><span class="keyword">end</span>;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p><code>create procedure</code> 创建存储过程</p>
+</li>
+<li><code>create procedure productpricing()</code> 如果存储过程接受参数，可以在（）中列举</li>
+<li>begin 和 end 用来限定存储过程体</li>
+<li>过程体本身就是 SQL 语句</li>
+</ul>
+<p><img src="/images/MySQLCrashCourse/22.png" alt> </p>
+<p><img src="/images/MySQLCrashCourse/23.png" alt> </p>
+<ul>
+<li><code>call productpricing();</code>  执行刚才创建的存储过程并返回结果</li>
+<li>存储过程实际上是一直函数，所以存储过程名后需要有（）</li>
+</ul>
+<h3 id="删除存储过程"><a href="#删除存储过程" class="headerlink" title="删除存储过程"></a>删除存储过程</h3><ul>
+<li><code>drop procedure productpricing</code> 删除存储过程，存储过程名后面不带（）</li>
+<li>如果指定的存储过程不存在，则产生错误提示</li>
+<li><code>drop procedure is exist productpricing</code> 仅当存储过程存在的时候删除，不存在的时候删除也不会产生错误提示</li>
+</ul>
+<h3 id="使用参数"><a href="#使用参数" class="headerlink" title="使用参数"></a>使用参数</h3><ul>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">procedure</span> productpricing(</span><br><span class="line">  <span class="keyword">out</span> pl <span class="built_in">decimal</span>(<span class="number">8</span>,<span class="number">2</span>),</span><br><span class="line">  <span class="keyword">out</span> ph <span class="built_in">decimal</span>(<span class="number">8</span>,<span class="number">2</span>),</span><br><span class="line">  <span class="keyword">out</span> pa <span class="built_in">decimal</span>(<span class="number">8</span>,<span class="number">2</span>)</span><br><span class="line">)</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  <span class="keyword">select</span> <span class="keyword">min</span>(prod_price)</span><br><span class="line">  <span class="keyword">into</span> pl</span><br><span class="line">  <span class="keyword">from</span> products;</span><br><span class="line">  <span class="keyword">select</span> <span class="keyword">max</span>(prod_price)</span><br><span class="line">  <span class="keyword">into</span> ph</span><br><span class="line">  <span class="keyword">from</span> products;</span><br><span class="line">  <span class="keyword">select</span> <span class="keyword">avg</span>(prod_price)</span><br><span class="line">  <span class="keyword">into</span> pa</span><br><span class="line">  <span class="keyword">from</span> products;</span><br><span class="line"><span class="keyword">end</span>;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>pl 最低价，ph 最高价，pa 平均价</p>
+</li>
+<li>out 关键字：从存储过程传出一个值给调用者</li>
+<li>into 关键字：指定保存的变量</li>
+<li>这里的整体意思是，把查询（select）的结果保存（into）到变量（pl/ph/pa）中，然后返回给调用者</li>
+<li>此外、in 关键字：传递给存储过程；inout 关键字：对存储过程的传入和传出</li>
+<li>以下调用该存储过程，传递对应数目的参数</li>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">call</span> productpricing(@pricelow,</span><br><span class="line">                    @pricehigh,</span><br><span class="line">                    @priceaverage);</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>检索返回的值</p>
+</li>
+<li><code>select @pricelow,@pricehigh,@priceaverage;</code></li>
+</ul>
+<hr>
+<ul>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">procedure</span> ordertotal(</span><br><span class="line">  <span class="keyword">in</span> onmuber <span class="built_in">int</span>,</span><br><span class="line">  <span class="keyword">out</span> ototal <span class="built_in">decimal</span>(<span class="number">8</span>,<span class="number">2</span>)</span><br><span class="line">)</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  <span class="keyword">select</span> <span class="keyword">sum</span>(item_price*quantity)</span><br><span class="line">    <span class="keyword">from</span> orderitems</span><br><span class="line">    <span class="keyword">where</span> order_num = onumber</span><br><span class="line">    <span class="keyword">into</span> ototal;</span><br><span class="line"><span class="keyword">end</span>;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p><code>call ordertotal(20005,@total);</code></p>
+</li>
+<li><code>select @total;</code></li>
+<li>想得到另外的结果，需要再次调用存储过程</li>
+<li><code>call ordertotal(20009,@total);</code></li>
+<li><code>select @total;</code></li>
+</ul>
+<h3 id="智能存储过程"><a href="#智能存储过程" class="headerlink" title="智能存储过程"></a>智能存储过程</h3><ul>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- Name: ordertotal</span></span><br><span class="line"><span class="comment">-- Parameters: onumber = order number</span></span><br><span class="line"><span class="comment">--             taxable = 0 if not taxable, 1 if taxable</span></span><br><span class="line">               ototal = order total variable</span><br><span class="line"></span><br><span class="line"><span class="keyword">create</span> <span class="keyword">procedure</span> ordertotal(</span><br><span class="line">  <span class="keyword">in</span> onumber <span class="built_in">int</span> ,</span><br><span class="line">  <span class="keyword">in</span> taxable <span class="built_in">boolean</span> ,</span><br><span class="line">  <span class="keyword">out</span> ototal <span class="built_in">decimal</span>(<span class="number">8</span>,<span class="number">2</span>)</span><br><span class="line">) <span class="keyword">comment</span> <span class="string">'Obtain order total, optiona11y adding tax'</span></span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  <span class="comment">-- Declare variable for total</span></span><br><span class="line">  <span class="comment">-- Declare tax percentage</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">declare</span> total <span class="built_in">decimal</span>(<span class="number">8</span>,<span class="number">2</span>);</span><br><span class="line">  <span class="keyword">declare</span> taxrate <span class="built_in">int</span> <span class="keyword">default</span> <span class="number">6</span>;</span><br><span class="line"></span><br><span class="line">  <span class="comment">-- Get the order total</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">select</span> <span class="keyword">Sum</span>(item_ price*quantity)</span><br><span class="line">  <span class="keyword">from</span> orderitems</span><br><span class="line">  <span class="keyword">where</span> order_ <span class="keyword">num</span> = onumber</span><br><span class="line">  <span class="keyword">into</span> total;</span><br><span class="line"></span><br><span class="line">  <span class="comment">-- Is this taxable?</span></span><br><span class="line">  <span class="comment">-- Yes, so add taxrate to the total</span></span><br><span class="line"></span><br><span class="line">  if taxable then</span><br><span class="line">     <span class="keyword">select</span> total+(total/<span class="number">100</span>*taxrate) <span class="keyword">into</span> total;</span><br><span class="line">  <span class="keyword">end</span> <span class="keyword">if</span>;</span><br><span class="line"></span><br><span class="line">  <span class="comment">-- And finally,save to out variable</span></span><br><span class="line"></span><br><span class="line">     <span class="keyword">select</span> total <span class="keyword">into</span> ototal;</span><br><span class="line"><span class="keyword">end</span>;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>注释（–）</p>
+</li>
+<li>declare 定义了局部变量</li>
+<li>if , elseif , else 判断</li>
+</ul>
+<p><img src="/images/MySQLCrashCourse/24.png" alt> </p>
+<ul>
+<li>测试执行以上的存储过程</li>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">call</span> ordertotal(<span class="number">20005</span>,<span class="number">0</span>,@total);</span><br><span class="line"><span class="keyword">select</span> @total;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">call</span> ordertotal(<span class="number">20005</span>,<span class="number">1</span>,@total);</span><br><span class="line"><span class="keyword">select</span> @total;</span><br></pre></td></tr></table></figure></div>
+</li>
+</ul>
+<h3 id="检查存储过程"><a href="#检查存储过程" class="headerlink" title="检查存储过程"></a>检查存储过程</h3><ul>
+<li><code>show create procedure ordertotal;</code></li>
+<li><code>show procedure status;</code></li>
+</ul>
+<p><img src="/images/MySQLCrashCourse/25.png" alt> </p>
+<h2 id="游标"><a href="#游标" class="headerlink" title="游标"></a><center>游标</center></h2><ul>
+<li>游标是一个存储在 MySQL 服务器上的数据库查询，他不是一条 select 语句，而是被该语句检索出来的结果集</li>
+<li>游标主要用于交互式应用，其中用户需要滚动屏幕上的数据，并对数据进行浏览或做出更改</li>
+<li>MySQL 游标只能用于存储过程</li>
+</ul>
+<h3 id="使用准则"><a href="#使用准则" class="headerlink" title="使用准则"></a>使用准则</h3><ul>
+<li>在能够使用前，必须声明它</li>
+<li>一旦声明后，必须打开游标以供使用</li>
+<li>对于填有数据的游标，根据需要取出各行</li>
+<li>在结束游标使用时，必须关闭游标</li>
+</ul>
+<h3 id="创建游标"><a href="#创建游标" class="headerlink" title="创建游标"></a>创建游标</h3><ul>
+<li>游标用 declare 语句创建</li>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">procedure</span> processorders()</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">    <span class="keyword">declare</span> ordernumbers <span class="keyword">cursor</span></span><br><span class="line">    <span class="keyword">for</span></span><br><span class="line">    <span class="keyword">select</span> order_num <span class="keyword">from</span> orders;</span><br><span class="line"><span class="keyword">end</span>;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>存储过程处理完成后，游标就消失（因为它局限于存储过程）</p>
+</li>
+</ul>
+<h3 id="打开-关闭-游标"><a href="#打开-关闭-游标" class="headerlink" title="打开/关闭 游标"></a>打开/关闭 游标</h3><ul>
+<li><code>open ordernumbers;</code>  打开游标</li>
+<li>处理 open 语句时执行查询，存储检索出的数据以供浏览和滚动</li>
+<li><code>close ordernumbers;</code> 关闭游标</li>
+<li>close 释放游标使用的所有内部内存和资源，因此在每个游标不再需要时都应该关闭</li>
+<li>声明过的游标不需要再次声明，用 open 语句打开它就可以了</li>
+</ul>
+<p><img src="/images/MySQLCrashCourse/26.png" alt></p>
+<ul>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">procedure</span> processorders()</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">    <span class="keyword">declare</span> ordernumbers <span class="keyword">cursor</span></span><br><span class="line">    <span class="keyword">for</span></span><br><span class="line">    <span class="keyword">select</span> order_num <span class="keyword">from</span> orders;</span><br><span class="line">    open ordernumbers;</span><br><span class="line">    close ordernumbers;</span><br><span class="line"><span class="keyword">end</span>;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>打开/关闭 游标的操作需要在存储过程中使用，相当于把检索出的数据用游标定位再做一次检索</p>
+</li>
+<li>主要操作还是通过 call 存储过程来体现</li>
+</ul>
+<h3 id="使用游标数据"><a href="#使用游标数据" class="headerlink" title="使用游标数据"></a>使用游标数据</h3><ul>
+<li>fetch 关键字：指定检索什么数据（所需的列），检索出来的数据存储在什么地方；他还向前移动游标中的内部行指针，使下一条 fetch 语句检索下一行（不重复读取同一行）</li>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">procedure</span> processorders()</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  <span class="keyword">declare</span> o <span class="built_in">int</span>;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">declare</span> ordernumbers <span class="keyword">cursor</span></span><br><span class="line">  <span class="keyword">for</span></span><br><span class="line">  <span class="keyword">select</span> order_num <span class="keyword">from</span> orders;</span><br><span class="line"></span><br><span class="line">  open ordernumbers;</span><br><span class="line">  fetch ordernumbers into o;</span><br><span class="line">  close ordernumbers;</span><br><span class="line"><span class="keyword">end</span>;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>fetch 检索了当前行 order_num 列（自动从第一行开始）到一个名为 o 的局部变量中</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">procedure</span> processorders()</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  <span class="keyword">declare</span> done <span class="built_in">boolean</span> <span class="keyword">default</span> <span class="number">0</span>;</span><br><span class="line">  <span class="keyword">declare</span> o <span class="built_in">int</span>;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">declare</span> ordernumbers <span class="keyword">cursor</span></span><br><span class="line">  <span class="keyword">for</span></span><br><span class="line">  <span class="keyword">select</span> order_num <span class="keyword">from</span> orders;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">declare</span> continue <span class="keyword">handler</span> <span class="keyword">for</span> <span class="keyword">sqlstate</span> <span class="string">'02000'</span> <span class="keyword">set</span> done=<span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">  open ordernumbers;</span><br><span class="line">  repeat</span><br><span class="line">    fetch ordernumbers into o;</span><br><span class="line">  until done <span class="keyword">end</span> <span class="keyword">repeat</span>;</span><br><span class="line">  close ordernumbers;</span><br><span class="line"><span class="keyword">end</span>;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p><code>repeat</code> 和 <code>until done end repeat;</code>之间为循环体，执行到 done 为真</p>
+</li>
+<li><code>declare continue handler for sqlstate &#39;02000&#39; set done=1;</code> continu handler 指出当 sqlstate ‘02000’ 出现时，设置 done 为 1 </li>
+<li>sqlstate ‘02000’是一个未找到条件，当REPEAT由于没有更多的行供循环而不能继续时，出现这个条件</li>
+</ul>
+<p><img src="/images/MySQLCrashCourse/27.png" alt> </p>
+<h3 id="完整实例"><a href="#完整实例" class="headerlink" title="完整实例"></a>完整实例</h3><ul>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">procedure</span> ordertotal(</span><br><span class="line">  <span class="keyword">in</span> onumber <span class="built_in">int</span> ,</span><br><span class="line">  <span class="keyword">in</span> taxable <span class="built_in">boolean</span> ,</span><br><span class="line">  <span class="keyword">out</span> ototal <span class="built_in">decimal</span>(<span class="number">8</span>,<span class="number">2</span>)</span><br><span class="line">) <span class="keyword">comment</span> <span class="string">'Obtain order total, optiona11y adding tax'</span></span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  <span class="keyword">declare</span> total <span class="built_in">decimal</span>(<span class="number">8</span>,<span class="number">2</span>);</span><br><span class="line">  <span class="keyword">declare</span> taxrate <span class="built_in">int</span> <span class="keyword">default</span> <span class="number">6</span>;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">select</span> <span class="keyword">Sum</span>(item_ price*quantity)</span><br><span class="line">  <span class="keyword">from</span> orderitems</span><br><span class="line">  <span class="keyword">where</span> order_ <span class="keyword">num</span> = onumber</span><br><span class="line">  <span class="keyword">into</span> total;</span><br><span class="line"></span><br><span class="line">  if taxable then</span><br><span class="line">     <span class="keyword">select</span> total+(total/<span class="number">100</span>*taxrate) <span class="keyword">into</span> total;</span><br><span class="line">  <span class="keyword">end</span> <span class="keyword">if</span>;</span><br><span class="line"></span><br><span class="line">     <span class="keyword">select</span> total <span class="keyword">into</span> ototal;</span><br><span class="line"><span class="keyword">end</span>;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">procedure</span> processorders()</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  <span class="keyword">declare</span> done <span class="built_in">boolean</span> <span class="keyword">default</span> <span class="number">0</span>;</span><br><span class="line">  <span class="keyword">declare</span> o <span class="built_in">int</span>;</span><br><span class="line">  <span class="keyword">declare</span> t <span class="built_in">decimal</span>(<span class="number">8</span>,<span class="number">2</span>);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">declare</span> ordernumbers <span class="keyword">cursor</span></span><br><span class="line">  <span class="keyword">for</span></span><br><span class="line">  <span class="keyword">select</span> order_num <span class="keyword">from</span> orders;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">declare</span> continue <span class="keyword">handler</span> <span class="keyword">for</span> <span class="keyword">sqlstate</span> <span class="string">'02000'</span> <span class="keyword">set</span> done=<span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">create</span> <span class="keyword">table</span> <span class="keyword">if</span> <span class="keyword">not</span> <span class="keyword">exists</span> ordertotals(order_num <span class="built_in">int</span>,total <span class="built_in">decimal</span>(<span class="number">8</span>,<span class="number">2</span>));</span><br><span class="line"></span><br><span class="line">  open ordernumbers;</span><br><span class="line">  repeat</span><br><span class="line">    fetch ordernumbers into o;</span><br><span class="line">    <span class="keyword">call</span> ordertotal(o,<span class="number">1</span>,t);</span><br><span class="line">    <span class="keyword">insert</span> <span class="keyword">into</span> ordertotals(order_num,total)</span><br><span class="line">    <span class="keyword">values</span>(o,t);</span><br><span class="line">  until done <span class="keyword">end</span> <span class="keyword">repeat</span>;</span><br><span class="line">  close ordernumbers;</span><br><span class="line"><span class="keyword">end</span>;</span><br></pre></td></tr></table></figure></div>
+</li>
+</ul>
+<h2 id="触发器"><a href="#触发器" class="headerlink" title="触发器"></a><center>触发器</center></h2><ul>
+<li>触发器：在事件发生的时候自动执行；在某个表发生更改时自动处理</li>
+<li>触发器响应的语句：（1）delete（2）insert（3）update</li>
+</ul>
+<h3 id="创建触发器"><a href="#创建触发器" class="headerlink" title="创建触发器"></a>创建触发器</h3><ul>
+<li>创建触发器的准则<ol>
+<li>唯一的触发器名 </li>
+<li>触发器关联的表</li>
+<li>触发器应该响应的活动（delete/insert/update）</li>
+<li>触发器何时执行（处理之前还是之后）</li>
+</ol>
+</li>
+<li><code>create trigger</code> 创建触发器</li>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">trigger</span> newproduct <span class="keyword">after</span> <span class="keyword">insert</span> <span class="keyword">on</span> products</span><br><span class="line"><span class="keyword">for</span> <span class="keyword">each</span> <span class="keyword">row</span> <span class="keyword">select</span> <span class="string">'product added'</span></span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>创建名为 newproduct 的触发器</p>
+</li>
+<li>after insert 在 insert 语句执行后执行</li>
+<li>on products 对于这个表进行响应</li>
+<li>for each row 代码对每个插入行执行</li>
+<li>‘product added’ 对每个插入的行显示一次</li>
+<li>整个流程为：对 products 表每使用 insert 语句添加一行或多行，会看到对每个成功的插入，都会显示 product added 消息</li>
+</ul>
+<p><img src="/images/MySQLCrashCourse/28.png" alt> </p>
+<ul>
+<li>触发器安每个表每个事件每次地定义</li>
+<li>每个表每个事件每次只允许一个触发器</li>
+<li>因此，每个表最多支持6个触发器（每条insert、update、delete的之前和之后）</li>
+<li>单一触发器不能与多个事件或多个表关联</li>
+</ul>
+<p><img src="/images/MySQLCrashCourse/29.png" alt> </p>
+<h3 id="删除触发器"><a href="#删除触发器" class="headerlink" title="删除触发器"></a>删除触发器</h3><ul>
+<li><code>drop trigger newproduct</code> 删除触发器</li>
+<li>触发器不能更新或覆盖；修改一个触发器，必须先删除它，然后再重新创建</li>
+</ul>
+<h3 id="使用触发器"><a href="#使用触发器" class="headerlink" title="使用触发器"></a>使用触发器</h3><h4 id="insert-触发器"><a href="#insert-触发器" class="headerlink" title="insert 触发器"></a>insert 触发器</h4><ol>
+<li>在 insert 触发器代码内，可以引用一个名为 new 的虚拟表，访问被插入的行</li>
+<li>在 before insert 触发器中，new 中的值也可以被更新（允许更改被插入的值）</li>
+<li>对于 auto_increment 列，new 在 insert 执行之前包含0，在 insert 执行之后包含新的自动生成值</li>
+</ol>
+<ul>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">trigger</span> neworder <span class="keyword">after</span> <span class="keyword">insert</span> <span class="keyword">on</span> orders</span><br><span class="line"><span class="keyword">for</span> <span class="keyword">each</span> <span class="keyword">row</span> <span class="keyword">select</span> new.order_num;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>order_num 是 orders 中的自增字段</p>
+</li>
+<li>每次执行插入操作时，都会引用名为 new 的虚拟表，然后把 orders 中获得的 order_num 值填充到新的虚拟表中</li>
+<li>order_num 是 orders 中的自增字段 ，因此该触发器必须 after insert , 因为 before insert 的话，order_num 还没生成</li>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> orders(order_date,cust_id)</span><br><span class="line"><span class="keyword">values</span>(<span class="keyword">now</span>(),<span class="number">10001</span>);</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">|order_num|</span><br><span class="line">|—————————|              </span><br><span class="line">|  20001  |</span><br></pre></td></tr></table></figure></div>
+</li>
+</ul>
+<p><img src="/images/MySQLCrashCourse/30.png" alt></p>
+<h4 id="delete-触发器"><a href="#delete-触发器" class="headerlink" title="delete 触发器"></a>delete 触发器</h4><ol>
+<li>在 delete 触发器代码内，可以引用一个名为 old 的虚拟表，访问被删除的行</li>
+<li>old 中的值全都是只读的，不能更新</li>
+</ol>
+<ul>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">trigger</span> deleteorder <span class="keyword">before</span> <span class="keyword">delete</span> <span class="keyword">on</span> orders</span><br><span class="line"><span class="keyword">for</span> <span class="keyword">each</span> <span class="keyword">row</span></span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  <span class="keyword">insert</span> <span class="keyword">into</span> archive_orders(order_num,order_date,cust_id)</span><br><span class="line">  <span class="keyword">values</span>(old.order_num,old.order_date,old.cust_id)</span><br><span class="line"><span class="keyword">end</span>;</span><br></pre></td></tr></table></figure></div>
+</li>
+</ul>
+<p><img src="/images/MySQLCrashCourse/31.png" alt></p>
+<h4 id="update-触发器"><a href="#update-触发器" class="headerlink" title="update 触发器"></a>update 触发器</h4><ul>
+<li>在 update 触发器代码中，可以引用一个名为 old 的虚拟表访问以前（update语句前）的值，引用一个名为 new 的虚拟表访问新更新的值</li>
+<li>在 before update 触发器中，new 中的值可能也被更新（允许更改将要用于 update 语句中的值）</li>
+<li>old 中的值全都是只读的，不能更新</li>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">trigger</span> updatevendor <span class="keyword">before</span> <span class="keyword">update</span> <span class="keyword">on</span> vendors</span><br><span class="line"><span class="keyword">for</span> <span class="keyword">each</span> <span class="keyword">row</span> <span class="keyword">set</span> new.vend_state = <span class="keyword">upper</span>(new.vend_state);</span><br></pre></td></tr></table></figure></div>
+</li>
+</ul>
+<h2 id="事务"><a href="#事务" class="headerlink" title="事务"></a><center>事务</center></h2><h3 id="事务处理"><a href="#事务处理" class="headerlink" title="事务处理"></a>事务处理</h3><ul>
+<li>并非所有引擎都支持事务处理</li>
+<li>MyISAM 和 InnoDB 是两种最常用的引擎，前者不支持明确的事务处理管理，而后者支持</li>
+<li>事务处理：可以用来维护数据库的完整性，保证成批的 MySQL 操作要么完全执行，要么完全不执行</li>
+</ul>
+<ol>
+<li>事务（transaction）指一组SQL语句</li>
+<li>回退（rollback）指撤销指定SQL语句的过程</li>
+<li>提交（commit）指将未存储的SQL语句结果写入数据库表</li>
+<li>保留点（savepoint）指事务处理中设置的临时占位符（place- holder），可以对它发布回退（与回退整个事务处理不同）</li>
+</ol>
+<h3 id="控制事务处理"><a href="#控制事务处理" class="headerlink" title="控制事务处理"></a>控制事务处理</h3><ul>
+<li>管理事务处理的关键在于将SQL语句组分解为逻辑块，并明确规定数据何时应该回退，何时不应该回退</li>
+<li><code>start transaction</code> 标识事务的开始</li>
+</ul>
+<h4 id="回退-rollback"><a href="#回退-rollback" class="headerlink" title="回退 rollback"></a>回退 rollback</h4><ul>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> * <span class="keyword">from</span> ordertotals;</span><br><span class="line"><span class="keyword">start</span> <span class="keyword">transaction</span>;</span><br><span class="line"><span class="keyword">delete</span> <span class="keyword">from</span> ordertotals;</span><br><span class="line"><span class="keyword">select</span> * <span class="keyword">from</span> ordertotals;</span><br><span class="line"><span class="keyword">rollback</span>;</span><br><span class="line"><span class="keyword">select</span> * <span class="keyword">from</span> ordertotals;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>rollback 语句回退 start transaction 之后的所有语句</p>
+</li>
+<li>整个流程为：（1）查看表内容不为空（2）标识事务开始（3）删除表内容（4）查看表内容为空（5）回退（6）查看表内容不为空</li>
+<li>rollback 只能在一个事务处理内使用（在执行一条 start transaction 命令之后）</li>
+</ul>
+<p><img src="/images/MySQLCrashCourse/32.png" alt></p>
+<h4 id="提交-commit"><a href="#提交-commit" class="headerlink" title="提交 commit"></a>提交 commit</h4><ul>
+<li>一般的 MySQL 语句都是直接针对数据库表执行和编写的；这就是所谓的隐含提交（implicit commit），即提交（写或保存）操作是自动进行的</li>
+<li>但是，在事务处理块中，提交不会隐含地提交</li>
+<li>为进行明确的提交，使用 commit 语句</li>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">start</span> <span class="keyword">transaction</span>;</span><br><span class="line"><span class="keyword">delete</span> <span class="keyword">from</span> orderitems <span class="keyword">where</span> order_num = <span class="number">20010</span>;</span><br><span class="line"><span class="keyword">delete</span> <span class="keyword">from</span> orders <span class="keyword">where</span> order_num =<span class="number">20010</span>;</span><br><span class="line"><span class="keyword">commit</span>;</span><br></pre></td></tr></table></figure></div>
+</li>
+</ul>
+<p><img src="/images/MySQLCrashCourse/33.png" alt></p>
+<h4 id="保留点-savepoint"><a href="#保留点-savepoint" class="headerlink" title="保留点 savepoint"></a>保留点 savepoint</h4><ul>
+<li>复杂一点的事务处理可能需要部分提交或回退</li>
+<li>这个时候就需要在事务处理中合适的位置放置占位符，如果需要回退，就可以回退到占位符的位置，这些占位符就称为 保留点</li>
+<li><code>savepoint delete1;</code> 创建保留点</li>
+<li><code>rollback to delete1;</code> 回退到保留点</li>
+</ul>
+<p><img src="/images/MySQLCrashCourse/34.png" alt></p>
+<p><img src="/images/MySQLCrashCourse/35.png" alt></p>
+<h4 id="更改默认的提交行为"><a href="#更改默认的提交行为" class="headerlink" title="更改默认的提交行为"></a>更改默认的提交行为</h4><ul>
+<li>默认的 MySQL 行为是自动提交所有更改；换句话说，任何时候你执行一条 MySQL 语句，该语句实际上都是针对表执行的，而且所做的更改立即生效</li>
+<li><code>set autocommit = 0;</code>  为了让 MySQL 不自动提交更改 ，设置 autocommit 为0（假）</li>
+</ul>
+<p><img src="/images/MySQLCrashCourse/36.png" alt></p>
+<h2 id="全球化和本地化"><a href="#全球化和本地化" class="headerlink" title="全球化和本地化"></a><center>全球化和本地化</center></h2><ul>
+<li>数据库表用来存储和检索数据</li>
+<li>不同的语言和字符集需要以不同的方式存储和检索</li>
+<li>字符集：字母和符号的集合</li>
+<li>编码：某个字符集成员的内部表示</li>
+<li>校对：规定字符如何比较的指令</li>
+</ul>
+<p><img src="/images/MySQLCrashCourse/37.png" alt></p>
+<ul>
+<li><code>show character set;</code> 显示所有可用的字符集以及每个字符集的描述和默认校对</li>
+<li><code>show collation;</code> 显示所有可用的校对，以及它们适用的字符集；有的字符集具有不止一次的校对</li>
+</ul>
+<hr>
+<ul>
+<li><code>show variables like &#39;character%&#39;;</code> 指定默认的字符集和校对</li>
+<li><code>show variables like &#39;collation%&#39;;</code> </li>
+<li>给表指定字符集和校对顺序</li>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> mytable</span><br><span class="line">(</span><br><span class="line">  columnn1 <span class="built_in">int</span>,</span><br><span class="line">  columnn2 <span class="built_in">varchar</span>(<span class="number">10</span>)</span><br><span class="line">) <span class="keyword">default</span> <span class="built_in">character</span> <span class="keyword">set</span> hebrew</span><br><span class="line">  <span class="keyword">collate</span> hebrew_general_ci;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>给列指定字符集和校对顺序</p>
+</li>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> mytable</span><br><span class="line">(</span><br><span class="line">  columnn1 <span class="built_in">int</span>,</span><br><span class="line">  columnn2 <span class="built_in">varchar</span>(<span class="number">10</span>)</span><br><span class="line">  columnn3 <span class="built_in">varchar</span>(<span class="number">10</span>) <span class="built_in">character</span> <span class="keyword">set</span> latinl <span class="keyword">collate</span> latin1_general_ci  </span><br><span class="line">) <span class="keyword">default</span> <span class="built_in">character</span> <span class="keyword">set</span> hebrew</span><br><span class="line">  <span class="keyword">collate</span> hebrew_general_ci;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>指定备用的顺序校对</p>
+</li>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> * <span class="keyword">from</span> customers</span><br><span class="line"><span class="keyword">order</span> <span class="keyword">by</span> lastname,firstname <span class="keyword">collate</span> latin1_general_cs;</span><br></pre></td></tr></table></figure></div>
+</li>
+</ul>
+<p><img src="/images/MySQLCrashCourse/38.png" alt></p>
+<ol>
+<li>如果指定 character set 和 collate 两者，则使用这些值</li>
+<li>如果只指定 character set ，则使用此字符集及其默认的校对</li>
+<li>如果既不指定 character set ，也不指定 collate ，则使用数据库默认</li>
+</ol>
+<p><img src="/images/MySQLCrashCourse/39.png" alt></p>
+<ul>
+<li>如果绝对需要，串可以在字符集之间进行转换；使用 cast() 或 convert() 函数</li>
+</ul>
+<h2 id="安全管理"><a href="#安全管理" class="headerlink" title="安全管理"></a><center>安全管理</center></h2><ul>
+<li>MySQL 用户账号和信息存在名为 mysql 的数据库中</li>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">use</span> mysql;</span><br><span class="line"><span class="keyword">select</span> <span class="keyword">user</span> <span class="keyword">from</span> <span class="keyword">user</span>;</span><br></pre></td></tr></table></figure></div>
+</li>
+</ul>
+<h3 id="用户设置"><a href="#用户设置" class="headerlink" title="用户设置"></a>用户设置</h3><p><img src="/images/MySQLCrashCourse/40.png" alt></p>
+<ul>
+<li><code>create user oreki identified by &#39;p@$$wOrd&#39;</code> 创建用户名和密码</li>
+</ul>
+<p><img src="/images/MySQLCrashCourse/41.png" alt></p>
+<p><img src="/images/MySQLCrashCourse/42.png" alt></p>
+<p><img src="/images/MySQLCrashCourse/43.png" alt></p>
+<ul>
+<li><code>rename user oreki to elias</code>  重命名一个用户账号</li>
+<li><code>drop user elias</code> 删除一个用户账号</li>
+</ul>
+<p><img src="/images/MySQLCrashCourse/44.png" alt></p>
+<ul>
+<li><code>set password for elias = password(&#39;n3wp@$$wOrd&#39;)</code>  修改用户的密码</li>
+<li><code>set password = password(&#39;n3wp@$$wOrd&#39;)</code>  不指定用户名时，更改当前登录用户的密码</li>
+</ul>
+<h3 id="权限设置"><a href="#权限设置" class="headerlink" title="权限设置"></a>权限设置</h3><ul>
+<li>在创建用户账号后，必须接着分配访问权限</li>
+<li>新创建的用户账号没有访问权限</li>
+<li>它们能登录MySQL，但不能看到数据，不能执行任何数据库操作</li>
+<li><code>show grants for elias</code> 查看用户账号的权限</li>
+<li>grant 语句需要给出的信息： （1）要授予的权限（2）被授予访问权限的数据库或表（3）用户名</li>
+<li><code>grant select on crashcourse.* to elias;</code> 允许用户 elias 在 crashcourse 数据库的所有表上使用 select ; 只授予 select 访问权限，具有 只读 访问权限</li>
+<li>grant 的反操作为 revoke ,撤销特定的权限</li>
+<li><code>revoke select on crashcourse.* from elias</code></li>
+</ul>
+<p><img src="/images/MySQLCrashCourse/45.png" alt></p>
+<p><img src="/images/MySQLCrashCourse/46.png" alt></p>
+<p><img src="/images/MySQLCrashCourse/47.png" alt></p>
+<p><img src="/images/MySQLCrashCourse/48.png" alt></p>
+<p><img src="/images/MySQLCrashCourse/49.png" alt></p>
+<h2 id="数据库维护"><a href="#数据库维护" class="headerlink" title="数据库维护"></a><center>数据库维护</center></h2><ul>
+<li><code>analyze table tN</code>  检查表键是否正确</li>
+<li><code>check table tN</code> </li>
+<li><code>flush tables</code>  刷新表</li>
+<li><code>flush logs</code>  刷新日志</li>
+</ul>
+<p><img src="/images/MySQLCrashCourse/50.png" alt></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>Post author:</strong>
+    Orekiyuta
+  </li>
+  <li class="post-copyright-link">
+    <strong>Post link:</strong>
+    <a href="http://www.orekiyuta.cn/archives/MySQLCrashCourse/" title="MySQL Crash Course / After reading">http://www.orekiyuta.cn/archives/MySQLCrashCourse/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice: </strong>
+    All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> unless stating additionally.
+  </li>
+</ul>
+
+      </div>
+    
+     <div>
+      
+        <div>
+    
+        <div style="text-align:center;color: black;font-size:15px;margin-top:30px">< - Thanks for reading - ></div>
+    
+</div>
+      
+     </div>
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/MySQL/" rel="tag"><i class="fa fa-tag"></i> MySQL</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/archives/HeadFirstJava/" rel="next" title="Head First Java / After reading">
+                <i class="fa fa-chevron-left"></i> Head First Java / After reading
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/archives/HowNetworksWorks/" rel="prev" title="How Networks Works / After reading">
+                How Networks Works / After reading <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+          <div id="scrollpercent"><span>0</span>%</div>
+      
+
+      <div style>
+  <canvas id="canvas" style="width:60%;">当前浏览器不支持canvas，请更换浏览器后再试</canvas>
+</div>
+<script>
+(function(){
+
+   var digit=
+    [
+        [
+            [0,0,1,1,1,0,0],
+            [0,1,1,0,1,1,0],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,0,1,1,0],
+            [0,0,1,1,1,0,0]
+        ],//0
+        [
+            [0,0,0,1,1,0,0],
+            [0,1,1,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [1,1,1,1,1,1,1]
+        ],//1
+        [
+            [0,1,1,1,1,1,0],
+            [1,1,0,0,0,1,1],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,1,1,0],
+            [0,0,0,1,1,0,0],
+            [0,0,1,1,0,0,0],
+            [0,1,1,0,0,0,0],
+            [1,1,0,0,0,0,0],
+            [1,1,0,0,0,1,1],
+            [1,1,1,1,1,1,1]
+        ],//2
+        [
+            [1,1,1,1,1,1,1],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,1,1,0],
+            [0,0,0,1,1,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,0,0,1,1,0],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,1,1,1,0]
+        ],//3
+        [
+            [0,0,0,0,1,1,0],
+            [0,0,0,1,1,1,0],
+            [0,0,1,1,1,1,0],
+            [0,1,1,0,1,1,0],
+            [1,1,0,0,1,1,0],
+            [1,1,1,1,1,1,1],
+            [0,0,0,0,1,1,0],
+            [0,0,0,0,1,1,0],
+            [0,0,0,0,1,1,0],
+            [0,0,0,1,1,1,1]
+        ],//4
+        [
+            [1,1,1,1,1,1,1],
+            [1,1,0,0,0,0,0],
+            [1,1,0,0,0,0,0],
+            [1,1,1,1,1,1,0],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,1,1,1,0]
+        ],//5
+        [
+            [0,0,0,0,1,1,0],
+            [0,0,1,1,0,0,0],
+            [0,1,1,0,0,0,0],
+            [1,1,0,0,0,0,0],
+            [1,1,0,1,1,1,0],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,1,1,1,0]
+        ],//6
+        [
+            [1,1,1,1,1,1,1],
+            [1,1,0,0,0,1,1],
+            [0,0,0,0,1,1,0],
+            [0,0,0,0,1,1,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,1,1,0,0,0],
+            [0,0,1,1,0,0,0],
+            [0,0,1,1,0,0,0],
+            [0,0,1,1,0,0,0]
+        ],//7
+        [
+            [0,1,1,1,1,1,0],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,1,1,1,0],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,1,1,1,0]
+        ],//8
+        [
+            [0,1,1,1,1,1,0],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,1,0,1,1],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,1,1,0],
+            [0,0,0,1,1,0,0],
+            [0,1,1,0,0,0,0]
+        ],//9
+        [
+            [0,0,0,0,0,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,0,0,0,0,0],
+            [0,0,0,0,0,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,0,0,0,0,0]
+        ]//:
+    ];
+
+var canvas = document.getElementById('canvas');
+
+if(canvas.getContext){
+    var cxt = canvas.getContext('2d');
+    //声明canvas的宽高
+    var H = 100,W = 700;
+    canvas.height = H;
+    canvas.width = W;
+    cxt.fillStyle = '#f00';
+    cxt.fillRect(10,10,50,50);
+
+    //存储时间数据
+    var data = [];
+    //存储运动的小球
+    var balls = [];
+    //设置粒子半径
+    var R = canvas.height/20-1;
+    (function(){
+        var temp = /(\d)(\d):(\d)(\d):(\d)(\d)/.exec(new Date());
+        //存储时间数字，由十位小时、个位小时、冒号、十位分钟、个位分钟、冒号、十位秒钟、个位秒钟这7个数字组成
+        data.push(temp[1],temp[2],10,temp[3],temp[4],10,temp[5],temp[6]);
+    })();
+
+    /*生成点阵数字*/
+    function renderDigit(index,num){
+        for(var i = 0; i < digit[num].length; i++){
+            for(var j = 0; j < digit[num][i].length; j++){
+                if(digit[num][i][j] == 1){
+                    cxt.beginPath();
+                    cxt.arc(14*(R+2)*index + j*2*(R+1)+(R+1),i*2*(R+1)+(R+1),R,0,2*Math.PI);
+                    cxt.closePath();
+                    cxt.fill();
+                }
+            }
+        }
+    }
+
+    /*更新时钟*/
+    function updateDigitTime(){
+        var changeNumArray = [];
+        var temp = /(\d)(\d):(\d)(\d):(\d)(\d)/.exec(new Date());
+        var NewData = [];
+        NewData.push(temp[1],temp[2],10,temp[3],temp[4],10,temp[5],temp[6]);
+        for(var i = data.length-1; i >=0 ; i--){
+            //时间发生变化
+            if(NewData[i] !== data[i]){
+                //将变化的数字值和在data数组中的索引存储在changeNumArray数组中
+                changeNumArray.push(i+'_'+(Number(data[i])+1)%10);
+            }
+        }
+        //增加小球
+        for(var i = 0; i< changeNumArray.length; i++){
+            addBalls.apply(this,changeNumArray[i].split('_'));
+        }
+        data = NewData.concat();
+    }
+
+    /*更新小球状态*/
+    function updateBalls(){
+        for(var i = 0; i < balls.length; i++){
+            balls[i].stepY += balls[i].disY;
+            balls[i].x += balls[i].stepX;
+            balls[i].y += balls[i].stepY;
+            if(balls[i].x > W + R || balls[i].y > H + R){
+                balls.splice(i,1);
+                i--;
+            }
+        }
+    }
+
+    /*增加要运动的小球*/
+    function addBalls(index,num){
+        var numArray = [1,2,3];
+        var colorArray =  ["#3BE","#09C","#A6C","#93C","#9C0","#690","#FB3","#F80","#F44","#C00"];
+        for(var i = 0; i < digit[num].length; i++){
+            for(var j = 0; j < digit[num][i].length; j++){
+                if(digit[num][i][j] == 1){
+                    var ball = {
+                        x:14*(R+2)*index + j*2*(R+1)+(R+1),
+                        y:i*2*(R+1)+(R+1),
+                        stepX:Math.floor(Math.random() * 4 -2),
+                        stepY:-2*numArray[Math.floor(Math.random()*numArray.length)],
+                        color:colorArray[Math.floor(Math.random()*colorArray.length)],
+                        disY:1
+                    };
+                    balls.push(ball);
+                }
+            }
+        }
+    }
+
+    /*渲染*/
+    function render(){
+        //重置画布宽度，达到清空画布的效果
+        canvas.height = 100;
+        //渲染时钟
+        for(var i = 0; i < data.length; i++){
+            renderDigit(i,data[i]);
+        }
+        //渲染小球
+        for(var i = 0; i < balls.length; i++){
+            cxt.beginPath();
+            cxt.arc(balls[i].x,balls[i].y,R,0,2*Math.PI);
+            cxt.fillStyle = balls[i].color;
+            cxt.closePath();
+            cxt.fill();
+        }
+    }
+
+    clearInterval(oTimer);
+    var oTimer = setInterval(function(){
+        //更新时钟
+        updateDigitTime();
+        //更新小球状态
+        updateBalls();
+        //渲染
+        render();
+    },50);
+}
+
+})();
+</script>
+
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+            
+              <a href="/">
+                <img class="site-author-image" itemprop="image" src="/images/uploads/avatar.png" alt="Orekiyuta">
+              </a>
+            
+              <p class="site-author-name" itemprop="name">Orekiyuta</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">63</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">48</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/rss.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/OrekiYuta" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:orekiyuta@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Remarks"><span class="nav-number">1.</span> <span class="nav-text">Remarks</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#检索数据"><span class="nav-number">2.</span> <span class="nav-text">检索数据</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#use-show"><span class="nav-number">2.1.</span> <span class="nav-text">use / show</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#select-distinct"><span class="nav-number">2.2.</span> <span class="nav-text">select / distinct</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#limit"><span class="nav-number">2.3.</span> <span class="nav-text">limit</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#order"><span class="nav-number">2.4.</span> <span class="nav-text">order</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#desc-asc"><span class="nav-number">2.5.</span> <span class="nav-text">desc / asc</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#过滤数据"><span class="nav-number">3.</span> <span class="nav-text">过滤数据</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#where"><span class="nav-number">3.1.</span> <span class="nav-text">where</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#between-is-null"><span class="nav-number">3.2.</span> <span class="nav-text">between / is null</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#and-or-运算符"><span class="nav-number">3.3.</span> <span class="nav-text">and / or / ( ) / 运算符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#in"><span class="nav-number">3.4.</span> <span class="nav-text">in</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#not"><span class="nav-number">3.5.</span> <span class="nav-text">not</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#like-通配符"><span class="nav-number">3.6.</span> <span class="nav-text">like / 通配符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#正则表达式-regexp"><span class="nav-number">3.7.</span> <span class="nav-text">正则表达式 regexp</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#like-和-regexp-的区别"><span class="nav-number">3.8.</span> <span class="nav-text">like 和 regexp 的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#"><span class="nav-number">3.9.</span> <span class="nav-text">|</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#-1"><span class="nav-number">3.10.</span> <span class="nav-text">[ ] / [^ ]</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#0-9-a-z"><span class="nav-number">3.11.</span> <span class="nav-text">[0-9] / [a-z]</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#转义字符"><span class="nav-number">3.12.</span> <span class="nav-text">转义字符 \</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#预定义字符集"><span class="nav-number">3.13.</span> <span class="nav-text">预定义字符集</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#重复元字符"><span class="nav-number">3.14.</span> <span class="nav-text">重复元字符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#定位符"><span class="nav-number">3.15.</span> <span class="nav-text">定位符</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#计算字段"><span class="nav-number">4.</span> <span class="nav-text">计算字段</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#拼接字段"><span class="nav-number">4.1.</span> <span class="nav-text">拼接字段</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#算数计算"><span class="nav-number">4.2.</span> <span class="nav-text">算数计算</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#函数处理"><span class="nav-number">5.</span> <span class="nav-text">函数处理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#文本"><span class="nav-number">5.1.</span> <span class="nav-text">文本</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#时间"><span class="nav-number">5.2.</span> <span class="nav-text">时间</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数值"><span class="nav-number">5.3.</span> <span class="nav-text">数值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#聚集"><span class="nav-number">5.4.</span> <span class="nav-text">聚集</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分组"><span class="nav-number">6.</span> <span class="nav-text">分组</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#group-by"><span class="nav-number">6.1.</span> <span class="nav-text">group by</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#having"><span class="nav-number">6.2.</span> <span class="nav-text">having</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#group-by-与-order-by"><span class="nav-number">6.3.</span> <span class="nav-text">group by 与 order by</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#select-子句顺序"><span class="nav-number">6.4.</span> <span class="nav-text">select 子句顺序</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#子查询"><span class="nav-number">7.</span> <span class="nav-text">子查询</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#联结表"><span class="nav-number">8.</span> <span class="nav-text">联结表</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#内部联结-inner-join"><span class="nav-number">8.1.</span> <span class="nav-text">内部联结 inner join</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用别名"><span class="nav-number">8.2.</span> <span class="nav-text">使用别名</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自联结"><span class="nav-number">8.3.</span> <span class="nav-text">自联结</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自然联结"><span class="nav-number">8.4.</span> <span class="nav-text">自然联结</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#外部联结-left-right-outer-join"><span class="nav-number">8.5.</span> <span class="nav-text">外部联结 left/right outer join</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#组合查询"><span class="nav-number">9.</span> <span class="nav-text">组合查询</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#union"><span class="nav-number">9.1.</span> <span class="nav-text">union</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#union-all"><span class="nav-number">9.2.</span> <span class="nav-text">union all</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#对组合查询结果排序"><span class="nav-number">9.3.</span> <span class="nav-text">对组合查询结果排序</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#全文本搜索"><span class="nav-number">10.</span> <span class="nav-text">全文本搜索</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#启用"><span class="nav-number">10.1.</span> <span class="nav-text">启用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用"><span class="nav-number">10.2.</span> <span class="nav-text">使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查询扩展"><span class="nav-number">10.3.</span> <span class="nav-text">查询扩展</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#布尔文本搜索"><span class="nav-number">10.4.</span> <span class="nav-text">布尔文本搜索</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#插入数据"><span class="nav-number">11.</span> <span class="nav-text">插入数据</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#insert-into"><span class="nav-number">11.1.</span> <span class="nav-text">insert into</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#insert-low-priority-into"><span class="nav-number">11.2.</span> <span class="nav-text">insert low_priority into</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#插入多行"><span class="nav-number">11.3.</span> <span class="nav-text">插入多行</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#插入检索出的数据-insert-select"><span class="nav-number">11.4.</span> <span class="nav-text">插入检索出的数据 insert select</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#更新-删除-数据"><span class="nav-number">12.</span> <span class="nav-text">更新/删除 数据</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#update-set"><span class="nav-number">12.1.</span> <span class="nav-text">update set</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#delete"><span class="nav-number">12.2.</span> <span class="nav-text">delete</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#操纵表"><span class="nav-number">13.</span> <span class="nav-text">操纵表</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#create-table"><span class="nav-number">13.1.</span> <span class="nav-text">create table</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#引擎类型"><span class="nav-number">13.2.</span> <span class="nav-text">引擎类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#alter-table"><span class="nav-number">13.3.</span> <span class="nav-text">alter table</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#drop-table"><span class="nav-number">13.4.</span> <span class="nav-text">drop table</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#rename-table"><span class="nav-number">13.5.</span> <span class="nav-text">rename table</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#视图"><span class="nav-number">14.</span> <span class="nav-text">视图</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#简化复杂联结"><span class="nav-number">14.1.</span> <span class="nav-text">简化复杂联结</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#重新格式化已检索的数据"><span class="nav-number">14.2.</span> <span class="nav-text">重新格式化已检索的数据</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#过滤数据-1"><span class="nav-number">14.3.</span> <span class="nav-text">过滤数据</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#计算字段-1"><span class="nav-number">14.4.</span> <span class="nav-text">计算字段</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#更新视图"><span class="nav-number">14.5.</span> <span class="nav-text">更新视图</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#存储过程"><span class="nav-number">15.</span> <span class="nav-text">存储过程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#执行存储过程"><span class="nav-number">15.1.</span> <span class="nav-text">执行存储过程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建存储过程"><span class="nav-number">15.2.</span> <span class="nav-text">创建存储过程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#删除存储过程"><span class="nav-number">15.3.</span> <span class="nav-text">删除存储过程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用参数"><span class="nav-number">15.4.</span> <span class="nav-text">使用参数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#智能存储过程"><span class="nav-number">15.5.</span> <span class="nav-text">智能存储过程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#检查存储过程"><span class="nav-number">15.6.</span> <span class="nav-text">检查存储过程</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#游标"><span class="nav-number">16.</span> <span class="nav-text">游标</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#使用准则"><span class="nav-number">16.1.</span> <span class="nav-text">使用准则</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建游标"><span class="nav-number">16.2.</span> <span class="nav-text">创建游标</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#打开-关闭-游标"><span class="nav-number">16.3.</span> <span class="nav-text">打开/关闭 游标</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用游标数据"><span class="nav-number">16.4.</span> <span class="nav-text">使用游标数据</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#完整实例"><span class="nav-number">16.5.</span> <span class="nav-text">完整实例</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#触发器"><span class="nav-number">17.</span> <span class="nav-text">触发器</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#创建触发器"><span class="nav-number">17.1.</span> <span class="nav-text">创建触发器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#删除触发器"><span class="nav-number">17.2.</span> <span class="nav-text">删除触发器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用触发器"><span class="nav-number">17.3.</span> <span class="nav-text">使用触发器</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#insert-触发器"><span class="nav-number">17.3.1.</span> <span class="nav-text">insert 触发器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#delete-触发器"><span class="nav-number">17.3.2.</span> <span class="nav-text">delete 触发器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#update-触发器"><span class="nav-number">17.3.3.</span> <span class="nav-text">update 触发器</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#事务"><span class="nav-number">18.</span> <span class="nav-text">事务</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#事务处理"><span class="nav-number">18.1.</span> <span class="nav-text">事务处理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#控制事务处理"><span class="nav-number">18.2.</span> <span class="nav-text">控制事务处理</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#回退-rollback"><span class="nav-number">18.2.1.</span> <span class="nav-text">回退 rollback</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#提交-commit"><span class="nav-number">18.2.2.</span> <span class="nav-text">提交 commit</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#保留点-savepoint"><span class="nav-number">18.2.3.</span> <span class="nav-text">保留点 savepoint</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#更改默认的提交行为"><span class="nav-number">18.2.4.</span> <span class="nav-text">更改默认的提交行为</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#全球化和本地化"><span class="nav-number">19.</span> <span class="nav-text">全球化和本地化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安全管理"><span class="nav-number">20.</span> <span class="nav-text">安全管理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#用户设置"><span class="nav-number">20.1.</span> <span class="nav-text">用户设置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#权限设置"><span class="nav-number">20.2.</span> <span class="nav-text">权限设置</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据库维护"><span class="nav-number">21.</span> <span class="nav-text">数据库维护</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Orekiyuta</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">88k</span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+<!--添加网站的运行时间-->
+<div>
+<i class="fa fa-cog fa-spin"></i>&nbsp;&nbsp;
+<span id="days"></span>
+</div>
+<script>
+function show_date_time(){
+    window.setTimeout("show_date_time()", 1000);
+    BirthDay=new Date("11/12/2018 00:00:00");
+    today=new Date();
+    timeold=(today.getTime()-BirthDay.getTime());
+    sectimeold=timeold/1000
+    secondsold=Math.floor(sectimeold);
+    msPerDay=24*60*60*1000
+    e_daysold=timeold/msPerDay
+    daysold=Math.floor(e_daysold);
+    e_hrsold=(e_daysold-daysold)*24;
+    hrsold=setzero(Math.floor(e_hrsold));
+    e_minsold=(e_hrsold-hrsold)*60;
+    minsold=setzero(Math.floor((e_hrsold-hrsold)*60));
+    seconds=setzero(Math.floor((e_minsold-minsold)*60));
+    document.getElementById('days').innerHTML="Run -> "+daysold+" dd :"+hrsold+" hh :"+minsold+" mm :"+seconds+" ss";
+}
+function setzero(i) {
+    if (i<10) {
+        i="0" + i
+    };
+    return i;
+}
+show_date_time();
+</script>
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top"></div>
+    
+
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  <script type="text/javascript" src="/js/src/js.cookie.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/js/src/scroll-cookie.js?v=5.1.4"></script>
+
+
+  
+
+  
+
+  <script src="/js/src/activate-power-mode.min.js"></script>
+  <script>
+    POWERMODE.colorful = true;
+    POWERMODE.shake = false;
+    document.body.addEventListener('input', POWERMODE);
+  </script>
+
+  
+  
+   <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;"></canvas> 
+   <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+   <script type="text/javascript" src="/js/src/fireworks.js"></script>
+  
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"scale":0.4,"hHeadPos":0,"vHeadPos":0,"jsonPath":"/live2dw/assets/tororo.model.json"},"display":{"superSample":2,"width":200,"height":200,"position":"left","hOffset":0,"vOffset":0},"mobile":{"show":false,"scale":0.4},"react":{"opacityDefault":0.7,"opacityOnHover":0.2},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>

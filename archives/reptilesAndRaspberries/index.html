@@ -1,0 +1,1653 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-corner-indicator.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/uploads/favicon.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/uploads/favicon.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/uploads/favicon.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/uploads/favicon.png?v=5.1.4" color="#222">
+
+
+  <link rel="manifest" href="/images/uploads/favicon.a">
+
+
+
+
+  <meta name="keywords" content="Linux,Selenium,ChromeDriver,JavaScript,Flask,Python,MySQL,Mariadb,RaspberryPi,Nginx,Chromium,BeautifulSoup,Echarts,Gunicorn,Crontab,Arm,">
+
+
+
+
+
+  <link rel="alternate" href="/rss.xml" title="Canoe" type="application/atom+xml">
+
+
+
+
+
+
+<meta name="description" content="分析接口数据结构 找到数据的接口信息之后，请求获取数据并逐层分析数据结构 然后提取需要的数据 最后封装成方法12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455def get_tencent_virus_data():    headers = &amp;#">
+<meta name="keywords" content="Linux,Selenium,ChromeDriver,JavaScript,Flask,Python,MySQL,Mariadb,RaspberryPi,Nginx,Chromium,BeautifulSoup,Echarts,Gunicorn,Crontab,Arm">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Reptiles and Raspberries">
+<meta property="og:url" content="http://www.orekiyuta.cn/archives/reptilesAndRaspberries/index.html">
+<meta property="og:site_name" content="Canoe">
+<meta property="og:description" content="分析接口数据结构 找到数据的接口信息之后，请求获取数据并逐层分析数据结构 然后提取需要的数据 最后封装成方法12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455def get_tencent_virus_data():    headers = &amp;#">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2021-07-13T12:25:28.026Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Reptiles and Raspberries">
+<meta name="twitter:description" content="分析接口数据结构 找到数据的接口信息之后，请求获取数据并逐层分析数据结构 然后提取需要的数据 最后封装成方法12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455def get_tencent_virus_data():    headers = &amp;#">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://www.orekiyuta.cn/archives/reptilesAndRaspberries/">
+
+
+
+<meta name="baidu-site-verification" content="aNZ4sAxC7g">
+<meta name="google-site-verification" content="UVhJF4cXYZJhCM6uaJWsNQktr-Y59XRhX_AIGiqUv3E">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <title>Reptiles and Raspberries | Canoe</title>
+  
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="default">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+      <a href="https://github.com/OrekiYuta" class="github-corner" aria-label="View source on GitHub" style><svg width="80" height="80" viewbox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Canoe</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">「ろくでなし」</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+           
+  </div>
+
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-elib">
+          <a href="https://elib.orekiyuta.cn" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-book"></i> <br>
+            
+            Elib
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            Search
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="Searching..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ 
+      </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.orekiyuta.cn/archives/reptilesAndRaspberries/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Orekiyuta">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Canoe">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Reptiles and Raspberries</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2021-01-08T21:49:18+08:00">
+                2021-01-08 => 21:49:18
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                  <span class="post-meta-divider">|</span>
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                
+                <span title="Words count in article">
+                  3.7k
+                </span>
+              
+
+              
+
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="分析接口数据结构"><a href="#分析接口数据结构" class="headerlink" title="分析接口数据结构"></a>分析接口数据结构</h2><ul>
+<li>找到数据的接口信息之后，请求获取数据并逐层分析数据结构</li>
+<li>然后提取需要的数据</li>
+<li>最后封装成方法<div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="PY"><figure class="iseeu highlight /py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_tencent_virus_data</span><span class="params">()</span>:</span></span><br><span class="line">    headers = &#123;</span><br><span class="line">        <span class="string">'User-Agent'</span>: <span class="string">'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit'</span></span><br><span class="line">                      <span class="string">'/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safar'</span></span><br><span class="line">                      <span class="string">'i/537.36'</span>,</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment"># https://news.qq.com/zt2020/page/feiyan.htm#/</span></span><br><span class="line">    url = <span class="string">"https://view.inews.qq.com/g2/getOnsInfo?name=disease_h5"</span></span><br><span class="line">    res = requests.get(url, headers=headers)</span><br><span class="line">    res.encoding = <span class="string">"utf-8"</span></span><br><span class="line">    getSource = json.loads(res.text)</span><br><span class="line">    sourceData = json.loads(getSource[<span class="string">"data"</span>])</span><br><span class="line"></span><br><span class="line">    lastUpdateTime = sourceData[<span class="string">"lastUpdateTime"</span>]  <span class="comment"># 最后更新时间</span></span><br><span class="line">    chinaTotal = sourceData[<span class="string">"chinaTotal"</span>]  <span class="comment"># 总情况</span></span><br><span class="line">    chinaAdd = sourceData[<span class="string">"chinaAdd"</span>]  <span class="comment"># 总确诊</span></span><br><span class="line">    areaTree = sourceData[<span class="string">"areaTree"</span>]  <span class="comment"># 国家</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 国家列表,中国</span></span><br><span class="line">    name = areaTree[<span class="number">0</span>][<span class="string">"name"</span>]  <span class="comment"># 中国</span></span><br><span class="line">    today = areaTree[<span class="number">0</span>][<span class="string">"today"</span>]  <span class="comment"># 今天新增确诊</span></span><br><span class="line">    total = areaTree[<span class="number">0</span>][<span class="string">"total"</span>]  <span class="comment"># 今日总情况</span></span><br><span class="line">    provinces = areaTree[<span class="number">0</span>][<span class="string">"children"</span>]  <span class="comment"># 34个省份</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># print(name)</span></span><br><span class="line">    <span class="comment"># print(today)</span></span><br><span class="line">    <span class="comment"># print(total)</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 今日确诊，目前确诊，总确诊，总死亡数，总死亡概率，总康复数，总康复概率</span></span><br><span class="line">    daily_data = [name, today[<span class="string">"confirm"</span>], total[<span class="string">"nowConfirm"</span>], total[<span class="string">"confirm"</span>], total[<span class="string">"dead"</span>], total[<span class="string">"deadRate"</span>],</span><br><span class="line">                  total[<span class="string">"heal"</span>], total[<span class="string">"healRate"</span>]]</span><br><span class="line"></span><br><span class="line">    today_details = []</span><br><span class="line">    <span class="keyword">for</span> province <span class="keyword">in</span> provinces:</span><br><span class="line">        <span class="comment"># print(province["name"])  # 省名</span></span><br><span class="line">        <span class="comment"># print(province["today"])</span></span><br><span class="line">        <span class="comment"># print(province["total"])</span></span><br><span class="line">        province_name_ = province[<span class="string">"name"</span>]</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 省所属城市</span></span><br><span class="line">        <span class="keyword">for</span> city <span class="keyword">in</span> province[<span class="string">"children"</span>]:</span><br><span class="line">            city_name_ = city[<span class="string">"name"</span>]</span><br><span class="line">            city_today_confirm_ = city[<span class="string">"today"</span>][<span class="string">"confirm"</span>]  <span class="comment"># 该城市今日确诊</span></span><br><span class="line">            city_total_confirm_ = city[<span class="string">"total"</span>][<span class="string">"confirm"</span>]  <span class="comment"># 该城市总确诊</span></span><br><span class="line">            city_total_heal_ = city[<span class="string">"total"</span>][<span class="string">"heal"</span>]  <span class="comment"># 该城市总康复</span></span><br><span class="line">            city_total_heal_rate_ = city[<span class="string">"total"</span>][<span class="string">"healRate"</span>]  <span class="comment"># 该城市总康复概率</span></span><br><span class="line">            city_total_dead_ = city[<span class="string">"total"</span>][<span class="string">"dead"</span>]  <span class="comment"># 该城市总死亡</span></span><br><span class="line">            city_total_dead_rate_ = city[<span class="string">"total"</span>][<span class="string">"deadRate"</span>]  <span class="comment"># 该城市总死亡概率</span></span><br><span class="line">            today_details.append([lastUpdateTime, province_name_, city_name_, city_today_confirm_,</span><br><span class="line">                                  city_total_confirm_, city_total_heal_, city_total_heal_rate_,</span><br><span class="line">                                  city_total_dead_, city_total_dead_rate_</span><br><span class="line">                                  ])</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> today_details, daily_data</span><br></pre></td></tr></table></figure></div>
+</li>
+</ul>
+<a id="more"></a>
+<h2 id="数据库连接"><a href="#数据库连接" class="headerlink" title="数据库连接"></a>数据库连接</h2><ul>
+<li>这里主要在于建立数据库连接，并取得游标去操作数据</li>
+<li>连接数据库操作完毕之后需要及时关闭连接<div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="PY"><figure class="iseeu highlight /py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">mariadb_conn</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        conn = mariadb.connect(</span><br><span class="line">            user=<span class="string">"root"</span>,</span><br><span class="line">            password=<span class="string">"raspberry"</span>,</span><br><span class="line">            host=<span class="string">"192.168.137.47"</span>,</span><br><span class="line">            port=<span class="number">3306</span>,</span><br><span class="line">            database=<span class="string">"virus"</span></span><br><span class="line">        )</span><br><span class="line">        cursor = conn.cursor()</span><br><span class="line">        <span class="keyword">return</span> conn, cursor</span><br><span class="line"></span><br><span class="line">    <span class="keyword">except</span> mariadb.Error <span class="keyword">as</span> e:</span><br><span class="line">        print(<span class="string">f"Error connecting to MariaDB Platform: <span class="subst">&#123;e&#125;</span>"</span>)</span><br><span class="line">        sys.exit(<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">mariadb_conn_close</span><span class="params">(conn, cursor)</span>:</span></span><br><span class="line">    <span class="keyword">if</span> cursor:</span><br><span class="line">        cursor.close()</span><br><span class="line">    <span class="keyword">if</span> conn:</span><br><span class="line">        conn.close()</span><br></pre></td></tr></table></figure></div>
+</li>
+</ul>
+<h2 id="获取数据并持久化"><a href="#获取数据并持久化" class="headerlink" title="获取数据并持久化"></a>获取数据并持久化</h2><ul>
+<li>这里需要注意的是游标的操作 <code>cursor.execute()</code></li>
+<li>如果是查询语句的话，游标执行之后就能得到返回的数据</li>
+<li>其他的语句需要提交事务<code>conn.commit()</code>才能得到返回的数据<div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="PY"><figure class="iseeu highlight /py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 更新每日的详情数据</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">update_virus_data</span><span class="params">()</span>:</span></span><br><span class="line">    cursor = <span class="literal">None</span></span><br><span class="line">    conn = <span class="literal">None</span></span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        virus_data = get_tencent_virus_data()[<span class="number">0</span>]</span><br><span class="line">        <span class="comment"># conn, cursor = mariadb_conn("root", "raspberry", "192.168.137.165", 3306, "virus")</span></span><br><span class="line">        conn, cursor = mariadb_conn()</span><br><span class="line">        setDataTime = time.strftime(<span class="string">'%Y-%m-%d %H:%M:%S'</span>, time.localtime(time.time()))</span><br><span class="line">        sql_insert_data = <span class="string">"insert into tencent_virus_data(lastUpdateTime,province_name_,"</span> \</span><br><span class="line">                          <span class="string">"city_name_,city_today_confirm_,city_total_confirm_,"</span> \</span><br><span class="line">                          <span class="string">"city_total_heal_,city_total_heal_rate_,"</span> \</span><br><span class="line">                          <span class="string">"city_total_dead_,city_total_dead_rate_,"</span> \</span><br><span class="line">                          <span class="string">"setDataTime"</span><span class="string">") values (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"</span></span><br><span class="line"></span><br><span class="line">        <span class="comment"># 取数据库最后一个记录的时间字段</span></span><br><span class="line">        sql_lastTime = <span class="string">"select lastUpdateTime from tencent_virus_data order by id desc limit 1"</span></span><br><span class="line">        cursor.execute(sql_lastTime)</span><br><span class="line">        lastUpdateTime = cursor.fetchone()</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 第一次初始化数据</span></span><br><span class="line">        <span class="keyword">if</span> lastUpdateTime <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">            print(<span class="string">f"<span class="subst">&#123;time.asctime()&#125;</span>    ---&gt;    滴滴！初始化最初的数据！"</span>)</span><br><span class="line">            <span class="keyword">for</span> item <span class="keyword">in</span> virus_data:</span><br><span class="line">                item.append(setDataTime)</span><br><span class="line">                print(item)</span><br><span class="line">                cursor.execute(sql_insert_data, item)</span><br><span class="line">            conn.commit()</span><br><span class="line">            print(<span class="string">f"<span class="subst">&#123;time.asctime()&#125;</span>    ---&gt;    嗒嗒！初始化数据完毕！"</span>)</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 非第一次更新数据</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="comment"># virus_data[0][0] 拿第一条数据的时间字段,因为每条数据时间都是一样的</span></span><br><span class="line">            dataNowTime = datetime.strptime(virus_data[<span class="number">0</span>][<span class="number">0</span>], <span class="string">'%Y-%m-%d %H:%M:%S'</span>)</span><br><span class="line">            <span class="comment"># 数据库最新记录时间 与 当前请求的数据时间对比，判断是否更新数据</span></span><br><span class="line">            <span class="keyword">if</span> dataNowTime &gt; lastUpdateTime[<span class="number">0</span>]:</span><br><span class="line">                print(<span class="string">f"<span class="subst">&#123;time.asctime()&#125;</span>    ---&gt;    滴滴！开始更新最新数据！"</span>)</span><br><span class="line">                <span class="keyword">for</span> item <span class="keyword">in</span> virus_data:</span><br><span class="line">                    item.append(setDataTime)</span><br><span class="line">                    cursor.execute(sql_insert_data, item)</span><br><span class="line">                conn.commit()</span><br><span class="line">                print(<span class="string">f"<span class="subst">&#123;time.asctime()&#125;</span>    ---&gt;    嗒嗒！更新最新数据完毕！"</span>)</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                print(<span class="string">f"<span class="subst">&#123;time.asctime()&#125;</span>    ---&gt;    嗯！已是最新数据！"</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">except</span>:</span><br><span class="line">        traceback.print_exc()</span><br><span class="line">    <span class="keyword">finally</span>:</span><br><span class="line">        mariadb_conn_close(conn, cursor)</span><br></pre></td></tr></table></figure></div>
+</li>
+</ul>
+<h2 id="从页面抓取数据"><a href="#从页面抓取数据" class="headerlink" title="从页面抓取数据"></a>从页面抓取数据</h2><h3 id="一般的页面，直接请求解析获取即可"><a href="#一般的页面，直接请求解析获取即可" class="headerlink" title="一般的页面，直接请求解析获取即可"></a>一般的页面，直接请求解析获取即可</h3><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="PY"><figure class="iseeu highlight /py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">baidu_hotPoint</span><span class="params">()</span>:</span></span><br><span class="line">    headers = &#123;</span><br><span class="line">        <span class="string">'User-Agent'</span>: <span class="string">'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit'</span></span><br><span class="line">                      <span class="string">'/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safar'</span></span><br><span class="line">                      <span class="string">'i/537.36'</span>,</span><br><span class="line">    &#125;</span><br><span class="line">    url = <span class="string">"http://top.baidu.com/buzz?b=1&amp;fr=topindex"</span></span><br><span class="line"></span><br><span class="line">    res = requests.get(url, headers=headers)</span><br><span class="line">    res.encoding = <span class="string">"gb2312"</span></span><br><span class="line">    html = res.text</span><br><span class="line">    soup = BeautifulSoup(html, <span class="string">"lxml"</span>)</span><br><span class="line">    titles = soup.find_all(name=<span class="string">"a"</span>, attrs=&#123;<span class="string">"class"</span>: <span class="string">"list-title"</span>&#125;)</span><br><span class="line">    content = [title.text <span class="keyword">for</span> title <span class="keyword">in</span> titles]</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> content</span><br></pre></td></tr></table></figure></div>
+<h3 id="如果页面用的是-JS-加载的话，可以使用-selenium-模拟人工获取"><a href="#如果页面用的是-JS-加载的话，可以使用-selenium-模拟人工获取" class="headerlink" title="如果页面用的是 JS 加载的话，可以使用 selenium 模拟人工获取"></a>如果页面用的是 JS 加载的话，可以使用 selenium 模拟人工获取</h3><ul>
+<li>在这里需要浏览器和浏览器驱动配合</li>
+<li>获得和 chrome 浏览器版本一致的 chromedriver 驱动</li>
+<li>👉 <a href="https://npm.taobao.org/mirrors/chromedriver/" target="_blank" rel="noopener">https://npm.taobao.org/mirrors/chromedriver/</a><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="PY"><figure class="iseeu highlight /py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">sogou_hotSearch</span><span class="params">()</span>:</span></span><br><span class="line">    headers = <span class="string">'user-agent="MQQBrowser/26 Mozilla/5.0 (Linux; U; Android 2.3.7; zh-cn; MB200 Build/GRJ22; '</span> \</span><br><span class="line">              <span class="string">'CyanogenMod-7) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1" '</span></span><br><span class="line"></span><br><span class="line">    url = <span class="string">"https://sa.sogou.com/new-weball/page/sgs/epidemic?type_page=VR"</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">from</span> selenium.webdriver.chrome.options <span class="keyword">import</span> Options</span><br><span class="line"></span><br><span class="line">    options = ChromeOptions()</span><br><span class="line">    options.add_argument(headers)</span><br><span class="line">    options.add_argument(<span class="string">"--headless"</span>)  <span class="comment"># 隐藏浏览器</span></span><br><span class="line">    options.add_argument(<span class="string">"--no-sandbox"</span>)  <span class="comment"># linux 需要禁用这个</span></span><br><span class="line">    options.add_argument(<span class="string">"--disable-gpu"</span>)</span><br><span class="line">    options.add_argument(<span class="string">'blink-settings=imagesEnabled=false'</span>)  <span class="comment"># 不加载图片资源</span></span><br><span class="line">    chrome = Chrome(executable_path=<span class="string">"./chromedriver.exe"</span>, options=options)  <span class="comment"># 路径加载驱动</span></span><br><span class="line">    <span class="comment"># chrome = Chrome(options=options)</span></span><br><span class="line">    chrome.get(url)</span><br><span class="line">    el_lis = chrome.find_elements_by_xpath(<span class="string">'//*[@id="no_active_pane"]/div/div/div[2]/ul/li'</span>)</span><br><span class="line">    content = [el_li.text <span class="keyword">for</span> el_li <span class="keyword">in</span> el_lis]</span><br><span class="line">    chrome.close()</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> content</span><br></pre></td></tr></table></figure></div>
+</li>
+</ul>
+<h2 id="建立-Web-服务"><a href="#建立-Web-服务" class="headerlink" title="建立 Web 服务"></a>建立 Web 服务</h2><h3 id="数据交互"><a href="#数据交互" class="headerlink" title="数据交互"></a>数据交互</h3><ul>
+<li>这里使用 flask 建立简单的请求服务</li>
+<li><p>在服务端返回页面需要用到 render_template</p>
+<div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="PY"><figure class="iseeu highlight /py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> flask <span class="keyword">import</span> render_template</span><br><span class="line"></span><br><span class="line"><span class="meta">@app.route('/', methods=["get", "post"])</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">hello_world</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">return</span> render_template(<span class="string">"index.html"</span>)</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>接着在页面发送 ajax 请求对应的路由即可</p>
+</li>
+</ul>
+<h3 id="建立工具类来处理数据"><a href="#建立工具类来处理数据" class="headerlink" title="建立工具类来处理数据"></a>建立工具类来处理数据</h3><ul>
+<li>在项目根路径建一个 xxx.py 来专门处理数据<ul>
+<li>数据库连接方法</li>
+<li>查询类方法</li>
+<li>每个数据接口方法<div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="PY"><figure class="iseeu highlight /py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_time</span><span class="params">()</span>:</span></span><br><span class="line">    time_str = time.strftime(<span class="string">"%Y&#123;&#125;%m&#123;&#125;%d&#123;&#125; %X"</span>)</span><br><span class="line">    <span class="keyword">return</span> time_str.format(<span class="string">"年"</span>, <span class="string">"月"</span>, <span class="string">"日"</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">mariadb_conn</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        conn = mariadb.connect(</span><br><span class="line">            user=<span class="string">"root"</span>,</span><br><span class="line">            password=<span class="string">"raspberry"</span>,</span><br><span class="line">            host=<span class="string">"192.168.137.47"</span>,</span><br><span class="line">            port=<span class="number">3306</span>,</span><br><span class="line">            database=<span class="string">"virus"</span></span><br><span class="line">        )</span><br><span class="line">        cursor = conn.cursor()</span><br><span class="line">        <span class="keyword">return</span> conn, cursor</span><br><span class="line"></span><br><span class="line">    <span class="keyword">except</span> mariadb.Error <span class="keyword">as</span> e:</span><br><span class="line">        print(<span class="string">f"Error connecting to MariaDB Platform: <span class="subst">&#123;e&#125;</span>"</span>)</span><br><span class="line">        sys.exit(<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">mariadb_conn_close</span><span class="params">(conn, cursor)</span>:</span></span><br><span class="line">    <span class="keyword">if</span> cursor:</span><br><span class="line">        cursor.close()</span><br><span class="line">    <span class="keyword">if</span> conn:</span><br><span class="line">        conn.close()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">query</span><span class="params">(sql, *args)</span>:</span></span><br><span class="line">    <span class="string">"""</span></span><br><span class="line"><span class="string">    :param sql:</span></span><br><span class="line"><span class="string">    :param args</span></span><br><span class="line"><span class="string">    :return 返回查询结果 ((),())</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line">    conn, cursor = mariadb_conn()</span><br><span class="line">    cursor.execute(sql, args)</span><br><span class="line">    res = cursor.fetchall()</span><br><span class="line">    mariadb_conn_close(conn, cursor)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> res</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_daily_data</span><span class="params">()</span>:</span></span><br><span class="line">    sql = <span class="string">"select today_confirm,total_nowConfirm,"</span> \</span><br><span class="line">          <span class="string">"total_confirm,total_dead,total_deadRate,"</span> \</span><br><span class="line">          <span class="string">"total_heal,total_healRate from daily_data "</span> \</span><br><span class="line">          <span class="string">"where setDataTime=(select setDataTime from daily_data "</span> \</span><br><span class="line">          <span class="string">"order by setDataTime desc limit 1)"</span></span><br><span class="line">    res = query(sql)</span><br><span class="line">    <span class="keyword">return</span> res[<span class="number">0</span>]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 地图整体数据</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_area_data</span><span class="params">()</span>:</span></span><br><span class="line">    sql = <span class="string">"select province_name_,sum(city_total_confirm_) "</span> \</span><br><span class="line">          <span class="string">"from tencent_virus_data where lastUpdateTime=("</span> \</span><br><span class="line">          <span class="string">"select lastUpdateTime from tencent_virus_data "</span> \</span><br><span class="line">          <span class="string">"order by lastUpdateTime desc limit 1) "</span> \</span><br><span class="line">          <span class="string">"group by province_name_"</span></span><br><span class="line">    res = query(sql)</span><br><span class="line">    <span class="keyword">return</span> res</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 总趋势最近十天</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_GeneralTrend_data</span><span class="params">()</span>:</span></span><br><span class="line">    sql = <span class="string">"select today_confirm,total_nowConfirm,total_confirm,"</span> \</span><br><span class="line">          <span class="string">"total_dead,total_heal,setDataTime from daily_data "</span> \</span><br><span class="line">          <span class="string">"order by  id desc limit 10"</span></span><br><span class="line">    res = query(sql)</span><br><span class="line">    <span class="keyword">return</span> res</span><br><span class="line"><span class="comment"># get_GeneralTrend_data()[1:] # 从第二条数据开始取</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 今日有新增确诊的省市</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_todayNewConfrim_data</span><span class="params">()</span>:</span></span><br><span class="line">    sql = <span class="string">"select CONCAT(province_name_,'-',city_name_) as province_city,"</span> \</span><br><span class="line">          <span class="string">"city_today_confirm_,lastUpdateTime from tencent_virus_data "</span> \</span><br><span class="line">          <span class="string">"where city_today_confirm_ &gt;0 and lastUpdateTime=("</span> \</span><br><span class="line">          <span class="string">"select lastUpdateTime from tencent_virus_data "</span> \</span><br><span class="line">          <span class="string">"ORDER BY lastUpdateTime desc limit 1 )"</span></span><br><span class="line"></span><br><span class="line">    res = query(sql)</span><br><span class="line">    <span class="keyword">return</span> res</span><br><span class="line"></span><br><span class="line"><span class="comment"># 目前各省市累计确诊数</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_confrimUntilNow</span><span class="params">()</span>:</span></span><br><span class="line">    sql = <span class="string">"select province_name_,sum(city_total_confirm_),lastUpdateTime "</span> \</span><br><span class="line">          <span class="string">"from tencent_virus_data where lastUpdateTime = ( "</span> \</span><br><span class="line">          <span class="string">"select lastUpdateTime from tencent_virus_data "</span> \</span><br><span class="line">          <span class="string">"order by lastUpdateTime desc limit 1) "</span> \</span><br><span class="line">          <span class="string">"group by province_name_"</span></span><br><span class="line"></span><br><span class="line">    res = query(sql)</span><br><span class="line">    <span class="keyword">return</span> res</span><br><span class="line"></span><br><span class="line"><span class="comment"># 获取最新50条热搜数据</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_hotPoint</span><span class="params">()</span>:</span></span><br><span class="line">    sql = <span class="string">"select content,setDataTime from  hotpoint order by id desc limit 50"</span></span><br><span class="line">    res = query(sql)</span><br><span class="line">    <span class="keyword">return</span> res</span><br></pre></td></tr></table></figure></div>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="建立路由调用工具类方法返回数据值"><a href="#建立路由调用工具类方法返回数据值" class="headerlink" title="建立路由调用工具类方法返回数据值"></a>建立路由调用工具类方法返回数据值</h3><ul>
+<li>这里需要注意的是需要引入写好的工具类<ul>
+<li><code>import xxx</code></li>
+</ul>
+</li>
+<li>在这里得到工具类查询数据库得到的值，再做进一步处理返回给页面关注的数据结构<div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="PY"><figure class="iseeu highlight /py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@app.route('/', methods=["get", "post"])</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">hello_world</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">return</span> render_template(<span class="string">"index.html"</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">@app.route("/getTime")</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_time</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">return</span> utils.get_time()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">@app.route("/getDailyData")</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_daily_data</span><span class="params">()</span>:</span></span><br><span class="line">    data = utils.get_daily_data()</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> jsonify(&#123;<span class="string">"today_confirm"</span>: data[<span class="number">0</span>],</span><br><span class="line">                    <span class="string">"total_nowConfirm"</span>: data[<span class="number">1</span>],</span><br><span class="line">                    <span class="string">"total_confirm"</span>: data[<span class="number">2</span>],</span><br><span class="line">                    <span class="string">"total_dead"</span>: data[<span class="number">3</span>],</span><br><span class="line">                    <span class="string">"total_deadRate"</span>: data[<span class="number">4</span>],</span><br><span class="line">                    <span class="string">"total_heal"</span>: data[<span class="number">5</span>],</span><br><span class="line">                    <span class="string">"total_healRate"</span>: data[<span class="number">6</span>]&#125;)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">@app.route("/getAreaData")</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_area_data</span><span class="params">()</span>:</span></span><br><span class="line">    areaData = []</span><br><span class="line">    <span class="keyword">for</span> city <span class="keyword">in</span> utils.get_area_data():</span><br><span class="line">        areaData.append(&#123;<span class="string">"name"</span>: city[<span class="number">0</span>], <span class="string">"value"</span>: int(city[<span class="number">1</span>])&#125;)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> jsonify(&#123;<span class="string">"data"</span>: areaData&#125;)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">@app.route("/getGeneralTrend")</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_generalTrend_data</span><span class="params">()</span>:</span></span><br><span class="line">    gT_data = utils.get_GeneralTrend_data()</span><br><span class="line">    today_confirm, total_nowConfirm, total_confirm = [], [], []</span><br><span class="line">    total_dead, total_heal, setDataTime = [], [], []</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> a, b, c, d, e, f <span class="keyword">in</span> gT_data:</span><br><span class="line">        today_confirm.append(a)</span><br><span class="line">        total_nowConfirm.append(b)</span><br><span class="line">        total_confirm.append(c)</span><br><span class="line">        total_dead.append(d)</span><br><span class="line">        total_heal.append(e)</span><br><span class="line">        setDataTime.append(f.strftime(<span class="string">"%m-%d"</span>))</span><br><span class="line"></span><br><span class="line">    <span class="comment"># reverse() 没有返回值</span></span><br><span class="line">    today_confirm.reverse()</span><br><span class="line">    total_nowConfirm.reverse()</span><br><span class="line">    total_confirm.reverse()</span><br><span class="line">    total_dead.reverse()</span><br><span class="line">    total_heal.reverse()</span><br><span class="line">    setDataTime.reverse()</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> jsonify(&#123;<span class="string">"today_confirm"</span>: today_confirm,</span><br><span class="line">                    <span class="string">"total_nowConfirm"</span>: total_nowConfirm,</span><br><span class="line">                    <span class="string">"total_confirm"</span>: total_confirm,</span><br><span class="line">                    <span class="string">"total_dead"</span>: total_dead,</span><br><span class="line">                    <span class="string">"total_heal"</span>: total_heal,</span><br><span class="line">                    <span class="string">"setDataTime"</span>: setDataTime&#125;)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">@app.route("/getTodayNewConfrim")</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_todayNewConfrim_data</span><span class="params">()</span>:</span></span><br><span class="line">    tNC_data = utils.get_todayNewConfrim_data()</span><br><span class="line">    province_city, city_today_confirm_ = [], []</span><br><span class="line">    setDateTime = <span class="string">""</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> tNC_data:</span><br><span class="line">        province_city.append(i[<span class="number">0</span>])</span><br><span class="line">        city_today_confirm_.append(i[<span class="number">1</span>])</span><br><span class="line">        setDateTime = i[<span class="number">2</span>].strftime(<span class="string">"%Y/%m/%d"</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> jsonify(&#123;<span class="string">"setDateTime"</span>: setDateTime,</span><br><span class="line">                    <span class="string">"city_today_confirm_"</span>: city_today_confirm_,</span><br><span class="line">                    <span class="string">"province_city"</span>: province_city&#125;)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">@app.route("/getConfrimUntilNow")</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_confrimUntilNow_data</span><span class="params">()</span>:</span></span><br><span class="line">    cUN_data = utils.get_confrimUntilNow()</span><br><span class="line">    provinces = []</span><br><span class="line">    setDateTime = <span class="string">""</span></span><br><span class="line">    provinceConfrim = []</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> cUN_data:</span><br><span class="line">        provinces.append(i[<span class="number">0</span>])</span><br><span class="line">        setDateTime = i[<span class="number">2</span>].strftime(<span class="string">"%Y/%m/%d"</span>)</span><br><span class="line">        pC = int(decimal.Decimal(i[<span class="number">1</span>]).quantize(decimal.Decimal(<span class="string">'0'</span>)))  <span class="comment"># 把 Decimal 转换成可用于 json 序列化的 int 类型</span></span><br><span class="line">        provinceConfrim.append(&#123;<span class="string">"name"</span>: i[<span class="number">0</span>], <span class="string">"value"</span>: pC&#125;)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> jsonify(&#123;<span class="string">"provinces"</span>: provinces,</span><br><span class="line">                    <span class="string">"provinceConfrim"</span>: provinceConfrim,</span><br><span class="line">                    <span class="string">"setDateTime"</span>: setDateTime&#125;)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">@app.route("/getHotPoint")</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_hotPoint_data</span><span class="params">()</span>:</span></span><br><span class="line">    hP_data = utils.get_hotPoint()</span><br><span class="line">    keywords = []</span><br><span class="line">    setDataTime = <span class="string">""</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> hP_data:</span><br><span class="line">        content = i[<span class="number">0</span>]</span><br><span class="line">        keyword_weight = extract_tags(content, topK=<span class="number">20</span>, withWeight=<span class="literal">True</span>)</span><br><span class="line">        setDataTime = i[<span class="number">1</span>].strftime(<span class="string">"%Y/%m/%d"</span>)</span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> keyword_weight:</span><br><span class="line">            <span class="keyword">if</span> <span class="keyword">not</span> j[<span class="number">0</span>].isdigit():  <span class="comment"># 如果是数字就不加入数组</span></span><br><span class="line">                weight = <span class="number">20</span> * round(j[<span class="number">1</span>], <span class="number">1</span>)</span><br><span class="line">                keywords.append(&#123;<span class="string">"name"</span>: j[<span class="number">0</span>], <span class="string">"value"</span>: str(weight)&#125;)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> jsonify(&#123;<span class="string">"keywords"</span>: keywords,</span><br><span class="line">                    <span class="string">"setDataTime"</span>: setDataTime&#125;)</span><br></pre></td></tr></table></figure></div>
+</li>
+</ul>
+<h3 id="页面请求数据并对接展示"><a href="#页面请求数据并对接展示" class="headerlink" title="页面请求数据并对接展示"></a>页面请求数据并对接展示</h3><ul>
+<li>这里展示数据用的 Echarts </li>
+<li>Echarts 的话，需要关注它的 options 内需要传入的数据结构</li>
+<li><p>然后在 ajax 请求获得数据后，赋给对应的位置即可</p>
+<div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="JS"><figure class="iseeu highlight /js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getAreaData</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    $.ajax(&#123;</span><br><span class="line">        url: <span class="string">"/getAreaData"</span>,</span><br><span class="line">        success:<span class="function"><span class="keyword">function</span> (<span class="params">data</span>) </span>&#123;</span><br><span class="line">            center_option.series[<span class="number">0</span>].data=data.data;</span><br><span class="line">            center.setOption(center_option);</span><br><span class="line">        &#125;,</span><br><span class="line">        error:<span class="function"><span class="keyword">function</span> (<span class="params">x</span>) </span>&#123;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>使用 Echarts 的 wordCloud 需要注意的是 5.0 版本不支持</p>
+</li>
+<li>需要切换 5.0 之前的版本</li>
+<li>这样的话，可以在项目中引入两个不同版本的 Echarts.js </li>
+<li>然后打开其中一个，把内部的 echarts 对象全部修改<ul>
+<li>比如需要单独把 4.0 版本的做处理，就打开该 js 文件，将全部默认的 echarts 对象修改成 echarts4</li>
+<li>区分开不同版本</li>
+</ul>
+</li>
+<li>最后获取对象的时候使用 echarts4 即可</li>
+</ul>
+<h2 id="树莓派部署测试"><a href="#树莓派部署测试" class="headerlink" title="树莓派部署测试"></a>树莓派部署测试</h2><h3 id="启动服务"><a href="#启动服务" class="headerlink" title="启动服务"></a>启动服务</h3><ul>
+<li>配置好基本环境</li>
+<li>然后直接通过 python 命令启动 flask 即可</li>
+<li><p>需要对外访问就需要设置一下 host</p>
+<div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="PY"><figure class="iseeu highlight /py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    app.run(host=<span class="string">"0.0.0.0"</span>)</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>浏览器输入 ip:5000 即可看到服务</p>
+</li>
+</ul>
+<h3 id="Nginx-反代"><a href="#Nginx-反代" class="headerlink" title="Nginx 反代"></a>Nginx 反代</h3><ul>
+<li>配置好 nginx ,将服务的地址代理到 nginx</li>
+<li>找到配置文件，我的树莓派默认的 nginx 配置文件是 <code>/etc/nginx/nginx.conf</code></li>
+<li><p>主要配置</p>
+<div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SHELL"><figure class="iseeu highlight /shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">    upstream hgo &#123;</span><br><span class="line"></span><br><span class="line">        server 127.0.0.1:5000 weight=10;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    server &#123;</span><br><span class="line">        listen       8080 default_server;</span><br><span class="line">        listen       [::]:8080 default_server;</span><br><span class="line">        server_name  _;</span><br><span class="line">        root         /usr/share/nginx/html;</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash">         Load configuration files <span class="keyword">for</span> the default server block.</span></span><br><span class="line"><span class="meta">#</span><span class="bash">         include /etc/nginx/default.d/*.conf;</span></span><br><span class="line"></span><br><span class="line">        location / &#123;</span><br><span class="line">                proxy_pass http://hgo;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        error_page 404 /404.html;</span><br><span class="line">        location = /404.html &#123;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        error_page 500 502 503 504 /50x.html;</span><br><span class="line">        location = /50x.html &#123;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>整个配置文件</p>
+<div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SHELL"><figure class="iseeu highlight /shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> For more information on configuration, see:</span></span><br><span class="line"><span class="meta">#</span><span class="bash">   * Official English Documentation: http://nginx.org/en/docs/</span></span><br><span class="line"><span class="meta">#</span><span class="bash">   * Official Russian Documentation: http://nginx.org/ru/docs/</span></span><br><span class="line"></span><br><span class="line">user nginx;</span><br><span class="line">worker_processes auto;</span><br><span class="line">error_log /var/log/nginx/error.log;</span><br><span class="line">pid /run/nginx.pid;</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> Load dynamic modules. See /usr/share/doc/nginx/README.dynamic.</span></span><br><span class="line">include /usr/share/nginx/modules/*.conf;</span><br><span class="line"></span><br><span class="line">events &#123;</span><br><span class="line">    worker_connections 1024;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">http &#123;</span><br><span class="line">    log_format  main  '$remote_addr - $remote_user [$time_local] "$request" '</span><br><span class="line">                      '$status $body_bytes_sent "$http_referer" '</span><br><span class="line">                      '"$http_user_agent" "$http_x_forwarded_for"';</span><br><span class="line"></span><br><span class="line">    access_log  /var/log/nginx/access.log  main;</span><br><span class="line"></span><br><span class="line">    sendfile            on;</span><br><span class="line">    tcp_nopush          on;</span><br><span class="line">    tcp_nodelay         on;</span><br><span class="line">    keepalive_timeout   65;</span><br><span class="line">    types_hash_max_size 2048;</span><br><span class="line"></span><br><span class="line">    include             /etc/nginx/mime.types;</span><br><span class="line">    default_type        application/octet-stream;</span><br><span class="line"></span><br><span class="line">    # Load modular configuration files from the /etc/nginx/conf.d directory.</span><br><span class="line">    # See http://nginx.org/en/docs/ngx_core_module.html#include</span><br><span class="line">    # for more information.</span><br><span class="line">    include /etc/nginx/conf.d/*.conf;</span><br><span class="line"></span><br><span class="line">    upstream hgo &#123;</span><br><span class="line"></span><br><span class="line">        server 127.0.0.1:5000 weight=10;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    server &#123;</span><br><span class="line">        listen       8080 default_server;</span><br><span class="line">        listen       [::]:8080 default_server;</span><br><span class="line">        server_name  _;</span><br><span class="line">        root         /usr/share/nginx/html;</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash">         Load configuration files <span class="keyword">for</span> the default server block.</span></span><br><span class="line"><span class="meta">#</span><span class="bash">         include /etc/nginx/default.d/*.conf;</span></span><br><span class="line"></span><br><span class="line">        location / &#123;</span><br><span class="line">                proxy_pass http://hgo;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        error_page 404 /404.html;</span><br><span class="line">        location = /404.html &#123;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        error_page 500 502 503 504 /50x.html;</span><br><span class="line">        location = /50x.html &#123;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> Settings <span class="keyword">for</span> a TLS enabled server.</span></span><br><span class="line"><span class="meta">#</span><span class="bash"></span></span><br><span class="line"><span class="meta">#</span><span class="bash">    server &#123;</span></span><br><span class="line"><span class="meta">#</span><span class="bash">        listen       443 ssl http2 default_server;</span></span><br><span class="line"><span class="meta">#</span><span class="bash">        listen       [::]:443 ssl http2 default_server;</span></span><br><span class="line"><span class="meta">#</span><span class="bash">        server_name  _;</span></span><br><span class="line"><span class="meta">#</span><span class="bash">        root         /usr/share/nginx/html;</span></span><br><span class="line"><span class="meta">#</span><span class="bash"></span></span><br><span class="line"><span class="meta">#</span><span class="bash">        ssl_certificate <span class="string">"/etc/pki/nginx/server.crt"</span>;</span></span><br><span class="line"><span class="meta">#</span><span class="bash">        ssl_certificate_key <span class="string">"/etc/pki/nginx/private/server.key"</span>;</span></span><br><span class="line"><span class="meta">#</span><span class="bash">        ssl_session_cache shared:SSL:1m;</span></span><br><span class="line"><span class="meta">#</span><span class="bash">        ssl_session_timeout  10m;</span></span><br><span class="line"><span class="meta">#</span><span class="bash">        ssl_ciphers HIGH:!aNULL:!MD5;</span></span><br><span class="line"><span class="meta">#</span><span class="bash">        ssl_prefer_server_ciphers on;</span></span><br><span class="line"><span class="meta">#</span><span class="bash"></span></span><br><span class="line"><span class="meta">#</span><span class="bash">        <span class="comment"># Load configuration files for the default server block.</span></span></span><br><span class="line"><span class="meta">#</span><span class="bash">        include /etc/nginx/default.d/*.conf;</span></span><br><span class="line"><span class="meta">#</span><span class="bash"></span></span><br><span class="line"><span class="meta">#</span><span class="bash">        location / &#123;</span></span><br><span class="line"><span class="meta">#</span><span class="bash">        &#125;</span></span><br><span class="line"><span class="meta">#</span><span class="bash"></span></span><br><span class="line"><span class="meta">#</span><span class="bash">        error_page 404 /404.html;</span></span><br><span class="line"><span class="meta">#</span><span class="bash">        location = /404.html &#123;</span></span><br><span class="line"><span class="meta">#</span><span class="bash">        &#125;</span></span><br><span class="line"><span class="meta">#</span><span class="bash"></span></span><br><span class="line"><span class="meta">#</span><span class="bash">        error_page 500 502 503 504 /50x.html;</span></span><br><span class="line"><span class="meta">#</span><span class="bash">        location = /50x.html &#123;</span></span><br><span class="line"><span class="meta">#</span><span class="bash">        &#125;</span></span><br><span class="line"><span class="meta">#</span><span class="bash">    &#125;</span></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>这样一来就可通过 nginx 代理出来的地址去访问服务器内部的地址了</p>
+</li>
+</ul>
+<h3 id="使用-WSGI-服务"><a href="#使用-WSGI-服务" class="headerlink" title="使用 WSGI 服务"></a>使用 WSGI 服务</h3><ul>
+<li>不建议直接用 python 命令去启动 flask </li>
+<li>使用 gunicorn 将服务启动</li>
+<li><code>gunicorn -b 127.0.0.1:5000 -D app:app</code></li>
+<li><code>gunicorn -b 127.0.0.1:5000 -D 文件名:文件内部的 flask 对象名</code><ul>
+<li><code>app = Flask(__name__)</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="定时任务"><a href="#定时任务" class="headerlink" title="定时任务"></a>定时任务</h3><ul>
+<li><code>crontab -l</code> 查看正在执行的定时任务</li>
+<li><p><code>crontab -e</code> 编辑定时任务</p>
+<div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SHELL"><figure class="iseeu highlight /shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> Edit this file to introduce tasks to be run by cron.</span></span><br><span class="line"><span class="meta">#</span><span class="bash"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> Each task to run has to be defined through a single line</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> indicating with different fields when the task will be run</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> and what <span class="built_in">command</span> to run <span class="keyword">for</span> the task</span></span><br><span class="line"><span class="meta">#</span><span class="bash"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> To define the time you can provide concrete values <span class="keyword">for</span></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> minute (m), hour (h), day of month (dom), month (mon),</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> and day of week (dow) or use <span class="string">'*'</span> <span class="keyword">in</span> these fields (<span class="keyword">for</span> <span class="string">'any'</span>).</span></span><br><span class="line"><span class="meta">#</span><span class="bash"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> Notice that tasks will be started based on the cron<span class="string">'s system</span></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> daemon<span class="string">'s notion of time and timezones.</span></span></span><br><span class="line"><span class="meta">#</span><span class="bash"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> Output of the crontab <span class="built_in">jobs</span> (including errors) is sent through</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> email to the user the crontab file belongs to (unless redirected).</span></span><br><span class="line"><span class="meta">#</span><span class="bash"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> For example, you can run a backup of all your user accounts</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> at 5 a.m every week with:</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 0 5 * * 1 tar -zcf /var/backups/home.tgz /home/</span></span><br><span class="line"><span class="meta">#</span><span class="bash"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> For more information see the manual pages of crontab(5) and cron(8)</span></span><br><span class="line"><span class="meta">#</span><span class="bash"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> m h  dom mon dow   <span class="built_in">command</span></span></span><br><span class="line">45 * * * * python3 /home/pi/Documents/FkZi/gunicorn/virus.py dd &gt;&gt; /home/pi/Documents/log/dd 2&gt;&amp;1 &amp;</span><br><span class="line">45 * * * * python3 /home/pi/Documents/FkZi/gunicorn/virus.py vd &gt;&gt; /home/pi/Documents/log/vd 2&gt;&amp;1 &amp;</span><br><span class="line">45 * * * * python3 /home/pi/Documents/FkZi/gunicorn/virus.py hp &gt;&gt; /home/pi/Documents/log/hp 2&gt;&amp;1 &amp;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>定时任务执行成功可在对应的目录看到生成的日志文件 <code>/home/pi/Documents/log/dd</code></p>
+</li>
+<li>可看到对应的参数设置</li>
+<li><code>virus.py hp</code> 这里是给 py 脚本传递参数</li>
+<li>需要在文件内设置<div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="PY"><figure class="iseeu highlight /py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    length = len(sys.argv)</span><br><span class="line">    <span class="keyword">if</span> length == <span class="number">1</span>:</span><br><span class="line">        s = <span class="string">"""</span></span><br><span class="line"><span class="string">                请输入参数：</span></span><br><span class="line"><span class="string">                dd 更新详细数据</span></span><br><span class="line"><span class="string">                vd 更新汇总数据</span></span><br><span class="line"><span class="string">                hp 更新热点信息</span></span><br><span class="line"><span class="string">            """</span></span><br><span class="line">        print(s)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        order = sys.argv[<span class="number">1</span>]</span><br><span class="line">        <span class="keyword">if</span> order == <span class="string">"vd"</span>:</span><br><span class="line">            update_virus_data()</span><br><span class="line">        <span class="keyword">elif</span> order == <span class="string">"dd"</span>:</span><br><span class="line">            update_daily_data()</span><br><span class="line">        <span class="keyword">elif</span> order == <span class="string">"hp"</span>:</span><br><span class="line">            update_hotPoint()</span><br></pre></td></tr></table></figure></div>
+</li>
+</ul>
+<h2 id="生产服务器部署"><a href="#生产服务器部署" class="headerlink" title="生产服务器部署"></a>生产服务器部署</h2><ul>
+<li>和在测试环境一样的步骤即可，这里生产的设备为 x86 的 Linux,OS 为 CentOS</li>
+<li>先拉项目到设备里，把依赖安装好</li>
+<li>将项目启动起来，配置 nginx 把端口代理出来</li>
+<li>然后用 gunicorn 启动项目</li>
+<li>设置定时任务</li>
+<li>测试定时任务的脚本，把依赖装好，主要问题在 chromedirver<ul>
+<li>👉 <a href="https://cloud.tencent.com/developer/article/1647905" target="_blank" rel="noopener">爬虫在linux下启动selenium-安装谷歌浏览器和驱动</a></li>
+</ul>
+</li>
+<li>‘chromedriver’ executable needs to be in PATH. Please see <a href="https://sites.google.com/a/chromium.org/chromedriver/home" target="_blank" rel="noopener">https://sites.google.com/a/chromium.org/chromedriver/home</a><ul>
+<li>如果出现这个问题，在代码里指定 chrome 对象驱动路径即可</li>
+</ul>
+</li>
+</ul>
+<h2 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h2><h3 id="print-cursor-execute-sql-为空"><a href="#print-cursor-execute-sql-为空" class="headerlink" title="print(cursor.execute(sql)) 为空"></a>print(cursor.execute(sql)) 为空</h3><ul>
+<li>因为执行的语句未非查询语句，只有查询语句才有返回值</li>
+<li>其他语句，如插入语句等，都需要提交事务 commit() 之后才能得到返回值 </li>
+</ul>
+<h3 id="在-selenium-中获取浏览器对象的时候，浏览器启动后一会就关闭了"><a href="#在-selenium-中获取浏览器对象的时候，浏览器启动后一会就关闭了" class="headerlink" title="在 selenium 中获取浏览器对象的时候，浏览器启动后一会就关闭了"></a>在 selenium 中获取浏览器对象的时候，浏览器启动后一会就关闭了</h3><ul>
+<li>因为获取浏览器的对象在方法中，方法执行完浏览器自然就跟着关闭了</li>
+<li>如果需要浏览器一直存在，把浏览器对象在方法外部，使其成为全局对象就可以了</li>
+</ul>
+<h3 id="树莓派-arm-架构安装的-nginx-默认配置缺失"><a href="#树莓派-arm-架构安装的-nginx-默认配置缺失" class="headerlink" title="树莓派 arm 架构安装的 nginx 默认配置缺失"></a>树莓派 arm 架构安装的 nginx 默认配置缺失</h3><ul>
+<li>找到对的位置的配置文件</li>
+<li>然后可以从其他已安装 nginx 的设备中把 配置文件 传过来</li>
+</ul>
+<h3 id="nginx-没有把服务代理出来"><a href="#nginx-没有把服务代理出来" class="headerlink" title="nginx 没有把服务代理出来"></a>nginx 没有把服务代理出来</h3><ul>
+<li><p>可能需要配置一下组和用 root 来启动</p>
+<div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="PLAIN"><figure class="iseeu highlight /plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">- `groupadd nginx` </span><br><span class="line">- `useradd -g nginx nginx -s /sbin/nologin`</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>还需要关注当前的用户和 root 用户的包是否有 nginx</p>
+</li>
+</ul>
+<h3 id="arm-架构的-chromedriver-版本"><a href="#arm-架构的-chromedriver-版本" class="headerlink" title="arm 架构的 chromedriver 版本"></a>arm 架构的 chromedriver 版本</h3><ul>
+<li>首先是要确保 chrome 浏览器和 chromedriver 版本一致</li>
+<li>arm 架构的 chromedriver 实在难找，树莓派 4b 里的 chromiun 的版本为 78<ul>
+<li>arm 架构的 chromedriver 版本为 78 根本找不到 </li>
+</ul>
+</li>
+<li>这样的话，我们可以换个思路，把浏览器和驱动都升级到最新即可</li>
+<li><code>sudo apt-get install chromium-browser</code> 更新最新</li>
+<li><code>chromium-browser --version</code></li>
+<li>👉 <a href="https://mirrors.tuna.tsinghua.edu.cn/raspberrypi/pool/main/c/chromium-browser/" target="_blank" rel="noopener">mirrors.tuna.tsinghua.edu.cn</a></li>
+<li><code>sudo apt-get install chromium-chromedriver</code> 下载浏览器驱动，默认下了最新的</li>
+<li>👉 <a href="https://launchpad.net/+search?field.text=chromium-chromedriver+armhf" target="_blank" rel="noopener">Launchpad.net</a></li>
+</ul>
+<h3 id="mysql-和-mariadb-的-group-by-字段"><a href="#mysql-和-mariadb-的-group-by-字段" class="headerlink" title="mysql 和 mariadb 的 group by 字段"></a>mysql 和 mariadb 的 group by 字段</h3><ul>
+<li>[Err] 1055 - Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column ‘virus.tencent_virus_data.lastUpdateTime’ which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by</li>
+<li>👉<a href="https://www.cnblogs.com/Wayou/p/mysql_group_by_issue.html" target="_blank" rel="noopener">MySQL GROUP BY 的问题</a></li>
+<li>👉<a href="https://cloud.tencent.com/developer/article/1533773" target="_blank" rel="noopener">sql_mode之only_full_group_by</a></li>
+</ul>
+<h3 id="mysql-和-mariadb-的-group-by-结果顺序"><a href="#mysql-和-mariadb-的-group-by-结果顺序" class="headerlink" title="mysql 和 mariadb 的 group by 结果顺序"></a>mysql 和 mariadb 的 group by 结果顺序</h3><ul>
+<li>👉<a href="https://www.coder.work/article/508344" target="_blank" rel="noopener">mysql - MariaDB上的“GROUP BY”的行为与MySQL不同</a></li>
+</ul>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>Post author:</strong>
+    Orekiyuta
+  </li>
+  <li class="post-copyright-link">
+    <strong>Post link:</strong>
+    <a href="http://www.orekiyuta.cn/archives/reptilesAndRaspberries/" title="Reptiles and Raspberries">http://www.orekiyuta.cn/archives/reptilesAndRaspberries/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice: </strong>
+    All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> unless stating additionally.
+  </li>
+</ul>
+
+      </div>
+    
+     <div>
+      
+        <div>
+    
+        <div style="text-align:center;color: black;font-size:15px;margin-top:30px">< - Thanks for reading - ></div>
+    
+</div>
+      
+     </div>
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Linux/" rel="tag"><i class="fa fa-tag"></i> Linux</a>
+          
+            <a href="/tags/Selenium/" rel="tag"><i class="fa fa-tag"></i> Selenium</a>
+          
+            <a href="/tags/ChromeDriver/" rel="tag"><i class="fa fa-tag"></i> ChromeDriver</a>
+          
+            <a href="/tags/JavaScript/" rel="tag"><i class="fa fa-tag"></i> JavaScript</a>
+          
+            <a href="/tags/Flask/" rel="tag"><i class="fa fa-tag"></i> Flask</a>
+          
+            <a href="/tags/Python/" rel="tag"><i class="fa fa-tag"></i> Python</a>
+          
+            <a href="/tags/MySQL/" rel="tag"><i class="fa fa-tag"></i> MySQL</a>
+          
+            <a href="/tags/Mariadb/" rel="tag"><i class="fa fa-tag"></i> Mariadb</a>
+          
+            <a href="/tags/RaspberryPi/" rel="tag"><i class="fa fa-tag"></i> RaspberryPi</a>
+          
+            <a href="/tags/Nginx/" rel="tag"><i class="fa fa-tag"></i> Nginx</a>
+          
+            <a href="/tags/Chromium/" rel="tag"><i class="fa fa-tag"></i> Chromium</a>
+          
+            <a href="/tags/BeautifulSoup/" rel="tag"><i class="fa fa-tag"></i> BeautifulSoup</a>
+          
+            <a href="/tags/Echarts/" rel="tag"><i class="fa fa-tag"></i> Echarts</a>
+          
+            <a href="/tags/Gunicorn/" rel="tag"><i class="fa fa-tag"></i> Gunicorn</a>
+          
+            <a href="/tags/Crontab/" rel="tag"><i class="fa fa-tag"></i> Crontab</a>
+          
+            <a href="/tags/Arm/" rel="tag"><i class="fa fa-tag"></i> Arm</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/archives/inJupyterNotebook/" rel="next" title="In Jupyter Notebook">
+                <i class="fa fa-chevron-left"></i> In Jupyter Notebook
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/archives/localAnywhereAndCORS/" rel="prev" title="Local-anywhere and CORS">
+                Local-anywhere and CORS <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+          <div id="scrollpercent"><span>0</span>%</div>
+      
+
+      <div style>
+  <canvas id="canvas" style="width:60%;">当前浏览器不支持canvas，请更换浏览器后再试</canvas>
+</div>
+<script>
+(function(){
+
+   var digit=
+    [
+        [
+            [0,0,1,1,1,0,0],
+            [0,1,1,0,1,1,0],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,0,1,1,0],
+            [0,0,1,1,1,0,0]
+        ],//0
+        [
+            [0,0,0,1,1,0,0],
+            [0,1,1,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [1,1,1,1,1,1,1]
+        ],//1
+        [
+            [0,1,1,1,1,1,0],
+            [1,1,0,0,0,1,1],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,1,1,0],
+            [0,0,0,1,1,0,0],
+            [0,0,1,1,0,0,0],
+            [0,1,1,0,0,0,0],
+            [1,1,0,0,0,0,0],
+            [1,1,0,0,0,1,1],
+            [1,1,1,1,1,1,1]
+        ],//2
+        [
+            [1,1,1,1,1,1,1],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,1,1,0],
+            [0,0,0,1,1,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,0,0,1,1,0],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,1,1,1,0]
+        ],//3
+        [
+            [0,0,0,0,1,1,0],
+            [0,0,0,1,1,1,0],
+            [0,0,1,1,1,1,0],
+            [0,1,1,0,1,1,0],
+            [1,1,0,0,1,1,0],
+            [1,1,1,1,1,1,1],
+            [0,0,0,0,1,1,0],
+            [0,0,0,0,1,1,0],
+            [0,0,0,0,1,1,0],
+            [0,0,0,1,1,1,1]
+        ],//4
+        [
+            [1,1,1,1,1,1,1],
+            [1,1,0,0,0,0,0],
+            [1,1,0,0,0,0,0],
+            [1,1,1,1,1,1,0],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,1,1,1,0]
+        ],//5
+        [
+            [0,0,0,0,1,1,0],
+            [0,0,1,1,0,0,0],
+            [0,1,1,0,0,0,0],
+            [1,1,0,0,0,0,0],
+            [1,1,0,1,1,1,0],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,1,1,1,0]
+        ],//6
+        [
+            [1,1,1,1,1,1,1],
+            [1,1,0,0,0,1,1],
+            [0,0,0,0,1,1,0],
+            [0,0,0,0,1,1,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,1,1,0,0,0],
+            [0,0,1,1,0,0,0],
+            [0,0,1,1,0,0,0],
+            [0,0,1,1,0,0,0]
+        ],//7
+        [
+            [0,1,1,1,1,1,0],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,1,1,1,0],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,1,1,1,0]
+        ],//8
+        [
+            [0,1,1,1,1,1,0],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,1,0,1,1],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,1,1,0],
+            [0,0,0,1,1,0,0],
+            [0,1,1,0,0,0,0]
+        ],//9
+        [
+            [0,0,0,0,0,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,0,0,0,0,0],
+            [0,0,0,0,0,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,0,0,0,0,0]
+        ]//:
+    ];
+
+var canvas = document.getElementById('canvas');
+
+if(canvas.getContext){
+    var cxt = canvas.getContext('2d');
+    //声明canvas的宽高
+    var H = 100,W = 700;
+    canvas.height = H;
+    canvas.width = W;
+    cxt.fillStyle = '#f00';
+    cxt.fillRect(10,10,50,50);
+
+    //存储时间数据
+    var data = [];
+    //存储运动的小球
+    var balls = [];
+    //设置粒子半径
+    var R = canvas.height/20-1;
+    (function(){
+        var temp = /(\d)(\d):(\d)(\d):(\d)(\d)/.exec(new Date());
+        //存储时间数字，由十位小时、个位小时、冒号、十位分钟、个位分钟、冒号、十位秒钟、个位秒钟这7个数字组成
+        data.push(temp[1],temp[2],10,temp[3],temp[4],10,temp[5],temp[6]);
+    })();
+
+    /*生成点阵数字*/
+    function renderDigit(index,num){
+        for(var i = 0; i < digit[num].length; i++){
+            for(var j = 0; j < digit[num][i].length; j++){
+                if(digit[num][i][j] == 1){
+                    cxt.beginPath();
+                    cxt.arc(14*(R+2)*index + j*2*(R+1)+(R+1),i*2*(R+1)+(R+1),R,0,2*Math.PI);
+                    cxt.closePath();
+                    cxt.fill();
+                }
+            }
+        }
+    }
+
+    /*更新时钟*/
+    function updateDigitTime(){
+        var changeNumArray = [];
+        var temp = /(\d)(\d):(\d)(\d):(\d)(\d)/.exec(new Date());
+        var NewData = [];
+        NewData.push(temp[1],temp[2],10,temp[3],temp[4],10,temp[5],temp[6]);
+        for(var i = data.length-1; i >=0 ; i--){
+            //时间发生变化
+            if(NewData[i] !== data[i]){
+                //将变化的数字值和在data数组中的索引存储在changeNumArray数组中
+                changeNumArray.push(i+'_'+(Number(data[i])+1)%10);
+            }
+        }
+        //增加小球
+        for(var i = 0; i< changeNumArray.length; i++){
+            addBalls.apply(this,changeNumArray[i].split('_'));
+        }
+        data = NewData.concat();
+    }
+
+    /*更新小球状态*/
+    function updateBalls(){
+        for(var i = 0; i < balls.length; i++){
+            balls[i].stepY += balls[i].disY;
+            balls[i].x += balls[i].stepX;
+            balls[i].y += balls[i].stepY;
+            if(balls[i].x > W + R || balls[i].y > H + R){
+                balls.splice(i,1);
+                i--;
+            }
+        }
+    }
+
+    /*增加要运动的小球*/
+    function addBalls(index,num){
+        var numArray = [1,2,3];
+        var colorArray =  ["#3BE","#09C","#A6C","#93C","#9C0","#690","#FB3","#F80","#F44","#C00"];
+        for(var i = 0; i < digit[num].length; i++){
+            for(var j = 0; j < digit[num][i].length; j++){
+                if(digit[num][i][j] == 1){
+                    var ball = {
+                        x:14*(R+2)*index + j*2*(R+1)+(R+1),
+                        y:i*2*(R+1)+(R+1),
+                        stepX:Math.floor(Math.random() * 4 -2),
+                        stepY:-2*numArray[Math.floor(Math.random()*numArray.length)],
+                        color:colorArray[Math.floor(Math.random()*colorArray.length)],
+                        disY:1
+                    };
+                    balls.push(ball);
+                }
+            }
+        }
+    }
+
+    /*渲染*/
+    function render(){
+        //重置画布宽度，达到清空画布的效果
+        canvas.height = 100;
+        //渲染时钟
+        for(var i = 0; i < data.length; i++){
+            renderDigit(i,data[i]);
+        }
+        //渲染小球
+        for(var i = 0; i < balls.length; i++){
+            cxt.beginPath();
+            cxt.arc(balls[i].x,balls[i].y,R,0,2*Math.PI);
+            cxt.fillStyle = balls[i].color;
+            cxt.closePath();
+            cxt.fill();
+        }
+    }
+
+    clearInterval(oTimer);
+    var oTimer = setInterval(function(){
+        //更新时钟
+        updateDigitTime();
+        //更新小球状态
+        updateBalls();
+        //渲染
+        render();
+    },50);
+}
+
+})();
+</script>
+
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+            
+              <a href="/">
+                <img class="site-author-image" itemprop="image" src="/images/uploads/avatar.png" alt="Orekiyuta">
+              </a>
+            
+              <p class="site-author-name" itemprop="name">Orekiyuta</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">63</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">48</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/rss.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/OrekiYuta" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:orekiyuta@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#分析接口数据结构"><span class="nav-number">1.</span> <span class="nav-text">分析接口数据结构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据库连接"><span class="nav-number">2.</span> <span class="nav-text">数据库连接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#获取数据并持久化"><span class="nav-number">3.</span> <span class="nav-text">获取数据并持久化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#从页面抓取数据"><span class="nav-number">4.</span> <span class="nav-text">从页面抓取数据</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#一般的页面，直接请求解析获取即可"><span class="nav-number">4.1.</span> <span class="nav-text">一般的页面，直接请求解析获取即可</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#如果页面用的是-JS-加载的话，可以使用-selenium-模拟人工获取"><span class="nav-number">4.2.</span> <span class="nav-text">如果页面用的是 JS 加载的话，可以使用 selenium 模拟人工获取</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#建立-Web-服务"><span class="nav-number">5.</span> <span class="nav-text">建立 Web 服务</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#数据交互"><span class="nav-number">5.1.</span> <span class="nav-text">数据交互</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#建立工具类来处理数据"><span class="nav-number">5.2.</span> <span class="nav-text">建立工具类来处理数据</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#建立路由调用工具类方法返回数据值"><span class="nav-number">5.3.</span> <span class="nav-text">建立路由调用工具类方法返回数据值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#页面请求数据并对接展示"><span class="nav-number">5.4.</span> <span class="nav-text">页面请求数据并对接展示</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#树莓派部署测试"><span class="nav-number">6.</span> <span class="nav-text">树莓派部署测试</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#启动服务"><span class="nav-number">6.1.</span> <span class="nav-text">启动服务</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Nginx-反代"><span class="nav-number">6.2.</span> <span class="nav-text">Nginx 反代</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用-WSGI-服务"><span class="nav-number">6.3.</span> <span class="nav-text">使用 WSGI 服务</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#定时任务"><span class="nav-number">6.4.</span> <span class="nav-text">定时任务</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#生产服务器部署"><span class="nav-number">7.</span> <span class="nav-text">生产服务器部署</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#遇到的问题"><span class="nav-number">8.</span> <span class="nav-text">遇到的问题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#print-cursor-execute-sql-为空"><span class="nav-number">8.1.</span> <span class="nav-text">print(cursor.execute(sql)) 为空</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#在-selenium-中获取浏览器对象的时候，浏览器启动后一会就关闭了"><span class="nav-number">8.2.</span> <span class="nav-text">在 selenium 中获取浏览器对象的时候，浏览器启动后一会就关闭了</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#树莓派-arm-架构安装的-nginx-默认配置缺失"><span class="nav-number">8.3.</span> <span class="nav-text">树莓派 arm 架构安装的 nginx 默认配置缺失</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#nginx-没有把服务代理出来"><span class="nav-number">8.4.</span> <span class="nav-text">nginx 没有把服务代理出来</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#arm-架构的-chromedriver-版本"><span class="nav-number">8.5.</span> <span class="nav-text">arm 架构的 chromedriver 版本</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#mysql-和-mariadb-的-group-by-字段"><span class="nav-number">8.6.</span> <span class="nav-text">mysql 和 mariadb 的 group by 字段</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#mysql-和-mariadb-的-group-by-结果顺序"><span class="nav-number">8.7.</span> <span class="nav-text">mysql 和 mariadb 的 group by 结果顺序</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Orekiyuta</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">88k</span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+<!--添加网站的运行时间-->
+<div>
+<i class="fa fa-cog fa-spin"></i>&nbsp;&nbsp;
+<span id="days"></span>
+</div>
+<script>
+function show_date_time(){
+    window.setTimeout("show_date_time()", 1000);
+    BirthDay=new Date("11/12/2018 00:00:00");
+    today=new Date();
+    timeold=(today.getTime()-BirthDay.getTime());
+    sectimeold=timeold/1000
+    secondsold=Math.floor(sectimeold);
+    msPerDay=24*60*60*1000
+    e_daysold=timeold/msPerDay
+    daysold=Math.floor(e_daysold);
+    e_hrsold=(e_daysold-daysold)*24;
+    hrsold=setzero(Math.floor(e_hrsold));
+    e_minsold=(e_hrsold-hrsold)*60;
+    minsold=setzero(Math.floor((e_hrsold-hrsold)*60));
+    seconds=setzero(Math.floor((e_minsold-minsold)*60));
+    document.getElementById('days').innerHTML="Run -> "+daysold+" dd :"+hrsold+" hh :"+minsold+" mm :"+seconds+" ss";
+}
+function setzero(i) {
+    if (i<10) {
+        i="0" + i
+    };
+    return i;
+}
+show_date_time();
+</script>
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top"></div>
+    
+
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  <script type="text/javascript" src="/js/src/js.cookie.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/js/src/scroll-cookie.js?v=5.1.4"></script>
+
+
+  
+
+  
+
+  <script src="/js/src/activate-power-mode.min.js"></script>
+  <script>
+    POWERMODE.colorful = true;
+    POWERMODE.shake = false;
+    document.body.addEventListener('input', POWERMODE);
+  </script>
+
+  
+  
+   <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;"></canvas> 
+   <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+   <script type="text/javascript" src="/js/src/fireworks.js"></script>
+  
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"scale":0.4,"hHeadPos":0,"vHeadPos":0,"jsonPath":"/live2dw/assets/tororo.model.json"},"display":{"superSample":2,"width":200,"height":200,"position":"left","hOffset":0,"vOffset":0},"mobile":{"show":false,"scale":0.4},"react":{"opacityDefault":0.7,"opacityOnHover":0.2},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>
