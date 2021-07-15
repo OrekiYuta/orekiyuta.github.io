@@ -4,6 +4,27 @@
   
     
     <entry>
+      <title>Use jsdeliver Load Static Resources</title>
+      <link href="/archives/usejsdeliverLoadStaticResources/"/>
+      <url>/archives/usejsdeliverLoadStaticResources/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Scene"><a href="#Scene" class="headerlink" title="Scene"></a>Scene</h2><ul><li>向 github 的 README 文件中添加图片链接</li><li>把图片上传到仓库,然后引用仓库的自动分配给图片的 <code>raw.githubusercontent.com</code> 域地址</li><li>但是这种方式只有能访问 <code>raw.githubusercontent.com</code> 的情况下才能加载图片</li><li>由于网络情况原因, DNS 污染 ,很多时候加载不出来</li><li>因此这种方式不够完善<a id="more"></a><h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2></li><li>解决这个问题的话，有两种方式<ul><li>利用 github 的仓库建个静态的图库站点,再取该站点的链接; 但这种方式取决于 github 的访问稳定情况</li><li>利用 CDN 内容分发服务, 这种方式能够完善的解决问题</li></ul></li><li>下面主要介绍利用 jsdelivr 和 github 仓库的 Releases 来部署静态资源</li></ul><ol><li>先把静态资源上传到仓库,然后创建 Releases<ul><li><img src="/images/usejsdeliverLoadStaticResources/Snipaste_2021-07-15_21-11-34.png" alt></li></ul></li><li>填写基本版本信息<ul><li><img src="/images/usejsdeliverLoadStaticResources/Snipaste_2021-07-15_21-12-32.png" alt></li></ul></li><li>然后 Publish release 即可</li><li>最后利用 jsdeliver 提供的服务即可<ul><li><code>https://cdn.jsdelivr.net/gh/[github用户名]/[仓库名][可选版本号]/[资源在仓库的路径]</code></li><li>如: <a href="https://cdn.jsdelivr.net/gh/OrekiYuta/OrekiYuta@1.0.0/OrekiYuta.png" target="_blank" rel="noopener">https://cdn.jsdelivr.net/gh/OrekiYuta/OrekiYuta@1.0.0/OrekiYuta.png</a></li><li><img src="https://cdn.jsdelivr.net/gh/OrekiYuta/OrekiYuta@1.0.0/OrekiYuta.png" alt="OrekiYuta"></li></ul></li></ol><ul><li>利用这种思想,还可以部署一些静态的服务<h2 id="Other"><a href="#Other" class="headerlink" title="Other"></a>Other</h2></li><li>👉 <a href="https://www.jsdelivr.com/" target="_blank" rel="noopener">jsdelivr</a></li></ul>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Github </tag>
+            
+            <tag> CDN </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Git Remote end hung up unexpectedly</title>
       <link href="/archives/gitRemoteEndHungUpUnexpectedly/"/>
       <url>/archives/gitRemoteEndHungUpUnexpectedly/</url>
