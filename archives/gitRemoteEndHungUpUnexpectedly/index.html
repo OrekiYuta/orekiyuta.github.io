@@ -100,7 +100,7 @@
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://www.orekiyuta.cn/images/gitRemoteEndHungUpUnexpectedly/Snipaste_2021-07-13_19-50-16.png">
 <meta property="og:image" content="http://www.orekiyuta.cn/images/gitRemoteEndHungUpUnexpectedly/Snipaste_2021-07-13_19-51-27.png">
-<meta property="og:updated_time" content="2021-07-13T12:35:38.173Z">
+<meta property="og:updated_time" content="2021-07-15T11:50:21.530Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git Remote end hung up unexpectedly">
 <meta name="twitter:description" content="Scene 查看 github 发现今日没有自动提交 手动 push 一下，发现异常情况,应该也是网络问题   Solution 把远程连接 https 改用 ssh git remote set-url origin git@github.com:OrekiYuta/Temp.git">
@@ -368,7 +368,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  121
+                  210
                 </span>
               
 
@@ -405,6 +405,17 @@
 <a id="more"></a>
 </li>
 <li><p>还是不行的话,再执行<code>git config --global http.postBuffer 524288000</code></p>
+</li>
+</ul>
+<h3 id="针对-hexo"><a href="#针对-hexo" class="headerlink" title="针对 hexo"></a>针对 hexo</h3><ul>
+<li>到 <code>C:\Users\[username]\.ssh</code>  目录下,新建 config 无后缀文件，写入以下内容</li>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="PLAIN"><figure class="iseeu highlight /plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Host github.com</span><br><span class="line">User 你GitHub的邮箱</span><br><span class="line">Hostname ssh.github.com</span><br><span class="line">PreferredAuthentications publickey</span><br><span class="line">IdentityFile ~/.ssh/id_rsa</span><br><span class="line">Port 443</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p><code>ssh -T git@github.com</code>命令测试能否连接</p>
+</li>
+<li>如果能连接通的话</li>
+<li>到 hexo 根目录配置文件 _config.yml ,修改连接方式</li>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="PLAIN"><figure class="iseeu highlight /plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">type: git</span><br><span class="line">repo: https://github.com/yourname/yourname.github.io.git</span><br></pre></td></tr></table></figure></div>
 </li>
 </ul>
 <h2 id="Other"><a href="#Other" class="headerlink" title="Other"></a>Other</h2><ul>
@@ -898,7 +909,7 @@ if(canvas.getContext){
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Scene"><span class="nav-number">1.</span> <span class="nav-text">Scene</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Solution"><span class="nav-number">2.</span> <span class="nav-text">Solution</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Other"><span class="nav-number">3.</span> <span class="nav-text">Other</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Scene"><span class="nav-number">1.</span> <span class="nav-text">Scene</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Solution"><span class="nav-number">2.</span> <span class="nav-text">Solution</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#针对-hexo"><span class="nav-number">2.1.</span> <span class="nav-text">针对 hexo</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Other"><span class="nav-number">3.</span> <span class="nav-text">Other</span></a></li></ol></div>
             
 
           </div>
@@ -932,7 +943,7 @@ if(canvas.getContext){
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">88k</span>
+    <span title="Site words total count">88.1k</span>
   
 </div>
 
