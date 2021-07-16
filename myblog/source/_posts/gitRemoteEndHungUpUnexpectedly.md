@@ -1,7 +1,7 @@
 ---
 title: Git Remote end hung up unexpectedly
 date: 2021-07-13 19:43:07
-tags: Git
+tags: [Git,Hexo]
 ---
 
 ## Scene
@@ -16,6 +16,25 @@ tags: Git
 <!-- more -->
 
 - 还是不行的话,再执行`git config --global http.postBuffer 524288000`
+
+### 针对 hexo
+- 到 `C:\Users\[username]\.ssh`  目录下,新建 config 无后缀文件，写入以下内容
+- ```
+    Host github.com
+    User 你GitHub的邮箱
+    Hostname ssh.github.com
+    PreferredAuthentications publickey
+    IdentityFile ~/.ssh/id_rsa
+    Port 443
+  ```
+- `ssh -T git@github.com`命令测试能否连接
+- 如果能连接通的话
+- 到 hexo 根目录配置文件 _config.yml ,修改连接方式
+- ```
+    deploy:
+    type: git
+    repo: https://github.com/yourname/yourname.github.io.git
+  ```
 
 ## Other
 
