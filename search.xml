@@ -484,6 +484,8 @@
             
             <tag> Python </tag>
             
+            <tag> Flask </tag>
+            
             <tag> RaspberryPi </tag>
             
             <tag> Nginx </tag>
@@ -491,8 +493,6 @@
             <tag> MySQL </tag>
             
             <tag> Mariadb </tag>
-            
-            <tag> Flask </tag>
             
             <tag> Chromium </tag>
             
