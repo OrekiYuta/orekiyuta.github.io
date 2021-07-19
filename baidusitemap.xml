@@ -16,10 +16,10 @@
     <loc>http://www.orekiyuta.cn/archives/WindowsSetting/</loc>
     <lastmod>2021-07-15</lastmod>
   </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/vritualDiskMapping/</loc>
+    <loc>http://www.orekiyuta.cn/archives/Usakizaki/</loc>
     <lastmod>2021-07-15</lastmod>
   </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/Usakizaki/</loc>
+    <loc>http://www.orekiyuta.cn/archives/vritualDiskMapping/</loc>
     <lastmod>2021-07-15</lastmod>
   </url>  <url>
     <loc>http://www.orekiyuta.cn/archives/tryFlutter/</loc>
@@ -31,16 +31,13 @@
     <loc>http://www.orekiyuta.cn/archives/SwitchToES6/</loc>
     <lastmod>2021-07-15</lastmod>
   </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/TheRainTurnedFine/</loc>
-    <lastmod>2021-07-15</lastmod>
-  </url>  <url>
     <loc>http://www.orekiyuta.cn/archives/scrapyLearningLog/</loc>
     <lastmod>2021-07-15</lastmod>
   </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/pythonVenvMigrateInvalid/</loc>
+    <loc>http://www.orekiyuta.cn/archives/TheRainTurnedFine/</loc>
     <lastmod>2021-07-15</lastmod>
   </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/setupSeafile/</loc>
+    <loc>http://www.orekiyuta.cn/archives/pythonVenvMigrateInvalid/</loc>
     <lastmod>2021-07-15</lastmod>
   </url>  <url>
     <loc>http://www.orekiyuta.cn/archives/stepIntoScrapy/</loc>
@@ -49,19 +46,22 @@
     <loc>http://www.orekiyuta.cn/archives/SSHPortMapping/</loc>
     <lastmod>2021-07-15</lastmod>
   </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/Thefriendlyinteractiveshell/</loc>
+    <loc>http://www.orekiyuta.cn/archives/setupSeafile/</loc>
     <lastmod>2021-07-15</lastmod>
   </url>  <url>
     <loc>http://www.orekiyuta.cn/archives/SortOutJSESTS/</loc>
     <lastmod>2021-07-15</lastmod>
   </url>  <url>
+    <loc>http://www.orekiyuta.cn/archives/Thefriendlyinteractiveshell/</loc>
+    <lastmod>2021-07-15</lastmod>
+  </url>  <url>
     <loc>http://www.orekiyuta.cn/archives/reptilesAndRaspberries/</loc>
     <lastmod>2021-07-15</lastmod>
   </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/PreliminaryUseMongodb/</loc>
+    <loc>http://www.orekiyuta.cn/archives/pythonGetFunctionFromString/</loc>
     <lastmod>2021-07-15</lastmod>
   </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/pythonGetFunctionFromString/</loc>
+    <loc>http://www.orekiyuta.cn/archives/PreliminaryUseMongodb/</loc>
     <lastmod>2021-07-15</lastmod>
   </url>  <url>
     <loc>http://www.orekiyuta.cn/archives/pythonDependencySeparation/</loc>
@@ -73,16 +73,16 @@
     <loc>http://www.orekiyuta.cn/archives/OneLine/</loc>
     <lastmod>2021-07-15</lastmod>
   </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/NiceToUseVue/</loc>
-    <lastmod>2021-07-15</lastmod>
-  </url>  <url>
     <loc>http://www.orekiyuta.cn/archives/JSgetter-setter/</loc>
     <lastmod>2021-07-15</lastmod>
   </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/mysqlSyncToMariadb/</loc>
+    <loc>http://www.orekiyuta.cn/archives/NiceToUseVue/</loc>
     <lastmod>2021-07-15</lastmod>
   </url>  <url>
     <loc>http://www.orekiyuta.cn/archives/mysqlSplitStringByProcedure/</loc>
+    <lastmod>2021-07-15</lastmod>
+  </url>  <url>
+    <loc>http://www.orekiyuta.cn/archives/mysqlSyncToMariadb/</loc>
     <lastmod>2021-07-15</lastmod>
   </url>  <url>
     <loc>http://www.orekiyuta.cn/archives/MySQLCrashCourse/</loc>
@@ -94,16 +94,13 @@
     <loc>http://www.orekiyuta.cn/archives/localAnywhereAndCORS/</loc>
     <lastmod>2021-07-15</lastmod>
   </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/JavaReview/</loc>
-    <lastmod>2021-07-15</lastmod>
-  </url>  <url>
     <loc>http://www.orekiyuta.cn/archives/javastartrun/</loc>
     <lastmod>2021-07-15</lastmod>
   </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/jnote/</loc>
+    <loc>http://www.orekiyuta.cn/archives/JavaReview/</loc>
     <lastmod>2021-07-15</lastmod>
   </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/JavaGenericTypes/</loc>
+    <loc>http://www.orekiyuta.cn/archives/jnote/</loc>
     <lastmod>2021-07-15</lastmod>
   </url>  <url>
     <loc>http://www.orekiyuta.cn/archives/janlear/</loc>
@@ -112,10 +109,13 @@
     <loc>http://www.orekiyuta.cn/archives/Java-ArtificialSimulation/</loc>
     <lastmod>2021-07-15</lastmod>
   </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/inJupyterNotebook/</loc>
+    <loc>http://www.orekiyuta.cn/archives/JavaGenericTypes/</loc>
     <lastmod>2021-07-15</lastmod>
   </url>  <url>
     <loc>http://www.orekiyuta.cn/archives/JavaNotes/</loc>
+    <lastmod>2021-07-15</lastmod>
+  </url>  <url>
+    <loc>http://www.orekiyuta.cn/archives/inJupyterNotebook/</loc>
     <lastmod>2021-07-15</lastmod>
   </url>  <url>
     <loc>http://www.orekiyuta.cn/archives/IgotaRaspberryPi/</loc>
@@ -139,10 +139,10 @@
     <loc>http://www.orekiyuta.cn/archives/githubCommitAccountAbout/</loc>
     <lastmod>2021-07-15</lastmod>
   </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/flaskRun/</loc>
+    <loc>http://www.orekiyuta.cn/archives/CSSFiveClassicLayouts/</loc>
     <lastmod>2021-07-15</lastmod>
   </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/CSSFiveClassicLayouts/</loc>
+    <loc>http://www.orekiyuta.cn/archives/flaskRun/</loc>
     <lastmod>2021-07-15</lastmod>
   </url>  <url>
     <loc>http://www.orekiyuta.cn/archives/Git-flow/</loc>
@@ -151,10 +151,10 @@
     <loc>http://www.orekiyuta.cn/archives/fileSharingOnWin/</loc>
     <lastmod>2021-07-15</lastmod>
   </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/FieldworkDaily/</loc>
+    <loc>http://www.orekiyuta.cn/archives/DockerNote/</loc>
     <lastmod>2021-07-15</lastmod>
   </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/DockerNote/</loc>
+    <loc>http://www.orekiyuta.cn/archives/FieldworkDaily/</loc>
     <lastmod>2021-07-15</lastmod>
   </url>  <url>
     <loc>http://www.orekiyuta.cn/archives/djangoRun/</loc>
