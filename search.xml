@@ -394,9 +394,9 @@
       
         <tags>
             
-            <tag> Python </tag>
-            
             <tag> Django </tag>
+            
+            <tag> Python </tag>
             
         </tags>
       
@@ -499,21 +499,21 @@
             
             <tag> Nginx </tag>
             
-            <tag> JavaScript </tag>
-            
             <tag> Selenium </tag>
             
             <tag> ChromeDriver </tag>
             
             <tag> MySQL </tag>
             
-            <tag> Flask </tag>
+            <tag> JavaScript </tag>
             
             <tag> Python </tag>
             
             <tag> Mariadb </tag>
             
             <tag> Chromium </tag>
+            
+            <tag> Flask </tag>
             
             <tag> BeautifulSoup </tag>
             
@@ -561,9 +561,9 @@
       
         <tags>
             
-            <tag> Flask </tag>
-            
             <tag> Python </tag>
+            
+            <tag> Flask </tag>
             
         </tags>
       
@@ -1137,7 +1137,7 @@
       <link href="/archives/Hexo-Install-Migrate/"/>
       <url>/archives/Hexo-Install-Migrate/</url>
       
-        <content type="html"><![CDATA[<h2 id="安装Git-Node"><a href="#安装Git-Node" class="headerlink" title="安装Git , Node"></a><center>安装Git , Node</center></h2><p><img src="/images/Hexo-IM/01.png" alt></p><h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a><center>安装Hexo</center></h2><ul><li>先创建一个文件夹，然后cd到这个目录下</li><li><code>npm install -g hexo-cli</code>    安装hexo项目构建工具</li><li><code>hexo -v</code>     查看版本</li></ul><p><img src="/images/Hexo-IM/02.png" alt></p><a id="more"></a><h2 id="初始化Hexo"><a href="#初始化Hexo" class="headerlink" title="初始化Hexo"></a><center>初始化Hexo</center></h2><ul><li><code>Hexo init myblog</code>    任意文件夹名 myblog</li></ul><p><img src="/images/Hexo-IM/03.png" alt></p><h2 id="启动服务"><a href="#启动服务" class="headerlink" title="启动服务"></a><center>启动服务</center></h2><p>进入myblog文件夹 , 编译生成静态文件 , 启动服务</p><ul><li><code>cd myblog</code></li><li><code>hexo g</code></li><li><code>hexo server</code></li></ul><p><img src="/images/Hexo-IM/04.png" alt></p><h2 id="检查页面；迁移设备"><a href="#检查页面；迁移设备" class="headerlink" title="检查页面；迁移设备"></a><center>检查页面；迁移设备</center></h2><p>在浏览器输入 <code>localhost:4000</code> , 即可看到页面</p><ul><li>迁移更新设备的话，做到这一步，把原来的博客文件复制到此替换即可</li></ul><h2 id="连接Github"><a href="#连接Github" class="headerlink" title="连接Github"></a><center>连接Github</center></h2><ul><li><p>创建Github仓库 , 命名 <code>xxx.github.io</code></p><p>  <img src="/images/Hexo-IM/05.png" alt></p></li><li><p>生成SSH</p><ul><li><code>git config --global user.name &quot;yourname&quot;</code></li><li><p><code>git config --global user.email &quot;youremail&quot;</code></p><p><img src="/images/Hexo-IM/06.png" alt></p><p><img src="/images/Hexo-IM/07.png" alt></p></li></ul></li><li><p>添加SSH到github</p><ul><li><p>将刚才生成的id_rsa.pub的内容复制到key</p><p>  <img src="/images/Hexo-IM/08.png" alt></p></li><li><p>检查是否建立连接成功</p><p>  <img src="/images/Hexo-IM/09.png" alt></p></li></ul></li></ul><h2 id="Hexo部署到GitHub"><a href="#Hexo部署到GitHub" class="headerlink" title="Hexo部署到GitHub"></a><center>Hexo部署到GitHub</center></h2><ul><li><p>修改配置文件 <code>_config.yml</code></p><p>  <img src="/images/Hexo-IM/10.png" alt></p></li><li><p>安装deploy-git 部署命令</p><ul><li><code>npm install hexo-deployer-git --save</code></li></ul></li></ul><h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a><center>常用命令</center></h2><ul><li><code>hexo clean</code>        清除之前编译生成的public文件夹的静态文件</li><li><code>hexo g</code>            编译生成静态文件      </li><li><code>hexo d</code>            部署到远端服务器</li><li><code>hexo s --debug</code>    启动服务并执行本地调试模式</li></ul><h2 id="Other"><a href="#Other" class="headerlink" title="Other"></a><center>Other</center></h2><ul><li><p>fatal: unable to access “xxx”: OpenSSL SSL_read: Connection was aborted, errno 10053</p><ul><li><code>git config --global http.sslVerify &quot;false&quot;</code></li></ul></li><li><p>tag/ 目录下 git 推送后 大小写问题</p>  <div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAIN"><figure class="iseeu highlight /plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd .deploy_git</span><br><span class="line">git config core.ignorecase false</span><br></pre></td></tr></table></figure></div></li></ul>]]></content>
+        <content type="html"><![CDATA[<h2 id="安装Git-Node"><a href="#安装Git-Node" class="headerlink" title="安装Git , Node"></a><center>安装Git , Node</center></h2><p><img src="/images/Hexo-IM/01.png" alt></p><h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a><center>安装Hexo</center></h2><ul><li>先创建一个文件夹，然后cd到这个目录下</li><li><code>npm install -g hexo-cli</code>    安装hexo项目构建工具</li><li><code>hexo -v</code>     查看版本</li></ul><p><img src="/images/Hexo-IM/02.png" alt></p><a id="more"></a><h2 id="初始化Hexo"><a href="#初始化Hexo" class="headerlink" title="初始化Hexo"></a><center>初始化Hexo</center></h2><ul><li><code>Hexo init myblog</code>    任意文件夹名 myblog</li></ul><p><img src="/images/Hexo-IM/03.png" alt></p><h2 id="启动服务"><a href="#启动服务" class="headerlink" title="启动服务"></a><center>启动服务</center></h2><p>进入myblog文件夹 , 编译生成静态文件 , 启动服务</p><ul><li><code>cd myblog</code></li><li><code>hexo g</code></li><li><code>hexo server</code></li></ul><p><img src="/images/Hexo-IM/04.png" alt></p><h2 id="检查页面；迁移设备"><a href="#检查页面；迁移设备" class="headerlink" title="检查页面；迁移设备"></a><center>检查页面；迁移设备</center></h2><p>在浏览器输入 <code>localhost:4000</code> , 即可看到页面</p><ul><li>迁移更新设备的话，做到这一步，把原来的博客文件复制到此替换即可</li></ul><h2 id="连接Github"><a href="#连接Github" class="headerlink" title="连接Github"></a><center>连接Github</center></h2><ul><li><p>创建Github仓库 , 命名 <code>xxx.github.io</code></p><p>  <img src="/images/Hexo-IM/05.png" alt></p></li><li><p>生成SSH</p><ul><li><code>git config --global user.name &quot;yourname&quot;</code></li><li><p><code>git config --global user.email &quot;youremail&quot;</code></p><p><img src="/images/Hexo-IM/06.png" alt></p><p><img src="/images/Hexo-IM/07.png" alt></p></li></ul></li><li><p>添加SSH到github</p><ul><li><p>将刚才生成的id_rsa.pub的内容复制到key</p><p>  <img src="/images/Hexo-IM/08.png" alt></p></li><li><p>检查是否建立连接成功</p><p>  <img src="/images/Hexo-IM/09.png" alt></p></li></ul></li></ul><h2 id="Hexo部署到GitHub"><a href="#Hexo部署到GitHub" class="headerlink" title="Hexo部署到GitHub"></a><center>Hexo部署到GitHub</center></h2><ul><li><p>修改配置文件 <code>_config.yml</code></p><p>  <img src="/images/Hexo-IM/10.png" alt></p></li><li><p>安装deploy-git 部署命令</p><ul><li><code>npm install hexo-deployer-git --save</code></li></ul></li></ul><h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a><center>常用命令</center></h2><ul><li><code>hexo clean</code>        清除之前编译生成的public文件夹的静态文件</li><li><code>hexo g</code>            编译生成静态文件      </li><li><code>hexo d</code>            部署到远端服务器</li><li><code>hexo s --debug</code>    启动服务并执行本地调试模式</li></ul><h2 id="Other"><a href="#Other" class="headerlink" title="Other"></a><center>Other</center></h2><ul><li><p>fatal: unable to access “xxx”: OpenSSL SSL_read: Connection was aborted, errno 10053</p><ul><li><code>git config --global http.sslVerify &quot;false&quot;</code></li></ul></li><li><p>tag/ 目录下 git 推送后 大小写问题</p>  <div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAIN"><figure class="iseeu highlight /plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd .deploy_git</span><br><span class="line">git config core.ignorecase false</span><br></pre></td></tr></table></figure></div></li><li><p>The “mode” argument must be integer</p><ul><li>版本问题,降一下版本</li><li><code>where node</code> 找到 node 的目录</li><li>👉 <a href="https://nodejs.org/en/download/releases/" target="_blank" rel="noopener">Previous Releases | Node.js</a></li><li>找到适合的版本, 我选择的是 12x , win 下载 win的 zip </li><li>解压覆盖 node 的目录即可</li></ul></li></ul>]]></content>
       
       
       
