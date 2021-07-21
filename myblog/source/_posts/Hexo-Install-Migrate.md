@@ -92,3 +92,9 @@ tags: [Hexo,Git]
         cd .deploy_git
         git config core.ignorecase false
     ```
+- The "mode" argument must be integer
+    - 版本问题,降一下版本
+    - `where node` 找到 node 的目录
+    -  👉 [Previous Releases | Node.js](https://nodejs.org/en/download/releases/)
+    - 找到适合的版本, 我选择的是 12x , win 下载 win的 zip 
+    - 解压覆盖 node 的目录即可
