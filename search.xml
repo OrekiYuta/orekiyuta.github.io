@@ -493,13 +493,13 @@
       
         <tags>
             
-            <tag> RaspberryPi </tag>
-            
             <tag> Linux </tag>
             
-            <tag> Nginx </tag>
-            
             <tag> JavaScript </tag>
+            
+            <tag> RaspberryPi </tag>
+            
+            <tag> Nginx </tag>
             
             <tag> Selenium </tag>
             
@@ -664,9 +664,9 @@
       
         <tags>
             
-            <tag> RaspberryPi </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> RaspberryPi </tag>
             
             <tag> Nginx </tag>
             
@@ -1046,9 +1046,9 @@
       
         <tags>
             
-            <tag> ECMAScript </tag>
-            
             <tag> ES6 </tag>
+            
+            <tag> ECMAScript </tag>
             
         </tags>
       
@@ -1183,9 +1183,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> SVN </tag>
             
