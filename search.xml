@@ -394,9 +394,9 @@
       
         <tags>
             
-            <tag> Django </tag>
-            
             <tag> Python </tag>
+            
+            <tag> Django </tag>
             
         </tags>
       
@@ -495,8 +495,6 @@
             
             <tag> Linux </tag>
             
-            <tag> JavaScript </tag>
-            
             <tag> RaspberryPi </tag>
             
             <tag> Nginx </tag>
@@ -505,15 +503,17 @@
             
             <tag> ChromeDriver </tag>
             
-            <tag> MySQL </tag>
+            <tag> JavaScript </tag>
             
-            <tag> Python </tag>
+            <tag> MySQL </tag>
             
             <tag> Flask </tag>
             
-            <tag> Mariadb </tag>
+            <tag> Python </tag>
             
             <tag> Chromium </tag>
+            
+            <tag> Mariadb </tag>
             
             <tag> BeautifulSoup </tag>
             
@@ -561,9 +561,9 @@
       
         <tags>
             
-            <tag> Python </tag>
-            
             <tag> Flask </tag>
+            
+            <tag> Python </tag>
             
         </tags>
       
@@ -1046,9 +1046,9 @@
       
         <tags>
             
-            <tag> ECMAScript </tag>
-            
             <tag> ES6 </tag>
+            
+            <tag> ECMAScript </tag>
             
         </tags>
       
