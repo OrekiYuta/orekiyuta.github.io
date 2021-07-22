@@ -493,19 +493,19 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> RaspberryPi </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Nginx </tag>
             
             <tag> JavaScript </tag>
             
-            <tag> MySQL </tag>
-            
             <tag> Selenium </tag>
             
             <tag> ChromeDriver </tag>
+            
+            <tag> MySQL </tag>
             
             <tag> Python </tag>
             
@@ -664,9 +664,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> RaspberryPi </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Nginx </tag>
             
@@ -1183,9 +1183,9 @@
       
         <tags>
             
-            <tag> CentOS </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> CentOS </tag>
             
             <tag> SVN </tag>
             
