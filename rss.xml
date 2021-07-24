@@ -6,7 +6,7 @@
   <link href="/rss.xml" rel="self"/>
   
   <link href="http://www.orekiyuta.cn/"/>
-  <updated>2021-07-24T09:59:55.630Z</updated>
+  <updated>2021-07-24T10:03:06.811Z</updated>
   <id>http://www.orekiyuta.cn/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://www.orekiyuta.cn/archives/getAZ-900Certification/"/>
     <id>http://www.orekiyuta.cn/archives/getAZ-900Certification/</id>
     <published>2021-07-24T09:39:00.000Z</published>
-    <updated>2021-07-24T09:59:55.630Z</updated>
+    <updated>2021-07-24T10:03:06.811Z</updated>
     
     <content type="html"><![CDATA[<h2 id="Prepare"><a href="#Prepare" class="headerlink" title="Prepare"></a>Prepare</h2><ul><li>👉 <a href="https://docs.microsoft.com/en-us/learn/certifications/exams/az-900?wt.mc_id=learningredirect_certs-web-wwl" target="_blank" rel="noopener">Exam AZ-900: Microsoft Azure Fundamentals</a></li><li>Schedule exam </li><li>Review examination on the site Or outside materials <ul><li>👉<a href="https://raw.githubusercontent.com/OrekiYuta/Gear/master/Materials/AZ-900.rar" target="_blank" rel="noopener">AZ-900</a></li><li>👉<a href="https://github.com/OrekiYuta/Gear/blob/master/Materials/AZ-900.rar" target="_blank" rel="noopener">AZ-900.bakLink</a></li></ul></li></ul><h2 id="If-Pass"><a href="#If-Pass" class="headerlink" title="If Pass"></a>If Pass</h2><ul><li>Receive Mail<ul><li><img src="/images/getAZ-900Certification/Snipaste_2021-07-24_17-55-39.png" alt></li></ul></li><li>Get the Certification<ul><li><img src="/images/getAZ-900Certification/Snipaste_2021-07-24_17-58-48.png" alt></li></ul></li><li>Check on <ul><li>Profile =&gt; Certifications 👉 <a href="https://docs.microsoft.com/en-us/" target="_blank" rel="noopener">docs.microsoft.com</a></li><li>👉 <a href="https://www.credly.com/earner/earned" target="_blank" rel="noopener">credly</a></li></ul></li></ul>]]></content>
     
@@ -36,6 +36,10 @@
     </summary>
     
     
+    
+      <category term="Microsoft" scheme="http://www.orekiyuta.cn/tags/Microsoft/"/>
+    
+      <category term="Certificate" scheme="http://www.orekiyuta.cn/tags/Certificate/"/>
     
   </entry>
   
