@@ -6,7 +6,7 @@
   <link href="/rss.xml" rel="self"/>
   
   <link href="http://www.orekiyuta.cn/"/>
-  <updated>2021-07-20T12:56:40.084Z</updated>
+  <updated>2021-07-24T09:59:55.630Z</updated>
   <id>http://www.orekiyuta.cn/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Get AZ-900 Certification</title>
+    <link href="http://www.orekiyuta.cn/archives/getAZ-900Certification/"/>
+    <id>http://www.orekiyuta.cn/archives/getAZ-900Certification/</id>
+    <published>2021-07-24T09:39:00.000Z</published>
+    <updated>2021-07-24T09:59:55.630Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Prepare"><a href="#Prepare" class="headerlink" title="Prepare"></a>Prepare</h2><ul><li>👉 <a href="https://docs.microsoft.com/en-us/learn/certifications/exams/az-900?wt.mc_id=learningredirect_certs-web-wwl" target="_blank" rel="noopener">Exam AZ-900: Microsoft Azure Fundamentals</a></li><li>Schedule exam </li><li>Review examination on the site Or outside materials <ul><li>👉<a href="https://raw.githubusercontent.com/OrekiYuta/Gear/master/Materials/AZ-900.rar" target="_blank" rel="noopener">AZ-900</a></li><li>👉<a href="https://github.com/OrekiYuta/Gear/blob/master/Materials/AZ-900.rar" target="_blank" rel="noopener">AZ-900.bakLink</a></li></ul></li></ul><h2 id="If-Pass"><a href="#If-Pass" class="headerlink" title="If Pass"></a>If Pass</h2><ul><li>Receive Mail<ul><li><img src="/images/getAZ-900Certification/Snipaste_2021-07-24_17-55-39.png" alt></li></ul></li><li>Get the Certification<ul><li><img src="/images/getAZ-900Certification/Snipaste_2021-07-24_17-58-48.png" alt></li></ul></li><li>Check on <ul><li>Profile =&gt; Certifications 👉 <a href="https://docs.microsoft.com/en-us/" target="_blank" rel="noopener">docs.microsoft.com</a></li><li>👉 <a href="https://www.credly.com/earner/earned" target="_blank" rel="noopener">credly</a></li></ul></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;Prepare&quot;&gt;&lt;a href=&quot;#Prepare&quot; class=&quot;headerlink&quot; title=&quot;Prepare&quot;&gt;&lt;/a&gt;Prepare&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;👉 &lt;a href=&quot;https://docs.microsoft.com/en-us
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>jQuery Loop Clone</title>
@@ -259,32 +282,6 @@
     </summary>
     
     
-    
-  </entry>
-  
-  <entry>
-    <title>File Sharing On Win</title>
-    <link href="http://www.orekiyuta.cn/archives/fileSharingOnWin/"/>
-    <id>http://www.orekiyuta.cn/archives/fileSharingOnWin/</id>
-    <published>2021-06-04T13:58:30.000Z</published>
-    <updated>2021-07-15T12:26:24.690Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="带账户密码的文件共享的几个要点"><a href="#带账户密码的文件共享的几个要点" class="headerlink" title="带账户密码的文件共享的几个要点"></a>带账户密码的文件共享的几个要点</h2><ul><li>开启密码共享</li><li><img src="/images/fileSharingOnWin/Snipaste_2021-06-04_22-01-49.png" alt></li><li>创建账户</li><li><img src="/images/fileSharingOnWin/Snipaste_2021-06-04_22-04-12.png" alt></li><li>设置文件共享权限</li><li><img src="/images/fileSharingOnWin/Snipaste_2021-06-04_22-06-07.png" alt></li><li><img src="/images/fileSharingOnWin/Snipaste_2021-06-04_22-07-09.png" alt></li><li><img src="/images/fileSharingOnWin/Snipaste_2021-06-04_22-08-15.png" alt></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;带账户密码的文件共享的几个要点&quot;&gt;&lt;a href=&quot;#带账户密码的文件共享的几个要点&quot; class=&quot;headerlink&quot; title=&quot;带账户密码的文件共享的几个要点&quot;&gt;&lt;/a&gt;带账户密码的文件共享的几个要点&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;开启密码共享&lt;/li&gt;
-
-      
-    
-    </summary>
-    
-    
-    
-      <category term="Windows" scheme="http://www.orekiyuta.cn/tags/Windows/"/>
     
   </entry>
   
