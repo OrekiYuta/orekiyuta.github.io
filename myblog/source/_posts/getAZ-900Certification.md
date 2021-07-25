@@ -1,11 +1,11 @@
 ---
 title: Get AZ-900 Certification
 date: 2021-07-24 17:39:00
-tags:
+tags: [Microsoft,Certificate]
 ---
 ## Prepare
 - 👉 [Exam AZ-900: Microsoft Azure Fundamentals](https://docs.microsoft.com/en-us/learn/certifications/exams/az-900?wt.mc_id=learningredirect_certs-web-wwl)
-- Schedule exam / 报名预定考试时间
+- Schedule exam 
 - Review examination on the site Or outside materials 
     - 👉[AZ-900](https://raw.githubusercontent.com/OrekiYuta/Gear/master/Materials/AZ-900.rar)
     - 👉[AZ-900.bakLink](https://github.com/OrekiYuta/Gear/blob/master/Materials/AZ-900.rar)
