@@ -8,9 +8,17 @@
       <link href="/archives/gitkrakenAccountSwitch/"/>
       <url>/archives/gitkrakenAccountSwitch/</url>
       
-        <content type="html"><![CDATA[<h2 id="Sence"><a href="#Sence" class="headerlink" title="Sence"></a>Sence</h2><ul><li>使用 Gitkraken GUI 工具,想要切换绑定的 github 账号拉取代码 </li><li>出现错误提示,无法断开当前 github 账户绑定</li><li><a href="/images/gitkrakenAccountSwitch/Snipaste_2021-07-28_21-50-19.png"></a><a id="more"></a><h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2></li><li>经过一顿排查,查阅官网文档终于找到答案 </li><li><p>👉<a href="https://support.gitkraken.com/faq/" target="_blank" rel="noopener">How can I use multiple GitHub / GitLab / Bitbucket / Azure DevOps accounts with GitKraken?</a></p></li><li><p><a href="/images/gitkrakenAccountSwitch/Snipaste_2021-07-28_21-54-00.png"></a></p></li><li><p>定位到是 Gitkraken 软件版本的问题,即 Pro 版本才能自由切换账户绑定</p></li><li>可知 Gitkraken 在 6.5.1 之前是完全开源免费的,安装 6.5.1 版本即可<ul><li>在安装之前修改下 hosts 文件</li><li>添加<code>0.0.0.0 release.gitkraken.com</code> 防止被动更新最新版本</li></ul></li><li>更换版本后即可自由切换 github 账户绑定</li><li><a href="/images/gitkrakenAccountSwitch/Snipaste_2021-07-28_21-56-01.png"></a></li></ul>]]></content>
+        <content type="html"><![CDATA[<h2 id="Sence"><a href="#Sence" class="headerlink" title="Sence"></a>Sence</h2><ul><li>使用 Gitkraken GUI 工具,想要切换绑定的 github 账号拉取代码 </li><li>出现错误提示,无法断开当前 github 账户绑定</li><li><img src="/images/gitkrakenAccountSwitch/Snipaste_2021-07-28_21-50-19.png" alt></li></ul><a id="more"></a><h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><ul><li>经过一顿排查,查阅官网文档终于找到答案 </li><li><p>👉<a href="https://support.gitkraken.com/faq/" target="_blank" rel="noopener">How can I use multiple GitHub / GitLab / Bitbucket / Azure DevOps accounts with GitKraken?</a></p></li><li><p><img src="/images/gitkrakenAccountSwitch/Snipaste_2021-07-28_21-54-00.png" alt></p></li><li><p>定位到是 Gitkraken 软件版本的问题,即 Pro 版本才能自由切换账户绑定</p></li><li>可知 Gitkraken 在 6.5.1 之前是完全开源免费的,安装 6.5.1 版本即可<ul><li>在安装之前修改下 hosts 文件</li><li>添加<code>0.0.0.0 release.gitkraken.com</code> 防止被动更新最新版本</li></ul></li><li>更换版本后即可自由切换 github 账户绑定</li><li><img src="/images/gitkrakenAccountSwitch/Snipaste_2021-07-28_21-56-01.png" alt></li></ul>]]></content>
       
       
+      
+        <tags>
+            
+            <tag> Git </tag>
+            
+            <tag> Github </tag>
+            
+        </tags>
       
     </entry>
     
@@ -533,11 +541,11 @@
             
             <tag> Nginx </tag>
             
+            <tag> JavaScript </tag>
+            
             <tag> Selenium </tag>
             
             <tag> ChromeDriver </tag>
-            
-            <tag> JavaScript </tag>
             
             <tag> MySQL </tag>
             
@@ -1080,9 +1088,9 @@
       
         <tags>
             
-            <tag> ES6 </tag>
-            
             <tag> ECMAScript </tag>
+            
+            <tag> ES6 </tag>
             
         </tags>
       
