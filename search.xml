@@ -537,11 +537,11 @@
             
             <tag> Linux </tag>
             
-            <tag> JavaScript </tag>
-            
             <tag> RaspberryPi </tag>
             
             <tag> Nginx </tag>
+            
+            <tag> JavaScript </tag>
             
             <tag> Selenium </tag>
             
@@ -1088,9 +1088,9 @@
       
         <tags>
             
-            <tag> ECMAScript </tag>
-            
             <tag> ES6 </tag>
+            
+            <tag> ECMAScript </tag>
             
         </tags>
       
