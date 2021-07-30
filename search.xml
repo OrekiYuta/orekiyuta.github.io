@@ -96,9 +96,9 @@
       
         <tags>
             
-            <tag> Hexo </tag>
-            
             <tag> Git </tag>
+            
+            <tag> Hexo </tag>
             
         </tags>
       
@@ -436,9 +436,9 @@
       
         <tags>
             
-            <tag> Django </tag>
-            
             <tag> Python </tag>
+            
+            <tag> Django </tag>
             
         </tags>
       
@@ -543,15 +543,17 @@
             
             <tag> JavaScript </tag>
             
-            <tag> MySQL </tag>
+            <tag> Selenium </tag>
             
-            <tag> Python </tag>
+            <tag> ChromeDriver </tag>
+            
+            <tag> MySQL </tag>
             
             <tag> Flask </tag>
             
-            <tag> Mariadb </tag>
+            <tag> Python </tag>
             
-            <tag> Selenium </tag>
+            <tag> Mariadb </tag>
             
             <tag> Chromium </tag>
             
@@ -562,8 +564,6 @@
             <tag> Gunicorn </tag>
             
             <tag> Crontab </tag>
-            
-            <tag> ChromeDriver </tag>
             
             <tag> Arm </tag>
             
@@ -603,9 +603,9 @@
       
         <tags>
             
-            <tag> Python </tag>
-            
             <tag> Flask </tag>
+            
+            <tag> Python </tag>
             
         </tags>
       
@@ -1185,9 +1185,9 @@
       
         <tags>
             
-            <tag> Hexo </tag>
-            
             <tag> Git </tag>
+            
+            <tag> Hexo </tag>
             
         </tags>
       
@@ -1250,13 +1250,13 @@
             
             <tag> Java </tag>
             
-            <tag> Selenium </tag>
-            
-            <tag> ChromeDriver </tag>
-            
             <tag> Maven </tag>
             
             <tag> Xpath </tag>
+            
+            <tag> Selenium </tag>
+            
+            <tag> ChromeDriver </tag>
             
         </tags>
       
