@@ -1,7 +1,7 @@
 ---
 title: Win10 turns blue screen when opening Android emulator
 date: 2021-04-15 00:13:06
-tags: [flutter,Android]
+tags: [Flutter,Android]
 ---
 
 ## Scene
