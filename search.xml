@@ -96,9 +96,9 @@
       
         <tags>
             
-            <tag> Git </tag>
-            
             <tag> Hexo </tag>
+            
+            <tag> Git </tag>
             
         </tags>
       
@@ -543,10 +543,6 @@
             
             <tag> JavaScript </tag>
             
-            <tag> Selenium </tag>
-            
-            <tag> ChromeDriver </tag>
-            
             <tag> MySQL </tag>
             
             <tag> Python </tag>
@@ -554,6 +550,8 @@
             <tag> Flask </tag>
             
             <tag> Mariadb </tag>
+            
+            <tag> Selenium </tag>
             
             <tag> Chromium </tag>
             
@@ -564,6 +562,8 @@
             <tag> Gunicorn </tag>
             
             <tag> Crontab </tag>
+            
+            <tag> ChromeDriver </tag>
             
             <tag> Arm </tag>
             
@@ -1185,9 +1185,9 @@
       
         <tags>
             
-            <tag> Git </tag>
-            
             <tag> Hexo </tag>
+            
+            <tag> Git </tag>
             
         </tags>
       
@@ -1250,13 +1250,13 @@
             
             <tag> Java </tag>
             
-            <tag> Maven </tag>
-            
-            <tag> Xpath </tag>
-            
             <tag> Selenium </tag>
             
             <tag> ChromeDriver </tag>
+            
+            <tag> Maven </tag>
+            
+            <tag> Xpath </tag>
             
         </tags>
       
