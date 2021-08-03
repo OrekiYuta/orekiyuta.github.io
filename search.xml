@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>Use Github Api Commit</title>
+      <link href="/archives/useGithubApiCommit/"/>
+      <url>/archives/useGithubApiCommit/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Sence"><a href="#Sence" class="headerlink" title="Sence"></a>Sence</h2><h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><h2 id="Other"><a href="#Other" class="headerlink" title="Other"></a>Other</h2><ul><li>👉 <a href="https://docs.github.com/en/rest/reference/repos#create-or-update-file-contents" target="_blank" rel="noopener">Create or update file contents</a></li><li>👉 <a href="https://segmentfault.com/a/1190000015144126" target="_blank" rel="noopener">一篇文章搞定Github API 调用 (v3)</a></li><li>👉 <a href="https://wqian.net/blog/2019/0426-python-github-api-index.html" target="_blank" rel="noopener">python利用github的api实现文件的上传和更新</a></li><li>👉 <a href="https://www.bbsmax.com/A/Vx5MDry7JN/" target="_blank" rel="noopener">使用GitHub API上传文件及GitHub做图床</a></li></ul>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Github </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Gitkraken Account Switch</title>
       <link href="/archives/gitkrakenAccountSwitch/"/>
       <url>/archives/gitkrakenAccountSwitch/</url>
@@ -96,9 +115,9 @@
       
         <tags>
             
-            <tag> Git </tag>
-            
             <tag> Hexo </tag>
+            
+            <tag> Git </tag>
             
         </tags>
       
@@ -537,17 +556,17 @@
             
             <tag> Linux </tag>
             
-            <tag> Selenium </tag>
-            
-            <tag> ChromeDriver </tag>
-            
             <tag> RaspberryPi </tag>
             
             <tag> Nginx </tag>
             
-            <tag> JavaScript </tag>
+            <tag> Selenium </tag>
+            
+            <tag> ChromeDriver </tag>
             
             <tag> MySQL </tag>
+            
+            <tag> JavaScript </tag>
             
             <tag> Python </tag>
             
@@ -1185,9 +1204,9 @@
       
         <tags>
             
-            <tag> Git </tag>
-            
             <tag> Hexo </tag>
+            
+            <tag> Git </tag>
             
         </tags>
       
