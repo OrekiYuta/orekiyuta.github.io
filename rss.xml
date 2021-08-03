@@ -6,7 +6,7 @@
   <link href="/rss.xml" rel="self"/>
   
   <link href="http://www.orekiyuta.cn/"/>
-  <updated>2021-07-29T13:13:49.718Z</updated>
+  <updated>2021-08-03T17:24:59.693Z</updated>
   <id>http://www.orekiyuta.cn/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Use Github Api Commit</title>
+    <link href="http://www.orekiyuta.cn/archives/useGithubApiCommit/"/>
+    <id>http://www.orekiyuta.cn/archives/useGithubApiCommit/</id>
+    <published>2021-08-03T16:53:33.000Z</published>
+    <updated>2021-08-03T17:24:59.693Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Sence"><a href="#Sence" class="headerlink" title="Sence"></a>Sence</h2><h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><h2 id="Other"><a href="#Other" class="headerlink" title="Other"></a>Other</h2><ul><li>👉 <a href="https://docs.github.com/en/rest/reference/repos#create-or-update-file-contents" target="_blank" rel="noopener">Create or update file contents</a></li><li>👉 <a href="https://segmentfault.com/a/1190000015144126" target="_blank" rel="noopener">一篇文章搞定Github API 调用 (v3)</a></li><li>👉 <a href="https://wqian.net/blog/2019/0426-python-github-api-index.html" target="_blank" rel="noopener">python利用github的api实现文件的上传和更新</a></li><li>👉 <a href="https://www.bbsmax.com/A/Vx5MDry7JN/" target="_blank" rel="noopener">使用GitHub API上传文件及GitHub做图床</a></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;Sence&quot;&gt;&lt;a href=&quot;#Sence&quot; class=&quot;headerlink&quot; title=&quot;Sence&quot;&gt;&lt;/a&gt;Sence&lt;/h2&gt;&lt;h2 id=&quot;Solution&quot;&gt;&lt;a href=&quot;#Solution&quot; class=&quot;headerlink&quot; titl
+      
+    
+    </summary>
+    
+    
+    
+      <category term="Github" scheme="http://www.orekiyuta.cn/tags/Github/"/>
+    
+  </entry>
   
   <entry>
     <title>Gitkraken Account Switch</title>
@@ -149,9 +173,9 @@
     
     
     
-      <category term="Git" scheme="http://www.orekiyuta.cn/tags/Git/"/>
-    
       <category term="Hexo" scheme="http://www.orekiyuta.cn/tags/Hexo/"/>
+    
+      <category term="Git" scheme="http://www.orekiyuta.cn/tags/Git/"/>
     
   </entry>
   
@@ -261,32 +285,6 @@
     
     
       <category term="Git" scheme="http://www.orekiyuta.cn/tags/Git/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>MySQL Migrate 8.0.18 -&gt; 5.6.28</title>
-    <link href="http://www.orekiyuta.cn/archives/mysqlMigrate8-0-18to5-6-28/"/>
-    <id>http://www.orekiyuta.cn/archives/mysqlMigrate8-0-18to5-6-28/</id>
-    <published>2021-06-26T09:24:14.000Z</published>
-    <updated>2021-07-15T12:26:24.709Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="Scene"><a href="#Scene" class="headerlink" title="Scene"></a>Scene</h2><ul><li>迁移 MySQL 数据库</li><li>用 Navicat 转储 SQL 文件</li><li>再导入新数据库<br><img src="/images/mysqlMigrate8-0-18to5-6-28/Snipaste_2021-06-26_17-30-25.png" alt></li><li>unkown collation:’utf8mb4_0900_ai_ci’<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2></li><li><p>这是因为 数据库版本 不一致 导致的</p><a id="more"></a><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- old db</span></span><br><span class="line">mysql&gt;  select version();</span><br><span class="line">+<span class="comment">-----------+</span></span><br><span class="line">| version() |</span><br><span class="line">+<span class="comment">-----------+</span></span><br><span class="line">| 8.0.18    |</span><br><span class="line">+<span class="comment">-----------+</span></span><br><span class="line">1 row in <span class="keyword">set</span> (<span class="number">0.04</span> sec)</span><br></pre></td></tr></table></figure></div>  <div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="SQL"><figure class="iseeu highlight /sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- new db</span></span><br><span class="line">mysql&gt;  select version();</span><br><span class="line">+<span class="comment">--------------------+</span></span><br><span class="line">| version()          |</span><br><span class="line">+<span class="comment">--------------------+</span></span><br><span class="line">| 5.6.28-cdb2016-log |</span><br><span class="line">+<span class="comment">--------------------+</span></span><br><span class="line">1 row in <span class="keyword">set</span> (<span class="number">0.06</span> sec)</span><br></pre></td></tr></table></figure></div></li><li><p>把转储 SQL 文件中的所有的 utf8mb4_0900_ai_ci 替换为 utf8_general_ci </p></li><li>把转储 SQL 文件中的所有的 utf8mb4 替换为 utf8</li><li>再次导入即可</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;Scene&quot;&gt;&lt;a href=&quot;#Scene&quot; class=&quot;headerlink&quot; title=&quot;Scene&quot;&gt;&lt;/a&gt;Scene&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;迁移 MySQL 数据库&lt;/li&gt;
-&lt;li&gt;用 Navicat 转储 SQL 文件&lt;/li&gt;
-&lt;li&gt;再导入新数据库&lt;br&gt;&lt;img src=&quot;/images/mysqlMigrate8-0-18to5-6-28/Snipaste_2021-06-26_17-30-25.png&quot; alt&gt;&lt;/li&gt;
-&lt;li&gt;unkown collation:’utf8mb4_0900_ai_ci’&lt;h2 id=&quot;Solution&quot;&gt;&lt;a href=&quot;#Solution&quot; class=&quot;headerlink&quot; title=&quot;Solution&quot;&gt;&lt;/a&gt;Solution&lt;/h2&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;这是因为 数据库版本 不一致 导致的&lt;/p&gt;
-    
-    </summary>
-    
-    
-    
-      <category term="MySQL" scheme="http://www.orekiyuta.cn/tags/MySQL/"/>
     
   </entry>
   
