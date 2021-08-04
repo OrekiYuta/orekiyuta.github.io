@@ -554,21 +554,21 @@
       
         <tags>
             
+            <tag> Linux </tag>
+            
             <tag> JavaScript </tag>
             
             <tag> RaspberryPi </tag>
             
-            <tag> Linux </tag>
-            
             <tag> Nginx </tag>
-            
-            <tag> Selenium </tag>
-            
-            <tag> ChromeDriver </tag>
             
             <tag> MySQL </tag>
             
             <tag> Python </tag>
+            
+            <tag> Selenium </tag>
+            
+            <tag> ChromeDriver </tag>
             
             <tag> Flask </tag>
             
@@ -725,9 +725,9 @@
       
         <tags>
             
-            <tag> RaspberryPi </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> RaspberryPi </tag>
             
             <tag> Nginx </tag>
             
@@ -1244,9 +1244,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> SVN </tag>
             
