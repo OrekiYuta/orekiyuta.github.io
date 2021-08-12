@@ -37,9 +37,9 @@
     
       <category term="Python" scheme="http://www.orekiyuta.cn/tags/Python/"/>
     
-      <category term="Github" scheme="http://www.orekiyuta.cn/tags/Github/"/>
-    
       <category term="Flask" scheme="http://www.orekiyuta.cn/tags/Flask/"/>
+    
+      <category term="Github" scheme="http://www.orekiyuta.cn/tags/Github/"/>
     
   </entry>
   
@@ -176,9 +176,9 @@
     
     
     
-      <category term="Hexo" scheme="http://www.orekiyuta.cn/tags/Hexo/"/>
-    
       <category term="Git" scheme="http://www.orekiyuta.cn/tags/Git/"/>
+    
+      <category term="Hexo" scheme="http://www.orekiyuta.cn/tags/Hexo/"/>
     
   </entry>
   
