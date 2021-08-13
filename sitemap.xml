@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.orekiyuta.cn/archives/setupSeafile/</loc>
+    
+    <lastmod>2021-08-13T19:13:11.082Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.orekiyuta.cn/archives/useGithubApiCommit/</loc>
     
     <lastmod>2021-08-05T14:41:32.169Z</lastmod>
@@ -107,14 +114,14 @@
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/SwitchToES6/</loc>
+    <loc>http://www.orekiyuta.cn/archives/TheRainTurnedFine/</loc>
     
     <lastmod>2021-07-15T12:26:24.722Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/TheRainTurnedFine/</loc>
+    <loc>http://www.orekiyuta.cn/archives/SwitchToES6/</loc>
     
     <lastmod>2021-07-15T12:26:24.722Z</lastmod>
     
@@ -136,13 +143,6 @@
   
   <url>
     <loc>http://www.orekiyuta.cn/archives/SSHPortMapping/</loc>
-    
-    <lastmod>2021-07-15T12:26:24.720Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.orekiyuta.cn/archives/setupSeafile/</loc>
     
     <lastmod>2021-07-15T12:26:24.720Z</lastmod>
     
@@ -268,13 +268,6 @@
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/javastartrun/</loc>
-    
-    <lastmod>2021-07-15T12:26:24.707Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.orekiyuta.cn/archives/jnote/</loc>
     
     <lastmod>2021-07-15T12:26:24.707Z</lastmod>
@@ -282,14 +275,21 @@
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/JavaGenericTypes/</loc>
+    <loc>http://www.orekiyuta.cn/archives/javastartrun/</loc>
+    
+    <lastmod>2021-07-15T12:26:24.707Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.orekiyuta.cn/archives/Java-ArtificialSimulation/</loc>
     
     <lastmod>2021-07-15T12:26:24.701Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/Java-ArtificialSimulation/</loc>
+    <loc>http://www.orekiyuta.cn/archives/JavaGenericTypes/</loc>
     
     <lastmod>2021-07-15T12:26:24.701Z</lastmod>
     

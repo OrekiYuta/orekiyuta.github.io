@@ -119,9 +119,9 @@
       
         <tags>
             
-            <tag> Git </tag>
-            
             <tag> Hexo </tag>
+            
+            <tag> Git </tag>
             
         </tags>
       
@@ -257,7 +257,7 @@
       <link href="/archives/setupSeafile/"/>
       <url>/archives/setupSeafile/</url>
       
-        <content type="html"><![CDATA[<h2 id="Linux-Server"><a href="#Linux-Server" class="headerlink" title="Linux Server"></a>Linux Server</h2><ul><li><code>yum install docker-compose -y</code></li><li>编写 docker-compose.yml </li><li><code>docker-compose up -d</code></li><li>进入 <code>http://&lt;您的 IP 地址&gt;:8000</code> </li><li>右上角 System Admin -&gt; Settings 更改 url 为该机器地址</li><li>👉 <a href="https://github.com/OrekiYuta/Gear/blob/master/Seafile/linux/docker-compose.yml" target="_blank" rel="noopener">docker-compose.yml</a><br>-👉 <a href="https://cloud.seafile.com/published/seafile-manual-cn/docker/%E7%94%A8Docker%E9%83%A8%E7%BD%B2Seafile.md" target="_blank" rel="noopener">用 Docker 部署 Seafile 服务</a><a id="more"></a><h2 id="Windows-Server"><a href="#Windows-Server" class="headerlink" title="Windows Server"></a>Windows Server</h2></li><li>强制要 Python 2.7.11 32位环境</li><li>下载解压 Seafile 文件</li><li>启动目录下的 run.bat</li><li>选择存储位置</li><li>添加管理员账号</li><li>进入 <code>http://&lt;您的 IP 地址&gt;:8000</code> </li><li>右上角 System Admin -&gt; Settings 更改 127.0.0.1 为该机器 ip</li><li>👉 <a href="https://github.com/OrekiYuta/Gear/tree/master/Seafile/win" target="_blank" rel="noopener">seafile-server_6.0.7_win32.tar.gz</a></li><li>👉 <a href="https://cloud.seafile.com/published/seafile-manual-cn/deploy_windows/download_and_setup_seafile_windows_server.md" target="_blank" rel="noopener">Windows 版 Seafile 服务器</a></li></ul><h2 id="Other"><a href="#Other" class="headerlink" title="Other"></a>Other</h2><h3 id="Docker-Compose-ERROR-network-has-active-endpoints"><a href="#Docker-Compose-ERROR-network-has-active-endpoints" class="headerlink" title="Docker Compose ERROR network has active endpoints"></a>Docker Compose ERROR network has active endpoints</h3><ul><li>删除 container 和 image 之后重新部署不成功</li><li>因为之前的 network 没删除仍然存在</li><li>方法一：重启 docker <code>sudo service docker restart</code></li><li>方法二：删除网络</li><li><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAIN"><figure class="iseeu highlight /plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">docker network ls</span><br><span class="line">docker network inspect [网络ID]</span><br><span class="line">docker network disconnet -f [网络ID] [容器Name]</span><br></pre></td></tr></table></figure></div></li><li><p><img src="/images/setupSeafile/Snipaste_2021-06-04_21-34-14.png" alt></p></li><li><img src="/images/setupSeafile/Snipaste_2021-06-04_21-36-54.png" alt></li><li><img src="/images/setupSeafile/Snipaste_2021-06-04_21-38-04.png" alt></li></ul>]]></content>
+        <content type="html"><![CDATA[<h2 id="Linux-Server"><a href="#Linux-Server" class="headerlink" title="Linux Server"></a>Linux Server</h2><ul><li><code>yum install docker-compose -y</code></li><li>编写 docker-compose.yml </li><li><code>docker-compose up -d</code></li><li>进入 <code>http://&lt;您的 IP 地址&gt;:8000</code> </li><li>右上角 System Admin -&gt; Settings 更改 url 为该机器地址</li><li>👉 <a href="https://github.com/OrekiYuta/Gear/blob/master/Seafile/linux/docker-compose.yml" target="_blank" rel="noopener">docker-compose.yml</a></li><li>👉 <a href="https://cloud.seafile.com/published/seafile-manual-cn/docker/%E7%94%A8Docker%E9%83%A8%E7%BD%B2Seafile.md" target="_blank" rel="noopener">用 Docker 部署 Seafile 服务</a><a id="more"></a><h2 id="Windows-Server"><a href="#Windows-Server" class="headerlink" title="Windows Server"></a>Windows Server</h2></li><li>强制要 Python 2.7.11 32位环境</li><li>下载解压 Seafile 文件</li><li>启动目录下的 run.bat</li><li>选择存储位置</li><li>添加管理员账号</li><li>进入 <code>http://&lt;您的 IP 地址&gt;:8000</code> </li><li>右上角 System Admin -&gt; Settings 更改 127.0.0.1 为该机器 ip</li><li>👉 <a href="https://github.com/OrekiYuta/Gear/tree/master/Seafile/win" target="_blank" rel="noopener">seafile-server_6.0.7_win32.tar.gz</a></li><li>👉 <a href="https://cloud.seafile.com/published/seafile-manual-cn/deploy_windows/download_and_setup_seafile_windows_server.md" target="_blank" rel="noopener">Windows 版 Seafile 服务器</a></li></ul><h2 id="Other"><a href="#Other" class="headerlink" title="Other"></a>Other</h2><h3 id="Docker-Compose-ERROR-network-has-active-endpoints"><a href="#Docker-Compose-ERROR-network-has-active-endpoints" class="headerlink" title="Docker Compose ERROR network has active endpoints"></a>Docker Compose ERROR network has active endpoints</h3><ul><li>删除 container 和 image 之后重新部署不成功</li><li>因为之前的 network 没删除仍然存在</li><li>方法一：重启 docker <code>sudo service docker restart</code></li><li>方法二：删除网络</li><li><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAIN"><figure class="iseeu highlight /plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">docker network ls</span><br><span class="line">docker network inspect [网络ID]</span><br><span class="line">docker network disconnet -f [网络ID] [容器Name]</span><br></pre></td></tr></table></figure></div></li><li><p><img src="/images/setupSeafile/Snipaste_2021-06-04_21-34-14.png" alt></p></li><li><img src="/images/setupSeafile/Snipaste_2021-06-04_21-36-54.png" alt></li><li><img src="/images/setupSeafile/Snipaste_2021-06-04_21-38-04.png" alt></li></ul>]]></content>
       
       
       
@@ -564,11 +564,11 @@
             
             <tag> Nginx </tag>
             
+            <tag> JavaScript </tag>
+            
             <tag> Selenium </tag>
             
             <tag> ChromeDriver </tag>
-            
-            <tag> JavaScript </tag>
             
             <tag> MySQL </tag>
             
@@ -1111,9 +1111,9 @@
       
         <tags>
             
-            <tag> ES6 </tag>
-            
             <tag> ECMAScript </tag>
+            
+            <tag> ES6 </tag>
             
         </tags>
       
@@ -1208,9 +1208,9 @@
       
         <tags>
             
-            <tag> Git </tag>
-            
             <tag> Hexo </tag>
+            
+            <tag> Git </tag>
             
         </tags>
       
