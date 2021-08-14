@@ -11,7 +11,7 @@ tags: [Linux,Windows]
 - 进入 `http://<您的 IP 地址>:8000` 
 - 右上角 System Admin -> Settings 更改 url 为该机器地址
 - 👉 [docker-compose.yml](https://github.com/OrekiYuta/Gear/blob/master/Seafile/linux/docker-compose.yml)
--👉 [用 Docker 部署 Seafile 服务](https://cloud.seafile.com/published/seafile-manual-cn/docker/%E7%94%A8Docker%E9%83%A8%E7%BD%B2Seafile.md)
+- 👉 [用 Docker 部署 Seafile 服务](https://cloud.seafile.com/published/seafile-manual-cn/docker/%E7%94%A8Docker%E9%83%A8%E7%BD%B2Seafile.md)
 <!-- more -->
 ##  Windows Server
 - 强制要 Python 2.7.11 32位环境
