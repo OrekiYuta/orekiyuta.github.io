@@ -576,9 +576,9 @@
             
             <tag> Flask </tag>
             
-            <tag> Chromium </tag>
-            
             <tag> Mariadb </tag>
+            
+            <tag> Chromium </tag>
             
             <tag> BeautifulSoup </tag>
             
@@ -1111,9 +1111,9 @@
       
         <tags>
             
-            <tag> ES6 </tag>
-            
             <tag> ECMAScript </tag>
+            
+            <tag> ES6 </tag>
             
         </tags>
       
