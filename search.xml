@@ -119,9 +119,9 @@
       
         <tags>
             
-            <tag> Git </tag>
-            
             <tag> Hexo </tag>
+            
+            <tag> Git </tag>
             
         </tags>
       
@@ -560,6 +560,8 @@
             
             <tag> Linux </tag>
             
+            <tag> JavaScript </tag>
+            
             <tag> RaspberryPi </tag>
             
             <tag> Nginx </tag>
@@ -569,8 +571,6 @@
             <tag> ChromeDriver </tag>
             
             <tag> MySQL </tag>
-            
-            <tag> JavaScript </tag>
             
             <tag> Python </tag>
             
@@ -1111,9 +1111,9 @@
       
         <tags>
             
-            <tag> ECMAScript </tag>
-            
             <tag> ES6 </tag>
+            
+            <tag> ECMAScript </tag>
             
         </tags>
       
@@ -1208,9 +1208,9 @@
       
         <tags>
             
-            <tag> Git </tag>
-            
             <tag> Hexo </tag>
+            
+            <tag> Git </tag>
             
         </tags>
       
