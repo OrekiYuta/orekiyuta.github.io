@@ -4,6 +4,27 @@
   
     
     <entry>
+      <title>Github Unsupport PassWord Authentication</title>
+      <link href="/archives/githubUnsupportPassWordAuthentication/"/>
+      <url>/archives/githubUnsupportPassWordAuthentication/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Sence"><a href="#Sence" class="headerlink" title="Sence"></a>Sence</h2><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="SHELL"><figure class="iseeu highlight /shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.</span><br><span class="line">remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.</span><br><span class="line">fatal: unable to access 'https://github.com/xxx/xxx.github.io.git/': The requested URL returned error: 403</span><br><span class="line">[41mFATAL[49m Something's wrong. Maybe you can find the solution here: [4mhttp://hexo.io/docs/troubleshooting.html[24m</span><br></pre></td></tr></table></figure></div><h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> Github </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Use Github Api Commit</title>
       <link href="/archives/useGithubApiCommit/"/>
       <url>/archives/useGithubApiCommit/</url>
@@ -119,9 +140,9 @@
       
         <tags>
             
-            <tag> Git </tag>
-            
             <tag> Hexo </tag>
+            
+            <tag> Git </tag>
             
         </tags>
       
@@ -560,25 +581,25 @@
             
             <tag> Linux </tag>
             
+            <tag> Selenium </tag>
+            
+            <tag> ChromeDriver </tag>
+            
             <tag> JavaScript </tag>
+            
+            <tag> MySQL </tag>
             
             <tag> RaspberryPi </tag>
             
             <tag> Nginx </tag>
             
-            <tag> Selenium </tag>
-            
-            <tag> ChromeDriver </tag>
-            
-            <tag> MySQL </tag>
-            
             <tag> Python </tag>
             
             <tag> Flask </tag>
             
-            <tag> Mariadb </tag>
-            
             <tag> Chromium </tag>
+            
+            <tag> Mariadb </tag>
             
             <tag> BeautifulSoup </tag>
             
@@ -1208,9 +1229,9 @@
       
         <tags>
             
-            <tag> Git </tag>
-            
             <tag> Hexo </tag>
+            
+            <tag> Git </tag>
             
         </tags>
       
