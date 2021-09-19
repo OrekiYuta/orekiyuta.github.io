@@ -304,6 +304,203 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.orekiyuta.cn/archives/TmuxManual/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Orekiyuta">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Canoe">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/archives/TmuxManual/" itemprop="url">Tmux Manual</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-11-28T00:08:43+08:00">
+                2019-11-28 => 00:08:43
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                  <span class="post-meta-divider">|</span>
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                
+                <span title="Words count in article">
+                  179
+                </span>
+              
+
+              
+
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="启动会话"><a href="#启动会话" class="headerlink" title="启动会话"></a>启动会话</h3><ul>
+<li><code>tmux</code> 匿名会话</li>
+<li><code>tmux new -s &lt;session-name&gt;</code></li>
+</ul>
+<h3 id="退出会话"><a href="#退出会话" class="headerlink" title="退出会话"></a>退出会话</h3><ul>
+<li><code>exit</code></li>
+<li>Ctrl + d</li>
+</ul>
+<h3 id="前缀"><a href="#前缀" class="headerlink" title="前缀"></a>前缀</h3><ul>
+<li>Ctrl + b</li>
+<li>Ctrl + b + ?  帮助信息</li>
+<li>ESC / q   退出帮助</li>
+</ul>
+<h3 id="分离会话"><a href="#分离会话" class="headerlink" title="分离会话"></a>分离会话</h3><ul>
+<li><code>tmux detach</code></li>
+<li>Ctrl + b + d</li>
+</ul>
+<h3 id="查看会话列表"><a href="#查看会话列表" class="headerlink" title="查看会话列表"></a>查看会话列表</h3><ul>
+<li><code>tmux ls</code></li>
+<li>Ctrl + b + s</li>
+</ul>
+<h3 id="接入会话"><a href="#接入会话" class="headerlink" title="接入会话"></a>接入会话</h3><ul>
+<li><code>tmux a</code> </li>
+<li><code>tmux attach -t &lt;session-name&gt;</code></li>
+</ul>
+<h3 id="关闭会话"><a href="#关闭会话" class="headerlink" title="关闭会话"></a>关闭会话</h3><ul>
+<li><code>tmux kill-session -t &lt;session-name&gt;</code></li>
+</ul>
+<h3 id="切换会话"><a href="#切换会话" class="headerlink" title="切换会话"></a>切换会话</h3><ul>
+<li><code>tmux switch -t &lt;session-name&gt;</code></li>
+</ul>
+<h3 id="重命名会话"><a href="#重命名会话" class="headerlink" title="重命名会话"></a>重命名会话</h3><ul>
+<li><code>tmux rename-session -t &lt;old-name&gt; &lt;new-name&gt;</code></li>
+<li>Ctrl + b + $</li>
+</ul>
+<h3 id="窗格操作"><a href="#窗格操作" class="headerlink" title="窗格操作"></a>窗格操作</h3><h4 id="划分上下窗口"><a href="#划分上下窗口" class="headerlink" title="划分上下窗口"></a>划分上下窗口</h4><ul>
+<li>Ctrl + b + “   </li>
+</ul>
+<h4 id="划分左右窗口"><a href="#划分左右窗口" class="headerlink" title="划分左右窗口"></a>划分左右窗口</h4><ul>
+<li>Ctrl + b + %</li>
+</ul>
+<h4 id="移动光标到其他窗格"><a href="#移动光标到其他窗格" class="headerlink" title="移动光标到其他窗格"></a>移动光标到其他窗格</h4><ul>
+<li>Ctrl + b + ↑↓←→键</li>
+</ul>
+<h4 id="调整窗格大小"><a href="#调整窗格大小" class="headerlink" title="调整窗格大小"></a>调整窗格大小</h4><ul>
+<li>Ctrl + b + Ctrl + ↑↓←→</li>
+</ul>
+<h4 id="窗格内容上下滚动"><a href="#窗格内容上下滚动" class="headerlink" title="窗格内容上下滚动"></a>窗格内容上下滚动</h4><ul>
+<li>Ctrl + b + [ + ↑↓   </li>
+</ul>
+<hr>
+<h3 id="参考内容"><a href="#参考内容" class="headerlink" title="参考内容"></a>参考内容</h3><ul>
+<li><a href="http://louiszhai.github.io/2017/09/30/tmux/" target="_blank" rel="noopener">Tmux 使用手册</a></li>
+<li><a href="https://www.ruanyifeng.com/blog/2019/10/tmux.html" target="_blank" rel="noopener">Tmux 使用教程</a></li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+     <div>
+      
+     </div>
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://www.orekiyuta.cn/archives/Ark-exploit-log/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -2058,7 +2255,7 @@ if(canvas.getContext){
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">69</span>
+                  <span class="site-state-item-count">70</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
