@@ -8,7 +8,7 @@
       <link href="/archives/localAreaNetworkFormationScheme/"/>
       <url>/archives/localAreaNetworkFormationScheme/</url>
       
-        <content type="html"><![CDATA[<h2 id="Scene"><a href="#Scene" class="headerlink" title="Scene"></a>Scene</h2><h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2>]]></content>
+        <content type="html"><![CDATA[<h2 id="Scene"><a href="#Scene" class="headerlink" title="Scene"></a>Scene</h2><ul><li>组一套家庭网络服务，充分利用全部闲置的计算设备。</li></ul><h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2>]]></content>
       
       
       
@@ -54,11 +54,11 @@
       
         <tags>
             
-            <tag> Flask </tag>
-            
             <tag> Python </tag>
             
             <tag> Github </tag>
+            
+            <tag> Flask </tag>
             
         </tags>
       
@@ -499,9 +499,9 @@
       
         <tags>
             
-            <tag> Python </tag>
-            
             <tag> Django </tag>
+            
+            <tag> Python </tag>
             
         </tags>
       
@@ -600,25 +600,25 @@
             
             <tag> Linux </tag>
             
-            <tag> JavaScript </tag>
-            
             <tag> RaspberryPi </tag>
             
             <tag> Nginx </tag>
-            
-            <tag> MySQL </tag>
             
             <tag> Selenium </tag>
             
             <tag> ChromeDriver </tag>
             
-            <tag> Flask </tag>
+            <tag> JavaScript </tag>
+            
+            <tag> MySQL </tag>
             
             <tag> Python </tag>
             
             <tag> Mariadb </tag>
             
             <tag> Chromium </tag>
+            
+            <tag> Flask </tag>
             
             <tag> BeautifulSoup </tag>
             
@@ -666,9 +666,9 @@
       
         <tags>
             
-            <tag> Flask </tag>
-            
             <tag> Python </tag>
+            
+            <tag> Flask </tag>
             
         </tags>
       

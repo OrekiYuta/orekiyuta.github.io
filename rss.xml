@@ -6,7 +6,7 @@
   <link href="/rss.xml" rel="self"/>
   
   <link href="http://www.orekiyuta.cn/"/>
-  <updated>2021-09-19T18:57:10.438Z</updated>
+  <updated>2021-09-21T12:35:18.471Z</updated>
   <id>http://www.orekiyuta.cn/</id>
   
   <author>
@@ -21,15 +21,18 @@
     <link href="http://www.orekiyuta.cn/archives/localAreaNetworkFormationScheme/"/>
     <id>http://www.orekiyuta.cn/archives/localAreaNetworkFormationScheme/</id>
     <published>2021-09-19T18:55:37.000Z</published>
-    <updated>2021-09-19T18:57:10.438Z</updated>
+    <updated>2021-09-21T12:35:18.471Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="Scene"><a href="#Scene" class="headerlink" title="Scene"></a>Scene</h2><h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2>]]></content>
+    <content type="html"><![CDATA[<h2 id="Scene"><a href="#Scene" class="headerlink" title="Scene"></a>Scene</h2><ul><li>组一套家庭网络服务，充分利用全部闲置的计算设备。</li></ul><h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h2 id=&quot;Scene&quot;&gt;&lt;a href=&quot;#Scene&quot; class=&quot;headerlink&quot; title=&quot;Scene&quot;&gt;&lt;/a&gt;Scene&lt;/h2&gt;&lt;h2 id=&quot;Solution&quot;&gt;&lt;a href=&quot;#Solution&quot; class=&quot;headerlink&quot; titl
+        &lt;h2 id=&quot;Scene&quot;&gt;&lt;a href=&quot;#Scene&quot; class=&quot;headerlink&quot; title=&quot;Scene&quot;&gt;&lt;/a&gt;Scene&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;组一套家庭网络服务，充分利用全部闲置的计算设备。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;Solution
       
     
     </summary>
@@ -85,11 +88,11 @@
     
     
     
-      <category term="Flask" scheme="http://www.orekiyuta.cn/tags/Flask/"/>
-    
       <category term="Python" scheme="http://www.orekiyuta.cn/tags/Python/"/>
     
       <category term="Github" scheme="http://www.orekiyuta.cn/tags/Github/"/>
+    
+      <category term="Flask" scheme="http://www.orekiyuta.cn/tags/Flask/"/>
     
   </entry>
   
