@@ -229,9 +229,9 @@
     
     
     
-      <category term="Git" scheme="http://www.orekiyuta.cn/tags/Git/"/>
-    
       <category term="Hexo" scheme="http://www.orekiyuta.cn/tags/Hexo/"/>
+    
+      <category term="Git" scheme="http://www.orekiyuta.cn/tags/Git/"/>
     
   </entry>
   
@@ -282,9 +282,9 @@
     
     
     
-      <category term="Ajax" scheme="http://www.orekiyuta.cn/tags/Ajax/"/>
-    
       <category term="Network" scheme="http://www.orekiyuta.cn/tags/Network/"/>
+    
+      <category term="Ajax" scheme="http://www.orekiyuta.cn/tags/Ajax/"/>
     
   </entry>
   
