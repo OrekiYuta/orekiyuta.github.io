@@ -282,9 +282,9 @@
     
     
     
-      <category term="Network" scheme="http://www.orekiyuta.cn/tags/Network/"/>
-    
       <category term="Ajax" scheme="http://www.orekiyuta.cn/tags/Ajax/"/>
+    
+      <category term="Network" scheme="http://www.orekiyuta.cn/tags/Network/"/>
     
   </entry>
   
