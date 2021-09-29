@@ -600,17 +600,17 @@
             
             <tag> Linux </tag>
             
-            <tag> RaspberryPi </tag>
-            
-            <tag> Nginx </tag>
+            <tag> JavaScript </tag>
             
             <tag> Selenium </tag>
             
             <tag> ChromeDriver </tag>
             
-            <tag> MySQL </tag>
+            <tag> RaspberryPi </tag>
             
-            <tag> JavaScript </tag>
+            <tag> Nginx </tag>
+            
+            <tag> MySQL </tag>
             
             <tag> Python </tag>
             
@@ -1090,9 +1090,9 @@
       
         <tags>
             
-            <tag> ECMAScript </tag>
-            
             <tag> JavaScript </tag>
+            
+            <tag> ECMAScript </tag>
             
             <tag> TypeScript </tag>
             
