@@ -4,6 +4,44 @@
   
     
     <entry>
+      <title>Disable Windows Update</title>
+      <link href="/archives/disableWindowsUpdate/"/>
+      <url>/archives/disableWindowsUpdate/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Scene"><a href="#Scene" class="headerlink" title="Scene"></a>Scene</h2><ul><li>Disable Windows Update<a id="more"></a></li></ul><h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><ul><li>win + r , input “services.msc”</li><li><img src="/images/disableWindowsUpdate/Snipaste_2021-10-02_02-39-27.png" alt></li><li>win + r , input “regedit”</li><li>make item “WindowsUpdate”</li><li><img src="/images/disableWindowsUpdate/Snipaste_2021-10-02_02-42-00.png" alt></li><li>make item “AU”</li><li><img src="/images/disableWindowsUpdate/Snipaste_2021-10-02_02-44-11.png" alt></li><li>make DWORD “AUOptions”</li><li><img src="/images/disableWindowsUpdate/Snipaste_2021-10-02_02-45-30.png" alt></li><li>value “2”</li><li><img src="/images/disableWindowsUpdate/Snipaste_2021-10-02_02-47-01.png" alt></li></ul>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Windows </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Disable Windows Defender</title>
+      <link href="/archives/disableWindowsDefender/"/>
+      <url>/archives/disableWindowsDefender/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Scene"><a href="#Scene" class="headerlink" title="Scene"></a>Scene</h2><ul><li>Disable Windows Defender<a id="more"></a></li></ul><h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><ul><li>win + r</li><li><img src="/images/disableWindowsDefender/Snipaste_2021-10-02_02-17-40.png" alt></li><li><img src="/images/disableWindowsDefender/Snipaste_2021-10-02_02-19-42.png" alt></li><li><img src="/images/disableWindowsDefender/Snipaste_2021-10-02_02-20-19.png" alt></li><li><img src="/images/disableWindowsDefender/Snipaste_2021-10-02_02-20-51.png" alt></li><li><img src="/images/disableWindowsDefender/Snipaste_2021-10-02_02-21-23.png" alt></li><li><img src="/images/disableWindowsDefender/Snipaste_2021-10-02_02-21-55.png" alt></li><li><img src="/images/disableWindowsDefender/Snipaste_2021-10-02_02-22-23.png" alt></li><li><img src="/images/disableWindowsDefender/Snipaste_2021-10-02_02-22-23.png" alt></li><li><img src="/images/disableWindowsDefender/Snipaste_2021-10-02_02-23-21.png" alt></li><li><img src="/images/disableWindowsDefender/Snipaste_2021-10-02_02-23-45.png" alt></li><li><img src="/images/disableWindowsDefender/Snipaste_2021-10-02_02-24-57.png" alt></li><li><img src="/images/disableWindowsDefender/Snipaste_2021-10-02_02-25-38.png" alt></li><li><img src="/images/disableWindowsDefender/Snipaste_2021-10-02_02-26-15.png" alt></li><li><img src="/images/disableWindowsDefender/Snipaste_2021-10-02_02-27-14.png" alt></li></ul>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Windows </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Local Area Network(LAN) Formation Scheme</title>
       <link href="/archives/localAreaNetworkFormationScheme/"/>
       <url>/archives/localAreaNetworkFormationScheme/</url>
@@ -159,9 +197,9 @@
       
         <tags>
             
-            <tag> Hexo </tag>
-            
             <tag> Git </tag>
+            
+            <tag> Hexo </tag>
             
         </tags>
       
@@ -600,11 +638,11 @@
             
             <tag> Linux </tag>
             
-            <tag> JavaScript </tag>
-            
             <tag> RaspberryPi </tag>
             
             <tag> Nginx </tag>
+            
+            <tag> JavaScript </tag>
             
             <tag> Selenium </tag>
             
@@ -1248,9 +1286,9 @@
       
         <tags>
             
-            <tag> Hexo </tag>
-            
             <tag> Git </tag>
+            
+            <tag> Hexo </tag>
             
         </tags>
       
