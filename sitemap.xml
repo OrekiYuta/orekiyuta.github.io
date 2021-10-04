@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.orekiyuta.cn/archives/localAreaNetworkFormationScheme/</loc>
+    
+    <lastmod>2021-10-04T17:16:40.702Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.orekiyuta.cn/archives/enableHyper-Vservice/</loc>
     
-    <lastmod>2021-10-04T15:22:28.405Z</lastmod>
+    <lastmod>2021-10-04T17:15:52.894Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.orekiyuta.cn/archives/selfhostPhotoPrism/</loc>
     
-    <lastmod>2021-10-03T17:28:54.551Z</lastmod>
+    <lastmod>2021-10-04T17:15:43.872Z</lastmod>
     
   </url>
   
@@ -33,13 +40,6 @@
     <loc>http://www.orekiyuta.cn/archives/disableWindowsDefender/</loc>
     
     <lastmod>2021-10-01T18:47:28.349Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.orekiyuta.cn/archives/localAreaNetworkFormationScheme/</loc>
-    
-    <lastmod>2021-09-21T12:35:18.471Z</lastmod>
     
   </url>
   
@@ -359,14 +359,14 @@
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/HeadFirstJava/</loc>
+    <loc>http://www.orekiyuta.cn/archives/Hexo-Install-Migrate/</loc>
     
     <lastmod>2021-08-19T20:21:17.537Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/Hexo-Install-Migrate/</loc>
+    <loc>http://www.orekiyuta.cn/archives/HeadFirstJava/</loc>
     
     <lastmod>2021-08-19T20:21:17.537Z</lastmod>
     
@@ -443,14 +443,14 @@
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/CSSFiveClassicLayouts/</loc>
+    <loc>http://www.orekiyuta.cn/archives/CSS3KnowledegePoint/</loc>
     
     <lastmod>2021-08-19T20:21:17.284Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/CSS3KnowledegePoint/</loc>
+    <loc>http://www.orekiyuta.cn/archives/CSSFiveClassicLayouts/</loc>
     
     <lastmod>2021-08-19T20:21:17.284Z</lastmod>
     
