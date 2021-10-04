@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://www.orekiyuta.cn/archives/localAreaNetworkFormationScheme/</loc>
+    <lastmod>2021-10-04</lastmod>
+  </url>  <url>
     <loc>http://www.orekiyuta.cn/archives/enableHyper-Vservice/</loc>
     <lastmod>2021-10-04</lastmod>
   </url>  <url>
     <loc>http://www.orekiyuta.cn/archives/selfhostPhotoPrism/</loc>
-    <lastmod>2021-10-03</lastmod>
+    <lastmod>2021-10-04</lastmod>
   </url>  <url>
     <loc>http://www.orekiyuta.cn/archives/setupSeafile/</loc>
     <lastmod>2021-10-03</lastmod>
@@ -15,9 +18,6 @@
   </url>  <url>
     <loc>http://www.orekiyuta.cn/archives/disableWindowsDefender/</loc>
     <lastmod>2021-10-01</lastmod>
-  </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/localAreaNetworkFormationScheme/</loc>
-    <lastmod>2021-09-21</lastmod>
   </url>  <url>
     <loc>http://www.orekiyuta.cn/archives/githubUnsupportPassWordAuthentication/</loc>
     <lastmod>2021-08-20</lastmod>
@@ -151,10 +151,10 @@
     <loc>http://www.orekiyuta.cn/archives/HowNetworksWorks/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/HeadFirstJava/</loc>
+    <loc>http://www.orekiyuta.cn/archives/Hexo-Install-Migrate/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/Hexo-Install-Migrate/</loc>
+    <loc>http://www.orekiyuta.cn/archives/HeadFirstJava/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
     <loc>http://www.orekiyuta.cn/archives/gitRemoteEndHungUpUnexpectedly/</loc>
@@ -187,10 +187,10 @@
     <loc>http://www.orekiyuta.cn/archives/djangoRun/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/CSSFiveClassicLayouts/</loc>
+    <loc>http://www.orekiyuta.cn/archives/CSS3KnowledegePoint/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/CSS3KnowledegePoint/</loc>
+    <loc>http://www.orekiyuta.cn/archives/CSSFiveClassicLayouts/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
     <loc>http://www.orekiyuta.cn/archives/daemonBat/</loc>

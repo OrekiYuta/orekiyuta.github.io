@@ -8,7 +8,7 @@
       <link href="/archives/enableHyper-Vservice/"/>
       <url>/archives/enableHyper-Vservice/</url>
       
-        <content type="html"><![CDATA[<h2 id="Scene"><a href="#Scene" class="headerlink" title="Scene"></a>Scene</h2><ul><li>After installed Docker Desktop , Cannot enable Hyper-V service.</li><li><img src="/images/enableHyper-Vservice/Snipaste_2021-10-04_22-49-16.png" alt><a id="more"></a></li></ul><h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><ul><li>Check Windows Configuration.</li><li><img src="/images/enableHyper-Vservice/Snipaste_2021-10-04_22-49-16.png" alt></li><li>win + r , input “cmd”.</li><li>Execute <code>systeminfo</code>.</li><li><img src="/images/enableHyper-Vservice/Snipaste_2021-10-04_22-50-14.png" alt></li><li>Must all the Hyper-V Requirements are YES.</li><li><p>For me , “Virutalization Enabled In Firmware : NO”.</p></li><li><p>My PC mainboard is Interl H61 , Click “delete” button show the Bios.</p></li><li>Then, Find and Enabled the Virutalization Configuration.</li><li><img src="/images/enableHyper-Vservice/IMG_20211004_225913.jpg" alt></li><li><p><img src="/images/enableHyper-Vservice/IMG_20211004_225923.jpg" alt></p></li><li><p>Final, Check the systeminfo , Open the Docker Desktop as well.</p></li><li><img src="/images/enableHyper-Vservice/Snipaste_2021-10-04_23-18-11.png" alt></li></ul><h2 id="Other"><a href="#Other" class="headerlink" title="Other"></a>Other</h2><ul><li>👉 <a href="https://docs.microsoft.com/zh-cn/virtualization/hyper-v-on-windows/reference/hyper-v-requirements#verify-hardware-compatibility" target="_blank" rel="noopener">Windows 10 Hyper-V System Requirements</a></li></ul>]]></content>
+        <content type="html"><![CDATA[<h2 id="Scene"><a href="#Scene" class="headerlink" title="Scene"></a>Scene</h2><ul><li>After installed Docker Desktop , Cannot enable Hyper-V service.</li><li><img src="/images/enableHyper-Vservice/Snipaste_2021-10-04_22-49-16.png" alt></li></ul><a id="more"></a><h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><ul><li>Check Windows Configuration.</li><li><img src="/images/enableHyper-Vservice/Snipaste_2021-10-04_22-51-11.png" alt></li><li>win + r , input “cmd”.</li><li>Execute <code>systeminfo</code>.</li><li><img src="/images/enableHyper-Vservice/Snipaste_2021-10-04_22-50-14.png" alt></li><li>Must all the Hyper-V Requirements are YES.</li><li><p>For me , “Virutalization Enabled In Firmware : NO”.</p></li><li><p>My PC mainboard is Interl H61 , Click “delete” button show the Bios.</p></li><li>Then, Find and Enabled the Virutalization Configuration.</li><li><img src="/images/enableHyper-Vservice/IMG_20211004_225913.jpg" alt></li><li><p><img src="/images/enableHyper-Vservice/IMG_20211004_225923.jpg" alt></p></li><li><p>Final, Check the systeminfo , Open the Docker Desktop as well.</p></li><li><img src="/images/enableHyper-Vservice/Snipaste_2021-10-04_23-18-11.png" alt></li></ul><h2 id="Other"><a href="#Other" class="headerlink" title="Other"></a>Other</h2><ul><li>👉 <a href="https://docs.microsoft.com/zh-cn/virtualization/hyper-v-on-windows/reference/hyper-v-requirements#verify-hardware-compatibility" target="_blank" rel="noopener">Windows 10 Hyper-V System Requirements</a></li></ul>]]></content>
       
       
       
@@ -90,7 +90,7 @@
       <link href="/archives/localAreaNetworkFormationScheme/"/>
       <url>/archives/localAreaNetworkFormationScheme/</url>
       
-        <content type="html"><![CDATA[<h2 id="Scene"><a href="#Scene" class="headerlink" title="Scene"></a>Scene</h2><ul><li>组一套家庭网络服务，充分利用全部闲置的计算设备。</li></ul><h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2>]]></content>
+        <content type="html"><![CDATA[<h2 id="Scene"><a href="#Scene" class="headerlink" title="Scene"></a>Scene</h2><ul><li>组一套家庭网络服务，充分利用全部闲置的计算设备。<a id="more"></a></li></ul><h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2>]]></content>
       
       
       
@@ -692,19 +692,19 @@
             
             <tag> JavaScript </tag>
             
-            <tag> MySQL </tag>
-            
             <tag> Selenium </tag>
             
             <tag> ChromeDriver </tag>
+            
+            <tag> MySQL </tag>
             
             <tag> Python </tag>
             
             <tag> Flask </tag>
             
-            <tag> Chromium </tag>
-            
             <tag> Mariadb </tag>
+            
+            <tag> Chromium </tag>
             
             <tag> BeautifulSoup </tag>
             
@@ -1237,9 +1237,9 @@
       
         <tags>
             
-            <tag> ES6 </tag>
-            
             <tag> ECMAScript </tag>
+            
+            <tag> ES6 </tag>
             
         </tags>
       
