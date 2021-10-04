@@ -1,7 +1,7 @@
 ---
 title: Set up Seafile
 date: 2021-06-03 21:15:37
-tags: [Linux,Windows]
+tags: [Linux,Windows,Selfhost,Docker]
 ---
 
 ## Linux Server
