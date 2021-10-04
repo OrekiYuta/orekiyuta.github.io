@@ -6,7 +6,7 @@
   <link href="/rss.xml" rel="self"/>
   
   <link href="http://www.orekiyuta.cn/"/>
-  <updated>2021-10-03T17:28:54.551Z</updated>
+  <updated>2021-10-04T15:22:28.405Z</updated>
   <id>http://www.orekiyuta.cn/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Enable Hyper-V Service</title>
+    <link href="http://www.orekiyuta.cn/archives/enableHyper-Vservice/"/>
+    <id>http://www.orekiyuta.cn/archives/enableHyper-Vservice/</id>
+    <published>2021-10-04T15:04:16.000Z</published>
+    <updated>2021-10-04T15:22:28.405Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Scene"><a href="#Scene" class="headerlink" title="Scene"></a>Scene</h2><ul><li>After installed Docker Desktop , Cannot enable Hyper-V service.</li><li><img src="/images/enableHyper-Vservice/Snipaste_2021-10-04_22-49-16.png" alt><a id="more"></a></li></ul><h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><ul><li>Check Windows Configuration.</li><li><img src="/images/enableHyper-Vservice/Snipaste_2021-10-04_22-49-16.png" alt></li><li>win + r , input “cmd”.</li><li>Execute <code>systeminfo</code>.</li><li><img src="/images/enableHyper-Vservice/Snipaste_2021-10-04_22-50-14.png" alt></li><li>Must all the Hyper-V Requirements are YES.</li><li><p>For me , “Virutalization Enabled In Firmware : NO”.</p></li><li><p>My PC mainboard is Interl H61 , Click “delete” button show the Bios.</p></li><li>Then, Find and Enabled the Virutalization Configuration.</li><li><img src="/images/enableHyper-Vservice/IMG_20211004_225913.jpg" alt></li><li><p><img src="/images/enableHyper-Vservice/IMG_20211004_225923.jpg" alt></p></li><li><p>Final, Check the systeminfo , Open the Docker Desktop as well.</p></li><li><img src="/images/enableHyper-Vservice/Snipaste_2021-10-04_23-18-11.png" alt></li></ul><h2 id="Other"><a href="#Other" class="headerlink" title="Other"></a>Other</h2><ul><li>👉 <a href="https://docs.microsoft.com/zh-cn/virtualization/hyper-v-on-windows/reference/hyper-v-requirements#verify-hardware-compatibility" target="_blank" rel="noopener">Windows 10 Hyper-V System Requirements</a></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Scene&quot;&gt;&lt;a href=&quot;#Scene&quot; class=&quot;headerlink&quot; title=&quot;Scene&quot;&gt;&lt;/a&gt;Scene&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;After installed Docker Desktop , Cannot enable Hyper-V service.&lt;/li&gt;
+&lt;li&gt;&lt;img src=&quot;/images/enableHyper-Vservice/Snipaste_2021-10-04_22-49-16.png&quot; alt&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="Docker" scheme="http://www.orekiyuta.cn/tags/Docker/"/>
+    
+      <category term="Windows" scheme="http://www.orekiyuta.cn/tags/Windows/"/>
+    
+  </entry>
   
   <entry>
     <title>Selfhost PhotoPrism</title>
@@ -35,9 +60,9 @@
     
     
     
-      <category term="Docker" scheme="http://www.orekiyuta.cn/tags/Docker/"/>
-    
       <category term="Linux" scheme="http://www.orekiyuta.cn/tags/Linux/"/>
+    
+      <category term="Docker" scheme="http://www.orekiyuta.cn/tags/Docker/"/>
     
       <category term="Selfhost" scheme="http://www.orekiyuta.cn/tags/Selfhost/"/>
     
@@ -244,34 +269,6 @@
     
     
       <category term="jQuery" scheme="http://www.orekiyuta.cn/tags/jQuery/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Use jsdeliver Load Static Resources</title>
-    <link href="http://www.orekiyuta.cn/archives/usejsdeliverLoadStaticResources/"/>
-    <id>http://www.orekiyuta.cn/archives/usejsdeliverLoadStaticResources/</id>
-    <published>2021-07-15T12:38:55.000Z</published>
-    <updated>2021-08-19T20:21:18.436Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="Scene"><a href="#Scene" class="headerlink" title="Scene"></a>Scene</h2><ul><li>向 github 的 README 文件中添加图片链接</li><li>把图片上传到仓库,然后引用仓库的自动分配给图片的 <code>raw.githubusercontent.com</code> 域地址</li><li>但是这种方式只有能访问 <code>raw.githubusercontent.com</code> 的情况下才能加载图片</li><li>由于网络情况原因, DNS 污染 ,很多时候加载不出来</li><li>因此这种方式不够完善<a id="more"></a><h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2></li><li>解决这个问题的话，有两种方式<ul><li>利用 github 的仓库建个静态的图库站点,再取该站点的链接; 但这种方式取决于 github 的访问稳定情况</li><li>利用 CDN 内容分发服务, 这种方式能够完善的解决问题</li></ul></li><li>下面主要介绍利用 jsdelivr 和 github 仓库的 Releases 来部署静态资源</li></ul><ol><li>先把静态资源上传到仓库,然后创建 Releases<ul><li><img src="/images/usejsdeliverLoadStaticResources/Snipaste_2021-07-15_21-11-34.png" alt></li></ul></li><li>填写基本版本信息<ul><li><img src="/images/usejsdeliverLoadStaticResources/Snipaste_2021-07-15_21-12-32.png" alt></li></ul></li><li>然后 Publish release 即可</li><li>最后利用 jsdeliver 提供的服务即可<ul><li><code>https://cdn.jsdelivr.net/gh/[github用户名]/[仓库名][可选版本号]/[资源在仓库的路径]</code></li><li>如: <a href="https://cdn.jsdelivr.net/gh/OrekiYuta/OrekiYuta@1.0.0/OrekiYuta.png" target="_blank" rel="noopener">https://cdn.jsdelivr.net/gh/OrekiYuta/OrekiYuta@1.0.0/OrekiYuta.png</a> </li><li>或, <a href="https://cdn.jsdelivr.net/gh/OrekiYuta/OrekiYuta@latest/OrekiYuta.png" target="_blank" rel="noopener">https://cdn.jsdelivr.net/gh/OrekiYuta/OrekiYuta@latest/OrekiYuta.png</a></li><li><img src="https://cdn.jsdelivr.net/gh/OrekiYuta/OrekiYuta@1.0.0/OrekiYuta.png" alt="OrekiYuta"></li></ul></li></ol><ul><li>利用这种思想,还可以部署一些静态的服务<h2 id="Other"><a href="#Other" class="headerlink" title="Other"></a>Other</h2></li><li>👉 <a href="https://www.jsdelivr.com/" target="_blank" rel="noopener">jsdelivr</a></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;Scene&quot;&gt;&lt;a href=&quot;#Scene&quot; class=&quot;headerlink&quot; title=&quot;Scene&quot;&gt;&lt;/a&gt;Scene&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;向 github 的 README 文件中添加图片链接&lt;/li&gt;
-&lt;li&gt;把图片上传到仓库,然后引用仓库的自动分配给图片的 &lt;code&gt;raw.githubusercontent.com&lt;/code&gt; 域地址&lt;/li&gt;
-&lt;li&gt;但是这种方式只有能访问 &lt;code&gt;raw.githubusercontent.com&lt;/code&gt; 的情况下才能加载图片&lt;/li&gt;
-&lt;li&gt;由于网络情况原因, DNS 污染 ,很多时候加载不出来&lt;/li&gt;
-&lt;li&gt;因此这种方式不够完善
-    
-    </summary>
-    
-    
-    
-      <category term="Github" scheme="http://www.orekiyuta.cn/tags/Github/"/>
-    
-      <category term="CDN" scheme="http://www.orekiyuta.cn/tags/CDN/"/>
     
   </entry>
   
