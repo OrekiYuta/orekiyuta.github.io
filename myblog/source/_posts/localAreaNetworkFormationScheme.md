@@ -6,6 +6,7 @@ tags: Network
 
 ## Scene
 - 组一套家庭网络服务，充分利用全部闲置的计算设备。
+<!-- more -->
 
 ## Solution
 
