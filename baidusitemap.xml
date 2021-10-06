@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://www.orekiyuta.cn/archives/disableWindowsDefender/</loc>
+    <lastmod>2021-10-06</lastmod>
+  </url>  <url>
     <loc>http://www.orekiyuta.cn/archives/localAreaNetworkFormationScheme/</loc>
     <lastmod>2021-10-04</lastmod>
   </url>  <url>
@@ -14,9 +17,6 @@
     <lastmod>2021-10-03</lastmod>
   </url>  <url>
     <loc>http://www.orekiyuta.cn/archives/disableWindowsUpdate/</loc>
-    <lastmod>2021-10-01</lastmod>
-  </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/disableWindowsDefender/</loc>
     <lastmod>2021-10-01</lastmod>
   </url>  <url>
     <loc>http://www.orekiyuta.cn/archives/githubUnsupportPassWordAuthentication/</loc>
@@ -67,10 +67,10 @@
     <loc>http://www.orekiyuta.cn/archives/SortOutJSESTS/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/reptilesAndRaspberries/</loc>
+    <loc>http://www.orekiyuta.cn/archives/scrapyLearningLog/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/scrapyLearningLog/</loc>
+    <loc>http://www.orekiyuta.cn/archives/reptilesAndRaspberries/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
     <loc>http://www.orekiyuta.cn/archives/pythonGetFunctionFromString/</loc>
@@ -151,16 +151,16 @@
     <loc>http://www.orekiyuta.cn/archives/HowNetworksWorks/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/Hexo-Install-Migrate/</loc>
-    <lastmod>2021-08-19</lastmod>
-  </url>  <url>
     <loc>http://www.orekiyuta.cn/archives/HeadFirstJava/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/gitkrakenAccountSwitch/</loc>
+    <loc>http://www.orekiyuta.cn/archives/Hexo-Install-Migrate/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
     <loc>http://www.orekiyuta.cn/archives/gitRemoteEndHungUpUnexpectedly/</loc>
+    <lastmod>2021-08-19</lastmod>
+  </url>  <url>
+    <loc>http://www.orekiyuta.cn/archives/gitkrakenAccountSwitch/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
     <loc>http://www.orekiyuta.cn/archives/Git-flow/</loc>
@@ -181,10 +181,10 @@
     <loc>http://www.orekiyuta.cn/archives/DockerNote/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/djangoRun/</loc>
+    <loc>http://www.orekiyuta.cn/archives/corsOptionsRequest/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/corsOptionsRequest/</loc>
+    <loc>http://www.orekiyuta.cn/archives/djangoRun/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
     <loc>http://www.orekiyuta.cn/archives/CSS3KnowledegePoint/</loc>
