@@ -17,7 +17,7 @@ tags: Windows
 - ![](/images/disableWindowsDefender/Snipaste_2021-10-02_02-21-23.png)
 - ![](/images/disableWindowsDefender/Snipaste_2021-10-02_02-21-55.png)
 - ![](/images/disableWindowsDefender/Snipaste_2021-10-02_02-22-23.png)
-- ![](/images/disableWindowsDefender/Snipaste_2021-10-02_02-22-23.png)
+- ![](/images/disableWindowsDefender/Snipaste_2021-10-02_02-22-51.png)
 - ![](/images/disableWindowsDefender/Snipaste_2021-10-02_02-23-21.png)
 - ![](/images/disableWindowsDefender/Snipaste_2021-10-02_02-23-45.png)
 - ![](/images/disableWindowsDefender/Snipaste_2021-10-02_02-24-57.png)
