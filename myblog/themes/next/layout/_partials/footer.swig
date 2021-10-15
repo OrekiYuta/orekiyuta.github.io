@@ -48,7 +48,10 @@
 
 
 <!--添加网站的运行时间-->
+
 <div>
+<a href="https://beian.miit.gov.cn/" target="_blank">京ICP备2021002172号-1</a>
+&nbsp;
 <i class="fa fa-cog fa-spin"></i>&nbsp;&nbsp;
 <span id="days"></span>
 </div>
