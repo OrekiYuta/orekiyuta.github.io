@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.orekiyuta.cn/archives/mklinkInWin/</loc>
+    
+    <lastmod>2021-10-23T18:53:02.117Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.orekiyuta.cn/archives/WindowsSetting/</loc>
+    
+    <lastmod>2021-10-23T18:20:55.618Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.orekiyuta.cn/archives/disableWindowsDefender/</loc>
     
     <lastmod>2021-10-06T14:09:56.267Z</lastmod>
@@ -54,13 +68,6 @@
     <loc>http://www.orekiyuta.cn/tags/index.html</loc>
     
     <lastmod>2021-08-19T20:21:19.730Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.orekiyuta.cn/archives/WindowsSetting/</loc>
-    
-    <lastmod>2021-08-19T20:21:18.475Z</lastmod>
     
   </url>
   
@@ -394,13 +401,6 @@
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/githubCommitAccountAbout/</loc>
-    
-    <lastmod>2021-08-19T20:21:17.535Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.orekiyuta.cn/archives/getAZ-900Certification/</loc>
     
     <lastmod>2021-08-19T20:21:17.535Z</lastmod>
@@ -408,14 +408,21 @@
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/flaskRun/</loc>
+    <loc>http://www.orekiyuta.cn/archives/githubCommitAccountAbout/</loc>
+    
+    <lastmod>2021-08-19T20:21:17.535Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.orekiyuta.cn/archives/fileSharingOnWin/</loc>
     
     <lastmod>2021-08-19T20:21:17.534Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/fileSharingOnWin/</loc>
+    <loc>http://www.orekiyuta.cn/archives/flaskRun/</loc>
     
     <lastmod>2021-08-19T20:21:17.534Z</lastmod>
     
