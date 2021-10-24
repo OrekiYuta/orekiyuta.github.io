@@ -77,12 +77,10 @@
 
 
 
-  <meta name="keywords" content="Windows,">
+  <meta name="keywords" content="Windows,LAN,">
 
 
 
-
-  
 
 
   <link rel="alternate" href="/rss.xml" title="Canoe" type="application/atom+xml">
@@ -93,14 +91,14 @@
 
 
 <meta name="description" content="Scene 当磁盘不够用,或者想转移当前目录文件存储的时候,又不能改变当前文件结构的情况 Winodws 提供了文件路径映射功能。">
-<meta name="keywords" content="Windows">
+<meta name="keywords" content="Windows,LAN">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Mklink in Win">
 <meta property="og:url" content="http://www.orekiyuta.cn/archives/mklinkInWin/index.html">
 <meta property="og:site_name" content="Canoe">
 <meta property="og:description" content="Scene 当磁盘不够用,或者想转移当前目录文件存储的时候,又不能改变当前文件结构的情况 Winodws 提供了文件路径映射功能。">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2021-10-23T18:53:02.117Z">
+<meta property="og:updated_time" content="2021-10-23T22:36:22.746Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Mklink in Win">
 <meta name="twitter:description" content="Scene 当磁盘不够用,或者想转移当前目录文件存储的时候,又不能改变当前文件结构的情况 Winodws 提供了文件路径映射功能。">
@@ -367,7 +365,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  541
+                  542
                 </span>
               
 
@@ -406,7 +404,7 @@
 <li><code>mklink /d &quot;d:\target&quot; &quot;d:\origin&quot;</code></li>
 <li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="PLAIN"><figure class="iseeu highlight /plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">C:\Windows\system32&gt;mklink /d &quot;d:\target&quot; &quot;d:\origin&quot;</span><br><span class="line">为 d:\target &lt;&lt;===&gt;&gt; d:\origin 创建的符号链接</span><br></pre></td></tr></table></figure></div>
 </li>
-<li><p><code>mklink /j &quot;d:\target&quot; &quot;d:\origin&quot;</code>  /j 只能创建本地磁盘映射, /d 可用创建网络映射</p>
+<li><p><code>mklink /j &quot;d:\target&quot; &quot;d:\origin&quot;</code>  /j 只能创建本地磁盘映射, /d 可用于创建网络映射</p>
 </li>
 <li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="PLAIN"><figure class="iseeu highlight /plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">C:\Windows\system32&gt;mklink /j &quot;d:\test&quot; &quot;\\192.168.1.10\AcerC\origin&quot;</span><br><span class="line">完成该操作需要本地卷。</span><br><span class="line"></span><br><span class="line">C:\Windows\system32&gt;mklink /d &quot;d:\test&quot; &quot;\\192.168.1.10\AcerC\origin&quot;</span><br><span class="line">为 d:\test &lt;&lt;===&gt;&gt; \\192.168.1.10\AcerC\origin 创建的符号链接</span><br></pre></td></tr></table></figure></div>
 </li>
@@ -424,8 +422,8 @@
 </li>
 </ul>
 <h2 id="Other"><a href="#Other" class="headerlink" title="Other"></a>Other</h2><ul>
-<li><a href="https://www.cnblogs.com/cnxkey/articles/7658462.html" target="_blank" rel="noopener">windows 软链接的建立及删除</a></li>
-<li><a href="https://blog.walterlv.com/post/ntfs-link-comparisons.html" target="_blank" rel="noopener">比较 Windows 上四种不同的文件（夹）链接方式</a></li>
+<li>👉 <a href="https://www.cnblogs.com/cnxkey/articles/7658462.html" target="_blank" rel="noopener">windows 软链接的建立及删除</a></li>
+<li>👉 <a href="https://blog.walterlv.com/post/ntfs-link-comparisons.html" target="_blank" rel="noopener">比较 Windows 上四种不同的文件（夹）链接方式</a></li>
 </ul>
 
       
@@ -472,6 +470,8 @@
           
             <a href="/tags/Windows/" rel="tag"><i class="fa fa-tag"></i> Windows</a>
           
+            <a href="/tags/LAN/" rel="tag"><i class="fa fa-tag"></i> LAN</a>
+          
         </div>
       
 
@@ -492,6 +492,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/archives/syncOverRoboCopy/" rel="prev" title="Sync Over RoboCopy">
+                Sync Over RoboCopy <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -843,7 +847,7 @@ if(canvas.getContext){
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">75</span>
+                  <span class="site-state-item-count">76</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -856,7 +860,7 @@ if(canvas.getContext){
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">53</span>
+                  <span class="site-state-item-count">55</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
@@ -946,7 +950,7 @@ if(canvas.getContext){
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">91.4k</span>
+    <span title="Site words total count">93.5k</span>
   
 </div>
 
