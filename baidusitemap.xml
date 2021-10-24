@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://www.orekiyuta.cn/archives/localAreaNetworkFormationScheme/</loc>
+    <lastmod>2021-10-24</lastmod>
+  </url>  <url>
+    <loc>http://www.orekiyuta.cn/archives/selfhostPhotoPrism/</loc>
+    <lastmod>2021-10-24</lastmod>
+  </url>  <url>
     <loc>http://www.orekiyuta.cn/archives/syncOverRoboCopy/</loc>
     <lastmod>2021-10-24</lastmod>
   </url>  <url>
     <loc>http://www.orekiyuta.cn/archives/mklinkInWin/</loc>
-    <lastmod>2021-10-23</lastmod>
-  </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/localAreaNetworkFormationScheme/</loc>
     <lastmod>2021-10-23</lastmod>
   </url>  <url>
     <loc>http://www.orekiyuta.cn/archives/WindowsSetting/</loc>
@@ -17,9 +20,6 @@
     <lastmod>2021-10-06</lastmod>
   </url>  <url>
     <loc>http://www.orekiyuta.cn/archives/enableHyper-Vservice/</loc>
-    <lastmod>2021-10-04</lastmod>
-  </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/selfhostPhotoPrism/</loc>
     <lastmod>2021-10-04</lastmod>
   </url>  <url>
     <loc>http://www.orekiyuta.cn/archives/setupSeafile/</loc>
@@ -55,10 +55,10 @@
     <loc>http://www.orekiyuta.cn/archives/ThinkingShift/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/TheRainTurnedFine/</loc>
+    <loc>http://www.orekiyuta.cn/archives/Thefriendlyinteractiveshell/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/Thefriendlyinteractiveshell/</loc>
+    <loc>http://www.orekiyuta.cn/archives/TheRainTurnedFine/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
     <loc>http://www.orekiyuta.cn/archives/SwitchToES6/</loc>
@@ -127,10 +127,10 @@
     <loc>http://www.orekiyuta.cn/archives/javastartrun/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/JavaGenericTypes/</loc>
+    <loc>http://www.orekiyuta.cn/archives/JavaNotes/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/JavaNotes/</loc>
+    <loc>http://www.orekiyuta.cn/archives/JavaGenericTypes/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
     <loc>http://www.orekiyuta.cn/archives/JavaReview/</loc>
@@ -157,10 +157,10 @@
     <loc>http://www.orekiyuta.cn/archives/HowNetworksWorks/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/Hexo-Install-Migrate/</loc>
+    <loc>http://www.orekiyuta.cn/archives/HeadFirstJava/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/HeadFirstJava/</loc>
+    <loc>http://www.orekiyuta.cn/archives/Hexo-Install-Migrate/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
     <loc>http://www.orekiyuta.cn/archives/gitRemoteEndHungUpUnexpectedly/</loc>
@@ -202,10 +202,10 @@
     <loc>http://www.orekiyuta.cn/archives/daemonBat/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/CrackRefrain/</loc>
+    <loc>http://www.orekiyuta.cn/archives/FieldworkDaily/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/FieldworkDaily/</loc>
+    <loc>http://www.orekiyuta.cn/archives/CrackRefrain/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
     <loc>http://www.orekiyuta.cn/archives/css-margin-auto/</loc>
