@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.orekiyuta.cn/archives/syncOverRoboCopy/</loc>
+    
+    <lastmod>2021-10-24T11:26:30.626Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.orekiyuta.cn/archives/mklinkInWin/</loc>
     
     <lastmod>2021-10-23T22:36:22.746Z</lastmod>
@@ -12,13 +19,6 @@
     <loc>http://www.orekiyuta.cn/archives/localAreaNetworkFormationScheme/</loc>
     
     <lastmod>2021-10-23T22:33:24.514Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.orekiyuta.cn/archives/syncOverRoboCopy/</loc>
-    
-    <lastmod>2021-10-23T22:32:18.368Z</lastmod>
     
   </url>
   
@@ -177,13 +177,6 @@
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/scrapyLearningLog/</loc>
-    
-    <lastmod>2021-08-19T20:21:18.188Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.orekiyuta.cn/archives/reptilesAndRaspberries/</loc>
     
     <lastmod>2021-08-19T20:21:18.188Z</lastmod>
@@ -191,14 +184,21 @@
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/pythonVenvMigrateInvalid/</loc>
+    <loc>http://www.orekiyuta.cn/archives/scrapyLearningLog/</loc>
+    
+    <lastmod>2021-08-19T20:21:18.188Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.orekiyuta.cn/archives/pythonGetFunctionFromString/</loc>
     
     <lastmod>2021-08-19T20:21:18.187Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/pythonGetFunctionFromString/</loc>
+    <loc>http://www.orekiyuta.cn/archives/pythonVenvMigrateInvalid/</loc>
     
     <lastmod>2021-08-19T20:21:18.187Z</lastmod>
     
@@ -303,6 +303,13 @@
   </url>
   
   <url>
+    <loc>http://www.orekiyuta.cn/archives/JavaGenericTypes/</loc>
+    
+    <lastmod>2021-08-19T20:21:17.797Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.orekiyuta.cn/archives/JavaNotes/</loc>
     
     <lastmod>2021-08-19T20:21:17.797Z</lastmod>
@@ -311,13 +318,6 @@
   
   <url>
     <loc>http://www.orekiyuta.cn/archives/JavaReview/</loc>
-    
-    <lastmod>2021-08-19T20:21:17.797Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.orekiyuta.cn/archives/JavaGenericTypes/</loc>
     
     <lastmod>2021-08-19T20:21:17.797Z</lastmod>
     
@@ -373,14 +373,14 @@
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/HeadFirstJava/</loc>
+    <loc>http://www.orekiyuta.cn/archives/Hexo-Install-Migrate/</loc>
     
     <lastmod>2021-08-19T20:21:17.537Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/Hexo-Install-Migrate/</loc>
+    <loc>http://www.orekiyuta.cn/archives/HeadFirstJava/</loc>
     
     <lastmod>2021-08-19T20:21:17.537Z</lastmod>
     
