@@ -191,14 +191,14 @@
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/pythonVenvMigrateInvalid/</loc>
+    <loc>http://www.orekiyuta.cn/archives/pythonGetFunctionFromString/</loc>
     
     <lastmod>2021-08-19T20:21:18.187Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/pythonGetFunctionFromString/</loc>
+    <loc>http://www.orekiyuta.cn/archives/pythonVenvMigrateInvalid/</loc>
     
     <lastmod>2021-08-19T20:21:18.187Z</lastmod>
     
@@ -373,13 +373,6 @@
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/HeadFirstJava/</loc>
-    
-    <lastmod>2021-08-19T20:21:17.537Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.orekiyuta.cn/archives/Hexo-Install-Migrate/</loc>
     
     <lastmod>2021-08-19T20:21:17.537Z</lastmod>
@@ -387,9 +380,9 @@
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/gitRemoteEndHungUpUnexpectedly/</loc>
+    <loc>http://www.orekiyuta.cn/archives/HeadFirstJava/</loc>
     
-    <lastmod>2021-08-19T20:21:17.536Z</lastmod>
+    <lastmod>2021-08-19T20:21:17.537Z</lastmod>
     
   </url>
   
@@ -401,9 +394,9 @@
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/githubCommitAccountAbout/</loc>
+    <loc>http://www.orekiyuta.cn/archives/gitRemoteEndHungUpUnexpectedly/</loc>
     
-    <lastmod>2021-08-19T20:21:17.535Z</lastmod>
+    <lastmod>2021-08-19T20:21:17.536Z</lastmod>
     
   </url>
   
@@ -416,6 +409,13 @@
   
   <url>
     <loc>http://www.orekiyuta.cn/archives/getAZ-900Certification/</loc>
+    
+    <lastmod>2021-08-19T20:21:17.535Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.orekiyuta.cn/archives/githubCommitAccountAbout/</loc>
     
     <lastmod>2021-08-19T20:21:17.535Z</lastmod>
     
@@ -443,13 +443,6 @@
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/djangoRun/</loc>
-    
-    <lastmod>2021-08-19T20:21:17.285Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.orekiyuta.cn/archives/corsOptionsRequest/</loc>
     
     <lastmod>2021-08-19T20:21:17.285Z</lastmod>
@@ -457,14 +450,21 @@
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/CSS3KnowledegePoint/</loc>
+    <loc>http://www.orekiyuta.cn/archives/djangoRun/</loc>
+    
+    <lastmod>2021-08-19T20:21:17.285Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.orekiyuta.cn/archives/CSSFiveClassicLayouts/</loc>
     
     <lastmod>2021-08-19T20:21:17.284Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/CSSFiveClassicLayouts/</loc>
+    <loc>http://www.orekiyuta.cn/archives/CSS3KnowledegePoint/</loc>
     
     <lastmod>2021-08-19T20:21:17.284Z</lastmod>
     
