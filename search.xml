@@ -79,9 +79,9 @@
       
         <tags>
             
-            <tag> Docker </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> Docker </tag>
             
             <tag> Selfhost </tag>
             
@@ -182,9 +182,9 @@
       
         <tags>
             
-            <tag> Python </tag>
-            
             <tag> Flask </tag>
+            
+            <tag> Python </tag>
             
             <tag> Github </tag>
             
@@ -287,9 +287,9 @@
       
         <tags>
             
-            <tag> Hexo </tag>
-            
             <tag> Git </tag>
+            
+            <tag> Hexo </tag>
             
         </tags>
       
@@ -431,9 +431,9 @@
       
         <tags>
             
-            <tag> Docker </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> Docker </tag>
             
             <tag> Windows </tag>
             
@@ -631,9 +631,9 @@
       
         <tags>
             
-            <tag> Django </tag>
-            
             <tag> Python </tag>
+            
+            <tag> Django </tag>
             
         </tags>
       
@@ -732,21 +732,21 @@
             
             <tag> Linux </tag>
             
+            <tag> JavaScript </tag>
+            
             <tag> RaspberryPi </tag>
             
             <tag> Nginx </tag>
+            
+            <tag> MySQL </tag>
             
             <tag> Selenium </tag>
             
             <tag> ChromeDriver </tag>
             
-            <tag> JavaScript </tag>
-            
-            <tag> MySQL </tag>
+            <tag> Flask </tag>
             
             <tag> Python </tag>
-            
-            <tag> Flask </tag>
             
             <tag> Mariadb </tag>
             
@@ -798,9 +798,9 @@
       
         <tags>
             
-            <tag> Python </tag>
-            
             <tag> Flask </tag>
+            
+            <tag> Python </tag>
             
         </tags>
       
@@ -1283,9 +1283,9 @@
       
         <tags>
             
-            <tag> ES6 </tag>
-            
             <tag> ECMAScript </tag>
+            
+            <tag> ES6 </tag>
             
         </tags>
       
@@ -1380,9 +1380,9 @@
       
         <tags>
             
-            <tag> Hexo </tag>
-            
             <tag> Git </tag>
+            
+            <tag> Hexo </tag>
             
         </tags>
       
