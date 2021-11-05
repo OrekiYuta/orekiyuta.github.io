@@ -112,9 +112,9 @@
     
     
     
-      <category term="Linux" scheme="http://www.orekiyuta.cn/tags/Linux/"/>
-    
       <category term="Docker" scheme="http://www.orekiyuta.cn/tags/Docker/"/>
+    
+      <category term="Linux" scheme="http://www.orekiyuta.cn/tags/Linux/"/>
     
       <category term="Selfhost" scheme="http://www.orekiyuta.cn/tags/Selfhost/"/>
     
@@ -235,9 +235,9 @@
     
       <category term="Python" scheme="http://www.orekiyuta.cn/tags/Python/"/>
     
-      <category term="Flask" scheme="http://www.orekiyuta.cn/tags/Flask/"/>
-    
       <category term="Github" scheme="http://www.orekiyuta.cn/tags/Github/"/>
+    
+      <category term="Flask" scheme="http://www.orekiyuta.cn/tags/Flask/"/>
     
   </entry>
   
