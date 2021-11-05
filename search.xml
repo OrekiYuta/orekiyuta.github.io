@@ -79,9 +79,9 @@
       
         <tags>
             
-            <tag> Docker </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> Docker </tag>
             
             <tag> Selfhost </tag>
             
@@ -182,11 +182,11 @@
       
         <tags>
             
+            <tag> Flask </tag>
+            
             <tag> Python </tag>
             
             <tag> Github </tag>
-            
-            <tag> Flask </tag>
             
         </tags>
       
@@ -431,9 +431,9 @@
       
         <tags>
             
-            <tag> Docker </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> Docker </tag>
             
             <tag> Windows </tag>
             
@@ -631,9 +631,9 @@
       
         <tags>
             
-            <tag> Django </tag>
-            
             <tag> Python </tag>
+            
+            <tag> Django </tag>
             
         </tags>
       
@@ -736,17 +736,17 @@
             
             <tag> Nginx </tag>
             
-            <tag> JavaScript </tag>
-            
-            <tag> MySQL </tag>
-            
             <tag> Selenium </tag>
             
             <tag> ChromeDriver </tag>
             
-            <tag> Python </tag>
+            <tag> JavaScript </tag>
+            
+            <tag> MySQL </tag>
             
             <tag> Flask </tag>
+            
+            <tag> Python </tag>
             
             <tag> Mariadb </tag>
             
@@ -798,9 +798,9 @@
       
         <tags>
             
-            <tag> Python </tag>
-            
             <tag> Flask </tag>
+            
+            <tag> Python </tag>
             
         </tags>
       
