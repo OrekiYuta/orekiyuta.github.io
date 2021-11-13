@@ -86,13 +86,6 @@
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/Usakizaki/</loc>
-    
-    <lastmod>2021-08-19T20:21:18.457Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.orekiyuta.cn/archives/tryFlutter/</loc>
     
     <lastmod>2021-08-19T20:21:18.448Z</lastmod>
@@ -142,13 +135,6 @@
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/TheRainTurnedFine/</loc>
-    
-    <lastmod>2021-08-19T20:21:18.355Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.orekiyuta.cn/archives/SwitchToES6/</loc>
     
     <lastmod>2021-08-19T20:21:18.345Z</lastmod>
@@ -191,14 +177,14 @@
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/pythonGetFunctionFromString/</loc>
+    <loc>http://www.orekiyuta.cn/archives/pythonVenvMigrateInvalid/</loc>
     
     <lastmod>2021-08-19T20:21:18.187Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/pythonVenvMigrateInvalid/</loc>
+    <loc>http://www.orekiyuta.cn/archives/pythonGetFunctionFromString/</loc>
     
     <lastmod>2021-08-19T20:21:18.187Z</lastmod>
     
@@ -219,13 +205,6 @@
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/OneLine/</loc>
-    
-    <lastmod>2021-08-19T20:21:18.177Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.orekiyuta.cn/archives/NiceToUseVue/</loc>
     
     <lastmod>2021-08-19T20:21:18.082Z</lastmod>
@@ -233,14 +212,14 @@
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/mysqlSyncToMariadb/</loc>
+    <loc>http://www.orekiyuta.cn/archives/mysqlSplitStringByProcedure/</loc>
     
     <lastmod>2021-08-19T20:21:18.019Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/mysqlSplitStringByProcedure/</loc>
+    <loc>http://www.orekiyuta.cn/archives/mysqlSyncToMariadb/</loc>
     
     <lastmod>2021-08-19T20:21:18.019Z</lastmod>
     
@@ -331,13 +310,6 @@
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/janlear/</loc>
-    
-    <lastmod>2021-08-19T20:21:17.796Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.orekiyuta.cn/archives/IgotaRaspberryPi/</loc>
     
     <lastmod>2021-08-19T20:21:17.795Z</lastmod>
@@ -373,14 +345,14 @@
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/Hexo-Install-Migrate/</loc>
+    <loc>http://www.orekiyuta.cn/archives/HeadFirstJava/</loc>
     
     <lastmod>2021-08-19T20:21:17.537Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/HeadFirstJava/</loc>
+    <loc>http://www.orekiyuta.cn/archives/Hexo-Install-Migrate/</loc>
     
     <lastmod>2021-08-19T20:21:17.537Z</lastmod>
     
@@ -443,14 +415,14 @@
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/djangoRun/</loc>
+    <loc>http://www.orekiyuta.cn/archives/corsOptionsRequest/</loc>
     
     <lastmod>2021-08-19T20:21:17.285Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/corsOptionsRequest/</loc>
+    <loc>http://www.orekiyuta.cn/archives/djangoRun/</loc>
     
     <lastmod>2021-08-19T20:21:17.285Z</lastmod>
     
