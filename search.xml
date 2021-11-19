@@ -79,9 +79,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> Docker </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Selfhost </tag>
             
@@ -287,9 +287,9 @@
       
         <tags>
             
-            <tag> Git </tag>
-            
             <tag> Hexo </tag>
+            
+            <tag> Git </tag>
             
         </tags>
       
@@ -418,9 +418,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> Docker </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Windows </tag>
             
@@ -700,25 +700,25 @@
             
             <tag> Linux </tag>
             
-            <tag> RaspberryPi </tag>
-            
-            <tag> Nginx </tag>
-            
             <tag> JavaScript </tag>
             
             <tag> Selenium </tag>
             
             <tag> ChromeDriver </tag>
             
-            <tag> MySQL </tag>
+            <tag> RaspberryPi </tag>
+            
+            <tag> Nginx </tag>
             
             <tag> Python </tag>
             
+            <tag> MySQL </tag>
+            
             <tag> Flask </tag>
             
-            <tag> Mariadb </tag>
-            
             <tag> Chromium </tag>
+            
+            <tag> Mariadb </tag>
             
             <tag> BeautifulSoup </tag>
             
@@ -1219,9 +1219,9 @@
       
         <tags>
             
-            <tag> ECMAScript </tag>
-            
             <tag> ES6 </tag>
+            
+            <tag> ECMAScript </tag>
             
         </tags>
       
@@ -1316,9 +1316,9 @@
       
         <tags>
             
-            <tag> Git </tag>
-            
             <tag> Hexo </tag>
+            
+            <tag> Git </tag>
             
         </tags>
       
