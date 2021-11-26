@@ -79,9 +79,9 @@
       
         <tags>
             
-            <tag> Docker </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> Docker </tag>
             
             <tag> Selfhost </tag>
             
@@ -418,9 +418,9 @@
       
         <tags>
             
-            <tag> Docker </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> Docker </tag>
             
             <tag> Windows </tag>
             
@@ -716,9 +716,9 @@
             
             <tag> Flask </tag>
             
-            <tag> Mariadb </tag>
-            
             <tag> Chromium </tag>
+            
+            <tag> Mariadb </tag>
             
             <tag> BeautifulSoup </tag>
             
@@ -1219,9 +1219,9 @@
       
         <tags>
             
-            <tag> ES6 </tag>
-            
             <tag> ECMAScript </tag>
+            
+            <tag> ES6 </tag>
             
         </tags>
       
