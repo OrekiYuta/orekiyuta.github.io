@@ -287,9 +287,9 @@
       
         <tags>
             
-            <tag> Hexo </tag>
-            
             <tag> Git </tag>
+            
+            <tag> Hexo </tag>
             
         </tags>
       
@@ -702,17 +702,17 @@
             
             <tag> JavaScript </tag>
             
-            <tag> Selenium </tag>
-            
-            <tag> ChromeDriver </tag>
-            
             <tag> RaspberryPi </tag>
             
             <tag> Nginx </tag>
             
-            <tag> MySQL </tag>
+            <tag> Selenium </tag>
+            
+            <tag> ChromeDriver </tag>
             
             <tag> Python </tag>
+            
+            <tag> MySQL </tag>
             
             <tag> Flask </tag>
             
@@ -1316,9 +1316,9 @@
       
         <tags>
             
-            <tag> Hexo </tag>
-            
             <tag> Git </tag>
+            
+            <tag> Hexo </tag>
             
         </tags>
       
