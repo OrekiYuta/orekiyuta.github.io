@@ -6,7 +6,7 @@
   <link href="/rss.xml" rel="self"/>
   
   <link href="http://www.orekiyuta.cn/"/>
-  <updated>2021-10-24T11:26:30.626Z</updated>
+  <updated>2021-11-29T15:23:25.813Z</updated>
   <id>http://www.orekiyuta.cn/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Get ACP Certification</title>
+    <link href="http://www.orekiyuta.cn/archives/getACPCertification/"/>
+    <id>http://www.orekiyuta.cn/archives/getACPCertification/</id>
+    <published>2021-11-29T15:08:49.000Z</published>
+    <updated>2021-11-29T15:23:25.813Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Prepare"><a href="#Prepare" class="headerlink" title="Prepare"></a>Prepare</h2><ul><li>Alibaba Cloud Certified Professional - Cloud Computing</li><li>Sign up =&gt; <a href="https://edu.aliyun.com/clouder/OfflineExam/detail/3086?token=9a7af9e452bbbef26b1b6d229d64b6c8" target="_blank" rel="noopener">阿里云认证专场考试报名</a></li><li>Exam on =&gt; <a href="https://edu.aliyun.com/clouder/my/clouderpackage?spm=5176.0.0.0.7caf28f8o5DvDQ&amp;type=acp" target="_blank" rel="noopener">阿里云云计算工程师ACP认证 (Alibaba Cloud Certified Professional - Cloud Computing)</a><h2 id="If-Pass"><a href="#If-Pass" class="headerlink" title="If Pass"></a>If Pass</h2></li><li>Check on =&gt; <a href="https://edu.aliyun.com/clouder/my/clouderpackage?spm=5176.0.0.0.7caf28f8o5DvDQ&amp;type=acp" target="_blank" rel="noopener">阿里云云计算工程师ACP认证 (Alibaba Cloud Certified Professional - Cloud Computing)</a><ul><li><img src="/images/getACPCertification/Snipaste_2021-11-29_23-14-39.png" alt></li></ul></li><li>Get the Certification<ul><li><img src="/images/getACPCertification/img_a6eb0073291d7e6bdf5174b95da57845.png" alt></li></ul></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;Prepare&quot;&gt;&lt;a href=&quot;#Prepare&quot; class=&quot;headerlink&quot; title=&quot;Prepare&quot;&gt;&lt;/a&gt;Prepare&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Alibaba Cloud Certified Professional - Cloud
+      
+    
+    </summary>
+    
+    
+    
+      <category term="Alibaba" scheme="http://www.orekiyuta.cn/tags/Alibaba/"/>
+    
+      <category term="Certificate" scheme="http://www.orekiyuta.cn/tags/Certificate/"/>
+    
+  </entry>
   
   <entry>
     <title>Sync Over RoboCopy</title>
@@ -112,9 +139,9 @@
     
     
     
-      <category term="Linux" scheme="http://www.orekiyuta.cn/tags/Linux/"/>
-    
       <category term="Docker" scheme="http://www.orekiyuta.cn/tags/Docker/"/>
+    
+      <category term="Linux" scheme="http://www.orekiyuta.cn/tags/Linux/"/>
     
       <category term="Selfhost" scheme="http://www.orekiyuta.cn/tags/Selfhost/"/>
     
@@ -236,33 +263,6 @@
       <category term="Python" scheme="http://www.orekiyuta.cn/tags/Python/"/>
     
       <category term="Flask" scheme="http://www.orekiyuta.cn/tags/Flask/"/>
-    
-      <category term="Github" scheme="http://www.orekiyuta.cn/tags/Github/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Gitkraken Account Switch</title>
-    <link href="http://www.orekiyuta.cn/archives/gitkrakenAccountSwitch/"/>
-    <id>http://www.orekiyuta.cn/archives/gitkrakenAccountSwitch/</id>
-    <published>2021-07-28T13:43:24.000Z</published>
-    <updated>2021-08-19T20:21:17.536Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="Sence"><a href="#Sence" class="headerlink" title="Sence"></a>Sence</h2><ul><li>使用 Gitkraken GUI 工具,想要切换绑定的 github 账号拉取代码 </li><li>出现错误提示,无法断开当前 github 账户绑定</li><li><img src="/images/gitkrakenAccountSwitch/Snipaste_2021-07-28_21-50-19.png" alt></li></ul><a id="more"></a><h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><ul><li>经过一顿排查,查阅官网文档终于找到答案 </li><li><p>👉<a href="https://support.gitkraken.com/faq/" target="_blank" rel="noopener">How can I use multiple GitHub / GitLab / Bitbucket / Azure DevOps accounts with GitKraken?</a></p></li><li><p><img src="/images/gitkrakenAccountSwitch/Snipaste_2021-07-28_21-54-00.png" alt></p></li><li><p>定位到是 Gitkraken 软件版本的问题,即 Pro 版本才能自由切换账户绑定</p></li><li>可知 Gitkraken 在 6.5.1 之前是完全开源免费的,安装 6.5.1 版本即可<ul><li>在安装之前修改下 hosts 文件</li><li>添加<code>0.0.0.0 release.gitkraken.com</code> 防止被动更新最新版本</li></ul></li><li>更换版本后即可自由切换 github 账户绑定</li><li><img src="/images/gitkrakenAccountSwitch/Snipaste_2021-07-28_21-56-01.png" alt></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;Sence&quot;&gt;&lt;a href=&quot;#Sence&quot; class=&quot;headerlink&quot; title=&quot;Sence&quot;&gt;&lt;/a&gt;Sence&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;使用 Gitkraken GUI 工具,想要切换绑定的 github 账号拉取代码 &lt;/li&gt;
-&lt;li&gt;出现错误提示,无法断开当前 github 账户绑定&lt;/li&gt;
-&lt;li&gt;&lt;img src=&quot;/images/gitkrakenAccountSwitch/Snipaste_2021-07-28_21-50-19.png&quot; alt&gt;&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-    
-      <category term="Git" scheme="http://www.orekiyuta.cn/tags/Git/"/>
     
       <category term="Github" scheme="http://www.orekiyuta.cn/tags/Github/"/>
     
