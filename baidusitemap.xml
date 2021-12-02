@@ -121,10 +121,10 @@
     <loc>http://www.orekiyuta.cn/archives/javastartrun/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/JavaNotes/</loc>
+    <loc>http://www.orekiyuta.cn/archives/JavaGenericTypes/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/JavaGenericTypes/</loc>
+    <loc>http://www.orekiyuta.cn/archives/JavaNotes/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
     <loc>http://www.orekiyuta.cn/archives/JavaReview/</loc>
@@ -178,16 +178,16 @@
     <loc>http://www.orekiyuta.cn/archives/DockerNote/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/djangoRun/</loc>
-    <lastmod>2021-08-19</lastmod>
-  </url>  <url>
     <loc>http://www.orekiyuta.cn/archives/corsOptionsRequest/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/CSSFiveClassicLayouts/</loc>
+    <loc>http://www.orekiyuta.cn/archives/djangoRun/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
     <loc>http://www.orekiyuta.cn/archives/CSS3KnowledegePoint/</loc>
+    <lastmod>2021-08-19</lastmod>
+  </url>  <url>
+    <loc>http://www.orekiyuta.cn/archives/CSSFiveClassicLayouts/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
     <loc>http://www.orekiyuta.cn/archives/daemonBat/</loc>
