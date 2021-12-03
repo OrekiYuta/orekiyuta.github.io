@@ -139,9 +139,9 @@
     
     
     
-      <category term="Linux" scheme="http://www.orekiyuta.cn/tags/Linux/"/>
-    
       <category term="Docker" scheme="http://www.orekiyuta.cn/tags/Docker/"/>
+    
+      <category term="Linux" scheme="http://www.orekiyuta.cn/tags/Linux/"/>
     
       <category term="Selfhost" scheme="http://www.orekiyuta.cn/tags/Selfhost/"/>
     
