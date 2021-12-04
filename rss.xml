@@ -6,7 +6,7 @@
   <link href="/rss.xml" rel="self"/>
   
   <link href="http://www.orekiyuta.cn/"/>
-  <updated>2021-11-29T15:23:25.813Z</updated>
+  <updated>2021-12-04T10:08:14.940Z</updated>
   <id>http://www.orekiyuta.cn/</id>
   
   <author>
@@ -15,6 +15,53 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>SecurityGroup On TencentCVM</title>
+    <link href="http://www.orekiyuta.cn/archives/securityGroupOnTencentCVM/"/>
+    <id>http://www.orekiyuta.cn/archives/securityGroupOnTencentCVM/</id>
+    <published>2021-12-04T09:44:09.000Z</published>
+    <updated>2021-12-04T10:08:14.940Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Scene"><a href="#Scene" class="headerlink" title="Scene"></a>Scene</h2><ul><li>在云服务器上部署了服务，开放端口配置注意点<a id="more"></a></li></ul><h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><ul><li>以下为 腾讯云CVM 为例说明</li></ul><ol><li>先找到自己的机器,并找到安全组选项,并新建一个随意的安全组<ul><li><img src="/images/securityGroupOnTencentCVM/Snipaste_2021-12-04_17-51-56.png" alt></li></ul></li><li>新建完后,点击修改规则<ul><li><img src="/images/securityGroupOnTencentCVM/Snipaste_2021-12-04_17-53-32.png" alt></li></ul></li><li>让外部访问,设置入站规则即可<ul><li><img src="/images/securityGroupOnTencentCVM/Snipaste_2021-12-04_17-56-04.png" alt></li><li><img src="/images/securityGroupOnTencentCVM/Snipaste_2021-12-04_17-56-52.png" alt></li></ul></li><li>最后设置一下,关联实例，把需要开放以上规则的机器配置上<br> Snipaste_2021-12-04_17-57-56.png</li></ol><ul><li>以下为机器内的服务的启动配置说明</li></ul><ol><li><p>正常操作了以上的步骤,端口即是正常开放了,</p><ul><li>telnet 能否连通,还需要机器内的端口监听正确</li></ul></li><li><p>比如以下情况,在外部是 telnet 不通的</p><ul><li><img src="/images/securityGroupOnTencentCVM/Snipaste_2021-12-04_18-03-22.png" alt></li><li>因为服务监听的是机器内本地(127.0.0.1)的端口，没法响应外部(0.0.0.0)请求</li><li>上图的服务,限制了只有来源IP为127.0.0.1才可以访问，其他IP无法访问，因此是无法telnet成功</li></ul></li><li><p>正确的方式是把服务启动修改为0.0.0.0，允许所有IP即可</p></li><li>或者保持以上的本地监听(127.0.0.1),再配置 Nginx,通过Nginx代理监听</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Scene&quot;&gt;&lt;a href=&quot;#Scene&quot; class=&quot;headerlink&quot; title=&quot;Scene&quot;&gt;&lt;/a&gt;Scene&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;在云服务器上部署了服务，开放端口配置注意点
+    
+    </summary>
+    
+    
+    
+      <category term="CloudServer" scheme="http://www.orekiyuta.cn/tags/CloudServer/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>USBWebserver For Dev</title>
+    <link href="http://www.orekiyuta.cn/archives/USBWebserverForDev/"/>
+    <id>http://www.orekiyuta.cn/archives/USBWebserverForDev/</id>
+    <published>2021-12-04T09:22:55.000Z</published>
+    <updated>2021-12-04T09:37:36.041Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Scene"><a href="#Scene" class="headerlink" title="Scene"></a>Scene</h2><ul><li>在一台机器上搭建 MySQL 并开放外部使用</li><li>常规方式有 （1）直接部署 MySQL (2) 在 Docker 中部署 MySQL</li><li>以上两种方式有其一定的优势，（1）性能肯定最好 （2）容器隔离</li><li>但是以上两种方式都需要部署成本，为了寻求更便捷的部署和迁移，将使用以下方式<a id="more"></a></li></ul><h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><ul><li><p>利用 可以移植的 USBWebserver =&gt; <a href="https://usbwebserver.yura.mk.ua/" target="_blank" rel="noopener">USBWebserver8</a></p><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAIN"><figure class="iseeu highlight /plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Most light weight local portable web server with Apache, PHP, MySQL and PHPMyAdmin for Windows on the Web. Just unzip enywhere (including USB flash drive), run and start using.</span><br></pre></td></tr></table></figure></div></li><li><p>部署环境在 win10,解压启动即可</p></li><li>设置开机启动，win + r ,<code>shell:startup</code>,把启动文件放在该目录即可</li><li>到此，只能是本地访问，提供给外部访问还需要进去 MySQL 赋予用户权限 <ul><li><img src="/images/USBWebserverForDev/Snipaste_2021-12-04_17-32-09.png" alt></li><li><img src="/images/USBWebserverForDev/Snipaste_2021-12-04_17-32-44.png" alt></li><li><img src="/images/USBWebserverForDev/Snipaste_2021-12-04_17-33-12.png" alt></li></ul></li><li>最后防火墙开放端口即可</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Scene&quot;&gt;&lt;a href=&quot;#Scene&quot; class=&quot;headerlink&quot; title=&quot;Scene&quot;&gt;&lt;/a&gt;Scene&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;在一台机器上搭建 MySQL 并开放外部使用&lt;/li&gt;
+&lt;li&gt;常规方式有 （1）直接部署 MySQL (2) 在 Docker 中部署 MySQL&lt;/li&gt;
+&lt;li&gt;以上两种方式有其一定的优势，（1）性能肯定最好 （2）容器隔离&lt;/li&gt;
+&lt;li&gt;但是以上两种方式都需要部署成本，为了寻求更便捷的部署和迁移，将使用以下方式
+    
+    </summary>
+    
+    
+    
+      <category term="MySQL" scheme="http://www.orekiyuta.cn/tags/MySQL/"/>
+    
+  </entry>
   
   <entry>
     <title>Get ACP Certification</title>
@@ -37,9 +84,9 @@
     
     
     
-      <category term="Certificate" scheme="http://www.orekiyuta.cn/tags/Certificate/"/>
-    
       <category term="Alibaba" scheme="http://www.orekiyuta.cn/tags/Alibaba/"/>
+    
+      <category term="Certificate" scheme="http://www.orekiyuta.cn/tags/Certificate/"/>
     
   </entry>
   
@@ -139,9 +186,9 @@
     
     
     
-      <category term="Linux" scheme="http://www.orekiyuta.cn/tags/Linux/"/>
-    
       <category term="Docker" scheme="http://www.orekiyuta.cn/tags/Docker/"/>
+    
+      <category term="Linux" scheme="http://www.orekiyuta.cn/tags/Linux/"/>
     
       <category term="Selfhost" scheme="http://www.orekiyuta.cn/tags/Selfhost/"/>
     
@@ -212,59 +259,6 @@
       <category term="Network" scheme="http://www.orekiyuta.cn/tags/Network/"/>
     
       <category term="LAN" scheme="http://www.orekiyuta.cn/tags/LAN/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Github Unsupport PassWord Authentication</title>
-    <link href="http://www.orekiyuta.cn/archives/githubUnsupportPassWordAuthentication/"/>
-    <id>http://www.orekiyuta.cn/archives/githubUnsupportPassWordAuthentication/</id>
-    <published>2021-08-20T16:23:55.000Z</published>
-    <updated>2021-08-20T16:53:28.016Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="Sence"><a href="#Sence" class="headerlink" title="Sence"></a>Sence</h2><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="SHELL"><figure class="iseeu highlight /shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.</span><br><span class="line">remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.</span><br><span class="line">fatal: unable to access 'https://github.com/xxx/xxx.github.io.git/': The requested URL returned error: 403</span><br><span class="line">[41mFATAL[49m Something's wrong. Maybe you can find the solution here: [4mhttp://hexo.io/docs/troubleshooting.html[24m</span><br></pre></td></tr></table></figure></div><h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><ul><li><p>Hexo =&gt; _config.yaml</p>  <div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="YAML"><figure class="iseeu highlight /yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="attr">    type:</span> <span class="string">git</span></span><br><span class="line">    <span class="comment"># repo: https://github.com/OrekiYuta/OrekiYuta.github.io.git</span></span><br><span class="line"><span class="attr">    repo:</span> <span class="string">git@github.com:OrekiYuta/orekiyuta.github.io.git</span></span><br><span class="line"><span class="attr">    branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure></div></li><li><p>👉 <a href="https://www.orekiyuta.cn/archives/Hexo-Install-Migrate/">Github SSH</a></p></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;Sence&quot;&gt;&lt;a href=&quot;#Sence&quot; class=&quot;headerlink&quot; title=&quot;Sence&quot;&gt;&lt;/a&gt;Sence&lt;/h2&gt;&lt;div class=&quot;highlight-wrap&quot;autocomplete=&quot;off&quot; autocorrect=&quot;of
-      
-    
-    </summary>
-    
-    
-    
-      <category term="Hexo" scheme="http://www.orekiyuta.cn/tags/Hexo/"/>
-    
-      <category term="Github" scheme="http://www.orekiyuta.cn/tags/Github/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Use Github Api Commit</title>
-    <link href="http://www.orekiyuta.cn/archives/useGithubApiCommit/"/>
-    <id>http://www.orekiyuta.cn/archives/useGithubApiCommit/</id>
-    <published>2021-08-03T16:53:33.000Z</published>
-    <updated>2021-08-19T20:21:18.401Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="Sence"><a href="#Sence" class="headerlink" title="Sence"></a>Sence</h2><ul><li>使用 github 提供的 API 操作 repo</li><li>之后可利用该操作,对仓库项目提交,结合 github action 进行自动化部署<a id="more"></a></li></ul><h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><h3 id="Read-Input"><a href="#Read-Input" class="headerlink" title="Read / Input"></a>Read / Input</h3><ul><li>查阅官方文档可见,接口说明 👉 <a href="https://docs.github.com/en/rest/reference/repos#create-or-update-file-contents" target="_blank" rel="noopener">Create or update file contents</a><ul><li><img src="/images/useGithubApiCommit/Snipaste_2021-08-05_21-15-21.png" alt>  </li></ul></li><li>鉴权说明 👉 <a href="https://docs.github.com/en/rest/guides/getting-started-with-the-rest-api#authentication" target="_blank" rel="noopener">Authentication</a></li></ul><h3 id="Do-Output"><a href="#Do-Output" class="headerlink" title="Do / Output"></a>Do / Output</h3><ul><li><p>申请 token   👉 <a href="https://github.com/settings/apps" target="_blank" rel="noopener">Settings/Developer settings/Personal access tokens</a> </p><ul><li>填写必要参数, 勾选需要的权限后, 点击 Generate token</li><li><img src="/images/useGithubApiCommit/Snipaste_2021-08-05_21-32-31.png" alt></li><li>这里需要注意保存一下 token 值, 只会显示一次 , 如果忘了再创建一个即可</li><li><img src="/images/useGithubApiCommit/Snipaste_2021-08-05_21-31-17.png" alt></li><li>github 会扫描 github 所有用户的 repo , 如果某个文件包含了 “token 值”,都会在此文件中清除掉 , 并在该 token 的持有者配置中 delete 掉该配置 , 就是上图选项 “Personal access tokens” 里</li></ul></li><li><p>利用 Flask 实现一下</p></li><li><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PY"><figure class="iseeu highlight /py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># github_pic_api.py</span></span><br><span class="line"><span class="keyword">import</span> base64</span><br><span class="line"><span class="keyword">from</span> app.api <span class="keyword">import</span> pic</span><br><span class="line"><span class="keyword">from</span> flask <span class="keyword">import</span> request</span><br><span class="line"><span class="keyword">from</span> flask <span class="keyword">import</span> jsonify</span><br><span class="line"><span class="keyword">from</span> flask_cors <span class="keyword">import</span> CORS</span><br><span class="line"><span class="keyword">from</span> app.service <span class="keyword">import</span> github_commit_service</span><br><span class="line"></span><br><span class="line">CORS(pic, supports_credentials=<span class="literal">True</span>) <span class="comment"># 允许跨域请求</span></span><br><span class="line"></span><br><span class="line"><span class="meta">@pic.route("/", methods=["POST"])</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">upload_pic_to_github</span><span class="params">()</span>:</span></span><br><span class="line">    f = request.files.get(<span class="string">'file'</span>) <span class="comment"># 获取前端传输过来的文件对象</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 配置仓库参数</span></span><br><span class="line">    github_repo_config = &#123;</span><br><span class="line">        <span class="string">"token"</span>: <span class="string">"x"</span>, <span class="comment"># 申请得到的 token</span></span><br><span class="line">        <span class="string">"repo"</span>: <span class="string">"asscet"</span>, <span class="comment"># 公开的仓库名</span></span><br><span class="line">        <span class="string">"owner"</span>: <span class="string">"cat"</span>,  <span class="comment"># 仓库的拥有者</span></span><br><span class="line">        <span class="string">"email"</span>: <span class="string">"cat@gmail.com"</span>, <span class="comment"># 仓库拥有者的邮箱</span></span><br><span class="line">        <span class="string">"base_url"</span>: <span class="string">"https://api.github.com/repos/"</span>, <span class="comment"># github 基础接口地址</span></span><br><span class="line">        <span class="string">"repo_path"</span>: <span class="string">"ccc/"</span>, <span class="comment"># 公开的仓库里的目录位置</span></span><br><span class="line">        <span class="string">"file"</span>: f  <span class="comment"># 要操作的文件对象</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 配置本次提交的参数</span></span><br><span class="line">    commit_data = &#123;</span><br><span class="line">        <span class="string">"message"</span>: <span class="string">"use github api commit at "</span>, <span class="comment"># 提交 message</span></span><br><span class="line">        <span class="string">"committer"</span>: &#123;</span><br><span class="line">            <span class="string">"name"</span>: github_repo_config.get(<span class="string">"owner"</span>), <span class="comment"># 提交者名称</span></span><br><span class="line">            <span class="string">"email"</span>: github_repo_config.get(<span class="string">"email"</span>) <span class="comment"># 提交者邮箱</span></span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="string">"content"</span>: base64.b64encode(f.read()).decode(<span class="string">'utf-8'</span>), <span class="comment"># 需要把文件对象 base64 加密再转成 String</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 配置请求头参数,用于鉴权</span></span><br><span class="line">    headers = &#123;</span><br><span class="line">        <span class="string">"Authorization"</span>: <span class="string">'token '</span> + github_repo_config.get(<span class="string">"token"</span>),</span><br><span class="line">        <span class="string">"Accept"</span>: <span class="string">"application/vnd.github.v3+json"</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    result = github_commit_service.commit_file(github_repo_config, commit_data, headers)</span><br><span class="line">    <span class="keyword">return</span> jsonify(result)</span><br></pre></td></tr></table></figure></div></li><li><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PY"><figure class="iseeu highlight /py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># github_commit_service.py</span></span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">commit_file</span><span class="params">(grc, commit_data, headers)</span>:</span></span><br><span class="line">    repo_url = grc.get(<span class="string">"base_url"</span>) \</span><br><span class="line">            + grc.get(<span class="string">"owner"</span>) + <span class="string">"/"</span> \</span><br><span class="line">            + grc.get(<span class="string">"repo"</span>) + <span class="string">"/contents/"</span> \</span><br><span class="line">            + grc.get(<span class="string">"repo_path"</span>) \</span><br><span class="line">            + grc.get(<span class="string">"file"</span>).filename</span><br><span class="line"></span><br><span class="line">    fin_result = &#123;</span><br><span class="line">        <span class="string">"req"</span>: <span class="string">""</span>,</span><br><span class="line">        <span class="string">"res"</span>: <span class="string">""</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        res = requests.put(repo_url, data=json.dumps(commit_data), headers=headers)</span><br><span class="line">        fin_result[<span class="string">"res"</span>] = bytes.decode(res.content)</span><br><span class="line">    <span class="keyword">except</span>:</span><br><span class="line">        fin_result[<span class="string">"req"</span>] = <span class="string">"commit fail! unknown exception!"</span></span><br><span class="line">        <span class="keyword">return</span> fin_result</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="comment"># print(result.get("req"))  .get 如果 key 不存在 'req' 不会报错</span></span><br><span class="line">        <span class="comment"># print(result["req"])      [] 如果 key 不存在 'req' 会报错</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> res.status_code == <span class="number">201</span>:</span><br><span class="line">            fin_result[<span class="string">"req"</span>] = <span class="string">"commit success! great!"</span></span><br><span class="line">            <span class="keyword">return</span> fin_result</span><br><span class="line">        <span class="keyword">elif</span> res.status_code == <span class="number">422</span>:</span><br><span class="line">            <span class="comment"># 422 状态码,可能该文件名已经存在仓库中</span></span><br><span class="line">            fin_result.get(<span class="string">"req"</span>, <span class="string">"commit fail! content maybe exists!?"</span>)</span><br><span class="line">            <span class="keyword">return</span> fin_result</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            fin_result[<span class="string">"req"</span>] = <span class="string">"commit fail! check the res message."</span></span><br><span class="line">            <span class="keyword">return</span> fin_result</span><br></pre></td></tr></table></figure></div></li><li><p><img src="/images/useGithubApiCommit/Snipaste_2021-08-05_22-08-34.png" alt></p></li></ul><h2 id="Other"><a href="#Other" class="headerlink" title="Other"></a>Other</h2><ul><li>👉 <a href="https://docs.github.com/en/rest/reference/repos#create-or-update-file-contents" target="_blank" rel="noopener">Create or update file contents</a></li><li>👉 <a href="https://segmentfault.com/a/1190000015144126" target="_blank" rel="noopener">一篇文章搞定Github API 调用 (v3)</a></li><li>👉 <a href="https://wqian.net/blog/2019/0426-python-github-api-index.html" target="_blank" rel="noopener">python利用github的api实现文件的上传和更新</a></li><li>👉 <a href="https://www.bbsmax.com/A/Vx5MDry7JN/" target="_blank" rel="noopener">使用GitHub API上传文件及GitHub做图床</a></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;Sence&quot;&gt;&lt;a href=&quot;#Sence&quot; class=&quot;headerlink&quot; title=&quot;Sence&quot;&gt;&lt;/a&gt;Sence&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;使用 github 提供的 API 操作 repo&lt;/li&gt;
-&lt;li&gt;之后可利用该操作,对仓库项目提交,结合 github action 进行自动化部署
-    
-    </summary>
-    
-    
-    
-      <category term="Python" scheme="http://www.orekiyuta.cn/tags/Python/"/>
-    
-      <category term="Flask" scheme="http://www.orekiyuta.cn/tags/Flask/"/>
-    
-      <category term="Github" scheme="http://www.orekiyuta.cn/tags/Github/"/>
     
   </entry>
   
