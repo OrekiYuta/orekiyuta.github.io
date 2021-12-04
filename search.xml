@@ -27,7 +27,7 @@
       <link href="/archives/USBWebserverForDev/"/>
       <url>/archives/USBWebserverForDev/</url>
       
-        <content type="html"><![CDATA[<h2 id="Scene"><a href="#Scene" class="headerlink" title="Scene"></a>Scene</h2><ul><li>在一台机器上搭建 MySQL 并开放外部使用</li><li>常规方式有 （1）直接部署 MySQL (2) 在 Docker 中部署 MySQL</li><li>以上两种方式有其一定的优势，（1）性能肯定最好 （2）容器隔离</li><li>但是以上两种方式都需要部署成本，为了寻求更便捷的部署和迁移，将使用以下方式<a id="more"></a></li></ul><h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><ul><li><p>利用 可以移植的 USBWebserver =&gt; <a href="https://usbwebserver.yura.mk.ua/" target="_blank" rel="noopener">USBWebserver8</a></p><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAIN"><figure class="iseeu highlight /plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Most light weight local portable web server with Apache, PHP, MySQL and PHPMyAdmin for Windows on the Web. Just unzip enywhere (including USB flash drive), run and start using.</span><br></pre></td></tr></table></figure></div></li><li><p>部署环境在 win10,解压启动即可</p></li><li>设置开机启动，win + r ,<code>shell:startup</code>,把启动文件放在该目录即可</li><li>到此，只能是本地访问，提供给外部访问还需要进去 MySQL 赋予用户权限 <ul><li><img src="/images/USBWebserverForDev/Snipaste_2021-12-04_17-32-09.png" alt></li><li><img src="/images/USBWebserverForDev/Snipaste_2021-12-04_17-32-44.png" alt></li><li><img src="/images/USBWebserverForDev/Snipaste_2021-12-04_17-33-12.png" alt></li></ul></li><li>最后防火墙开放端口即可</li></ul>]]></content>
+        <content type="html"><![CDATA[<h2 id="Scene"><a href="#Scene" class="headerlink" title="Scene"></a>Scene</h2><ul><li>在一台机器上搭建 MySQL 并开放外部使用</li><li>常规方式有 （1）直接部署 MySQL （2） 在 Docker 中部署 MySQL</li><li>以上两种方式有其一定的优势:（1）性能好 （2）容器隔离</li><li>但是以上两种方式都需要部署成本, 为了寻求更便捷的部署和迁移, 将使用以下方式<a id="more"></a></li></ul><h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><ul><li><p>利用 可以移植的 USBWebserver =&gt; <a href="https://usbwebserver.yura.mk.ua/" target="_blank" rel="noopener">USBWebserver8</a></p><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAIN"><figure class="iseeu highlight /plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Most light weight local portable web server with Apache, PHP, MySQL and PHPMyAdmin for Windows on the Web. Just unzip enywhere (including USB flash drive), run and start using.</span><br></pre></td></tr></table></figure></div></li><li><p>部署环境在 win10,解压启动即可</p></li><li>设置开机启动，win + r ,<code>shell:startup</code>,把启动文件放在该目录即可</li><li>到此，只能是本地访问，提供给外部访问还需要进去 MySQL 赋予用户权限 <ul><li><img src="/images/USBWebserverForDev/Snipaste_2021-12-04_17-32-09.png" alt></li><li><img src="/images/USBWebserverForDev/Snipaste_2021-12-04_17-32-44.png" alt></li><li><img src="/images/USBWebserverForDev/Snipaste_2021-12-04_17-33-12.png" alt></li></ul></li><li>最后防火墙开放端口即可</li></ul>]]></content>
       
       
       
@@ -52,9 +52,9 @@
       
         <tags>
             
-            <tag> Alibaba </tag>
-            
             <tag> Certificate </tag>
+            
+            <tag> Alibaba </tag>
             
         </tags>
       
@@ -243,9 +243,9 @@
             
             <tag> Python </tag>
             
-            <tag> Flask </tag>
-            
             <tag> Github </tag>
+            
+            <tag> Flask </tag>
             
         </tags>
       
@@ -285,9 +285,9 @@
       
         <tags>
             
-            <tag> Certificate </tag>
-            
             <tag> Microsoft </tag>
+            
+            <tag> Certificate </tag>
             
         </tags>
       
@@ -346,9 +346,9 @@
       
         <tags>
             
-            <tag> Git </tag>
-            
             <tag> Hexo </tag>
+            
+            <tag> Git </tag>
             
         </tags>
       
@@ -380,9 +380,9 @@
       
         <tags>
             
-            <tag> Network </tag>
-            
             <tag> Ajax </tag>
+            
+            <tag> Network </tag>
             
         </tags>
       
@@ -759,25 +759,25 @@
             
             <tag> Linux </tag>
             
-            <tag> Selenium </tag>
-            
-            <tag> ChromeDriver </tag>
-            
             <tag> RaspberryPi </tag>
             
             <tag> Nginx </tag>
             
-            <tag> MySQL </tag>
-            
             <tag> JavaScript </tag>
+            
+            <tag> Selenium </tag>
+            
+            <tag> ChromeDriver </tag>
+            
+            <tag> MySQL </tag>
             
             <tag> Python </tag>
             
             <tag> Flask </tag>
             
-            <tag> Mariadb </tag>
-            
             <tag> Chromium </tag>
+            
+            <tag> Mariadb </tag>
             
             <tag> BeautifulSoup </tag>
             
@@ -787,7 +787,7 @@
             
             <tag> Crontab </tag>
             
-            <tag> Arm </tag>
+            <tag> ARM </tag>
             
         </tags>
       
@@ -1375,9 +1375,9 @@
       
         <tags>
             
-            <tag> Git </tag>
-            
             <tag> Hexo </tag>
+            
+            <tag> Git </tag>
             
         </tags>
       
