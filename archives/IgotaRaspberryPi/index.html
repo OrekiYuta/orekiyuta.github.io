@@ -117,7 +117,7 @@
 <meta property="og:image" content="http://www.orekiyuta.cn/images/IgotaRaspberryPi/Snipaste_2020-12-25_15-28-39.png">
 <meta property="og:image" content="http://www.orekiyuta.cn/images/IgotaRaspberryPi/Snipaste_2021-01-06_20-58-26.png">
 <meta property="og:image" content="http://www.orekiyuta.cn/images/IgotaRaspberryPi/Snipaste_2021-01-19_22-13-01.png">
-<meta property="og:updated_time" content="2021-08-19T20:21:17.795Z">
+<meta property="og:updated_time" content="2021-12-04T20:19:56.655Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="I got a Raspberry Pi">
 <meta name="twitter:description" content="通过网络分享连接树莓派 确保一台能上网的主机 把已经连接的网络通过想要共享的形式共享出去  开启共享前后的本机 ipv4">
@@ -385,7 +385,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  1.9k
+                  2k
                 </span>
               
 
@@ -470,8 +470,9 @@
 <li><p>然后 Win+r , 输入 mstsc </p>
 </li>
 <li>接着在远程桌面连接窗口输入 树莓派 ip , 账户密码</li>
+<li><a href="https://www.codenong.com/cs106439903/" target="_blank" rel="noopener">树莓派——xrdp win10远程登录以及蓝屏问题</a><h2 id="开启-SSH"><a href="#开启-SSH" class="headerlink" title="开启 SSH"></a>开启 SSH</h2></li>
 </ul>
-<h2 id="开启-SSH"><a href="#开启-SSH" class="headerlink" title="开启 SSH"></a>开启 SSH</h2><h3 id="已连接树莓派"><a href="#已连接树莓派" class="headerlink" title="已连接树莓派"></a>已连接树莓派</h3><ul>
+<h3 id="已连接树莓派"><a href="#已连接树莓派" class="headerlink" title="已连接树莓派"></a>已连接树莓派</h3><ul>
 <li><code>sudo raspi-config</code></li>
 <li>interfacing Options</li>
 </ul>
@@ -530,6 +531,8 @@
 <li><code>sudo su</code> 切换成 root</li>
 <li><code>su [username]</code> 切换成其他用户,如:<code>sudo pi</code></li>
 <li>👉 <a href="https://blog.csdn.net/farYang/article/details/50779767" target="_blank" rel="noopener">初次使用树莓派并启用root管理员</a></li>
+<li><code>sudo passwd root</code> 设置 root 用户密码</li>
+<li><code>sudo passwd --unlock root</code> 解锁 root 用户</li>
 </ul>
 <h2 id="不同网段问题"><a href="#不同网段问题" class="headerlink" title="不同网段问题"></a>不同网段问题</h2><ul>
 <li>当前内网的网段为 172 </li>
@@ -614,6 +617,9 @@
 </ul>
 <h2 id="换下载源"><a href="#换下载源" class="headerlink" title="换下载源"></a>换下载源</h2><ul>
 <li>👉 <a href="https://mirror.tuna.tsinghua.edu.cn/help/raspbian/" target="_blank" rel="noopener">根据架构和版本更换源</a></li>
+<li><code>cat /etc/debian_version</code> 对应 Debian版本编号</li>
+<li><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SHELL"><figure class="iseeu highlight /shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> Debian 10(buster)</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 编辑 `/etc/apt/sources.list` 文件，删除原文件所有内容，用以下内容取代：</span></span><br><span class="line">deb http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ buster main non-free contrib rpi</span><br><span class="line">deb-src http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ buster main non-free contrib rpi</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 编辑 `/etc/apt/sources.list.d/raspi.list` 文件，删除原文件所有内容，用以下内容取代：</span></span><br><span class="line">deb http://mirrors.tuna.tsinghua.edu.cn/raspberrypi/ buster main ui</span><br></pre></td></tr></table></figure></div>
+</li>
 </ul>
 <h2 id="SSH-认证更新"><a href="#SSH-认证更新" class="headerlink" title="SSH 认证更新"></a>SSH 认证更新</h2><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="PLAIN"><figure class="iseeu highlight /plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</span><br><span class="line">@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @</span><br><span class="line">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</span><br><span class="line">IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!</span><br><span class="line">Someone could be eavesdropping on you right now (man-in-the-middle attack)!</span><br><span class="line">It is also possible that a host key has just been changed.</span><br><span class="line">The fingerprint for the ECDSA key sent by the remote host is</span><br><span class="line">SHA256:wFyPv88OeUwo1eUnjPQTUB1PR/O/XLlJMip3BVX5mPU.</span><br><span class="line">Please contact your system administrator.</span><br><span class="line">Add correct host key in C:\\Users\\OrekiYuta/.ssh/known_hosts to get rid of this message.</span><br><span class="line">Offending ECDSA key in C:\\Users\\OrekiYuta/.ssh/known_hosts:14</span><br><span class="line">ECDSA host key for 192.168.1.201 has changed and you have requested strict checking.</span><br><span class="line">Host key verification failed.</span><br></pre></td></tr></table></figure></div>
 <ul>
@@ -1182,7 +1188,7 @@ if(canvas.getContext){
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">94.5k</span>
+    <span title="Site words total count">94.6k</span>
   
 </div>
 
