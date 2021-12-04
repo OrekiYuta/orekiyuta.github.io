@@ -4,6 +4,44 @@
   
     
     <entry>
+      <title>SecurityGroup On TencentCVM</title>
+      <link href="/archives/securityGroupOnTencentCVM/"/>
+      <url>/archives/securityGroupOnTencentCVM/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Scene"><a href="#Scene" class="headerlink" title="Scene"></a>Scene</h2><ul><li>在云服务器上部署了服务，开放端口配置注意点<a id="more"></a></li></ul><h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><ul><li>以下为 腾讯云CVM 为例说明</li></ul><ol><li>先找到自己的机器,并找到安全组选项,并新建一个随意的安全组<ul><li><img src="/images/securityGroupOnTencentCVM/Snipaste_2021-12-04_17-51-56.png" alt></li></ul></li><li>新建完后,点击修改规则<ul><li><img src="/images/securityGroupOnTencentCVM/Snipaste_2021-12-04_17-53-32.png" alt></li></ul></li><li>让外部访问,设置入站规则即可<ul><li><img src="/images/securityGroupOnTencentCVM/Snipaste_2021-12-04_17-56-04.png" alt></li><li><img src="/images/securityGroupOnTencentCVM/Snipaste_2021-12-04_17-56-52.png" alt></li></ul></li><li>最后设置一下,关联实例，把需要开放以上规则的机器配置上<br> Snipaste_2021-12-04_17-57-56.png</li></ol><ul><li>以下为机器内的服务的启动配置说明</li></ul><ol><li><p>正常操作了以上的步骤,端口即是正常开放了,</p><ul><li>telnet 能否连通,还需要机器内的端口监听正确</li></ul></li><li><p>比如以下情况,在外部是 telnet 不通的</p><ul><li><img src="/images/securityGroupOnTencentCVM/Snipaste_2021-12-04_18-03-22.png" alt></li><li>因为服务监听的是机器内本地(127.0.0.1)的端口，没法响应外部(0.0.0.0)请求</li><li>上图的服务,限制了只有来源IP为127.0.0.1才可以访问，其他IP无法访问，因此是无法telnet成功</li></ul></li><li><p>正确的方式是把服务启动修改为0.0.0.0，允许所有IP即可</p></li><li>或者保持以上的本地监听(127.0.0.1),再配置 Nginx,通过Nginx代理监听</li></ol>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> CloudServer </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>USBWebserver For Dev</title>
+      <link href="/archives/USBWebserverForDev/"/>
+      <url>/archives/USBWebserverForDev/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Scene"><a href="#Scene" class="headerlink" title="Scene"></a>Scene</h2><ul><li>在一台机器上搭建 MySQL 并开放外部使用</li><li>常规方式有 （1）直接部署 MySQL (2) 在 Docker 中部署 MySQL</li><li>以上两种方式有其一定的优势，（1）性能肯定最好 （2）容器隔离</li><li>但是以上两种方式都需要部署成本，为了寻求更便捷的部署和迁移，将使用以下方式<a id="more"></a></li></ul><h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><ul><li><p>利用 可以移植的 USBWebserver =&gt; <a href="https://usbwebserver.yura.mk.ua/" target="_blank" rel="noopener">USBWebserver8</a></p><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAIN"><figure class="iseeu highlight /plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Most light weight local portable web server with Apache, PHP, MySQL and PHPMyAdmin for Windows on the Web. Just unzip enywhere (including USB flash drive), run and start using.</span><br></pre></td></tr></table></figure></div></li><li><p>部署环境在 win10,解压启动即可</p></li><li>设置开机启动，win + r ,<code>shell:startup</code>,把启动文件放在该目录即可</li><li>到此，只能是本地访问，提供给外部访问还需要进去 MySQL 赋予用户权限 <ul><li><img src="/images/USBWebserverForDev/Snipaste_2021-12-04_17-32-09.png" alt></li><li><img src="/images/USBWebserverForDev/Snipaste_2021-12-04_17-32-44.png" alt></li><li><img src="/images/USBWebserverForDev/Snipaste_2021-12-04_17-33-12.png" alt></li></ul></li><li>最后防火墙开放端口即可</li></ul>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> MySQL </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Get ACP Certification</title>
       <link href="/archives/getACPCertification/"/>
       <url>/archives/getACPCertification/</url>
@@ -14,9 +52,9 @@
       
         <tags>
             
-            <tag> Certificate </tag>
-            
             <tag> Alibaba </tag>
+            
+            <tag> Certificate </tag>
             
         </tags>
       
@@ -100,9 +138,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> Docker </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Selfhost </tag>
             
@@ -247,9 +285,9 @@
       
         <tags>
             
-            <tag> Microsoft </tag>
-            
             <tag> Certificate </tag>
+            
+            <tag> Microsoft </tag>
             
         </tags>
       
@@ -342,9 +380,9 @@
       
         <tags>
             
-            <tag> Ajax </tag>
-            
             <tag> Network </tag>
+            
+            <tag> Ajax </tag>
             
         </tags>
       
@@ -439,9 +477,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> Docker </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Windows </tag>
             
@@ -721,17 +759,17 @@
             
             <tag> Linux </tag>
             
-            <tag> RaspberryPi </tag>
-            
-            <tag> Nginx </tag>
-            
-            <tag> JavaScript </tag>
-            
             <tag> Selenium </tag>
             
             <tag> ChromeDriver </tag>
             
+            <tag> RaspberryPi </tag>
+            
+            <tag> Nginx </tag>
+            
             <tag> MySQL </tag>
+            
+            <tag> JavaScript </tag>
             
             <tag> Python </tag>
             
@@ -983,7 +1021,7 @@
       <link href="/archives/WindowsSetting/"/>
       <url>/archives/WindowsSetting/</url>
       
-        <content type="html"><![CDATA[<h3 id="Win10-LTSB-Add-MicrosoftStore"><a href="#Win10-LTSB-Add-MicrosoftStore" class="headerlink" title="Win10 LTSB Add MicrosoftStore"></a>Win10 LTSB Add MicrosoftStore</h3><ul><li>To : <a href="https://github.com/kkkgo/LTSB-Add-MicrosoftStore" target="_blank" rel="noopener">LTSB-Add-MicrosoftStore</a></li><li>Run: Add-Store.cmd<a id="more"></a><img src="/images/Windows/Win10LTSBAddMicrosoftStore/Snipaste_2020-11-14_16-53-39.png" alt></li></ul><h3 id="Windows-show-Windows-File"><a href="#Windows-show-Windows-File" class="headerlink" title="Windows show Windows/File"></a>Windows show Windows/File</h3><ul><li><code>explorer .</code></li><li><code>explorer ..</code></li><li><code>explorer [dirName]</code></li><li><code>start .</code><br><img src="/images/Windows/Explorer/Snipaste_2020-11-14_17-06-31.png" alt></li></ul><h3 id="Desktop-Context-Menu"><a href="#Desktop-Context-Menu" class="headerlink" title="Desktop Context Menu"></a>Desktop Context Menu</h3><ul><li><code>计算机\HKEY_CLASSES_ROOT\Directory\Background\shell</code></li><li><img src="/images/Windows/DesktopContextMenu/Snipaste_2020-11-24_22-36-36.png" alt></li><li><img src="/images/Windows/DesktopContextMenu/Snipaste_2020-11-24_22-35-15.png" alt></li><li><img src="/images/Windows/DesktopContextMenu/Snipaste_2020-11-24_22-40-14.png" alt></li></ul><h3 id="DOS-Clean"><a href="#DOS-Clean" class="headerlink" title="DOS Clean"></a>DOS Clean</h3><ul><li><code>cls</code></li></ul><h3 id="Netstat-Find-Kill"><a href="#Netstat-Find-Kill" class="headerlink" title="Netstat Find/Kill"></a>Netstat Find/Kill</h3><ul><li><p><code>netstat -ano|findstr 8000</code>  查看占用8000端口的进程</p></li><li><p><code>tasklist | findstr 8608</code> 查看进程的信息</p></li><li><p><code>taskkill /pid 8608 /f</code>  关闭进程</p></li></ul><p><img src="/images/Windows/Netstat/Snipaste_2020-05-23_13-23-00.png" alt></p><h3 id="Install-Chocolatey"><a href="#Install-Chocolatey" class="headerlink" title="Install Chocolatey"></a>Install Chocolatey</h3><ul><li>At PowerShell<ul><li><code>Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString(&#39;https://chocolatey.org/install.ps1&#39;))</code></li></ul></li><li><a href="https://chocolatey.org/install" target="_blank" rel="noopener">https://chocolatey.org/install</a></li><li>At CMD<ul><li><code>@powershell Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString(&#39;https://chocolatey.org/install.ps1&#39;))</code></li></ul></li></ul><h3 id="Choco"><a href="#Choco" class="headerlink" title="Choco"></a>Choco</h3><ul><li><code>choco list -lo</code> 查看用 chocolatey 安装的软件</li><li><code>choco list -li</code> 查看所有已安装的软件</li><li><code>choco uninstall [name]</code> 卸载软件</li></ul><h3 id="Nslookup"><a href="#Nslookup" class="headerlink" title="Nslookup"></a>Nslookup</h3><ul><li><code>nslookup www.baidu.com</code> 查看域名当前 IP<h3 id="Net-user"><a href="#Net-user" class="headerlink" title="Net user"></a>Net user</h3></li><li><code>net user</code> 查看当前计算机用户名<h3 id="Arp-a"><a href="#Arp-a" class="headerlink" title="Arp -a"></a>Arp -a</h3></li><li><code>arp -a</code> 查看当前局域网内的所有 IP<h3 id="Net-share"><a href="#Net-share" class="headerlink" title="Net share"></a>Net share</h3></li><li><code>net share</code> 查看本机上的共享资源</li><li><code>net share [name]/delete</code> 删除共享资源</li></ul><h3 id="Netsh-wlan"><a href="#Netsh-wlan" class="headerlink" title="Netsh wlan"></a>Netsh wlan</h3><ul><li><code>netsh wlan show profile [wlanName] key=clear</code> 查看已连接 Wi-Fi 的详细信息，包含密码</li></ul><h3 id><a href="#" class="headerlink" title="|"></a>|</h3><ul><li><code>ipconfig | clip</code> 将结果输出到剪贴板</li></ul><h3 id="amp-amp"><a href="#amp-amp" class="headerlink" title="&amp;&amp;"></a>&amp;&amp;</h3><ul><li><code>ipconfig &amp;&amp; arp -a</code> 连接多个命令，只有前面一个执行成功，后面的才执行</li><li>&amp; 一个一个执行</li><li>PowerShell 不支持</li></ul><h3 id="VSCode-Column-edit"><a href="#VSCode-Column-edit" class="headerlink" title="VSCode Column edit"></a>VSCode Column edit</h3><ul><li>Shift + Alt + 左键</li></ul><h3 id="Google-Clean-up-cache"><a href="#Google-Clean-up-cache" class="headerlink" title="Google Clean up cache"></a>Google Clean up cache</h3><ul><li>Shift + ctrl + R</li></ul><h3 id="Comfortable-colors"><a href="#Comfortable-colors" class="headerlink" title="Comfortable colors"></a>Comfortable colors</h3><ul><li>#39ff70</li></ul><h3 id="The-Lost-Worlds"><a href="#The-Lost-Worlds" class="headerlink" title="The Lost Worlds"></a>The Lost Worlds</h3><ul><li><code>telnet towel.blinkenlights.nl</code><br><img src="/images/Windows/Blinkenlights/Snipaste_2020-12-13_02-50-40.png" alt></li></ul><h3 id="Check-WIN-Version"><a href="#Check-WIN-Version" class="headerlink" title="Check WIN Version"></a>Check WIN Version</h3><ul><li><code>winver</code> cmd</li><li>win + R , 输入 winver </li></ul><h3 id="PowerShell-Theme"><a href="#PowerShell-Theme" class="headerlink" title="PowerShell Theme"></a>PowerShell Theme</h3><ul><li><code>Install-Module posh-git -Scope CurrentUser</code></li><li><code>Install-Module oh-my-posh -Scope CurrentUser</code></li><li><code>if (!(Test-Path -Path $PROFILE )) { New-Item -Type File -Path $PROFILE -Force }</code></li><li><code>notepad $PROFILE</code></li><li><p>在打开的文件中写入</p><ul><li><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAIN"><figure class="iseeu highlight /plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Import-Module posh-git </span><br><span class="line">Import-Module oh-my-posh </span><br><span class="line">Set-Theme Paradox</span><br></pre></td></tr></table></figure></div></li><li><p>如果出现 “···无法加载文件 <strong>**</strong>.ps1，因为在此系统中禁止执行脚本···”</p></li><li>就执行 <code>set-ExecutionPolicy RemoteSigned</code></li></ul></li><li><p>修改主题,把下面出现的主题名写入上面的文件中<br><img src="/images/Windows/PowerShellTheme/Snipaste_2020-12-27_00-12-42.png" alt></p></li><li><p>👉<a href="https://zhuanlan.zhihu.com/p/57730843" target="_blank" rel="noopener">5 个 PowerShell 主题，让你的 Windows 终端更好看</a></p></li></ul><h4 id="在-fluent-打开"><a href="#在-fluent-打开" class="headerlink" title="在 fluent 打开"></a>在 fluent 打开</h4><ul><li>如有以下错误<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAIN"><figure class="iseeu highlight /plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">···PowerShell_profile.ps1 cannot be loaded because running scripts is disabled on this system···</span><br></pre></td></tr></table></figure></div></li></ul><p>-执行 <code>Set-ExecutionPolicy -Scope &quot;CurrentUser&quot; -ExecutionPolicy &quot;RemoteSigned&quot;</code></p><h3 id="MySQL-install-linking"><a href="#MySQL-install-linking" class="headerlink" title="MySQL install/linking"></a>MySQL install/linking</h3><ul><li>👉 <a href="https://dev.mysql.com/downloads/windows/installer/" target="_blank" rel="noopener">MySQL Community Downloads</a></li><li>👉 <a href="https://www.runoob.com/w3cnote/windows10-mysql-installer.html" target="_blank" rel="noopener">Windows10 MYSQL Installer 安装（mysql-installer-community-5.7.19.0.msi）</a></li><li>👉 <a href="https://blog.csdn.net/seventopalsy/article/details/80195246" target="_blank" rel="noopener">解决Navicat for MySQL 连接 Mysql 8.0.11 出现1251- Client does not support authentication protocol 错误</a></li><li>👉 <a href="https://www.cnblogs.com/linjiqin/p/5270938.html" target="_blank" rel="noopener">配置mysql允许远程连接的方法</a></li></ul><h3 id="Show-wifi-info-histroy"><a href="#Show-wifi-info-histroy" class="headerlink" title="Show wifi info histroy"></a>Show wifi info histroy</h3><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAIN"><figure class="iseeu highlight /plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[cc lang=&quot;php&quot;]</span><br><span class="line">for /f &quot;skip=9 tokens=1,2 delims=:&quot; %i in (&apos;netsh wlan show profiles&apos;) do @echo %j | findstr -i -v echo | netsh wlan show profiles %j key=clear</span><br><span class="line">[/cc]</span><br></pre></td></tr></table></figure></div><h3 id="Clean-network-link"><a href="#Clean-network-link" class="headerlink" title="Clean network link"></a>Clean network link</h3><ul><li>删除映射过的网络磁盘连接</li><li>用于清除映射磁盘的账户信息，切换用户登录磁盘</li><li><code>net use * /del /y</code></li></ul>]]></content>
+        <content type="html"><![CDATA[<h3 id="Win10-LTSB-Add-MicrosoftStore"><a href="#Win10-LTSB-Add-MicrosoftStore" class="headerlink" title="Win10 LTSB Add MicrosoftStore"></a>Win10 LTSB Add MicrosoftStore</h3><ul><li>To : <a href="https://github.com/kkkgo/LTSB-Add-MicrosoftStore" target="_blank" rel="noopener">LTSB-Add-MicrosoftStore</a></li><li>Run: Add-Store.cmd<a id="more"></a><img src="/images/Windows/Win10LTSBAddMicrosoftStore/Snipaste_2020-11-14_16-53-39.png" alt></li></ul><h3 id="Windows-show-Windows-File"><a href="#Windows-show-Windows-File" class="headerlink" title="Windows show Windows/File"></a>Windows show Windows/File</h3><ul><li><code>explorer .</code></li><li><code>explorer ..</code></li><li><code>explorer [dirName]</code></li><li><code>start .</code><br><img src="/images/Windows/Explorer/Snipaste_2020-11-14_17-06-31.png" alt></li></ul><h3 id="Desktop-Context-Menu"><a href="#Desktop-Context-Menu" class="headerlink" title="Desktop Context Menu"></a>Desktop Context Menu</h3><ul><li><code>计算机\HKEY_CLASSES_ROOT\Directory\Background\shell</code></li><li><img src="/images/Windows/DesktopContextMenu/Snipaste_2020-11-24_22-36-36.png" alt></li><li><img src="/images/Windows/DesktopContextMenu/Snipaste_2020-11-24_22-35-15.png" alt></li><li><img src="/images/Windows/DesktopContextMenu/Snipaste_2020-11-24_22-40-14.png" alt></li></ul><h3 id="DOS-Clean"><a href="#DOS-Clean" class="headerlink" title="DOS Clean"></a>DOS Clean</h3><ul><li><code>cls</code></li></ul><h3 id="Netstat-Find-Kill"><a href="#Netstat-Find-Kill" class="headerlink" title="Netstat Find/Kill"></a>Netstat Find/Kill</h3><ul><li><p><code>netstat -ano|findstr 8000</code>  查看占用8000端口的进程</p></li><li><p><code>tasklist | findstr 8608</code> 查看进程的信息</p></li><li><p><code>taskkill /pid 8608 /f</code>  关闭进程</p></li></ul><p><img src="/images/Windows/Netstat/Snipaste_2020-05-23_13-23-00.png" alt></p><h3 id="Install-Chocolatey"><a href="#Install-Chocolatey" class="headerlink" title="Install Chocolatey"></a>Install Chocolatey</h3><ul><li>At PowerShell<ul><li><code>Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString(&#39;https://chocolatey.org/install.ps1&#39;))</code></li></ul></li><li><a href="https://chocolatey.org/install" target="_blank" rel="noopener">https://chocolatey.org/install</a></li><li>At CMD<ul><li><code>@powershell Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString(&#39;https://chocolatey.org/install.ps1&#39;))</code></li></ul></li></ul><h3 id="Choco"><a href="#Choco" class="headerlink" title="Choco"></a>Choco</h3><ul><li><code>choco list -lo</code> 查看用 chocolatey 安装的软件</li><li><code>choco list -li</code> 查看所有已安装的软件</li><li><code>choco uninstall [name]</code> 卸载软件</li></ul><h3 id="Nslookup"><a href="#Nslookup" class="headerlink" title="Nslookup"></a>Nslookup</h3><ul><li><code>nslookup www.baidu.com</code> 查看域名当前 IP<h3 id="Net-user"><a href="#Net-user" class="headerlink" title="Net user"></a>Net user</h3></li><li><code>net user</code> 查看当前计算机用户名<h3 id="Arp-a"><a href="#Arp-a" class="headerlink" title="Arp -a"></a>Arp -a</h3></li><li><code>arp -a</code> 查看当前局域网内的所有 IP<h3 id="Net-share"><a href="#Net-share" class="headerlink" title="Net share"></a>Net share</h3></li><li><code>net share</code> 查看本机上的共享资源</li><li><code>net share [name]/delete</code> 删除共享资源</li></ul><h3 id="Netsh-wlan"><a href="#Netsh-wlan" class="headerlink" title="Netsh wlan"></a>Netsh wlan</h3><ul><li><code>netsh wlan show profile [wlanName] key=clear</code> 查看已连接 Wi-Fi 的详细信息，包含密码</li></ul><h3 id><a href="#" class="headerlink" title="|"></a>|</h3><ul><li><code>ipconfig | clip</code> 将结果输出到剪贴板</li></ul><h3 id="amp-amp"><a href="#amp-amp" class="headerlink" title="&amp;&amp;"></a>&amp;&amp;</h3><ul><li><code>ipconfig &amp;&amp; arp -a</code> 连接多个命令，只有前面一个执行成功，后面的才执行</li><li>&amp; 一个一个执行</li><li>PowerShell 不支持</li></ul><h3 id="VSCode-Column-edit"><a href="#VSCode-Column-edit" class="headerlink" title="VSCode Column edit"></a>VSCode Column edit</h3><ul><li>Shift + Alt + 左键</li></ul><h3 id="Google-Clean-up-cache"><a href="#Google-Clean-up-cache" class="headerlink" title="Google Clean up cache"></a>Google Clean up cache</h3><ul><li>Shift + ctrl + R</li></ul><h3 id="Comfortable-colors"><a href="#Comfortable-colors" class="headerlink" title="Comfortable colors"></a>Comfortable colors</h3><ul><li>#39ff70</li></ul><h3 id="The-Lost-Worlds"><a href="#The-Lost-Worlds" class="headerlink" title="The Lost Worlds"></a>The Lost Worlds</h3><ul><li><code>telnet towel.blinkenlights.nl</code><br><img src="/images/Windows/Blinkenlights/Snipaste_2020-12-13_02-50-40.png" alt></li></ul><h3 id="Check-WIN-Version"><a href="#Check-WIN-Version" class="headerlink" title="Check WIN Version"></a>Check WIN Version</h3><ul><li><code>winver</code> cmd</li><li>win + R , 输入 winver </li></ul><h3 id="PowerShell-Theme"><a href="#PowerShell-Theme" class="headerlink" title="PowerShell Theme"></a>PowerShell Theme</h3><ul><li><code>Install-Module posh-git -Scope CurrentUser</code></li><li><code>Install-Module oh-my-posh -Scope CurrentUser</code></li><li><code>if (!(Test-Path -Path $PROFILE )) { New-Item -Type File -Path $PROFILE -Force }</code></li><li><code>notepad $PROFILE</code></li><li><p>在打开的文件中写入</p><ul><li><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAIN"><figure class="iseeu highlight /plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Import-Module posh-git </span><br><span class="line">Import-Module oh-my-posh </span><br><span class="line">Set-Theme Paradox</span><br></pre></td></tr></table></figure></div></li><li><p>如果出现 “···无法加载文件 <strong>**</strong>.ps1，因为在此系统中禁止执行脚本···”</p></li><li>就执行 <code>set-ExecutionPolicy RemoteSigned</code></li></ul></li><li><p>修改主题,把下面出现的主题名写入上面的文件中<br><img src="/images/Windows/PowerShellTheme/Snipaste_2020-12-27_00-12-42.png" alt></p></li><li><p>👉<a href="https://zhuanlan.zhihu.com/p/57730843" target="_blank" rel="noopener">5 个 PowerShell 主题，让你的 Windows 终端更好看</a></p></li></ul><h4 id="在-fluent-打开"><a href="#在-fluent-打开" class="headerlink" title="在 fluent 打开"></a>在 fluent 打开</h4><ul><li>如有以下错误<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAIN"><figure class="iseeu highlight /plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">···PowerShell_profile.ps1 cannot be loaded because running scripts is disabled on this system···</span><br></pre></td></tr></table></figure></div></li></ul><p>-执行 <code>Set-ExecutionPolicy -Scope &quot;CurrentUser&quot; -ExecutionPolicy &quot;RemoteSigned&quot;</code></p><h3 id="MySQL-install-linking"><a href="#MySQL-install-linking" class="headerlink" title="MySQL install/linking"></a>MySQL install/linking</h3><ul><li>👉 <a href="https://dev.mysql.com/downloads/windows/installer/" target="_blank" rel="noopener">MySQL Community Downloads</a></li><li>👉 <a href="https://www.runoob.com/w3cnote/windows10-mysql-installer.html" target="_blank" rel="noopener">Windows10 MYSQL Installer 安装（mysql-installer-community-5.7.19.0.msi）</a></li><li>👉 <a href="https://blog.csdn.net/seventopalsy/article/details/80195246" target="_blank" rel="noopener">解决Navicat for MySQL 连接 Mysql 8.0.11 出现1251- Client does not support authentication protocol 错误</a></li><li>👉 <a href="https://www.cnblogs.com/linjiqin/p/5270938.html" target="_blank" rel="noopener">配置mysql允许远程连接的方法</a></li></ul><h3 id="Show-wifi-info-histroy"><a href="#Show-wifi-info-histroy" class="headerlink" title="Show wifi info histroy"></a>Show wifi info histroy</h3><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAIN"><figure class="iseeu highlight /plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[cc lang=&quot;php&quot;]</span><br><span class="line">for /f &quot;skip=9 tokens=1,2 delims=:&quot; %i in (&apos;netsh wlan show profiles&apos;) do @echo %j | findstr -i -v echo | netsh wlan show profiles %j key=clear</span><br><span class="line">[/cc]</span><br></pre></td></tr></table></figure></div><h3 id="Clean-network-link"><a href="#Clean-network-link" class="headerlink" title="Clean network link"></a>Clean network link</h3><ul><li>删除映射过的网络磁盘连接</li><li>用于清除映射磁盘的账户信息，切换用户登录磁盘</li><li><code>net use * /del /y</code></li></ul><h2 id="Roboot-start"><a href="#Roboot-start" class="headerlink" title="Roboot start"></a>Roboot start</h2><ul><li>win10 添加开机启动项</li><li>win + r <code>shell:startup</code></li><li>往该文件夹里放启动文件即可</li></ul>]]></content>
       
       
       
