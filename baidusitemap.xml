@@ -106,10 +106,10 @@
     <loc>http://www.orekiyuta.cn/archives/mysqlSyncToMariadb/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/MySQLCrashCourse/</loc>
+    <loc>http://www.orekiyuta.cn/archives/mysqlMigrate8-0-18to5-6-28/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/mysqlMigrate8-0-18to5-6-28/</loc>
+    <loc>http://www.orekiyuta.cn/archives/MySQLCrashCourse/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
     <loc>http://www.orekiyuta.cn/archives/JSgetter-setter/</loc>
@@ -166,13 +166,13 @@
     <loc>http://www.orekiyuta.cn/archives/gitkrakenAccountSwitch/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/Git-flow/</loc>
-    <lastmod>2021-08-19</lastmod>
-  </url>  <url>
     <loc>http://www.orekiyuta.cn/archives/getAZ-900Certification/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
     <loc>http://www.orekiyuta.cn/archives/githubCommitAccountAbout/</loc>
+    <lastmod>2021-08-19</lastmod>
+  </url>  <url>
+    <loc>http://www.orekiyuta.cn/archives/Git-flow/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
     <loc>http://www.orekiyuta.cn/archives/flaskRun/</loc>
@@ -220,10 +220,10 @@
     <loc>http://www.orekiyuta.cn/archives/batchNote/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/acerBiosResetPW/</loc>
+    <loc>http://www.orekiyuta.cn/archives/Ark-exploit-log/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/Ark-exploit-log/</loc>
+    <loc>http://www.orekiyuta.cn/archives/acerBiosResetPW/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>
 </urlset>
