@@ -240,13 +240,6 @@
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/mysqlSplitStringByProcedure/</loc>
-    
-    <lastmod>2021-08-19T20:21:18.019Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.orekiyuta.cn/archives/mysqlSyncToMariadb/</loc>
     
     <lastmod>2021-08-19T20:21:18.019Z</lastmod>
@@ -254,14 +247,21 @@
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/mysqlMigrate8-0-18to5-6-28/</loc>
+    <loc>http://www.orekiyuta.cn/archives/mysqlSplitStringByProcedure/</loc>
+    
+    <lastmod>2021-08-19T20:21:18.019Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.orekiyuta.cn/archives/MySQLCrashCourse/</loc>
     
     <lastmod>2021-08-19T20:21:18.018Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/MySQLCrashCourse/</loc>
+    <loc>http://www.orekiyuta.cn/archives/mysqlMigrate8-0-18to5-6-28/</loc>
     
     <lastmod>2021-08-19T20:21:18.018Z</lastmod>
     
@@ -366,14 +366,14 @@
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/HeadFirstJava/</loc>
+    <loc>http://www.orekiyuta.cn/archives/Hexo-Install-Migrate/</loc>
     
     <lastmod>2021-08-19T20:21:17.537Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/Hexo-Install-Migrate/</loc>
+    <loc>http://www.orekiyuta.cn/archives/HeadFirstJava/</loc>
     
     <lastmod>2021-08-19T20:21:17.537Z</lastmod>
     
@@ -394,6 +394,13 @@
   </url>
   
   <url>
+    <loc>http://www.orekiyuta.cn/archives/Git-flow/</loc>
+    
+    <lastmod>2021-08-19T20:21:17.535Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.orekiyuta.cn/archives/getAZ-900Certification/</loc>
     
     <lastmod>2021-08-19T20:21:17.535Z</lastmod>
@@ -408,21 +415,14 @@
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/Git-flow/</loc>
-    
-    <lastmod>2021-08-19T20:21:17.535Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.orekiyuta.cn/archives/flaskRun/</loc>
+    <loc>http://www.orekiyuta.cn/archives/fileSharingOnWin/</loc>
     
     <lastmod>2021-08-19T20:21:17.534Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/fileSharingOnWin/</loc>
+    <loc>http://www.orekiyuta.cn/archives/flaskRun/</loc>
     
     <lastmod>2021-08-19T20:21:17.534Z</lastmod>
     
@@ -450,14 +450,14 @@
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/CSS3KnowledegePoint/</loc>
+    <loc>http://www.orekiyuta.cn/archives/CSSFiveClassicLayouts/</loc>
     
     <lastmod>2021-08-19T20:21:17.284Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/CSSFiveClassicLayouts/</loc>
+    <loc>http://www.orekiyuta.cn/archives/CSS3KnowledegePoint/</loc>
     
     <lastmod>2021-08-19T20:21:17.284Z</lastmod>
     
