@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.orekiyuta.cn/archives/yarnConnetionRetrying/</loc>
+    
+    <lastmod>2021-12-09T17:18:14.614Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.orekiyuta.cn/archives/USBWebserverForDev/</loc>
+    
+    <lastmod>2021-12-09T17:07:40.625Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.orekiyuta.cn/archives/IgotaRaspberryPi/</loc>
     
     <lastmod>2021-12-05T09:35:43.528Z</lastmod>
@@ -12,13 +26,6 @@
     <loc>http://www.orekiyuta.cn/archives/reptilesAndRaspberries/</loc>
     
     <lastmod>2021-12-04T10:35:08.759Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.orekiyuta.cn/archives/USBWebserverForDev/</loc>
-    
-    <lastmod>2021-12-04T10:33:42.880Z</lastmod>
     
   </url>
   
@@ -310,6 +317,13 @@
   </url>
   
   <url>
+    <loc>http://www.orekiyuta.cn/archives/JavaGenericTypes/</loc>
+    
+    <lastmod>2021-08-19T20:21:17.797Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.orekiyuta.cn/archives/JavaNotes/</loc>
     
     <lastmod>2021-08-19T20:21:17.797Z</lastmod>
@@ -318,13 +332,6 @@
   
   <url>
     <loc>http://www.orekiyuta.cn/archives/JavaReview/</loc>
-    
-    <lastmod>2021-08-19T20:21:17.797Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.orekiyuta.cn/archives/JavaGenericTypes/</loc>
     
     <lastmod>2021-08-19T20:21:17.797Z</lastmod>
     
@@ -366,13 +373,6 @@
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/HeadFirstJava/</loc>
-    
-    <lastmod>2021-08-19T20:21:17.537Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.orekiyuta.cn/archives/Hexo-Install-Migrate/</loc>
     
     <lastmod>2021-08-19T20:21:17.537Z</lastmod>
@@ -380,14 +380,21 @@
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/gitRemoteEndHungUpUnexpectedly/</loc>
+    <loc>http://www.orekiyuta.cn/archives/HeadFirstJava/</loc>
+    
+    <lastmod>2021-08-19T20:21:17.537Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.orekiyuta.cn/archives/gitkrakenAccountSwitch/</loc>
     
     <lastmod>2021-08-19T20:21:17.536Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/gitkrakenAccountSwitch/</loc>
+    <loc>http://www.orekiyuta.cn/archives/gitRemoteEndHungUpUnexpectedly/</loc>
     
     <lastmod>2021-08-19T20:21:17.536Z</lastmod>
     
@@ -401,14 +408,14 @@
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/githubCommitAccountAbout/</loc>
+    <loc>http://www.orekiyuta.cn/archives/getAZ-900Certification/</loc>
     
     <lastmod>2021-08-19T20:21:17.535Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/getAZ-900Certification/</loc>
+    <loc>http://www.orekiyuta.cn/archives/githubCommitAccountAbout/</loc>
     
     <lastmod>2021-08-19T20:21:17.535Z</lastmod>
     
@@ -429,6 +436,13 @@
   </url>
   
   <url>
+    <loc>http://www.orekiyuta.cn/archives/DockerNote/</loc>
+    
+    <lastmod>2021-08-19T20:21:17.285Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.orekiyuta.cn/archives/corsOptionsRequest/</loc>
     
     <lastmod>2021-08-19T20:21:17.285Z</lastmod>
@@ -443,13 +457,6 @@
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/DockerNote/</loc>
-    
-    <lastmod>2021-08-19T20:21:17.285Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.orekiyuta.cn/archives/CSS3KnowledegePoint/</loc>
     
     <lastmod>2021-08-19T20:21:17.284Z</lastmod>
@@ -457,14 +464,14 @@
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/daemonBat/</loc>
+    <loc>http://www.orekiyuta.cn/archives/CSSFiveClassicLayouts/</loc>
     
     <lastmod>2021-08-19T20:21:17.284Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/CSSFiveClassicLayouts/</loc>
+    <loc>http://www.orekiyuta.cn/archives/daemonBat/</loc>
     
     <lastmod>2021-08-19T20:21:17.284Z</lastmod>
     

@@ -4,6 +4,29 @@
   
     
     <entry>
+      <title>Yarn Connetion Retrying</title>
+      <link href="/archives/yarnConnetionRetrying/"/>
+      <url>/archives/yarnConnetionRetrying/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Scene"><a href="#Scene" class="headerlink" title="Scene"></a>Scene</h2><ul><li>创建 quasar 项目的时候,安装依赖的时候网络总是重连<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAIN"><figure class="iseeu highlight /plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">yarn install v1.22.10</span><br><span class="line">info No lockfile found.</span><br><span class="line">[1/5] Validating package.json...</span><br><span class="line">[2/5] Resolving packages...</span><br><span class="line">info There appears to be trouble with your network connection. Retrying...</span><br></pre></td></tr></table></figure></div></li></ul><a id="more"></a><h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><ul><li>改下 yarn 下载源就行</li></ul><ol><li><p><code>yarn config list</code> 查看代理</p><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="SHELL"><figure class="iseeu highlight /shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">info yarn config</span><br><span class="line">&#123;</span><br><span class="line">'version-tag-prefix': 'v',</span><br><span class="line">'version-git-tag': true,</span><br><span class="line">'version-commit-hooks': true,</span><br><span class="line">'version-git-sign': false,</span><br><span class="line">'version-git-message': 'v%s',</span><br><span class="line">'init-version': '1.0.0',</span><br><span class="line">'init-license': 'MIT',</span><br><span class="line">'save-prefix': '^',</span><br><span class="line">'bin-links': true,</span><br><span class="line">'ignore-scripts': false,</span><br><span class="line">'ignore-optional': false,</span><br><span class="line">registry: 'https://registry.yarnpkg.com', # 默认</span><br><span class="line">'strict-ssl': true,</span><br><span class="line">'user-agent': 'yarn/1.22.10 npm/? node/v12.22.3 win32 ia32',</span><br><span class="line">lastUpdateCheck: 1639062753417</span><br><span class="line">&#125;</span><br><span class="line">info npm config</span><br><span class="line">&#123;&#125;</span><br></pre></td></tr></table></figure></div></li><li><p>删除代理</p><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="SHELL"><figure class="iseeu highlight /shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">yarn config delete proxy # 执行这个就行</span><br><span class="line">npm config rm proxy   # 根据 config 结果, 如果 npm 设置了也删除就行</span><br><span class="line">npm config rm https-proxy # 同上</span><br></pre></td></tr></table></figure></div></li><li><p><code>yarn config set registry https://registry.npm.taobao.org</code> 更换下载源</p><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="SHELL"><figure class="iseeu highlight /shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">info yarn config</span><br><span class="line">&#123;</span><br><span class="line">'version-tag-prefix': 'v',</span><br><span class="line">'version-git-tag': true,</span><br><span class="line">'version-commit-hooks': true,</span><br><span class="line">'version-git-sign': false,</span><br><span class="line">'version-git-message': 'v%s',</span><br><span class="line">'init-version': '1.0.0',</span><br><span class="line">'init-license': 'MIT',</span><br><span class="line">'save-prefix': '^',</span><br><span class="line">'bin-links': true,</span><br><span class="line">'ignore-scripts': false,</span><br><span class="line">'ignore-optional': false,</span><br><span class="line">registry: 'https://registry.npm.taobao.org', # 更换成淘宝镜像</span><br><span class="line">'strict-ssl': true,</span><br><span class="line">'user-agent': 'yarn/1.22.10 npm/? node/v12.22.3 win32 ia32',</span><br><span class="line">lastUpdateCheck: 1639062753417</span><br><span class="line">&#125;</span><br><span class="line">info npm config</span><br><span class="line">&#123;&#125;</span><br><span class="line">Done i</span><br></pre></td></tr></table></figure></div></li></ol><h2 id="Other"><a href="#Other" class="headerlink" title="Other"></a>Other</h2><ul><li>Carry On !!!<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="SHELL"><figure class="iseeu highlight /shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> quasar create coza</span></span><br><span class="line"></span><br><span class="line">___</span><br><span class="line">/ _ \ _   _  __ _ ___  __ _ _ __</span><br><span class="line">| | | | | | |/ _` / __|/ _` | '__|</span><br><span class="line">| |_| | |_| | (_| \__ \ (_| | |</span><br><span class="line">\__\_\\__,_|\__,_|___/\__,_|_|</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">? Target directory exists. Continue? Yes</span><br><span class="line">? Project name (internal usage for dev) coza</span><br><span class="line">? Project product name (must start with letter if building mobile apps) coza</span><br><span class="line">? Project description lazy sleep</span><br><span class="line">? Author OrekiYuta &lt;orekiyuta@gmail.com&gt;</span><br><span class="line">? Pick your CSS preprocessor: SCSS</span><br><span class="line">? Check the features needed for your project: ESLint (recommended), TypeScript, Vuex, Axios, Vue-i18n</span><br><span class="line">? Pick a component style: Composition</span><br><span class="line">? Pick an ESLint preset: Prettier</span><br><span class="line">? Continue to install project dependencies after the project has been created? (recommended) yarn</span><br><span class="line"></span><br><span class="line">Quasar CLI · Generated "coza".</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">[*] Installing project dependencies ...</span><br><span class="line"></span><br><span class="line">yarn install v1.22.10</span><br><span class="line">info No lockfile found.</span><br><span class="line">[1/5] Validating package.json...</span><br><span class="line">[2/5] Resolving packages...</span><br><span class="line">warning @quasar/app &gt; webpack-dev-server &gt; url &gt; querystring@0.2.0: The querystring API is considered Legacy. new code should use the URLSearchParams API instead.</span><br><span class="line">[3/5] Fetching packages...</span><br><span class="line">info fsevents@2.3.2: The platform "win32" is incompatible with this module.</span><br><span class="line">info "fsevents@2.3.2" is an optional dependency and failed compatibility check. Excluding it from installation.</span><br><span class="line">[4/5] Linking dependencies...</span><br><span class="line">warning " &gt; vue-i18n@9.1.9" has unmet peer dependency "vue@^3.0.0".</span><br><span class="line">warning " &gt; vuex@4.0.2" has unmet peer dependency "vue@^3.0.2".</span><br><span class="line">warning " &gt; @babel/eslint-parser@7.16.3" has unmet peer dependency "@babel/core@&gt;=7.11.0".</span><br><span class="line">warning "@typescript-eslint/eslint-plugin &gt; tsutils@3.21.0" has unmet peer dependency "typescript@&gt;=2.8.0 || &gt;= 3.2.0-dev || &gt;= 3.3.0-dev || &gt;= 3.4.0-dev || &gt;= 3.5.0-dev || &gt;= 3.6.0-dev || &gt;=</span><br><span class="line">3.6.0-beta || &gt;= 3.7.0-dev || &gt;= 3.7.0-beta".</span><br><span class="line">[5/5] Building fresh packages...</span><br><span class="line">success Saved lockfile.</span><br><span class="line">Done in 64.59s.</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">[*] Running eslint --fix to comply with chosen preset rules...</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">yarn run v1.22.10</span><br><span class="line"><span class="meta">$</span><span class="bash"> eslint --ext .js,.ts,.vue ./ --fix</span></span><br><span class="line">Done in 49.61s.</span><br><span class="line"></span><br><span class="line">[*] Quasar Project initialization finished!</span><br><span class="line"></span><br><span class="line">To get started:</span><br><span class="line"></span><br><span class="line">cd coza</span><br><span class="line">quasar dev</span><br><span class="line"></span><br><span class="line">Documentation can be found at: https://quasar.dev</span><br><span class="line"></span><br><span class="line">Quasar is relying on donations to evolve. We'd be very grateful if you can</span><br><span class="line">read our manifest on "Why donations are important": https://quasar.dev/why-donate</span><br><span class="line">Donation campaign: https://donate.quasar.dev</span><br><span class="line">Any amount is very welcomed.</span><br><span class="line">If invoices are required, please first contact razvan@quasar.dev</span><br><span class="line"></span><br><span class="line">Please give us a star on Github if you appreciate our work:</span><br><span class="line">https://github.com/quasarframework/quasar</span><br><span class="line"></span><br><span class="line">Enjoy! - Quasar Team</span><br></pre></td></tr></table></figure></div></li></ul>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> quasar </tag>
+            
+            <tag> vue </tag>
+            
+            <tag> yarn </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>SecurityGroup On TencentCVM</title>
       <link href="/archives/securityGroupOnTencentCVM/"/>
       <url>/archives/securityGroupOnTencentCVM/</url>
@@ -27,7 +50,7 @@
       <link href="/archives/USBWebserverForDev/"/>
       <url>/archives/USBWebserverForDev/</url>
       
-        <content type="html"><![CDATA[<h2 id="Scene"><a href="#Scene" class="headerlink" title="Scene"></a>Scene</h2><ul><li>在一台机器上搭建 MySQL 并开放外部使用</li><li>常规方式有 （1）直接部署 MySQL （2） 在 Docker 中部署 MySQL</li><li>以上两种方式有其一定的优势:（1）性能好 （2）容器隔离</li><li>但是以上两种方式都需要部署成本, 为了寻求更便捷的部署和迁移, 将使用以下方式<a id="more"></a></li></ul><h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><ul><li><p>利用 可以移植的 USBWebserver =&gt; <a href="https://usbwebserver.yura.mk.ua/" target="_blank" rel="noopener">USBWebserver8</a></p><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAIN"><figure class="iseeu highlight /plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Most light weight local portable web server with Apache, PHP, MySQL and PHPMyAdmin for Windows on the Web. Just unzip enywhere (including USB flash drive), run and start using.</span><br></pre></td></tr></table></figure></div></li><li><p>部署环境在 win10,解压启动即可</p></li><li>设置开机启动，win + r ,<code>shell:startup</code>,把启动文件放在该目录即可</li><li>到此，只能是本地访问，提供给外部访问还需要进去 MySQL 赋予用户权限 <ul><li><img src="/images/USBWebserverForDev/Snipaste_2021-12-04_17-32-09.png" alt></li><li><img src="/images/USBWebserverForDev/Snipaste_2021-12-04_17-32-44.png" alt></li><li><img src="/images/USBWebserverForDev/Snipaste_2021-12-04_17-33-12.png" alt></li></ul></li><li>最后防火墙开放端口即可</li></ul>]]></content>
+        <content type="html"><![CDATA[<h2 id="Scene"><a href="#Scene" class="headerlink" title="Scene"></a>Scene</h2><ul><li>在一台机器上搭建 MySQL 并开放外部使用 </li><li>常规方式有 （1）直接部署 MySQL （2） 在 Docker 中部署 MySQL</li><li>以上两种方式有其一定的优势:（1）性能好 （2）容器隔离</li><li>但是以上两种方式都需要部署成本, 为了寻求更便捷的部署和迁移, 将使用以下方式<a id="more"></a></li></ul><h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><ul><li><p>利用 可以移植的 USBWebserver =&gt; <a href="https://usbwebserver.yura.mk.ua/" target="_blank" rel="noopener">USBWebserver8</a></p><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAIN"><figure class="iseeu highlight /plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Most light weight local portable web server with Apache, PHP, MySQL and PHPMyAdmin for Windows on the Web. Just unzip enywhere (including USB flash drive), run and start using.</span><br></pre></td></tr></table></figure></div></li><li><p>部署环境在 win10,解压启动即可</p></li><li>设置开机启动，win + r ,<code>shell:startup</code>,把启动文件放在该目录即可</li><li>到此，只能是本地访问，提供给外部访问还需要进去 MySQL 赋予用户权限 <ul><li><img src="/images/USBWebserverForDev/Snipaste_2021-12-04_17-32-09.png" alt></li><li><img src="/images/USBWebserverForDev/Snipaste_2021-12-04_17-32-44.png" alt></li><li><img src="/images/USBWebserverForDev/Snipaste_2021-12-04_17-33-12.png" alt></li></ul></li><li>最后防火墙开放端口即可</li></ul>]]></content>
       
       
       
@@ -52,9 +75,9 @@
       
         <tags>
             
-            <tag> Alibaba </tag>
-            
             <tag> Certificate </tag>
+            
+            <tag> Alibaba </tag>
             
         </tags>
       
@@ -117,9 +140,9 @@
       
         <tags>
             
-            <tag> Windows </tag>
-            
             <tag> Docker </tag>
+            
+            <tag> Windows </tag>
             
         </tags>
       
@@ -138,9 +161,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> Docker </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Selfhost </tag>
             
@@ -199,9 +222,9 @@
       
         <tags>
             
-            <tag> Network </tag>
-            
             <tag> LAN </tag>
+            
+            <tag> Network </tag>
             
         </tags>
       
@@ -243,9 +266,9 @@
             
             <tag> Python </tag>
             
-            <tag> Flask </tag>
-            
             <tag> Github </tag>
+            
+            <tag> Flask </tag>
             
         </tags>
       
@@ -285,9 +308,9 @@
       
         <tags>
             
-            <tag> Certificate </tag>
-            
             <tag> Microsoft </tag>
+            
+            <tag> Certificate </tag>
             
         </tags>
       
@@ -477,11 +500,11 @@
       
         <tags>
             
+            <tag> Docker </tag>
+            
             <tag> Linux </tag>
             
             <tag> Windows </tag>
-            
-            <tag> Docker </tag>
             
             <tag> Selfhost </tag>
             
@@ -757,15 +780,15 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
-            <tag> JavaScript </tag>
-            
             <tag> Selenium </tag>
             
             <tag> ChromeDriver </tag>
             
+            <tag> JavaScript </tag>
+            
             <tag> RaspberryPi </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Nginx </tag>
             
@@ -928,9 +951,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> RaspberryPi </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Nginx </tag>
             
@@ -1278,9 +1301,9 @@
       
         <tags>
             
-            <tag> ES6 </tag>
-            
             <tag> ECMAScript </tag>
+            
+            <tag> ES6 </tag>
             
         </tags>
       
@@ -1415,9 +1438,9 @@
       
         <tags>
             
-            <tag> CentOS </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> CentOS </tag>
             
             <tag> SVN </tag>
             
