@@ -6,7 +6,7 @@
   <link href="/rss.xml" rel="self"/>
   
   <link href="http://www.orekiyuta.cn/"/>
-  <updated>2021-12-09T17:18:14.614Z</updated>
+  <updated>2021-12-10T19:07:05.953Z</updated>
   <id>http://www.orekiyuta.cn/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Git Reset Commit Without Change Code</title>
+    <link href="http://www.orekiyuta.cn/archives/gitResetCommitWithoutChangeCode/"/>
+    <id>http://www.orekiyuta.cn/archives/gitResetCommitWithoutChangeCode/</id>
+    <published>2021-12-10T18:56:21.000Z</published>
+    <updated>2021-12-10T19:07:05.953Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Scene"><a href="#Scene" class="headerlink" title="Scene"></a>Scene</h2><ul><li>因为设置了定时提交 github 脚本,偶尔在目录下打包了大的压缩包忘了删除</li><li>定时任务提交 git commit 到本地仓库了</li><li>今天手动 push 到 github 发现文件过大<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="SHELL"><figure class="iseeu highlight /shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">F:\Code\Temp&gt;git push</span><br><span class="line">    Enumerating objects: 1193, done.</span><br><span class="line">    Counting objects: 100% (1193/1193), done.</span><br><span class="line">    Delta compression using up to 12 threads</span><br><span class="line">    Compressing objects: 100% (812/812), done.</span><br><span class="line">    Writing objects: 100% (1177/1177), 146.10 MiB | 461.00 KiB/s, done.</span><br><span class="line">    Total 1177 (delta 212), reused 1111 (delta 175), pack-reused 0</span><br><span class="line">    remote: Resolving deltas: 100% (212/212), completed with 14 local objects.</span><br><span class="line">    remote: error: Trace: 64c7aa0d8f24426987252f0fa81b8013929e07d5a0f4f52abfff441e541eee51</span><br><span class="line">    remote: error: See http://git.io/iEPt8g for more information.</span><br><span class="line">    remote: error: File vue/vue.zip is 161.24 MB; this exceeds GitHub's file size limit of 100.00 MB </span><br><span class="line">    remote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.</span><br><span class="line">    To github.com:OrekiYuta/Temp.git</span><br><span class="line">    ! [remote rejected]   master -&gt; master (pre-receive hook declined)</span><br><span class="line">    error: failed to push some refs to 'github.com:OrekiYuta/Temp.git'</span><br></pre></td></tr></table></figure></div></li></ul><a id="more"></a><h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><ul><li>解决方法是 回退本地 commit 到大文件提交记录之前的 commit</li><li><p>以下方法只是 回退本地 commit 记录,并不会对本地代码修改回退</p><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="SHELL"><figure class="iseeu highlight /shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">F:\Code\Temp&gt;git log</span><br><span class="line">commit 137833d814c302e03e806aa0dd297c66cbfe26f8 (HEAD -&gt; master)</span><br><span class="line">Author: OrekiYuta &lt;orekiyuta@gmail.com&gt;</span><br><span class="line">Date:   Sat Dec 11 02:49:13 2021 +0800</span><br><span class="line"></span><br><span class="line">    on</span><br><span class="line"></span><br><span class="line">commit 05d5ba83c4d0ee2678ab7ad0fe71f36456b3d548</span><br><span class="line">Author: OrekiYuta &lt;orekiyuta@gmail.com&gt;</span><br><span class="line">Date:   Sat Dec 11 02:30:57 2021 +0800</span><br><span class="line"></span><br><span class="line">    2021-12-11/ 2:30:54.50 by auto commit</span><br><span class="line"></span><br><span class="line">commit 4d09030accde17e9f9b1551fbbea06511683d635</span><br><span class="line">Author: OrekiYuta &lt;orekiyuta@gmail.com&gt;</span><br><span class="line">Date:   Fri Dec 10 23:30:55 2021 +0800</span><br><span class="line"></span><br><span class="line">    2021-12-10/23:30:54.05 by auto commit</span><br><span class="line"></span><br><span class="line">commit f0089c3aa837e7fb7a820717f1e5f529f352890e</span><br><span class="line">Author: OrekiYuta &lt;orekiyuta@gmail.com&gt;</span><br><span class="line">Date:   Fri Dec 10 02:32:18 2021 +0800</span><br><span class="line"></span><br><span class="line">    2021-12-10/ 2:31:49.91 by auto commit</span><br><span class="line"></span><br><span class="line">commit f4fe5830c92e3a0240c6606f6b35bea74b951f35 # commit id 标识</span><br><span class="line">Author: OrekiYuta &lt;orekiyuta@gmail.com&gt;</span><br><span class="line">Date:   Thu Dec 9 23:31:11 2021 +0800</span><br><span class="line"></span><br><span class="line">    2021-12-09/23:31:01.07 by auto commit</span><br></pre></td></tr></table></figure></div></li><li><p>定位到想要回退 commit 的记录 id 标识</p></li><li><p><code>git reset id</code> 执行即可</p><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="SHELL"><figure class="iseeu highlight /shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">F:\Code\Temp\vue&gt;git reset a389eb06aa841e79c734f361a25b77b4c177e964</span><br><span class="line">Unstaged changes after reset:</span><br><span class="line">M       python/amos/.idea/amos.iml</span><br><span class="line">M       python/amos/.idea/misc.xml</span><br><span class="line">M       python/amos/.idea/modules.xml</span><br><span class="line">M       python/amos/.idea/vcs.xml</span><br><span class="line">M       python/lab/app/service/github_commit_service.py</span><br><span class="line">D       python/lab/test.md</span><br><span class="line">D       vue/kasrc/.editorconfig</span><br></pre></td></tr></table></figure></div></li><li><p>最后重新提交 push 代码到 github 即可</p></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Scene&quot;&gt;&lt;a href=&quot;#Scene&quot; class=&quot;headerlink&quot; title=&quot;Scene&quot;&gt;&lt;/a&gt;Scene&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;因为设置了定时提交 github 脚本,偶尔在目录下打包了大的压缩包忘了删除&lt;/li&gt;
+&lt;li&gt;定时任务提交 git commit 到本地仓库了&lt;/li&gt;
+&lt;li&gt;今天手动 push 到 github 发现文件过大&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;F:\Code\Temp&amp;gt;git push&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    Enumerating objects: 1193, done.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    Counting objects: 100% (1193/1193), done.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    Delta compression using up to 12 threads&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    Compressing objects: 100% (812/812), done.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    Writing objects: 100% (1177/1177), 146.10 MiB | 461.00 KiB/s, done.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    Total 1177 (delta 212), reused 1111 (delta 175), pack-reused 0&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    remote: Resolving deltas: 100% (212/212), completed with 14 local objects.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    remote: error: Trace: 64c7aa0d8f24426987252f0fa81b8013929e07d5a0f4f52abfff441e541eee51&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    remote: error: See http://git.io/iEPt8g for more information.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    remote: error: File vue/vue.zip is 161.24 MB; this exceeds GitHub&#39;s file size limit of 100.00 MB &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    remote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    To github.com:OrekiYuta/Temp.git&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    ! [remote rejected]   master -&amp;gt; master (pre-receive hook declined)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    error: failed to push some refs to &#39;github.com:OrekiYuta/Temp.git&#39;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="Git" scheme="http://www.orekiyuta.cn/tags/Git/"/>
+    
+      <category term="Github" scheme="http://www.orekiyuta.cn/tags/Github/"/>
+    
+  </entry>
   
   <entry>
     <title>Yarn Connetion Retrying</title>
@@ -235,28 +263,6 @@
     
       &lt;h2 id=&quot;Scene&quot;&gt;&lt;a href=&quot;#Scene&quot; class=&quot;headerlink&quot; title=&quot;Scene&quot;&gt;&lt;/a&gt;Scene&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;Disable Windows Update
-    
-    </summary>
-    
-    
-    
-      <category term="Windows" scheme="http://www.orekiyuta.cn/tags/Windows/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Disable Windows Defender</title>
-    <link href="http://www.orekiyuta.cn/archives/disableWindowsDefender/"/>
-    <id>http://www.orekiyuta.cn/archives/disableWindowsDefender/</id>
-    <published>2021-10-01T18:13:31.000Z</published>
-    <updated>2021-10-06T14:09:56.267Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="Scene"><a href="#Scene" class="headerlink" title="Scene"></a>Scene</h2><ul><li>Disable Windows Defender<a id="more"></a></li></ul><h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><ul><li>win + r</li><li><img src="/images/disableWindowsDefender/Snipaste_2021-10-02_02-17-40.png" alt></li><li><img src="/images/disableWindowsDefender/Snipaste_2021-10-02_02-19-42.png" alt></li><li><img src="/images/disableWindowsDefender/Snipaste_2021-10-02_02-20-19.png" alt></li><li><img src="/images/disableWindowsDefender/Snipaste_2021-10-02_02-20-51.png" alt></li><li><img src="/images/disableWindowsDefender/Snipaste_2021-10-02_02-21-23.png" alt></li><li><img src="/images/disableWindowsDefender/Snipaste_2021-10-02_02-21-55.png" alt></li><li><img src="/images/disableWindowsDefender/Snipaste_2021-10-02_02-22-23.png" alt></li><li><img src="/images/disableWindowsDefender/Snipaste_2021-10-02_02-22-51.png" alt></li><li><img src="/images/disableWindowsDefender/Snipaste_2021-10-02_02-23-21.png" alt></li><li><img src="/images/disableWindowsDefender/Snipaste_2021-10-02_02-23-45.png" alt></li><li><img src="/images/disableWindowsDefender/Snipaste_2021-10-02_02-24-57.png" alt></li><li><img src="/images/disableWindowsDefender/Snipaste_2021-10-02_02-25-38.png" alt></li><li><img src="/images/disableWindowsDefender/Snipaste_2021-10-02_02-26-15.png" alt></li><li><img src="/images/disableWindowsDefender/Snipaste_2021-10-02_02-27-14.png" alt></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;Scene&quot;&gt;&lt;a href=&quot;#Scene&quot; class=&quot;headerlink&quot; title=&quot;Scene&quot;&gt;&lt;/a&gt;Scene&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;Disable Windows Defender
     
     </summary>
     

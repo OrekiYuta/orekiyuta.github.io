@@ -77,10 +77,12 @@
 
 
 
-  <meta name="keywords" content="quasar,vue,yarn,">
+  <meta name="keywords" content="Git,Github,">
 
 
 
+
+  
 
 
   <link rel="alternate" href="/rss.xml" title="Canoe" type="application/atom+xml">
@@ -90,18 +92,18 @@
 
 
 
-<meta name="description" content="Scene 创建 quasar 项目的时候,安装依赖的时候网络总是重连12345yarn install v1.22.10info No lockfile found.[1/5] Validating package.json...[2/5] Resolving packages...info There appears to be trouble with your network connec">
-<meta name="keywords" content="quasar,vue,yarn">
+<meta name="description" content="Scene 因为设置了定时提交 github 脚本,偶尔在目录下打包了大的压缩包忘了删除 定时任务提交 git commit 到本地仓库了 今天手动 push 到 github 发现文件过大123456789101112131415F:\Code\Temp&amp;gt;git push    Enumerating objects: 1193, done.    Counting objects: 10">
+<meta name="keywords" content="Git,Github">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Yarn Connetion Retrying">
-<meta property="og:url" content="http://www.orekiyuta.cn/archives/yarnConnetionRetrying/index.html">
+<meta property="og:title" content="Git Reset Commit Without Change Code">
+<meta property="og:url" content="http://www.orekiyuta.cn/archives/gitResetCommitWithoutChangeCode/index.html">
 <meta property="og:site_name" content="Canoe">
-<meta property="og:description" content="Scene 创建 quasar 项目的时候,安装依赖的时候网络总是重连12345yarn install v1.22.10info No lockfile found.[1/5] Validating package.json...[2/5] Resolving packages...info There appears to be trouble with your network connec">
+<meta property="og:description" content="Scene 因为设置了定时提交 github 脚本,偶尔在目录下打包了大的压缩包忘了删除 定时任务提交 git commit 到本地仓库了 今天手动 push 到 github 发现文件过大123456789101112131415F:\Code\Temp&amp;gt;git push    Enumerating objects: 1193, done.    Counting objects: 10">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2021-12-09T17:18:14.614Z">
+<meta property="og:updated_time" content="2021-12-10T19:07:05.953Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Yarn Connetion Retrying">
-<meta name="twitter:description" content="Scene 创建 quasar 项目的时候,安装依赖的时候网络总是重连12345yarn install v1.22.10info No lockfile found.[1/5] Validating package.json...[2/5] Resolving packages...info There appears to be trouble with your network connec">
+<meta name="twitter:title" content="Git Reset Commit Without Change Code">
+<meta name="twitter:description" content="Scene 因为设置了定时提交 github 脚本,偶尔在目录下打包了大的压缩包忘了删除 定时任务提交 git commit 到本地仓库了 今天手动 push 到 github 发现文件过大123456789101112131415F:\Code\Temp&amp;gt;git push    Enumerating objects: 1193, done.    Counting objects: 10">
 
 
 
@@ -131,7 +133,7 @@
 
 
 
-  <link rel="canonical" href="http://www.orekiyuta.cn/archives/yarnConnetionRetrying/">
+  <link rel="canonical" href="http://www.orekiyuta.cn/archives/gitResetCommitWithoutChangeCode/">
 
 
 
@@ -139,7 +141,7 @@
 <meta name="google-site-verification" content="UVhJF4cXYZJhCM6uaJWsNQktr-Y59XRhX_AIGiqUv3E">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-  <title>Yarn Connetion Retrying | Canoe</title>
+  <title>Git Reset Commit Without Change Code | Canoe</title>
   
 
 
@@ -302,7 +304,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.orekiyuta.cn/archives/yarnConnetionRetrying/">
+    <link itemprop="mainEntityOfPage" href="http://www.orekiyuta.cn/archives/gitResetCommitWithoutChangeCode/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Orekiyuta">
@@ -319,7 +321,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Yarn Connetion Retrying</h1>
+          <h1 class="post-title" itemprop="name headline">Git Reset Commit Without Change Code</h1>
         
 
         <div class="post-meta">
@@ -331,8 +333,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2021-12-10T01:06:16+08:00">
-                2021-12-10 => 01:06:16
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2021-12-11T02:56:21+08:00">
+                2021-12-11 => 02:56:21
               </time>
             
 
@@ -365,7 +367,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  702
+                  467
                 </span>
               
 
@@ -391,26 +393,24 @@
 
       
         <h2 id="Scene"><a href="#Scene" class="headerlink" title="Scene"></a>Scene</h2><ul>
-<li>创建 quasar 项目的时候,安装依赖的时候网络总是重连<div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="PLAIN"><figure class="iseeu highlight /plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">yarn install v1.22.10</span><br><span class="line">info No lockfile found.</span><br><span class="line">[1/5] Validating package.json...</span><br><span class="line">[2/5] Resolving packages...</span><br><span class="line">info There appears to be trouble with your network connection. Retrying...</span><br></pre></td></tr></table></figure></div>
+<li>因为设置了定时提交 github 脚本,偶尔在目录下打包了大的压缩包忘了删除</li>
+<li>定时任务提交 git commit 到本地仓库了</li>
+<li>今天手动 push 到 github 发现文件过大<div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SHELL"><figure class="iseeu highlight /shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">F:\Code\Temp&gt;git push</span><br><span class="line">    Enumerating objects: 1193, done.</span><br><span class="line">    Counting objects: 100% (1193/1193), done.</span><br><span class="line">    Delta compression using up to 12 threads</span><br><span class="line">    Compressing objects: 100% (812/812), done.</span><br><span class="line">    Writing objects: 100% (1177/1177), 146.10 MiB | 461.00 KiB/s, done.</span><br><span class="line">    Total 1177 (delta 212), reused 1111 (delta 175), pack-reused 0</span><br><span class="line">    remote: Resolving deltas: 100% (212/212), completed with 14 local objects.</span><br><span class="line">    remote: error: Trace: 64c7aa0d8f24426987252f0fa81b8013929e07d5a0f4f52abfff441e541eee51</span><br><span class="line">    remote: error: See http://git.io/iEPt8g for more information.</span><br><span class="line">    remote: error: File vue/vue.zip is 161.24 MB; this exceeds GitHub's file size limit of 100.00 MB </span><br><span class="line">    remote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.</span><br><span class="line">    To github.com:OrekiYuta/Temp.git</span><br><span class="line">    ! [remote rejected]   master -&gt; master (pre-receive hook declined)</span><br><span class="line">    error: failed to push some refs to 'github.com:OrekiYuta/Temp.git'</span><br></pre></td></tr></table></figure></div>
 </li>
 </ul>
 <a id="more"></a>
 <h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><ul>
-<li>改下 yarn 下载源就行</li>
-</ul>
-<ol>
-<li><p><code>yarn config list</code> 查看代理</p>
-<div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SHELL"><figure class="iseeu highlight /shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">info yarn config</span><br><span class="line">&#123;</span><br><span class="line">'version-tag-prefix': 'v',</span><br><span class="line">'version-git-tag': true,</span><br><span class="line">'version-commit-hooks': true,</span><br><span class="line">'version-git-sign': false,</span><br><span class="line">'version-git-message': 'v%s',</span><br><span class="line">'init-version': '1.0.0',</span><br><span class="line">'init-license': 'MIT',</span><br><span class="line">'save-prefix': '^',</span><br><span class="line">'bin-links': true,</span><br><span class="line">'ignore-scripts': false,</span><br><span class="line">'ignore-optional': false,</span><br><span class="line">registry: 'https://registry.yarnpkg.com', # 默认</span><br><span class="line">'strict-ssl': true,</span><br><span class="line">'user-agent': 'yarn/1.22.10 npm/? node/v12.22.3 win32 ia32',</span><br><span class="line">lastUpdateCheck: 1639062753417</span><br><span class="line">&#125;</span><br><span class="line">info npm config</span><br><span class="line">&#123;&#125;</span><br></pre></td></tr></table></figure></div>
+<li>解决方法是 回退本地 commit 到大文件提交记录之前的 commit</li>
+<li><p>以下方法只是 回退本地 commit 记录,并不会对本地代码修改回退</p>
+<div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SHELL"><figure class="iseeu highlight /shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">F:\Code\Temp&gt;git log</span><br><span class="line">commit 137833d814c302e03e806aa0dd297c66cbfe26f8 (HEAD -&gt; master)</span><br><span class="line">Author: OrekiYuta &lt;orekiyuta@gmail.com&gt;</span><br><span class="line">Date:   Sat Dec 11 02:49:13 2021 +0800</span><br><span class="line"></span><br><span class="line">    on</span><br><span class="line"></span><br><span class="line">commit 05d5ba83c4d0ee2678ab7ad0fe71f36456b3d548</span><br><span class="line">Author: OrekiYuta &lt;orekiyuta@gmail.com&gt;</span><br><span class="line">Date:   Sat Dec 11 02:30:57 2021 +0800</span><br><span class="line"></span><br><span class="line">    2021-12-11/ 2:30:54.50 by auto commit</span><br><span class="line"></span><br><span class="line">commit 4d09030accde17e9f9b1551fbbea06511683d635</span><br><span class="line">Author: OrekiYuta &lt;orekiyuta@gmail.com&gt;</span><br><span class="line">Date:   Fri Dec 10 23:30:55 2021 +0800</span><br><span class="line"></span><br><span class="line">    2021-12-10/23:30:54.05 by auto commit</span><br><span class="line"></span><br><span class="line">commit f0089c3aa837e7fb7a820717f1e5f529f352890e</span><br><span class="line">Author: OrekiYuta &lt;orekiyuta@gmail.com&gt;</span><br><span class="line">Date:   Fri Dec 10 02:32:18 2021 +0800</span><br><span class="line"></span><br><span class="line">    2021-12-10/ 2:31:49.91 by auto commit</span><br><span class="line"></span><br><span class="line">commit f4fe5830c92e3a0240c6606f6b35bea74b951f35 # commit id 标识</span><br><span class="line">Author: OrekiYuta &lt;orekiyuta@gmail.com&gt;</span><br><span class="line">Date:   Thu Dec 9 23:31:11 2021 +0800</span><br><span class="line"></span><br><span class="line">    2021-12-09/23:31:01.07 by auto commit</span><br></pre></td></tr></table></figure></div>
 </li>
-<li><p>删除代理</p>
-<div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SHELL"><figure class="iseeu highlight /shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">yarn config delete proxy # 执行这个就行</span><br><span class="line">npm config rm proxy   # 根据 config 结果, 如果 npm 设置了也删除就行</span><br><span class="line">npm config rm https-proxy # 同上</span><br></pre></td></tr></table></figure></div>
+<li><p>定位到想要回退 commit 的记录 id 标识</p>
 </li>
-<li><p><code>yarn config set registry https://registry.npm.taobao.org</code> 更换下载源</p>
-<div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SHELL"><figure class="iseeu highlight /shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">info yarn config</span><br><span class="line">&#123;</span><br><span class="line">'version-tag-prefix': 'v',</span><br><span class="line">'version-git-tag': true,</span><br><span class="line">'version-commit-hooks': true,</span><br><span class="line">'version-git-sign': false,</span><br><span class="line">'version-git-message': 'v%s',</span><br><span class="line">'init-version': '1.0.0',</span><br><span class="line">'init-license': 'MIT',</span><br><span class="line">'save-prefix': '^',</span><br><span class="line">'bin-links': true,</span><br><span class="line">'ignore-scripts': false,</span><br><span class="line">'ignore-optional': false,</span><br><span class="line">registry: 'https://registry.npm.taobao.org', # 更换成淘宝镜像</span><br><span class="line">'strict-ssl': true,</span><br><span class="line">'user-agent': 'yarn/1.22.10 npm/? node/v12.22.3 win32 ia32',</span><br><span class="line">lastUpdateCheck: 1639062753417</span><br><span class="line">&#125;</span><br><span class="line">info npm config</span><br><span class="line">&#123;&#125;</span><br><span class="line">Done i</span><br></pre></td></tr></table></figure></div>
+<li><p><code>git reset id</code> 执行即可</p>
+<div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SHELL"><figure class="iseeu highlight /shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">F:\Code\Temp\vue&gt;git reset a389eb06aa841e79c734f361a25b77b4c177e964</span><br><span class="line">Unstaged changes after reset:</span><br><span class="line">M       python/amos/.idea/amos.iml</span><br><span class="line">M       python/amos/.idea/misc.xml</span><br><span class="line">M       python/amos/.idea/modules.xml</span><br><span class="line">M       python/amos/.idea/vcs.xml</span><br><span class="line">M       python/lab/app/service/github_commit_service.py</span><br><span class="line">D       python/lab/test.md</span><br><span class="line">D       vue/kasrc/.editorconfig</span><br></pre></td></tr></table></figure></div>
 </li>
-</ol>
-<h2 id="Other"><a href="#Other" class="headerlink" title="Other"></a>Other</h2><ul>
-<li>Carry On !!!<div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SHELL"><figure class="iseeu highlight /shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> quasar create coza</span></span><br><span class="line"></span><br><span class="line">___</span><br><span class="line">/ _ \ _   _  __ _ ___  __ _ _ __</span><br><span class="line">| | | | | | |/ _` / __|/ _` | '__|</span><br><span class="line">| |_| | |_| | (_| \__ \ (_| | |</span><br><span class="line">\__\_\\__,_|\__,_|___/\__,_|_|</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">? Target directory exists. Continue? Yes</span><br><span class="line">? Project name (internal usage for dev) coza</span><br><span class="line">? Project product name (must start with letter if building mobile apps) coza</span><br><span class="line">? Project description lazy sleep</span><br><span class="line">? Author OrekiYuta &lt;orekiyuta@gmail.com&gt;</span><br><span class="line">? Pick your CSS preprocessor: SCSS</span><br><span class="line">? Check the features needed for your project: ESLint (recommended), TypeScript, Vuex, Axios, Vue-i18n</span><br><span class="line">? Pick a component style: Composition</span><br><span class="line">? Pick an ESLint preset: Prettier</span><br><span class="line">? Continue to install project dependencies after the project has been created? (recommended) yarn</span><br><span class="line"></span><br><span class="line">Quasar CLI · Generated "coza".</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">[*] Installing project dependencies ...</span><br><span class="line"></span><br><span class="line">yarn install v1.22.10</span><br><span class="line">info No lockfile found.</span><br><span class="line">[1/5] Validating package.json...</span><br><span class="line">[2/5] Resolving packages...</span><br><span class="line">warning @quasar/app &gt; webpack-dev-server &gt; url &gt; querystring@0.2.0: The querystring API is considered Legacy. new code should use the URLSearchParams API instead.</span><br><span class="line">[3/5] Fetching packages...</span><br><span class="line">info fsevents@2.3.2: The platform "win32" is incompatible with this module.</span><br><span class="line">info "fsevents@2.3.2" is an optional dependency and failed compatibility check. Excluding it from installation.</span><br><span class="line">[4/5] Linking dependencies...</span><br><span class="line">warning " &gt; vue-i18n@9.1.9" has unmet peer dependency "vue@^3.0.0".</span><br><span class="line">warning " &gt; vuex@4.0.2" has unmet peer dependency "vue@^3.0.2".</span><br><span class="line">warning " &gt; @babel/eslint-parser@7.16.3" has unmet peer dependency "@babel/core@&gt;=7.11.0".</span><br><span class="line">warning "@typescript-eslint/eslint-plugin &gt; tsutils@3.21.0" has unmet peer dependency "typescript@&gt;=2.8.0 || &gt;= 3.2.0-dev || &gt;= 3.3.0-dev || &gt;= 3.4.0-dev || &gt;= 3.5.0-dev || &gt;= 3.6.0-dev || &gt;=</span><br><span class="line">3.6.0-beta || &gt;= 3.7.0-dev || &gt;= 3.7.0-beta".</span><br><span class="line">[5/5] Building fresh packages...</span><br><span class="line">success Saved lockfile.</span><br><span class="line">Done in 64.59s.</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">[*] Running eslint --fix to comply with chosen preset rules...</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">yarn run v1.22.10</span><br><span class="line"><span class="meta">$</span><span class="bash"> eslint --ext .js,.ts,.vue ./ --fix</span></span><br><span class="line">Done in 49.61s.</span><br><span class="line"></span><br><span class="line">[*] Quasar Project initialization finished!</span><br><span class="line"></span><br><span class="line">To get started:</span><br><span class="line"></span><br><span class="line">cd coza</span><br><span class="line">quasar dev</span><br><span class="line"></span><br><span class="line">Documentation can be found at: https://quasar.dev</span><br><span class="line"></span><br><span class="line">Quasar is relying on donations to evolve. We'd be very grateful if you can</span><br><span class="line">read our manifest on "Why donations are important": https://quasar.dev/why-donate</span><br><span class="line">Donation campaign: https://donate.quasar.dev</span><br><span class="line">Any amount is very welcomed.</span><br><span class="line">If invoices are required, please first contact razvan@quasar.dev</span><br><span class="line"></span><br><span class="line">Please give us a star on Github if you appreciate our work:</span><br><span class="line">https://github.com/quasarframework/quasar</span><br><span class="line"></span><br><span class="line">Enjoy! - Quasar Team</span><br></pre></td></tr></table></figure></div></li>
+<li><p>最后重新提交 push 代码到 github 即可</p>
+</li>
 </ul>
 
       
@@ -432,7 +432,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>Post link:</strong>
-    <a href="http://www.orekiyuta.cn/archives/yarnConnetionRetrying/" title="Yarn Connetion Retrying">http://www.orekiyuta.cn/archives/yarnConnetionRetrying/</a>
+    <a href="http://www.orekiyuta.cn/archives/gitResetCommitWithoutChangeCode/" title="Git Reset Commit Without Change Code">http://www.orekiyuta.cn/archives/gitResetCommitWithoutChangeCode/</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice: </strong>
@@ -455,11 +455,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/quasar/" rel="tag"><i class="fa fa-tag"></i> quasar</a>
+            <a href="/tags/Git/" rel="tag"><i class="fa fa-tag"></i> Git</a>
           
-            <a href="/tags/vue/" rel="tag"><i class="fa fa-tag"></i> vue</a>
-          
-            <a href="/tags/yarn/" rel="tag"><i class="fa fa-tag"></i> yarn</a>
+            <a href="/tags/Github/" rel="tag"><i class="fa fa-tag"></i> Github</a>
           
         </div>
       
@@ -472,8 +470,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/archives/securityGroupOnTencentCVM/" rel="next" title="SecurityGroup On TencentCVM">
-                <i class="fa fa-chevron-left"></i> SecurityGroup On TencentCVM
+              <a href="/archives/yarnConnetionRetrying/" rel="next" title="Yarn Connetion Retrying">
+                <i class="fa fa-chevron-left"></i> Yarn Connetion Retrying
               </a>
             
           </div>
@@ -481,10 +479,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/archives/gitResetCommitWithoutChangeCode/" rel="prev" title="Git Reset Commit Without Change Code">
-                Git Reset Commit Without Change Code <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -905,7 +899,7 @@ if(canvas.getContext){
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Scene"><span class="nav-number">1.</span> <span class="nav-text">Scene</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Solution"><span class="nav-number">2.</span> <span class="nav-text">Solution</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Other"><span class="nav-number">3.</span> <span class="nav-text">Other</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Scene"><span class="nav-number">1.</span> <span class="nav-text">Scene</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Solution"><span class="nav-number">2.</span> <span class="nav-text">Solution</span></a></li></ol></div>
             
 
           </div>

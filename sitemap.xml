@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.orekiyuta.cn/archives/gitResetCommitWithoutChangeCode/</loc>
+    
+    <lastmod>2021-12-10T19:07:05.953Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.orekiyuta.cn/archives/yarnConnetionRetrying/</loc>
     
     <lastmod>2021-12-09T17:18:14.614Z</lastmod>
@@ -247,14 +254,14 @@
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/mysqlSyncToMariadb/</loc>
+    <loc>http://www.orekiyuta.cn/archives/mysqlSplitStringByProcedure/</loc>
     
     <lastmod>2021-08-19T20:21:18.019Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/mysqlSplitStringByProcedure/</loc>
+    <loc>http://www.orekiyuta.cn/archives/mysqlSyncToMariadb/</loc>
     
     <lastmod>2021-08-19T20:21:18.019Z</lastmod>
     
