@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.orekiyuta.cn/archives/useArchiveBoxForDaily/</loc>
+    
+    <lastmod>2021-12-11T19:39:17.698Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.orekiyuta.cn/archives/centos8AboutDocker/</loc>
+    
+    <lastmod>2021-12-11T19:38:39.922Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.orekiyuta.cn/archives/syncOverRoboCopy/</loc>
     
     <lastmod>2021-12-11T15:09:04.315Z</lastmod>
@@ -233,14 +247,14 @@
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/pythonVenvMigrateInvalid/</loc>
+    <loc>http://www.orekiyuta.cn/archives/pythonGetFunctionFromString/</loc>
     
     <lastmod>2021-08-19T20:21:18.187Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/pythonGetFunctionFromString/</loc>
+    <loc>http://www.orekiyuta.cn/archives/pythonVenvMigrateInvalid/</loc>
     
     <lastmod>2021-08-19T20:21:18.187Z</lastmod>
     
@@ -478,14 +492,14 @@
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/CSSFiveClassicLayouts/</loc>
+    <loc>http://www.orekiyuta.cn/archives/CSS3KnowledegePoint/</loc>
     
     <lastmod>2021-08-19T20:21:17.284Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/CSS3KnowledegePoint/</loc>
+    <loc>http://www.orekiyuta.cn/archives/CSSFiveClassicLayouts/</loc>
     
     <lastmod>2021-08-19T20:21:17.284Z</lastmod>
     
