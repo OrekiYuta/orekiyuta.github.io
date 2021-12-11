@@ -77,7 +77,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="Java,SRC,">
 
 
 
@@ -90,13 +90,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Canoe">
-<meta property="og:url" content="http://www.orekiyuta.cn/tags/vue/index.html">
+<meta name="description" content="Sence Apache Log4j 2.x &amp;lt; 2.15.0 存在远程代码执行 结合了 JNDI , 本地利用 Log4j2 构造函数, 调用远程服务端 Log4j2 的函数,导致本地函数可以注入远程服务端代码 详细 👉【漏洞预警】Apache Log4j2 远程代码执行漏洞（CVE-2021-44228）">
+<meta name="keywords" content="Java,SRC">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Apache Log4j2 Fixbug">
+<meta property="og:url" content="http://www.orekiyuta.cn/archives/log4j2Fixbug/index.html">
 <meta property="og:site_name" content="Canoe">
+<meta property="og:description" content="Sence Apache Log4j 2.x &amp;lt; 2.15.0 存在远程代码执行 结合了 JNDI , 本地利用 Log4j2 构造函数, 调用远程服务端 Log4j2 的函数,导致本地函数可以注入远程服务端代码 详细 👉【漏洞预警】Apache Log4j2 远程代码执行漏洞（CVE-2021-44228）">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2021-12-11T14:41:21.633Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Canoe">
+<meta name="twitter:title" content="Apache Log4j2 Fixbug">
+<meta name="twitter:description" content="Sence Apache Log4j 2.x &amp;lt; 2.15.0 存在远程代码执行 结合了 JNDI , 本地利用 Log4j2 构造函数, 调用远程服务端 Log4j2 的函数,导致本地函数可以注入远程服务端代码 详细 👉【漏洞预警】Apache Log4j2 远程代码执行漏洞（CVE-2021-44228）">
 
 
 
@@ -126,7 +131,7 @@
 
 
 
-  <link rel="canonical" href="http://www.orekiyuta.cn/tags/vue/">
+  <link rel="canonical" href="http://www.orekiyuta.cn/archives/log4j2Fixbug/">
 
 
 
@@ -134,7 +139,7 @@
 <meta name="google-site-verification" content="UVhJF4cXYZJhCM6uaJWsNQktr-Y59XRhX_AIGiqUv3E">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-  <title>Tag: vue | Canoe</title>
+  <title>Apache Log4j2 Fixbug | Canoe</title>
   
 
 
@@ -154,7 +159,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
       <a href="https://github.com/OrekiYuta" class="github-corner" aria-label="View source on GitHub" style><svg width="80" height="80" viewbox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -283,58 +288,217 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>vue<small>Tag</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.orekiyuta.cn/archives/log4j2Fixbug/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Orekiyuta">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Canoe">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/archives/yarnConnetionRetrying/" itemprop="url">
-              
-                <span itemprop="name">Yarn Connetion Retrying</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">Apache Log4j2 Fixbug</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2021-12-10T01:06:16+08:00" content="2021-12-10">
-          12-10
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2021-12-11T22:25:22+08:00">
+                2021-12-11 => 22:25:22
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                  <span class="post-meta-divider">|</span>
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                
+                <span title="Words count in article">
+                  153
+                </span>
+              
+
+              
+
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="Sence"><a href="#Sence" class="headerlink" title="Sence"></a>Sence</h2><ul>
+<li>Apache Log4j 2.x &lt; 2.15.0 存在远程代码执行</li>
+<li>结合了 JNDI , 本地利用 Log4j2 构造函数, 调用远程服务端 Log4j2 的函数,导致本地函数可以注入远程服务端代码</li>
+<li>详细 👉<a href="https://help.aliyun.com/noticelist/articleid/1060971232.html" target="_blank" rel="noopener">【漏洞预警】Apache Log4j2 远程代码执行漏洞（CVE-2021-44228）</a><a id="more"></a>
+</li>
+</ul>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><ul>
+<li>到 maven 官方仓库下载最新修复该漏洞的 jar 👉 <a href="https://repo.maven.apache.org/maven2/org/apache/logging/log4j/" target="_blank" rel="noopener">org/apache/logging/log4j</a> </li>
+<li>在官方站点可查看哪些 jar 引用了 涉及该漏洞版本的log4j2 jar , 如 👉 <a href="https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core/2.14.1/usages" target="_blank" rel="noopener">mvnrepository/Artifacts using log4j-core version 2.14.1</a> </li>
+<li>在项目里替换一下 已修复漏洞的 jar 的引用即可</li>
+</ul>
 
       
     </div>
+    
+    
+    
 
+    
+
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>Post author:</strong>
+    Orekiyuta
+  </li>
+  <li class="post-copyright-link">
+    <strong>Post link:</strong>
+    <a href="http://www.orekiyuta.cn/archives/log4j2Fixbug/" title="Apache Log4j2 Fixbug">http://www.orekiyuta.cn/archives/log4j2Fixbug/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice: </strong>
+    All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> unless stating additionally.
+  </li>
+</ul>
+
+      </div>
+    
+     <div>
+      
+        <div>
+    
+        <div style="text-align:center;color: black;font-size:15px;margin-top:30px">< - 僕らは知らない - ></div>
+    
+</div>
+      
+     </div>
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Java/" rel="tag"><i class="fa fa-tag"></i> Java</a>
+          
+            <a href="/tags/SRC/" rel="tag"><i class="fa fa-tag"></i> SRC</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/archives/rawGithubConnectionRefused/" rel="next" title="Raw Github Connection Refused">
+                <i class="fa fa-chevron-left"></i> Raw Github Connection Refused
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
 
           </div>
           
 
 
           
+
+  
+
+
 
         </div>
         
@@ -625,8 +789,17 @@ if(canvas.getContext){
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -646,7 +819,7 @@ if(canvas.getContext){
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">78</span>
+                  <span class="site-state-item-count">79</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -659,7 +832,7 @@ if(canvas.getContext){
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">60</span>
+                  <span class="site-state-item-count">61</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
@@ -706,6 +879,22 @@ if(canvas.getContext){
       </section>
 
       
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Sence"><span class="nav-number">1.</span> <span class="nav-text">Sence</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Solution"><span class="nav-number">2.</span> <span class="nav-text">Solution</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
 
       
 
@@ -733,7 +922,7 @@ if(canvas.getContext){
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">96.4k</span>
+    <span title="Site words total count">96.5k</span>
   
 </div>
 
@@ -877,6 +1066,10 @@ show_date_time();
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 

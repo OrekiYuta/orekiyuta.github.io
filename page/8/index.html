@@ -304,6 +304,206 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.orekiyuta.cn/archives/Ark-exploit-log/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Orekiyuta">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Canoe">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/archives/Ark-exploit-log/" itemprop="url">Ark.exploit.log</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-10-10T11:47:18+08:00">
+                2019-10-10 => 11:47:18
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                  <span class="post-meta-divider">|</span>
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                
+                <span title="Words count in article">
+                  1.4k
+                </span>
+              
+
+              
+
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h3 id="Date-2019-11-23-18-18-27"><a href="#Date-2019-11-23-18-18-27" class="headerlink" title="Date: 2019-11-23 18:18:27"></a>Date: 2019-11-23 18:18:27</h3><ul>
+<li>Ctrl + Alt + N 内联变量(相当于提取变量的逆向操作)</li>
+</ul>
+<h3 id="Date-2019-11-20-22-01-04"><a href="#Date-2019-11-20-22-01-04" class="headerlink" title="Date: 2019-11-20 22:01:04"></a>Date: 2019-11-20 22:01:04</h3><ul>
+<li><p>Pro Environment Deployment Review</p>
+<ul>
+<li>安装Git <code>yum install git</code></li>
+<li>服务器端用 git pull 拉取开发环境提交的最新代码 <code>git clone https://github.com/OrekiYuta/ArCanoe.git</code></li>
+<li>安装Maven <code>yum install</code></li>
+<li><p>修改配置文件信息;👉<a href="https://maven.apache.org/guides/introduction/introduction-to-profiles.html" target="_blank" rel="noopener">Maven官方文档</a></p>
+<ul>
+<li>环境分离,Spring 提供在本地使用 Pom 配置</li>
+<li>服务端用Maven 的 .m2/setting.xml 配置文件  <ul>
+<li><code>vim ~/.m2/settings.xml</code><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">settings</span> <span class="attr">xmlns</span>=<span class="string">"http://maven.apache.org/SETTINGS/1.0.0"</span></span></span><br><span class="line"><span class="tag"><span class="attr">xmlns:xsi</span>=<span class="string">"http://www.w3.org/2001/XMLSchema-instance"</span></span></span><br><span class="line"><span class="tag"><span class="attr">xsi:schemaLocation</span>=<span class="string">"http://maven.apache.org/SETTINGS/1.0.0</span></span></span><br><span class="line"><span class="tag"><span class="string">                    https://maven.apache.org/xsd/settings-1.0.0.xsd"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">localRepository</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">interactiveMode</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">offline</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">pluginGroups</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">servers</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">mirrors</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">proxies</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">profiles</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">profile</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>dev<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">properties</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">db.url</span>&gt;</span>jdbc:h2:~/ArCanoe<span class="tag">&lt;/<span class="name">db.url</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">db.user</span>&gt;</span>sa<span class="tag">&lt;/<span class="name">db.user</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">db.password</span>&gt;</span>123<span class="tag">&lt;/<span class="name">db.password</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">properties</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">activation</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">activeByDefault</span>&gt;</span>true<span class="tag">&lt;/<span class="name">activeByDefault</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">activation</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">profile</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">profile</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>pro<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">properties</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">db.url</span>&gt;</span>jdbc:mysql://localhost:3306/ArCanoe<span class="tag">&lt;/<span class="name">db.url</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">db.user</span>&gt;</span>root<span class="tag">&lt;/<span class="name">db.user</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">db.password</span>&gt;</span>xxxxx<span class="tag">&lt;/<span class="name">db.password</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">properties</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">profile</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">profiles</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">activeProfiles</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">settings</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>配置jdk,maven环境</p>
+<ul>
+<li>cd 进入项目</li>
+<li>用flyway工具按脚本生成数据库表 <code>mvn clean compile flyway:migrate -Ppro</code> pro是在配置中 profile 节点自定义的名称  </li>
+<li>配置了环境分离的话,可以在开发环境和服务端分别按配置构建数据库连接进行便利开发,因为开发环境的配置不能随意填写</li>
+<li>开发环境最好和服务部署环境保持一致性</li>
+</ul>
+</li>
+<li>用 <code>mvn clean compile</code> 和 <code>mvn package</code> 构建jar包</li>
+<li>运行jar包即可 <code>java -jar target/xxxx-0.0.1 -SNAPSHOT.jar</code></li>
+<li>访问服务端即可</li>
+</ul>
+<hr>
+<ul>
+<li>在服务器部署方面采用docker会更方便后续工作</li>
+<li>docker主要步骤为:   拉取镜像/构建镜像→构建容器→运行容器</li>
+<li>首先得安装docker,运行 <code>service docker start</code></li>
+<li>在这里以MySQL为例:</li>
+<li><code>docker image pull mysql</code> 首先会从本地查看有没有mysql镜像,没有再去docker仓库拉取</li>
+<li><code>docker image ls</code></li>
+<li><code>docker container run mysql</code> 生成的容器会持久化存在，不需要可删除</li>
+<li><code>docker ps</code> <code>docker container ls -all</code></li>
+<li><code>docker run -it --name mysql -e MYSQL_ROOT_PASSWORD=123456 -p 3306:3306 -v xx/xx : xx/xx mysql</code> 端口映射,文件夹映射</li>
+<li>需要深入了解网络IP</li>
+<li><code>docker exec -it mysql /bin/bash</code> 进入容器启动容器命令行</li>
+<li><code>docker exec -it mysql -h localhost -u root -p</code></li>
+<li><code>docker exec -it mysql bash</code> <code>mysql -uroot -p</code></li>
+<li><code>docker exec -it mysql mysql -uroot -p</code></li>
+</ul>
+<hr>
+<ul>
+<li>对于项目而言可以采用 dockerFile 方式把环境和项目和操作步骤写入dockerFile文件里</li>
+<li>然后构建项目镜像,就可以方便的在不同环境利用docker部署</li>
+<li>也可以把项目容器和数据库容器等多个容器用docker compose 方式构建</li>
+<li>多下点功夫去看官方英文文档
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/archives/Ark-exploit-log/" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </li></ul></li></ul></div>
+    
+    
+    
+
+    
+
+    
+
+    
+     <div>
+      
+     </div>
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://www.orekiyuta.cn/archives/Hexo-Install-Migrate/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1858,7 +2058,7 @@ if(canvas.getContext){
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">78</span>
+                  <span class="site-state-item-count">79</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -1871,7 +2071,7 @@ if(canvas.getContext){
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">60</span>
+                  <span class="site-state-item-count">61</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
@@ -1945,7 +2145,7 @@ if(canvas.getContext){
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">96.4k</span>
+    <span title="Site words total count">96.5k</span>
   
 </div>
 
