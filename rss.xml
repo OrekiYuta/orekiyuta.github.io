@@ -6,7 +6,7 @@
   <link href="/rss.xml" rel="self"/>
   
   <link href="http://www.orekiyuta.cn/"/>
-  <updated>2021-12-11T14:41:21.633Z</updated>
+  <updated>2021-12-11T19:39:17.698Z</updated>
   <id>http://www.orekiyuta.cn/</id>
   
   <author>
@@ -15,6 +15,62 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Use ArchiveBox For Daily</title>
+    <link href="http://www.orekiyuta.cn/archives/useArchiveBoxForDaily/"/>
+    <id>http://www.orekiyuta.cn/archives/useArchiveBoxForDaily/</id>
+    <published>2021-12-11T19:20:46.000Z</published>
+    <updated>2021-12-11T19:39:17.698Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Sence"><a href="#Sence" class="headerlink" title="Sence"></a>Sence</h2><ul><li>由于经常发现一些站点或文章很不错,每次都只是手动保存链接</li><li>偶尔回头看的话,原本保存的链接的站点或文章已经消失了</li><li>所以需要一个服务在保存站点链接的时候,把站点抓取保存成文件</li><li>这样日后翻看就很方便<a id="more"></a></li></ul><h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><ul><li>ArchiveBox 可以很好的满足这个日常的需求 👉 <a href="https://archivebox.io/" target="_blank" rel="noopener">ArchiveBox</a><h3 id="Easy-Setup-With-Docker"><a href="#Easy-Setup-With-Docker" class="headerlink" title="Easy Setup With Docker"></a>Easy Setup With Docker</h3></li><li>切换到非 root 账户下安装</li><li><code>mkdir ~/archivebox &amp;&amp; cd ~/archivebox</code> ## 创建目录</li><li><code>docker run -v $PWD:/data -it archivebox/archivebox init --setup</code> # 初始化</li><li><code>docker run -v $PWD:/data -p 8000:8000 archivebox/archivebox</code> # 启动容器<br><img src="/images/useArchiveBoxForDaily/Snipaste_2021-12-12_03-21-47.png" alt></li></ul><h3 id="Account-About"><a href="#Account-About" class="headerlink" title="Account About"></a>Account About</h3><ul><li>登录后台需要修改下默认密码</li><li><code>docker exec -it [容器id] /bin/bash</code> 进入容器</li><li>ArchiveBox 修改用户信息需要在非 root 账户下</li><li>进入容器后默认的是 root 用户,需要创建新用户<ul><li><code>useradd -d /home/elias elias</code></li><li><code>passwd elias</code></li></ul></li><li><code>su elias</code> 接着切换用户执行操作</li><li><code>archivebox manage changepassword USERNAME</code> 修改账户密码</li><li><code>archivebox manage changepassword admin</code> 修改默认的 admin 密码<br><img src="/images/useArchiveBoxForDaily/Snipaste_2021-12-12_03-21-24.png" alt></li></ul><h2 id="Other"><a href="#Other" class="headerlink" title="Other"></a>Other</h2><ul><li><p>容器里需要给目录赋权限</p><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAIN"><figure class="iseeu highlight /plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">$ archivebox manage changepassword USERNAME</span><br><span class="line">[i] [2021-12-11 19:17:32] ArchiveBox v0.6.2: archivebox manage changepassword USERNAME</span><br><span class="line">    &gt; /data</span><br><span class="line"></span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File &quot;/usr/local/lib/python3.9/logging/config.py&quot;, line 564, in configure</span><br><span class="line">    handler = self.configure_handler(handlers[name])</span><br><span class="line">  File &quot;/usr/local/lib/python3.9/logging/config.py&quot;, line 745, in configure_handler</span><br><span class="line">    result = factory(**kwargs)</span><br><span class="line">  File &quot;/usr/local/lib/python3.9/logging/handlers.py&quot;, line 153, in __init__</span><br><span class="line">    BaseRotatingHandler.__init__(self, filename, mode, encoding=encoding,</span><br><span class="line">  File &quot;/usr/local/lib/python3.9/logging/handlers.py&quot;, line 58, in __init__</span><br><span class="line">    logging.FileHandler.__init__(self, filename, mode=mode,</span><br><span class="line">  File &quot;/usr/local/lib/python3.9/logging/__init__.py&quot;, line 1146, in __init__</span><br><span class="line">    StreamHandler.__init__(self, self._open())</span><br><span class="line">  File &quot;/usr/local/lib/python3.9/logging/__init__.py&quot;, line 1175, in _open</span><br><span class="line">    return open(self.baseFilename, self.mode, encoding=self.encoding,</span><br><span class="line">PermissionError: [Errno 13] Permission denied: &apos;/data/logs/errors.log&apos;</span><br></pre></td></tr></table></figure></div></li><li><p>切换到 root 账户, 到 <code>/data</code> 目录下 </p></li><li><code>chmod -R 777 ./</code> 给 data 目录下所有文件赋予权限</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Sence&quot;&gt;&lt;a href=&quot;#Sence&quot; class=&quot;headerlink&quot; title=&quot;Sence&quot;&gt;&lt;/a&gt;Sence&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;由于经常发现一些站点或文章很不错,每次都只是手动保存链接&lt;/li&gt;
+&lt;li&gt;偶尔回头看的话,原本保存的链接的站点或文章已经消失了&lt;/li&gt;
+&lt;li&gt;所以需要一个服务在保存站点链接的时候,把站点抓取保存成文件&lt;/li&gt;
+&lt;li&gt;这样日后翻看就很方便
+    
+    </summary>
+    
+    
+    
+      <category term="Docker" scheme="http://www.orekiyuta.cn/tags/Docker/"/>
+    
+      <category term="ArchiveBox" scheme="http://www.orekiyuta.cn/tags/ArchiveBox/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CentOS8 About Docker</title>
+    <link href="http://www.orekiyuta.cn/archives/centos8AboutDocker/"/>
+    <id>http://www.orekiyuta.cn/archives/centos8AboutDocker/</id>
+    <published>2021-12-11T19:03:25.000Z</published>
+    <updated>2021-12-11T19:38:39.922Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Sence"><a href="#Sence" class="headerlink" title="Sence"></a>Sence</h2><ul><li>安装 ArchiveBox 遇到了一些问题</li><li>由于是用 Docker 安装的, 容器启动失败<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="SHELL"><figure class="iseeu highlight /shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Emulate Docker CLI using podman. Create /etc/containers/nodocker to quiet msg.</span><br><span class="line">ERRO[0001] unable to get systemd connection to add healthchecks: dial unix /tmp/podman-run-1003/systemd/private: connect: connection refused</span><br><span class="line">ERRO[0001] unable to get systemd connection to start healthchecks: dial unix /tmp/podman-run-1003/systemd/private: connect: connection refused</span><br><span class="line">4</span><br></pre></td></tr></table></figure></div></li></ul><a id="more"></a><h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><ul><li>查了一下发现在 CentOS8 里直接使用 <code>yum install docker -y</code> ,安装的是 podman-docker</li><li>虽说命令兼,但是有些问题,所以把它卸了重新装 Docker</li><li><code>yum remove docker</code> 卸载当前装的 podman</li><li><code>curl https://download.docker.com/linux/centos/docker-ce.repo -o /etc/yum.repos.d/docker-ce.repo</code> 下载 docker-ce 源</li><li><code>yum install docker-ce -y</code> 安装 docker-ce</li></ul><h2 id="Other"><a href="#Other" class="headerlink" title="Other"></a>Other</h2><h3 id="docker-Cannot-connect-to-the-Docker-daemon-at-unix-var-run-docker-sock-Is-the-docker-daemon-running"><a href="#docker-Cannot-connect-to-the-Docker-daemon-at-unix-var-run-docker-sock-Is-the-docker-daemon-running" class="headerlink" title="docker: Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?."></a>docker: Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?.</h3><ul><li>添加用户到 docker 组</li><li><code>gpasswd -a $USER docker</code> root用户下添加当前登录用户(root)到 docker 组</li><li><code>gpasswd -a elias docker</code> root用户下添加 elias 用户到 docker 组</li><li><code>systemctl restart docker</code> 重启 docker </li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Sence&quot;&gt;&lt;a href=&quot;#Sence&quot; class=&quot;headerlink&quot; title=&quot;Sence&quot;&gt;&lt;/a&gt;Sence&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;安装 ArchiveBox 遇到了一些问题&lt;/li&gt;
+&lt;li&gt;由于是用 Docker 安装的, 容器启动失败&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Emulate Docker CLI using podman. Create /etc/containers/nodocker to quiet msg.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;ERRO[0001] unable to get systemd connection to add healthchecks: dial unix /tmp/podman-run-1003/systemd/private: connect: connection refused&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;ERRO[0001] unable to get systemd connection to start healthchecks: dial unix /tmp/podman-run-1003/systemd/private: connect: connection refused&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="CentOS" scheme="http://www.orekiyuta.cn/tags/CentOS/"/>
+    
+      <category term="Docker" scheme="http://www.orekiyuta.cn/tags/Docker/"/>
+    
+      <category term="Podman" scheme="http://www.orekiyuta.cn/tags/Podman/"/>
+    
+  </entry>
   
   <entry>
     <title>Apache Log4j2 Fixbug</title>
@@ -190,9 +246,9 @@
     
     
     
-      <category term="Certificate" scheme="http://www.orekiyuta.cn/tags/Certificate/"/>
-    
       <category term="Alibaba" scheme="http://www.orekiyuta.cn/tags/Alibaba/"/>
+    
+      <category term="Certificate" scheme="http://www.orekiyuta.cn/tags/Certificate/"/>
     
   </entry>
   
@@ -219,57 +275,6 @@
       <category term="LAN" scheme="http://www.orekiyuta.cn/tags/LAN/"/>
     
       <category term="RoboCopy" scheme="http://www.orekiyuta.cn/tags/RoboCopy/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Mklink in Win</title>
-    <link href="http://www.orekiyuta.cn/archives/mklinkInWin/"/>
-    <id>http://www.orekiyuta.cn/archives/mklinkInWin/</id>
-    <published>2021-10-23T18:23:11.000Z</published>
-    <updated>2021-10-23T22:36:22.746Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="Scene"><a href="#Scene" class="headerlink" title="Scene"></a>Scene</h2><ul><li>当磁盘不够用,或者想转移当前目录文件存储的时候,又不能改变当前文件结构的情况</li><li>Winodws 提供了文件路径映射功能。<a id="more"></a></li></ul><h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAIN"><figure class="iseeu highlight /plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">MKLINK [[/D] | [/H] | [/J]] Link Target</span><br><span class="line"></span><br><span class="line">        /D      创建目录符号链接。默认为文件</span><br><span class="line">                符号链接。</span><br><span class="line">        /H      创建硬链接而非符号链接。</span><br><span class="line">        /J      创建目录联接。</span><br><span class="line">        Link    指定新的符号链接名称。</span><br><span class="line">        Target  指定新链接引用的路径</span><br><span class="line">                (相对或绝对)。</span><br></pre></td></tr></table></figure></div><ul><li>用法：<code>mklink /j &quot;映射到这个目录&quot; &quot;想要映射过来的路径&quot;</code> =&gt; <code>mklink /J &quot;e:\test&quot; &quot;f:\test&quot;</code></li><li>需要注意的是, <code>mklink /j &quot;目标路径&quot; &quot;源路径&quot;</code>, 目标路径实现不能存在,因为会创建该路径造成冲突,无法创建</li><li><p>总之,常用的如下</p><ul><li><code>mklink /d &quot;d:\target&quot; &quot;d:\origin&quot;</code></li><li><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAIN"><figure class="iseeu highlight /plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">C:\Windows\system32&gt;mklink /d &quot;d:\target&quot; &quot;d:\origin&quot;</span><br><span class="line">为 d:\target &lt;&lt;===&gt;&gt; d:\origin 创建的符号链接</span><br></pre></td></tr></table></figure></div></li><li><p><code>mklink /j &quot;d:\target&quot; &quot;d:\origin&quot;</code>  /j 只能创建本地磁盘映射, /d 可用于创建网络映射</p></li><li><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAIN"><figure class="iseeu highlight /plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">C:\Windows\system32&gt;mklink /j &quot;d:\test&quot; &quot;\\192.168.1.10\AcerC\origin&quot;</span><br><span class="line">完成该操作需要本地卷。</span><br><span class="line"></span><br><span class="line">C:\Windows\system32&gt;mklink /d &quot;d:\test&quot; &quot;\\192.168.1.10\AcerC\origin&quot;</span><br><span class="line">为 d:\test &lt;&lt;===&gt;&gt; \\192.168.1.10\AcerC\origin 创建的符号链接</span><br></pre></td></tr></table></figure></div></li></ul></li></ul><ul><li><p>创建了映射之后,就可以在创建的映射目录里对目标路径进行操作了,就相当于操作目标路径的文件一样</p></li><li><p>此外, robocopy 没法移动文件到符号链接,对以上创建的映射无法生效</p><ul><li><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAIN"><figure class="iseeu highlight /plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">D:\&gt;robocopy &quot;d:\cc&quot; &quot;z:\test&quot; /MIR /sl</span><br><span class="line">-------------------------------------------------------------------------------</span><br><span class="line">ROBOCOPY     ::     Windows 的可靠文件复制</span><br><span class="line">-------------------------------------------------------------------------------</span><br><span class="line"></span><br><span class="line">开始时间: 2021年10月24日 2:17:54</span><br><span class="line">        源: d:\cc\</span><br><span class="line">    目标: z:\test\</span><br><span class="line"></span><br><span class="line">    文件: *.*</span><br><span class="line"></span><br><span class="line">    选项: *.* /S /E /DCOPY:DA /COPY:DAT /PURGE /MIR /R:1000000 /W:30</span><br><span class="line"></span><br><span class="line">------------------------------------------------------------------------------</span><br><span class="line"></span><br><span class="line">2021/10/24 02:17:54 错误 1463 (0x000005B7) 正在访问目标目录 z:\test\</span><br><span class="line">无法遵循符号链接，因为其类型已禁用。</span><br><span class="line">正在等待 30 秒... 正在重试...</span><br></pre></td></tr></table></figure></div></li></ul></li></ul><h2 id="Other"><a href="#Other" class="headerlink" title="Other"></a>Other</h2><ul><li>👉 <a href="https://www.cnblogs.com/cnxkey/articles/7658462.html" target="_blank" rel="noopener">windows 软链接的建立及删除</a></li><li>👉 <a href="https://blog.walterlv.com/post/ntfs-link-comparisons.html" target="_blank" rel="noopener">比较 Windows 上四种不同的文件（夹）链接方式</a></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;Scene&quot;&gt;&lt;a href=&quot;#Scene&quot; class=&quot;headerlink&quot; title=&quot;Scene&quot;&gt;&lt;/a&gt;Scene&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;当磁盘不够用,或者想转移当前目录文件存储的时候,又不能改变当前文件结构的情况&lt;/li&gt;
-&lt;li&gt;Winodws 提供了文件路径映射功能。
-    
-    </summary>
-    
-    
-    
-      <category term="Windows" scheme="http://www.orekiyuta.cn/tags/Windows/"/>
-    
-      <category term="LAN" scheme="http://www.orekiyuta.cn/tags/LAN/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Enable Hyper-V Service</title>
-    <link href="http://www.orekiyuta.cn/archives/enableHyper-Vservice/"/>
-    <id>http://www.orekiyuta.cn/archives/enableHyper-Vservice/</id>
-    <published>2021-10-04T15:04:16.000Z</published>
-    <updated>2021-10-04T17:15:52.894Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="Scene"><a href="#Scene" class="headerlink" title="Scene"></a>Scene</h2><ul><li>After installed Docker Desktop , Cannot enable Hyper-V service.</li><li><img src="/images/enableHyper-Vservice/Snipaste_2021-10-04_22-49-16.png" alt></li></ul><a id="more"></a><h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><ul><li>Check Windows Configuration.</li><li><img src="/images/enableHyper-Vservice/Snipaste_2021-10-04_22-51-11.png" alt></li><li>win + r , input “cmd”.</li><li>Execute <code>systeminfo</code>.</li><li><img src="/images/enableHyper-Vservice/Snipaste_2021-10-04_22-50-14.png" alt></li><li>Must all the Hyper-V Requirements are YES.</li><li><p>For me , “Virutalization Enabled In Firmware : NO”.</p></li><li><p>My PC mainboard is Interl H61 , Click “delete” button show the Bios.</p></li><li>Then, Find and Enabled the Virutalization Configuration.</li><li><img src="/images/enableHyper-Vservice/IMG_20211004_225913.jpg" alt></li><li><p><img src="/images/enableHyper-Vservice/IMG_20211004_225923.jpg" alt></p></li><li><p>Final, Check the systeminfo , Open the Docker Desktop as well.</p></li><li><img src="/images/enableHyper-Vservice/Snipaste_2021-10-04_23-18-11.png" alt></li></ul><h2 id="Other"><a href="#Other" class="headerlink" title="Other"></a>Other</h2><ul><li>👉 <a href="https://docs.microsoft.com/zh-cn/virtualization/hyper-v-on-windows/reference/hyper-v-requirements#verify-hardware-compatibility" target="_blank" rel="noopener">Windows 10 Hyper-V System Requirements</a></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;Scene&quot;&gt;&lt;a href=&quot;#Scene&quot; class=&quot;headerlink&quot; title=&quot;Scene&quot;&gt;&lt;/a&gt;Scene&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;After installed Docker Desktop , Cannot enable Hyper-V service.&lt;/li&gt;
-&lt;li&gt;&lt;img src=&quot;/images/enableHyper-Vservice/Snipaste_2021-10-04_22-49-16.png&quot; alt&gt;&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-    
-      <category term="Docker" scheme="http://www.orekiyuta.cn/tags/Docker/"/>
-    
-      <category term="Windows" scheme="http://www.orekiyuta.cn/tags/Windows/"/>
     
   </entry>
   
