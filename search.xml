@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>Raw Github Connection Refused</title>
+      <link href="/archives/rawGithubConnectionRefused/"/>
+      <url>/archives/rawGithubConnectionRefused/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Sence"><a href="#Sence" class="headerlink" title="Sence"></a>Sence</h2><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="SHELL"><figure class="iseeu highlight /shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">root@raspberrypi /h/pi# curl -sSL 'https://get.archivebox.io' | sh</span><br><span class="line">curl: (7) Failed to connect to raw.githubusercontent.com port 443: Connection refused</span><br><span class="line">root@raspberrypi /h/pi# ping raw.githubusercontent.com</span><br><span class="line">PING raw.githubusercontent.com (127.0.0.1) 56(84) bytes of data.</span><br><span class="line">64 bytes from localhost (127.0.0.1): icmp_seq=1 ttl=64 time=0.180 ms</span><br><span class="line">64 bytes from localhost (127.0.0.1): icmp_seq=2 ttl=64 time=0.156 ms</span><br><span class="line">64 bytes from localhost (127.0.0.1): icmp_seq=3 ttl=64 time=0.114 ms</span><br><span class="line">64 bytes from localhost (127.0.0.1): icmp_seq=4 ttl=64 time=0.118 ms</span><br><span class="line">64 bytes from localhost (127.0.0.1): icmp_seq=5 ttl=64 time=0.102 ms</span><br><span class="line">64 bytes from localhost (127.0.0.1): icmp_seq=6 ttl=64 time=0.105 ms</span><br><span class="line">64 bytes from localhost (127.0.0.1): icmp_seq=7 ttl=64 time=0.128 ms</span><br><span class="line">^C</span><br><span class="line">--- raw.githubusercontent.com ping statistics ---</span><br><span class="line">7 packets transmitted, 7 received, 0% packet loss, time 234ms</span><br><span class="line">rtt min/avg/max/mdev = 0.102/0.129/0.180/0.026 ms</span><br><span class="line">root@raspberrypi /h/pi#</span><br></pre></td></tr></table></figure></div><ul><li>由上可知,由于 DNS 污染问题, raw.githubusercontent.com 经常访问不了</li></ul><a id="more"></a><h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><ul><li>打开 <a href="https://www.ipaddress.com/" target="_blank" rel="noopener">ipaddress</a> , 输入 <code>raw.githubusercontent.com</code> 查看目前 DNS 解析到的 IP</li><li>如 <a href="https://ipaddress.com/website/raw.githubusercontent.com" target="_blank" rel="noopener">ipaddress</a> ,翻看可见解析到的 IP</li><li>最后在机器上配置 hosts 解析即可<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="SHELL"><figure class="iseeu highlight /shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">185.199.108.133 raw.githubusercontent.com</span><br><span class="line">185.199.109.133 raw.githubusercontent.com</span><br><span class="line">185.199.110.133 raw.githubusercontent.com</span><br><span class="line">185.199.111.133 raw.githubusercontent.com</span><br></pre></td></tr></table></figure></div></li></ul><h2 id="Other"><a href="#Other" class="headerlink" title="Other"></a>Other</h2><ul><li><p>on pi 重启网络</p><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAIN"><figure class="iseeu highlight /plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">pi@raspberrypi ~&gt; /etc/init.d/networking restart</span><br><span class="line">[....] Restarting networking (via systemctl): networking.service==== AUTHENTICATING FOR org.freedesktop.systemd1.manage-units ===</span><br><span class="line">Authentication is required to restart &apos;networking.service&apos;.</span><br><span class="line">Authenticating as: ,,, (pi)</span><br><span class="line">Password:</span><br><span class="line">==== AUTHENTICATION COMPLETE ===</span><br><span class="line">. ok</span><br></pre></td></tr></table></figure></div></li><li><p>使用工具刷新 DNS</p><ul><li><code>sudo apt-get install nscd</code></li><li><code>sudo /etc/init.d/nscd restart</code></li></ul></li><li>改变机器 DNS 解析服务器 <code>sudo nano /etc/resolv.conf</code><ul><li><code>nameserver 8.8.8.8</code> 修改</li></ul></li><li></li></ul>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Github </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Git Reset Commit Without Change Code</title>
       <link href="/archives/gitResetCommitWithoutChangeCode/"/>
       <url>/archives/gitResetCommitWithoutChangeCode/</url>
@@ -96,9 +115,9 @@
       
         <tags>
             
-            <tag> Alibaba </tag>
-            
             <tag> Certificate </tag>
+            
+            <tag> Alibaba </tag>
             
         </tags>
       
@@ -182,9 +201,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> Docker </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Selfhost </tag>
             
@@ -329,9 +348,9 @@
       
         <tags>
             
-            <tag> Certificate </tag>
-            
             <tag> Microsoft </tag>
+            
+            <tag> Certificate </tag>
             
         </tags>
       
@@ -521,9 +540,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> Docker </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Windows </tag>
             
@@ -1322,9 +1341,9 @@
       
         <tags>
             
-            <tag> ES6 </tag>
-            
             <tag> ECMAScript </tag>
+            
+            <tag> ES6 </tag>
             
         </tags>
       
