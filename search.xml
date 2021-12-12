@@ -8,7 +8,7 @@
       <link href="/archives/useArchiveBoxForDaily/"/>
       <url>/archives/useArchiveBoxForDaily/</url>
       
-        <content type="html"><![CDATA[<h2 id="Sence"><a href="#Sence" class="headerlink" title="Sence"></a>Sence</h2><ul><li>由于经常发现一些站点或文章很不错,每次都只是手动保存链接</li><li>偶尔回头看的话,原本保存的链接的站点或文章已经消失了</li><li>所以需要一个服务在保存站点链接的时候,把站点抓取保存成文件</li><li>这样日后翻看就很方便<a id="more"></a></li></ul><h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><ul><li>ArchiveBox 可以很好的满足这个日常的需求 👉 <a href="https://archivebox.io/" target="_blank" rel="noopener">ArchiveBox</a><h3 id="Easy-Setup-With-Docker"><a href="#Easy-Setup-With-Docker" class="headerlink" title="Easy Setup With Docker"></a>Easy Setup With Docker</h3></li><li>切换到非 root 账户下安装</li><li><code>mkdir ~/archivebox &amp;&amp; cd ~/archivebox</code> ## 创建目录</li><li><code>docker run -v $PWD:/data -it archivebox/archivebox init --setup</code> # 初始化</li><li><code>docker run -v $PWD:/data -p 8000:8000 archivebox/archivebox</code> # 启动容器<br><img src="/images/useArchiveBoxForDaily/Snipaste_2021-12-12_03-21-47.png" alt></li></ul><h3 id="Account-About"><a href="#Account-About" class="headerlink" title="Account About"></a>Account About</h3><ul><li>登录后台需要修改下默认密码</li><li><code>docker exec -it [容器id] /bin/bash</code> 进入容器</li><li>ArchiveBox 修改用户信息需要在非 root 账户下</li><li>进入容器后默认的是 root 用户,需要创建新用户<ul><li><code>useradd -d /home/elias elias</code></li><li><code>passwd elias</code></li></ul></li><li><code>su elias</code> 接着切换用户执行操作</li><li><code>archivebox manage changepassword USERNAME</code> 修改账户密码</li><li><code>archivebox manage changepassword admin</code> 修改默认的 admin 密码<br><img src="/images/useArchiveBoxForDaily/Snipaste_2021-12-12_03-21-24.png" alt></li></ul><h2 id="Other"><a href="#Other" class="headerlink" title="Other"></a>Other</h2><ul><li><p>容器里需要给目录赋权限</p><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAIN"><figure class="iseeu highlight /plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">$ archivebox manage changepassword USERNAME</span><br><span class="line">[i] [2021-12-11 19:17:32] ArchiveBox v0.6.2: archivebox manage changepassword USERNAME</span><br><span class="line">    &gt; /data</span><br><span class="line"></span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File &quot;/usr/local/lib/python3.9/logging/config.py&quot;, line 564, in configure</span><br><span class="line">    handler = self.configure_handler(handlers[name])</span><br><span class="line">  File &quot;/usr/local/lib/python3.9/logging/config.py&quot;, line 745, in configure_handler</span><br><span class="line">    result = factory(**kwargs)</span><br><span class="line">  File &quot;/usr/local/lib/python3.9/logging/handlers.py&quot;, line 153, in __init__</span><br><span class="line">    BaseRotatingHandler.__init__(self, filename, mode, encoding=encoding,</span><br><span class="line">  File &quot;/usr/local/lib/python3.9/logging/handlers.py&quot;, line 58, in __init__</span><br><span class="line">    logging.FileHandler.__init__(self, filename, mode=mode,</span><br><span class="line">  File &quot;/usr/local/lib/python3.9/logging/__init__.py&quot;, line 1146, in __init__</span><br><span class="line">    StreamHandler.__init__(self, self._open())</span><br><span class="line">  File &quot;/usr/local/lib/python3.9/logging/__init__.py&quot;, line 1175, in _open</span><br><span class="line">    return open(self.baseFilename, self.mode, encoding=self.encoding,</span><br><span class="line">PermissionError: [Errno 13] Permission denied: &apos;/data/logs/errors.log&apos;</span><br></pre></td></tr></table></figure></div></li><li><p>切换到 root 账户, 到 <code>/data</code> 目录下 </p></li><li><code>chmod -R 777 ./</code> 给 data 目录下所有文件赋予权限</li></ul>]]></content>
+        <content type="html"><![CDATA[<h2 id="Sence"><a href="#Sence" class="headerlink" title="Sence"></a>Sence</h2><ul><li>由于经常发现一些站点或文章很不错,每次都只是手动保存链接</li><li>偶尔回头看的话,原本保存的链接的站点或文章已经消失了</li><li>所以需要一个服务在保存站点链接的时候,把站点抓取保存成文件</li><li>这样日后翻看就很方便<a id="more"></a></li></ul><h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><ul><li>ArchiveBox 可以很好的满足这个日常的需求 👉 <a href="https://archivebox.io/" target="_blank" rel="noopener">ArchiveBox</a></li></ul><h3 id="Easy-Setup-With-Docker"><a href="#Easy-Setup-With-Docker" class="headerlink" title="Easy Setup With Docker"></a>Easy Setup With Docker</h3><ul><li>切换到非 root 账户下安装</li><li><code>mkdir ~/archivebox &amp;&amp; cd ~/archivebox</code> ## 创建目录</li><li><code>docker run -v $PWD:/data -it archivebox/archivebox init --setup</code> # 初始化</li><li><code>docker run -v $PWD:/data -p 8000:8000 archivebox/archivebox</code> # 启动容器<br><img src="/images/useArchiveBoxForDaily/Snipaste_2021-12-12_03-21-47.png" alt></li></ul><h3 id="Account-About"><a href="#Account-About" class="headerlink" title="Account About"></a>Account About</h3><ul><li>登录后台需要修改下默认密码</li><li><code>docker exec -it [容器id] /bin/bash</code> 进入容器</li><li>ArchiveBox 修改用户信息需要在非 root 账户下</li><li>进入容器后默认的是 root 用户,需要创建新用户<ul><li><code>useradd -d /home/elias elias</code></li><li><code>passwd elias</code></li></ul></li><li><code>su elias</code> 接着切换用户执行操作</li><li><code>archivebox manage changepassword USERNAME</code> 修改账户密码</li><li><code>archivebox manage changepassword admin</code> 修改默认的 admin 密码<br><img src="/images/useArchiveBoxForDaily/Snipaste_2021-12-12_03-21-24.png" alt></li></ul><h2 id="Other"><a href="#Other" class="headerlink" title="Other"></a>Other</h2><ul><li><p>容器里需要给目录赋权限</p><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAIN"><figure class="iseeu highlight /plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">$ archivebox manage changepassword USERNAME</span><br><span class="line">[i] [2021-12-11 19:17:32] ArchiveBox v0.6.2: archivebox manage changepassword USERNAME</span><br><span class="line">    &gt; /data</span><br><span class="line"></span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File &quot;/usr/local/lib/python3.9/logging/config.py&quot;, line 564, in configure</span><br><span class="line">    handler = self.configure_handler(handlers[name])</span><br><span class="line">  File &quot;/usr/local/lib/python3.9/logging/config.py&quot;, line 745, in configure_handler</span><br><span class="line">    result = factory(**kwargs)</span><br><span class="line">  File &quot;/usr/local/lib/python3.9/logging/handlers.py&quot;, line 153, in __init__</span><br><span class="line">    BaseRotatingHandler.__init__(self, filename, mode, encoding=encoding,</span><br><span class="line">  File &quot;/usr/local/lib/python3.9/logging/handlers.py&quot;, line 58, in __init__</span><br><span class="line">    logging.FileHandler.__init__(self, filename, mode=mode,</span><br><span class="line">  File &quot;/usr/local/lib/python3.9/logging/__init__.py&quot;, line 1146, in __init__</span><br><span class="line">    StreamHandler.__init__(self, self._open())</span><br><span class="line">  File &quot;/usr/local/lib/python3.9/logging/__init__.py&quot;, line 1175, in _open</span><br><span class="line">    return open(self.baseFilename, self.mode, encoding=self.encoding,</span><br><span class="line">PermissionError: [Errno 13] Permission denied: &apos;/data/logs/errors.log&apos;</span><br></pre></td></tr></table></figure></div></li><li><p>切换到 root 账户, 到 <code>/data</code> 目录下 </p></li><li><code>chmod -R 777 ./</code> 给 data 目录下所有文件赋予权限</li></ul>]]></content>
       
       
       
@@ -35,9 +35,9 @@
       
         <tags>
             
-            <tag> CentOS </tag>
-            
             <tag> Docker </tag>
+            
+            <tag> CentOS </tag>
             
             <tag> Podman </tag>
             
@@ -180,9 +180,9 @@
       
         <tags>
             
-            <tag> Alibaba </tag>
-            
             <tag> Certificate </tag>
+            
+            <tag> Alibaba </tag>
             
         </tags>
       
@@ -266,9 +266,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> Docker </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Selfhost </tag>
             
@@ -413,9 +413,9 @@
       
         <tags>
             
-            <tag> Certificate </tag>
-            
             <tag> Microsoft </tag>
+            
+            <tag> Certificate </tag>
             
         </tags>
       
@@ -605,9 +605,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> Docker </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Windows </tag>
             
