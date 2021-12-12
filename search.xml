@@ -885,9 +885,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> RaspberryPi </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Nginx </tag>
             
@@ -1056,9 +1056,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> RaspberryPi </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Nginx </tag>
             
@@ -1543,9 +1543,9 @@
       
         <tags>
             
-            <tag> CentOS </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> CentOS </tag>
             
             <tag> SVN </tag>
             
