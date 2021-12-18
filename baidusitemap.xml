@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://www.orekiyuta.cn/archives/roboCopyInWin10TaskAbout/</loc>
+    <lastmod>2021-12-18</lastmod>
+  </url>  <url>
+    <loc>http://www.orekiyuta.cn/archives/WindowsSetting/</loc>
+    <lastmod>2021-12-18</lastmod>
+  </url>  <url>
     <loc>http://www.orekiyuta.cn/archives/IgotaRaspberryPi/</loc>
     <lastmod>2021-12-13</lastmod>
   </url>  <url>
@@ -32,9 +38,6 @@
     <lastmod>2021-12-04</lastmod>
   </url>  <url>
     <loc>http://www.orekiyuta.cn/archives/securityGroupOnTencentCVM/</loc>
-    <lastmod>2021-12-04</lastmod>
-  </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/WindowsSetting/</loc>
     <lastmod>2021-12-04</lastmod>
   </url>  <url>
     <loc>http://www.orekiyuta.cn/archives/getACPCertification/</loc>
@@ -118,10 +121,10 @@
     <loc>http://www.orekiyuta.cn/archives/NiceToUseVue/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/mysqlSyncToMariadb/</loc>
+    <loc>http://www.orekiyuta.cn/archives/mysqlSplitStringByProcedure/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/mysqlSplitStringByProcedure/</loc>
+    <loc>http://www.orekiyuta.cn/archives/mysqlSyncToMariadb/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
     <loc>http://www.orekiyuta.cn/archives/MySQLCrashCourse/</loc>
@@ -148,13 +151,13 @@
     <loc>http://www.orekiyuta.cn/archives/javastartrun/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
+    <loc>http://www.orekiyuta.cn/archives/JavaReview/</loc>
+    <lastmod>2021-08-19</lastmod>
+  </url>  <url>
     <loc>http://www.orekiyuta.cn/archives/JavaGenericTypes/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
     <loc>http://www.orekiyuta.cn/archives/JavaNotes/</loc>
-    <lastmod>2021-08-19</lastmod>
-  </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/JavaReview/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
     <loc>http://www.orekiyuta.cn/archives/Java-ArtificialSimulation/</loc>
@@ -202,10 +205,10 @@
     <loc>http://www.orekiyuta.cn/archives/DockerNote/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/corsOptionsRequest/</loc>
+    <loc>http://www.orekiyuta.cn/archives/djangoRun/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/djangoRun/</loc>
+    <loc>http://www.orekiyuta.cn/archives/corsOptionsRequest/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
     <loc>http://www.orekiyuta.cn/archives/CSS3KnowledegePoint/</loc>
