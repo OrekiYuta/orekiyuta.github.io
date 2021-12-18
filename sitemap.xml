@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.orekiyuta.cn/archives/roboCopyInWin10TaskAbout/</loc>
+    
+    <lastmod>2021-12-18T11:06:00.772Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.orekiyuta.cn/archives/WindowsSetting/</loc>
+    
+    <lastmod>2021-12-18T10:46:18.775Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.orekiyuta.cn/archives/IgotaRaspberryPi/</loc>
     
     <lastmod>2021-12-13T15:09:45.551Z</lastmod>
@@ -75,13 +89,6 @@
     <loc>http://www.orekiyuta.cn/archives/securityGroupOnTencentCVM/</loc>
     
     <lastmod>2021-12-04T10:08:14.940Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.orekiyuta.cn/archives/WindowsSetting/</loc>
-    
-    <lastmod>2021-12-04T08:29:11.036Z</lastmod>
     
   </url>
   
@@ -282,14 +289,14 @@
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/mysqlSyncToMariadb/</loc>
+    <loc>http://www.orekiyuta.cn/archives/mysqlSplitStringByProcedure/</loc>
     
     <lastmod>2021-08-19T20:21:18.019Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/mysqlSplitStringByProcedure/</loc>
+    <loc>http://www.orekiyuta.cn/archives/mysqlSyncToMariadb/</loc>
     
     <lastmod>2021-08-19T20:21:18.019Z</lastmod>
     
@@ -352,6 +359,13 @@
   </url>
   
   <url>
+    <loc>http://www.orekiyuta.cn/archives/JavaReview/</loc>
+    
+    <lastmod>2021-08-19T20:21:17.797Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.orekiyuta.cn/archives/JavaGenericTypes/</loc>
     
     <lastmod>2021-08-19T20:21:17.797Z</lastmod>
@@ -360,13 +374,6 @@
   
   <url>
     <loc>http://www.orekiyuta.cn/archives/JavaNotes/</loc>
-    
-    <lastmod>2021-08-19T20:21:17.797Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.orekiyuta.cn/archives/JavaReview/</loc>
     
     <lastmod>2021-08-19T20:21:17.797Z</lastmod>
     
@@ -478,14 +485,14 @@
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/corsOptionsRequest/</loc>
+    <loc>http://www.orekiyuta.cn/archives/djangoRun/</loc>
     
     <lastmod>2021-08-19T20:21:17.285Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.orekiyuta.cn/archives/djangoRun/</loc>
+    <loc>http://www.orekiyuta.cn/archives/corsOptionsRequest/</loc>
     
     <lastmod>2021-08-19T20:21:17.285Z</lastmod>
     
