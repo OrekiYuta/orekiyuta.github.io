@@ -97,9 +97,9 @@
     
     
     
-      <category term="CentOS" scheme="http://www.orekiyuta.cn/tags/CentOS/"/>
-    
       <category term="Docker" scheme="http://www.orekiyuta.cn/tags/Docker/"/>
+    
+      <category term="CentOS" scheme="http://www.orekiyuta.cn/tags/CentOS/"/>
     
       <category term="Podman" scheme="http://www.orekiyuta.cn/tags/Podman/"/>
     
@@ -279,9 +279,9 @@
     
     
     
-      <category term="Certificate" scheme="http://www.orekiyuta.cn/tags/Certificate/"/>
-    
       <category term="Alibaba" scheme="http://www.orekiyuta.cn/tags/Alibaba/"/>
+    
+      <category term="Certificate" scheme="http://www.orekiyuta.cn/tags/Certificate/"/>
     
   </entry>
   
