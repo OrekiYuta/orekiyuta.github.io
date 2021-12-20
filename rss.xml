@@ -6,7 +6,7 @@
   <link href="/rss.xml" rel="self"/>
   
   <link href="http://www.orekiyuta.cn/"/>
-  <updated>2021-12-18T11:06:00.772Z</updated>
+  <updated>2021-12-20T14:45:37.095Z</updated>
   <id>http://www.orekiyuta.cn/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Fiddler About Phone Proxy</title>
+    <link href="http://www.orekiyuta.cn/archives/fiddlerAboutPhoneProxy/"/>
+    <id>http://www.orekiyuta.cn/archives/fiddlerAboutPhoneProxy/</id>
+    <published>2021-12-20T14:13:40.000Z</published>
+    <updated>2021-12-20T14:45:37.095Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Scene"><a href="#Scene" class="headerlink" title="Scene"></a>Scene</h2><ul><li>Fiddler 手机抓包的一些设置</li><li>通过 Fiddler 获取手机应用的网络请求数据</li><li>不通端网络的设置方式</li></ul><a id="more"></a><h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><h3 id="外部网络-Fiddler-宿主机网络"><a href="#外部网络-Fiddler-宿主机网络" class="headerlink" title="外部网络 / Fiddler 宿主机网络"></a>外部网络 / Fiddler 宿主机网络</h3><ul><li>手机和 Fiddler 宿主机连接在同一个外部网络中</li><li>Fiddler 宿主机连接外部网络,然后宿主机开放热点, 手机连接该热点</li></ul><ol><li>然后在手机的 WLAN 连接里配置宿主机上 Fiddler 的代理地址和端口<ul><li><img src="/images/fiddlerAboutPhoneProxy/Screenshot_2021-12-20-22-31-01-945_com.android.se.jpg" alt></li></ul></li><li>连上后,手机浏览器打开该 代理地址和端口 下载证书</li><li>最后打开手机应用,即可在 Fiddler 里看到网络数据了 </li></ol><h3 id="手机共享网络"><a href="#手机共享网络" class="headerlink" title="手机共享网络"></a>手机共享网络</h3><ul><li>手机通过开启热点,把移动网络分享出来,然后宿主机连接该网络</li></ul><ol><li>打开手机移动网络设置,找到 APN , 设置代理地址和端口为宿主机上 Fiddler 的代理地址和端口<ul><li><img src="/images/fiddlerAboutPhoneProxy/Screenshot_2021-12-20-22-36-09-186_com.android.ph.jpg" alt></li><li><img src="/images/fiddlerAboutPhoneProxy/Screenshot_2021-12-20-22-36-22-323_com.android.se.jpg" alt></li><li><img src="/images/fiddlerAboutPhoneProxy/Screenshot_2021-12-20-22-36-43-946_com.android.se.jpg" alt></li></ul></li><li>最后打开手机应用,同样的可以在 Fiddler 里看到网络请求包了</li></ol><h2 id="Other"><a href="#Other" class="headerlink" title="Other"></a>Other</h2><ul><li>Fiddler 抓包的常规配置开启</li><li><img src="/images/fiddlerAboutPhoneProxy/Snipaste_2021-12-20_22-05-08.png" alt></li><li><img src="/images/fiddlerAboutPhoneProxy/Snipaste_2021-12-20_22-07-17.png" alt></li><li>下图右上角查看该代理地址信息</li><li><img src="/images/fiddlerAboutPhoneProxy/Snipaste_2021-12-20_22-07-49.png" alt></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Scene&quot;&gt;&lt;a href=&quot;#Scene&quot; class=&quot;headerlink&quot; title=&quot;Scene&quot;&gt;&lt;/a&gt;Scene&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Fiddler 手机抓包的一些设置&lt;/li&gt;
+&lt;li&gt;通过 Fiddler 获取手机应用的网络请求数据&lt;/li&gt;
+&lt;li&gt;不通端网络的设置方式&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="Fiddler" scheme="http://www.orekiyuta.cn/tags/Fiddler/"/>
+    
+      <category term="Proxy" scheme="http://www.orekiyuta.cn/tags/Proxy/"/>
+    
+  </entry>
   
   <entry>
     <title>RoboCopy In Win10 Task About(0x1/0x10)</title>
@@ -97,9 +124,9 @@
     
     
     
-      <category term="Docker" scheme="http://www.orekiyuta.cn/tags/Docker/"/>
-    
       <category term="CentOS" scheme="http://www.orekiyuta.cn/tags/CentOS/"/>
+    
+      <category term="Docker" scheme="http://www.orekiyuta.cn/tags/Docker/"/>
     
       <category term="Podman" scheme="http://www.orekiyuta.cn/tags/Podman/"/>
     
@@ -255,33 +282,6 @@
     
     
       <category term="MySQL" scheme="http://www.orekiyuta.cn/tags/MySQL/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Get ACP Certification</title>
-    <link href="http://www.orekiyuta.cn/archives/getACPCertification/"/>
-    <id>http://www.orekiyuta.cn/archives/getACPCertification/</id>
-    <published>2021-11-29T15:08:49.000Z</published>
-    <updated>2021-11-29T15:23:25.813Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="Prepare"><a href="#Prepare" class="headerlink" title="Prepare"></a>Prepare</h2><ul><li>Alibaba Cloud Certified Professional - Cloud Computing</li><li>Sign up =&gt; <a href="https://edu.aliyun.com/clouder/OfflineExam/detail/3086?token=9a7af9e452bbbef26b1b6d229d64b6c8" target="_blank" rel="noopener">阿里云认证专场考试报名</a></li><li>Exam on =&gt; <a href="https://edu.aliyun.com/clouder/my/clouderpackage?spm=5176.0.0.0.7caf28f8o5DvDQ&amp;type=acp" target="_blank" rel="noopener">阿里云云计算工程师ACP认证 (Alibaba Cloud Certified Professional - Cloud Computing)</a><h2 id="If-Pass"><a href="#If-Pass" class="headerlink" title="If Pass"></a>If Pass</h2></li><li>Check on =&gt; <a href="https://edu.aliyun.com/clouder/my/clouderpackage?spm=5176.0.0.0.7caf28f8o5DvDQ&amp;type=acp" target="_blank" rel="noopener">阿里云云计算工程师ACP认证 (Alibaba Cloud Certified Professional - Cloud Computing)</a><ul><li><img src="/images/getACPCertification/Snipaste_2021-11-29_23-14-39.png" alt></li></ul></li><li>Get the Certification<ul><li><img src="/images/getACPCertification/img_a6eb0073291d7e6bdf5174b95da57845.png" alt></li></ul></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;Prepare&quot;&gt;&lt;a href=&quot;#Prepare&quot; class=&quot;headerlink&quot; title=&quot;Prepare&quot;&gt;&lt;/a&gt;Prepare&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;Alibaba Cloud Certified Professional - Cloud
-      
-    
-    </summary>
-    
-    
-    
-      <category term="Certificate" scheme="http://www.orekiyuta.cn/tags/Certificate/"/>
-    
-      <category term="Alibaba" scheme="http://www.orekiyuta.cn/tags/Alibaba/"/>
     
   </entry>
   
