@@ -127,10 +127,10 @@
     <loc>http://www.orekiyuta.cn/archives/NiceToUseVue/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/mysqlSyncToMariadb/</loc>
+    <loc>http://www.orekiyuta.cn/archives/mysqlSplitStringByProcedure/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/mysqlSplitStringByProcedure/</loc>
+    <loc>http://www.orekiyuta.cn/archives/mysqlSyncToMariadb/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
     <loc>http://www.orekiyuta.cn/archives/MySQLCrashCourse/</loc>
@@ -157,13 +157,13 @@
     <loc>http://www.orekiyuta.cn/archives/javastartrun/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/JavaReview/</loc>
+    <loc>http://www.orekiyuta.cn/archives/JavaNotes/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
     <loc>http://www.orekiyuta.cn/archives/JavaGenericTypes/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/JavaNotes/</loc>
+    <loc>http://www.orekiyuta.cn/archives/JavaReview/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
     <loc>http://www.orekiyuta.cn/archives/Java-ArtificialSimulation/</loc>
@@ -244,10 +244,10 @@
     <loc>http://www.orekiyuta.cn/archives/batchNote/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/Ark-exploit-log/</loc>
+    <loc>http://www.orekiyuta.cn/archives/acerBiosResetPW/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/acerBiosResetPW/</loc>
+    <loc>http://www.orekiyuta.cn/archives/Ark-exploit-log/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>
 </urlset>
