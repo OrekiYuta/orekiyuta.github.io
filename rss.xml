@@ -124,9 +124,9 @@
     
     
     
-      <category term="Docker" scheme="http://www.orekiyuta.cn/tags/Docker/"/>
-    
       <category term="CentOS" scheme="http://www.orekiyuta.cn/tags/CentOS/"/>
+    
+      <category term="Docker" scheme="http://www.orekiyuta.cn/tags/Docker/"/>
     
       <category term="Podman" scheme="http://www.orekiyuta.cn/tags/Podman/"/>
     
