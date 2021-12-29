@@ -77,9 +77,9 @@
       
         <tags>
             
-            <tag> Docker </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Docker </tag>
             
             <tag> Podman </tag>
             
@@ -222,9 +222,9 @@
       
         <tags>
             
-            <tag> Certificate </tag>
-            
             <tag> Alibaba </tag>
+            
+            <tag> Certificate </tag>
             
         </tags>
       
@@ -308,9 +308,9 @@
       
         <tags>
             
-            <tag> Docker </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> Docker </tag>
             
             <tag> Selfhost </tag>
             
@@ -413,9 +413,9 @@
             
             <tag> Python </tag>
             
-            <tag> Github </tag>
-            
             <tag> Flask </tag>
+            
+            <tag> Github </tag>
             
         </tags>
       
@@ -455,9 +455,9 @@
       
         <tags>
             
-            <tag> Microsoft </tag>
-            
             <tag> Certificate </tag>
+            
+            <tag> Microsoft </tag>
             
         </tags>
       
@@ -550,9 +550,9 @@
       
         <tags>
             
-            <tag> Network </tag>
-            
             <tag> Ajax </tag>
+            
+            <tag> Network </tag>
             
         </tags>
       
@@ -649,9 +649,9 @@
       
         <tags>
             
-            <tag> Docker </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> Docker </tag>
             
             <tag> Windows </tag>
             
@@ -929,13 +929,13 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
-            <tag> JavaScript </tag>
-            
             <tag> RaspberryPi </tag>
             
+            <tag> Linux </tag>
+            
             <tag> Nginx </tag>
+            
+            <tag> JavaScript </tag>
             
             <tag> Selenium </tag>
             
@@ -945,11 +945,11 @@
             
             <tag> Python </tag>
             
+            <tag> Flask </tag>
+            
             <tag> Mariadb </tag>
             
             <tag> Chromium </tag>
-            
-            <tag> Flask </tag>
             
             <tag> BeautifulSoup </tag>
             
@@ -1100,9 +1100,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> RaspberryPi </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Nginx </tag>
             
@@ -1587,9 +1587,9 @@
       
         <tags>
             
-            <tag> CentOS </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> CentOS </tag>
             
             <tag> SVN </tag>
             
