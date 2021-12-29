@@ -287,9 +287,9 @@
       
         <tags>
             
-            <tag> Docker </tag>
-            
             <tag> Windows </tag>
+            
+            <tag> Docker </tag>
             
         </tags>
       
@@ -651,9 +651,9 @@
             
             <tag> Linux </tag>
             
-            <tag> Docker </tag>
-            
             <tag> Windows </tag>
+            
+            <tag> Docker </tag>
             
             <tag> Selfhost </tag>
             
@@ -929,9 +929,9 @@
       
         <tags>
             
-            <tag> RaspberryPi </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> RaspberryPi </tag>
             
             <tag> Nginx </tag>
             
@@ -1100,9 +1100,9 @@
       
         <tags>
             
-            <tag> RaspberryPi </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> RaspberryPi </tag>
             
             <tag> Nginx </tag>
             
@@ -1587,9 +1587,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> SVN </tag>
             
