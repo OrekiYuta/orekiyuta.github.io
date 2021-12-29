@@ -222,9 +222,9 @@
       
         <tags>
             
-            <tag> Alibaba </tag>
-            
             <tag> Certificate </tag>
+            
+            <tag> Alibaba </tag>
             
         </tags>
       
@@ -287,9 +287,9 @@
       
         <tags>
             
-            <tag> Windows </tag>
-            
             <tag> Docker </tag>
+            
+            <tag> Windows </tag>
             
         </tags>
       
@@ -455,9 +455,9 @@
       
         <tags>
             
-            <tag> Certificate </tag>
-            
             <tag> Microsoft </tag>
+            
+            <tag> Certificate </tag>
             
         </tags>
       
@@ -651,9 +651,9 @@
             
             <tag> Linux </tag>
             
-            <tag> Windows </tag>
-            
             <tag> Docker </tag>
+            
+            <tag> Windows </tag>
             
             <tag> Selfhost </tag>
             
@@ -931,11 +931,11 @@
             
             <tag> Linux </tag>
             
+            <tag> JavaScript </tag>
+            
             <tag> RaspberryPi </tag>
             
             <tag> Nginx </tag>
-            
-            <tag> JavaScript </tag>
             
             <tag> Selenium </tag>
             
