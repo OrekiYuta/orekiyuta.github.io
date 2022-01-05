@@ -96,9 +96,9 @@
       
         <tags>
             
-            <tag> Docker </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Docker </tag>
             
             <tag> Podman </tag>
             
@@ -241,9 +241,9 @@
       
         <tags>
             
-            <tag> Alibaba </tag>
-            
             <tag> Certificate </tag>
+            
+            <tag> Alibaba </tag>
             
         </tags>
       
@@ -327,9 +327,9 @@
       
         <tags>
             
-            <tag> Docker </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> Docker </tag>
             
             <tag> Selfhost </tag>
             
@@ -474,9 +474,9 @@
       
         <tags>
             
-            <tag> Certificate </tag>
-            
             <tag> Microsoft </tag>
+            
+            <tag> Certificate </tag>
             
         </tags>
       
@@ -668,9 +668,9 @@
       
         <tags>
             
-            <tag> Docker </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> Docker </tag>
             
             <tag> Windows </tag>
             
@@ -954,11 +954,11 @@
             
             <tag> Nginx </tag>
             
+            <tag> JavaScript </tag>
+            
             <tag> Selenium </tag>
             
             <tag> ChromeDriver </tag>
-            
-            <tag> JavaScript </tag>
             
             <tag> MySQL </tag>
             
@@ -966,9 +966,9 @@
             
             <tag> Flask </tag>
             
-            <tag> Mariadb </tag>
-            
             <tag> Chromium </tag>
+            
+            <tag> Mariadb </tag>
             
             <tag> BeautifulSoup </tag>
             
@@ -1469,9 +1469,9 @@
       
         <tags>
             
-            <tag> ES6 </tag>
-            
             <tag> ECMAScript </tag>
+            
+            <tag> ES6 </tag>
             
         </tags>
       
