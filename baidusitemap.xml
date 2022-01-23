@@ -115,10 +115,10 @@
     <loc>http://www.orekiyuta.cn/archives/scrapyLearningLog/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/pythonGetFunctionFromString/</loc>
+    <loc>http://www.orekiyuta.cn/archives/pythonVenvMigrateInvalid/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/pythonVenvMigrateInvalid/</loc>
+    <loc>http://www.orekiyuta.cn/archives/pythonGetFunctionFromString/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
     <loc>http://www.orekiyuta.cn/archives/pythonDependencySeparation/</loc>
@@ -163,10 +163,10 @@
     <loc>http://www.orekiyuta.cn/archives/JavaNotes/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/JavaGenericTypes/</loc>
+    <loc>http://www.orekiyuta.cn/archives/JavaReview/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/JavaReview/</loc>
+    <loc>http://www.orekiyuta.cn/archives/JavaGenericTypes/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
     <loc>http://www.orekiyuta.cn/archives/Java-ArtificialSimulation/</loc>
@@ -184,10 +184,10 @@
     <loc>http://www.orekiyuta.cn/archives/HowNetworksWorks/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/Hexo-Install-Migrate/</loc>
+    <loc>http://www.orekiyuta.cn/archives/HeadFirstJava/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/HeadFirstJava/</loc>
+    <loc>http://www.orekiyuta.cn/archives/Hexo-Install-Migrate/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
     <loc>http://www.orekiyuta.cn/archives/gitRemoteEndHungUpUnexpectedly/</loc>
@@ -202,25 +202,25 @@
     <loc>http://www.orekiyuta.cn/archives/getAZ-900Certification/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/fileSharingOnWin/</loc>
+    <loc>http://www.orekiyuta.cn/archives/flaskRun/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/flaskRun/</loc>
+    <loc>http://www.orekiyuta.cn/archives/fileSharingOnWin/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
     <loc>http://www.orekiyuta.cn/archives/DockerNote/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/djangoRun/</loc>
-    <lastmod>2021-08-19</lastmod>
-  </url>  <url>
     <loc>http://www.orekiyuta.cn/archives/corsOptionsRequest/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/CSS3KnowledegePoint/</loc>
+    <loc>http://www.orekiyuta.cn/archives/djangoRun/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
     <loc>http://www.orekiyuta.cn/archives/CSSFiveClassicLayouts/</loc>
+    <lastmod>2021-08-19</lastmod>
+  </url>  <url>
+    <loc>http://www.orekiyuta.cn/archives/CSS3KnowledegePoint/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
     <loc>http://www.orekiyuta.cn/archives/daemonBat/</loc>
@@ -247,10 +247,10 @@
     <loc>http://www.orekiyuta.cn/archives/batchNote/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/Ark-exploit-log/</loc>
+    <loc>http://www.orekiyuta.cn/archives/acerBiosResetPW/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
-    <loc>http://www.orekiyuta.cn/archives/acerBiosResetPW/</loc>
+    <loc>http://www.orekiyuta.cn/archives/Ark-exploit-log/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>
 </urlset>
