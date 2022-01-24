@@ -241,9 +241,9 @@
       
         <tags>
             
-            <tag> Certificate </tag>
-            
             <tag> Alibaba </tag>
+            
+            <tag> Certificate </tag>
             
         </tags>
       
@@ -432,9 +432,9 @@
             
             <tag> Python </tag>
             
-            <tag> Github </tag>
-            
             <tag> Flask </tag>
+            
+            <tag> Github </tag>
             
         </tags>
       
@@ -474,9 +474,9 @@
       
         <tags>
             
-            <tag> Microsoft </tag>
-            
             <tag> Certificate </tag>
+            
+            <tag> Microsoft </tag>
             
         </tags>
       
@@ -950,10 +950,6 @@
             
             <tag> Linux </tag>
             
-            <tag> RaspberryPi </tag>
-            
-            <tag> Nginx </tag>
-            
             <tag> Selenium </tag>
             
             <tag> ChromeDriver </tag>
@@ -977,6 +973,10 @@
             <tag> Gunicorn </tag>
             
             <tag> Crontab </tag>
+            
+            <tag> RaspberryPi </tag>
+            
+            <tag> Nginx </tag>
             
             <tag> ARM </tag>
             
