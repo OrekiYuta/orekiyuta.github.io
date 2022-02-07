@@ -948,11 +948,15 @@
       
         <tags>
             
+            <tag> Linux </tag>
+            
+            <tag> Selenium </tag>
+            
+            <tag> ChromeDriver </tag>
+            
             <tag> JavaScript </tag>
             
             <tag> RaspberryPi </tag>
-            
-            <tag> Linux </tag>
             
             <tag> Nginx </tag>
             
@@ -964,8 +968,6 @@
             
             <tag> Mariadb </tag>
             
-            <tag> Selenium </tag>
-            
             <tag> Chromium </tag>
             
             <tag> BeautifulSoup </tag>
@@ -975,8 +977,6 @@
             <tag> Gunicorn </tag>
             
             <tag> Crontab </tag>
-            
-            <tag> ChromeDriver </tag>
             
             <tag> ARM </tag>
             
@@ -1119,9 +1119,9 @@
       
         <tags>
             
-            <tag> RaspberryPi </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> RaspberryPi </tag>
             
             <tag> Nginx </tag>
             
@@ -1469,9 +1469,9 @@
       
         <tags>
             
-            <tag> ES6 </tag>
-            
             <tag> ECMAScript </tag>
+            
+            <tag> ES6 </tag>
             
         </tags>
       
@@ -1606,9 +1606,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> SVN </tag>
             
@@ -1631,13 +1631,13 @@
             
             <tag> Java </tag>
             
-            <tag> Selenium </tag>
-            
-            <tag> ChromeDriver </tag>
-            
             <tag> Maven </tag>
             
             <tag> Xpath </tag>
+            
+            <tag> Selenium </tag>
+            
+            <tag> ChromeDriver </tag>
             
         </tags>
       
