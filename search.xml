@@ -535,9 +535,9 @@
       
         <tags>
             
-            <tag> Hexo </tag>
-            
             <tag> Git </tag>
+            
+            <tag> Hexo </tag>
             
         </tags>
       
@@ -569,9 +569,9 @@
       
         <tags>
             
-            <tag> Ajax </tag>
-            
             <tag> Network </tag>
+            
+            <tag> Ajax </tag>
             
         </tags>
       
@@ -954,11 +954,11 @@
             
             <tag> Nginx </tag>
             
+            <tag> JavaScript </tag>
+            
             <tag> Selenium </tag>
             
             <tag> ChromeDriver </tag>
-            
-            <tag> JavaScript </tag>
             
             <tag> MySQL </tag>
             
@@ -1469,9 +1469,9 @@
       
         <tags>
             
-            <tag> ES6 </tag>
-            
             <tag> ECMAScript </tag>
+            
+            <tag> ES6 </tag>
             
         </tags>
       
@@ -1566,9 +1566,9 @@
       
         <tags>
             
-            <tag> Hexo </tag>
-            
             <tag> Git </tag>
+            
+            <tag> Hexo </tag>
             
         </tags>
       
