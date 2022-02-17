@@ -535,9 +535,9 @@
       
         <tags>
             
-            <tag> Hexo </tag>
-            
             <tag> Git </tag>
+            
+            <tag> Hexo </tag>
             
         </tags>
       
@@ -952,6 +952,10 @@
             
             <tag> JavaScript </tag>
             
+            <tag> RaspberryPi </tag>
+            
+            <tag> Nginx </tag>
+            
             <tag> Selenium </tag>
             
             <tag> ChromeDriver </tag>
@@ -961,10 +965,6 @@
             <tag> Python </tag>
             
             <tag> Flask </tag>
-            
-            <tag> RaspberryPi </tag>
-            
-            <tag> Nginx </tag>
             
             <tag> Mariadb </tag>
             
@@ -1566,9 +1566,9 @@
       
         <tags>
             
-            <tag> Hexo </tag>
-            
             <tag> Git </tag>
+            
+            <tag> Hexo </tag>
             
         </tags>
       
