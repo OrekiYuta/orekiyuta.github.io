@@ -96,9 +96,9 @@
       
         <tags>
             
-            <tag> CentOS </tag>
-            
             <tag> Docker </tag>
+            
+            <tag> CentOS </tag>
             
             <tag> Podman </tag>
             
@@ -241,9 +241,9 @@
       
         <tags>
             
-            <tag> Certificate </tag>
-            
             <tag> Alibaba </tag>
+            
+            <tag> Certificate </tag>
             
         </tags>
       
@@ -474,9 +474,9 @@
       
         <tags>
             
-            <tag> Microsoft </tag>
-            
             <tag> Certificate </tag>
+            
+            <tag> Microsoft </tag>
             
         </tags>
       
@@ -948,17 +948,17 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
-            <tag> RaspberryPi </tag>
-            
-            <tag> Nginx </tag>
-            
             <tag> JavaScript </tag>
             
             <tag> Selenium </tag>
             
             <tag> ChromeDriver </tag>
+            
+            <tag> RaspberryPi </tag>
+            
+            <tag> Linux </tag>
+            
+            <tag> Nginx </tag>
             
             <tag> MySQL </tag>
             
@@ -1119,9 +1119,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> RaspberryPi </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Nginx </tag>
             
@@ -1606,9 +1606,9 @@
       
         <tags>
             
-            <tag> CentOS </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> CentOS </tag>
             
             <tag> SVN </tag>
             
