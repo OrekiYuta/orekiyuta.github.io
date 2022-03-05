@@ -6,7 +6,7 @@
   <link href="/rss.xml" rel="self"/>
   
   <link href="http://www.orekiyuta.cn/"/>
-  <updated>2022-01-03T07:34:46.227Z</updated>
+  <updated>2022-03-05T08:44:48.052Z</updated>
   <id>http://www.orekiyuta.cn/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>LightCVM and DB in Tencent Cloud</title>
+    <link href="http://www.orekiyuta.cn/archives/lightCVMAndDBinTencentCloud/"/>
+    <id>http://www.orekiyuta.cn/archives/lightCVMAndDBinTencentCloud/</id>
+    <published>2022-03-05T08:30:55.000Z</published>
+    <updated>2022-03-05T08:44:48.052Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Scene"><a href="#Scene" class="headerlink" title="Scene"></a>Scene</h2><ul><li>在使用轻量级应用服务器的时候发现连接不上数据库</li><li>查阅得知,腾讯云内部轻量服务器和云数据库默认内网是不通的<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2></li><li>到轻量级应用服务器 console 选择 内网互联 tab , 然后选择区域 “关联云联网” <ul><li><img src="/images/lightCVMAndDBinTencentCloud/Snipaste_2022-03-05_16-38-12.png" alt></li></ul></li><li>填写信息建立关联后,到 私有网络的云联网中进行确认配置即可<ul><li><img src="/images/lightCVMAndDBinTencentCloud/Snipaste_2022-03-05_16-41-01.png" alt></li></ul></li><li>值得注意的一点是，<strong>云联网的设备是需要付费的，但是如果设备在同一个地域就不需要收费</strong>（如：上海一区和上海五区是同一个地域）<h2 id="Other"><a href="#Other" class="headerlink" title="Other"></a>Other</h2></li><li>👉 <a href="https://cloud.tencent.com/document/product/1207/56847" target="_blank" rel="noopener">内网互联</a></li><li>👉 <a href="https://cloud.tencent.com/document/product/877" target="_blank" rel="noopener">云联网</a></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;Scene&quot;&gt;&lt;a href=&quot;#Scene&quot; class=&quot;headerlink&quot; title=&quot;Scene&quot;&gt;&lt;/a&gt;Scene&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;在使用轻量级应用服务器的时候发现连接不上数据库&lt;/li&gt;
+&lt;li&gt;查阅得知,腾讯云内部轻量服务器和云数据
+      
+    
+    </summary>
+    
+    
+    
+      <category term="CloudServer" scheme="http://www.orekiyuta.cn/tags/CloudServer/"/>
+    
+  </entry>
   
   <entry>
     <title>Something About VMware</title>
@@ -147,9 +173,9 @@
     
     
     
-      <category term="CentOS" scheme="http://www.orekiyuta.cn/tags/CentOS/"/>
-    
       <category term="Docker" scheme="http://www.orekiyuta.cn/tags/Docker/"/>
+    
+      <category term="CentOS" scheme="http://www.orekiyuta.cn/tags/CentOS/"/>
     
       <category term="Podman" scheme="http://www.orekiyuta.cn/tags/Podman/"/>
     
@@ -258,28 +284,6 @@
       <category term="vue.js" scheme="http://www.orekiyuta.cn/tags/vue-js/"/>
     
       <category term="Yarn" scheme="http://www.orekiyuta.cn/tags/Yarn/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>SecurityGroup On TencentCVM</title>
-    <link href="http://www.orekiyuta.cn/archives/securityGroupOnTencentCVM/"/>
-    <id>http://www.orekiyuta.cn/archives/securityGroupOnTencentCVM/</id>
-    <published>2021-12-04T09:44:09.000Z</published>
-    <updated>2021-12-04T10:08:14.940Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="Scene"><a href="#Scene" class="headerlink" title="Scene"></a>Scene</h2><ul><li>在云服务器上部署了服务，开放端口配置注意点<a id="more"></a></li></ul><h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><ul><li>以下为 腾讯云CVM 为例说明</li></ul><ol><li>先找到自己的机器,并找到安全组选项,并新建一个随意的安全组<ul><li><img src="/images/securityGroupOnTencentCVM/Snipaste_2021-12-04_17-51-56.png" alt></li></ul></li><li>新建完后,点击修改规则<ul><li><img src="/images/securityGroupOnTencentCVM/Snipaste_2021-12-04_17-53-32.png" alt></li></ul></li><li>让外部访问,设置入站规则即可<ul><li><img src="/images/securityGroupOnTencentCVM/Snipaste_2021-12-04_17-56-04.png" alt></li><li><img src="/images/securityGroupOnTencentCVM/Snipaste_2021-12-04_17-56-52.png" alt></li></ul></li><li>最后设置一下,关联实例，把需要开放以上规则的机器配置上<br> Snipaste_2021-12-04_17-57-56.png</li></ol><ul><li>以下为机器内的服务的启动配置说明</li></ul><ol><li><p>正常操作了以上的步骤,端口即是正常开放了,</p><ul><li>telnet 能否连通,还需要机器内的端口监听正确</li></ul></li><li><p>比如以下情况,在外部是 telnet 不通的</p><ul><li><img src="/images/securityGroupOnTencentCVM/Snipaste_2021-12-04_18-03-22.png" alt></li><li>因为服务监听的是机器内本地(127.0.0.1)的端口，没法响应外部(0.0.0.0)请求</li><li>上图的服务,限制了只有来源IP为127.0.0.1才可以访问，其他IP无法访问，因此是无法telnet成功</li></ul></li><li><p>正确的方式是把服务启动修改为0.0.0.0，允许所有IP即可</p></li><li>或者保持以上的本地监听(127.0.0.1),再配置 Nginx,通过Nginx代理监听</li></ol>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;Scene&quot;&gt;&lt;a href=&quot;#Scene&quot; class=&quot;headerlink&quot; title=&quot;Scene&quot;&gt;&lt;/a&gt;Scene&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;在云服务器上部署了服务，开放端口配置注意点
-    
-    </summary>
-    
-    
-    
-      <category term="CloudServer" scheme="http://www.orekiyuta.cn/tags/CloudServer/"/>
     
   </entry>
   

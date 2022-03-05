@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>LightCVM and DB in Tencent Cloud</title>
+      <link href="/archives/lightCVMAndDBinTencentCloud/"/>
+      <url>/archives/lightCVMAndDBinTencentCloud/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Scene"><a href="#Scene" class="headerlink" title="Scene"></a>Scene</h2><ul><li>在使用轻量级应用服务器的时候发现连接不上数据库</li><li>查阅得知,腾讯云内部轻量服务器和云数据库默认内网是不通的<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2></li><li>到轻量级应用服务器 console 选择 内网互联 tab , 然后选择区域 “关联云联网” <ul><li><img src="/images/lightCVMAndDBinTencentCloud/Snipaste_2022-03-05_16-38-12.png" alt></li></ul></li><li>填写信息建立关联后,到 私有网络的云联网中进行确认配置即可<ul><li><img src="/images/lightCVMAndDBinTencentCloud/Snipaste_2022-03-05_16-41-01.png" alt></li></ul></li><li>值得注意的一点是，<strong>云联网的设备是需要付费的，但是如果设备在同一个地域就不需要收费</strong>（如：上海一区和上海五区是同一个地域）<h2 id="Other"><a href="#Other" class="headerlink" title="Other"></a>Other</h2></li><li>👉 <a href="https://cloud.tencent.com/document/product/1207/56847" target="_blank" rel="noopener">内网互联</a></li><li>👉 <a href="https://cloud.tencent.com/document/product/877" target="_blank" rel="noopener">云联网</a></li></ul>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> CloudServer </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Something About VMware</title>
       <link href="/archives/somethingAboutVmware/"/>
       <url>/archives/somethingAboutVmware/</url>
@@ -96,9 +115,9 @@
       
         <tags>
             
-            <tag> CentOS </tag>
-            
             <tag> Docker </tag>
+            
+            <tag> CentOS </tag>
             
             <tag> Podman </tag>
             
@@ -241,9 +260,9 @@
       
         <tags>
             
-            <tag> Alibaba </tag>
-            
             <tag> Certificate </tag>
+            
+            <tag> Alibaba </tag>
             
         </tags>
       
@@ -327,9 +346,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> Docker </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Selfhost </tag>
             
@@ -474,9 +493,9 @@
       
         <tags>
             
-            <tag> Certificate </tag>
-            
             <tag> Microsoft </tag>
+            
+            <tag> Certificate </tag>
             
         </tags>
       
@@ -668,9 +687,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> Docker </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Windows </tag>
             
@@ -950,15 +969,15 @@
             
             <tag> Linux </tag>
             
-            <tag> RaspberryPi </tag>
-            
-            <tag> Nginx </tag>
+            <tag> JavaScript </tag>
             
             <tag> Selenium </tag>
             
             <tag> ChromeDriver </tag>
             
-            <tag> JavaScript </tag>
+            <tag> RaspberryPi </tag>
+            
+            <tag> Nginx </tag>
             
             <tag> MySQL </tag>
             
