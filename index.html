@@ -304,6 +304,163 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.orekiyuta.cn/archives/lightCVMAndDBinTencentCloud/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Orekiyuta">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Canoe">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/archives/lightCVMAndDBinTencentCloud/" itemprop="url">LightCVM and DB in Tencent Cloud</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2022-03-05T16:30:55+08:00">
+                2022-03-05 => 16:30:55
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                  <span class="post-meta-divider">|</span>
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                
+                <span title="Words count in article">
+                  169
+                </span>
+              
+
+              
+
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="Scene"><a href="#Scene" class="headerlink" title="Scene"></a>Scene</h2><ul>
+<li>在使用轻量级应用服务器的时候发现连接不上数据库</li>
+<li>查阅得知,腾讯云内部轻量服务器和云数据库默认内网是不通的<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2></li>
+<li>到轻量级应用服务器 console 选择 内网互联 tab , 然后选择区域 “关联云联网” <ul>
+<li><img src="/images/lightCVMAndDBinTencentCloud/Snipaste_2022-03-05_16-38-12.png" alt></li>
+</ul>
+</li>
+<li>填写信息建立关联后,到 私有网络的云联网中进行确认配置即可<ul>
+<li><img src="/images/lightCVMAndDBinTencentCloud/Snipaste_2022-03-05_16-41-01.png" alt></li>
+</ul>
+</li>
+<li>值得注意的一点是，<strong>云联网的设备是需要付费的，但是如果设备在同一个地域就不需要收费</strong>（如：上海一区和上海五区是同一个地域）<h2 id="Other"><a href="#Other" class="headerlink" title="Other"></a>Other</h2></li>
+<li>👉 <a href="https://cloud.tencent.com/document/product/1207/56847" target="_blank" rel="noopener">内网互联</a></li>
+<li>👉 <a href="https://cloud.tencent.com/document/product/877" target="_blank" rel="noopener">云联网</a></li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+     <div>
+      
+     </div>
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://www.orekiyuta.cn/archives/somethingAboutVmware/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1652,154 +1809,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.orekiyuta.cn/archives/securityGroupOnTencentCVM/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Orekiyuta">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/uploads/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Canoe">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/archives/securityGroupOnTencentCVM/" itemprop="url">SecurityGroup On TencentCVM</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2021-12-04T17:44:09+08:00">
-                2021-12-04 => 17:44:09
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                  <span class="post-meta-divider">|</span>
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Words count in article&#58;</span>
-                
-                <span title="Words count in article">
-                  301
-                </span>
-              
-
-              
-
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="Scene"><a href="#Scene" class="headerlink" title="Scene"></a>Scene</h2><ul>
-<li>在云服务器上部署了服务，开放端口配置注意点
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/archives/securityGroupOnTencentCVM/" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </li></ul></div>
-    
-    
-    
-
-    
-
-    
-
-    
-     <div>
-      
-     </div>
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -2125,7 +2134,7 @@ if(canvas.getContext){
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">84</span>
+                  <span class="site-state-item-count">85</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -2212,7 +2221,7 @@ if(canvas.getContext){
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">98.4k</span>
+    <span title="Site words total count">98.6k</span>
   
 </div>
 
