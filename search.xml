@@ -115,9 +115,9 @@
       
         <tags>
             
-            <tag> Docker </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Docker </tag>
             
             <tag> Podman </tag>
             
@@ -260,9 +260,9 @@
       
         <tags>
             
-            <tag> Certificate </tag>
-            
             <tag> Alibaba </tag>
+            
+            <tag> Certificate </tag>
             
         </tags>
       
@@ -346,9 +346,9 @@
       
         <tags>
             
-            <tag> Docker </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> Docker </tag>
             
             <tag> Selfhost </tag>
             
@@ -493,9 +493,9 @@
       
         <tags>
             
-            <tag> Microsoft </tag>
-            
             <tag> Certificate </tag>
+            
+            <tag> Microsoft </tag>
             
         </tags>
       
@@ -687,9 +687,9 @@
       
         <tags>
             
-            <tag> Docker </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> Docker </tag>
             
             <tag> Windows </tag>
             
@@ -967,17 +967,17 @@
       
         <tags>
             
-            <tag> RaspberryPi </tag>
-            
             <tag> Linux </tag>
             
-            <tag> Nginx </tag>
+            <tag> RaspberryPi </tag>
             
-            <tag> JavaScript </tag>
+            <tag> Nginx </tag>
             
             <tag> Selenium </tag>
             
             <tag> ChromeDriver </tag>
+            
+            <tag> JavaScript </tag>
             
             <tag> MySQL </tag>
             
@@ -1138,9 +1138,9 @@
       
         <tags>
             
-            <tag> RaspberryPi </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> RaspberryPi </tag>
             
             <tag> Nginx </tag>
             
@@ -1488,9 +1488,9 @@
       
         <tags>
             
-            <tag> ES6 </tag>
-            
             <tag> ECMAScript </tag>
+            
+            <tag> ES6 </tag>
             
         </tags>
       
@@ -1625,9 +1625,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> SVN </tag>
             
