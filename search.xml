@@ -115,9 +115,9 @@
       
         <tags>
             
-            <tag> CentOS </tag>
-            
             <tag> Docker </tag>
+            
+            <tag> CentOS </tag>
             
             <tag> Podman </tag>
             
@@ -346,9 +346,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> Docker </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Selfhost </tag>
             
@@ -687,9 +687,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> Docker </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Windows </tag>
             
@@ -973,13 +973,13 @@
             
             <tag> Nginx </tag>
             
-            <tag> JavaScript </tag>
-            
             <tag> Selenium </tag>
             
             <tag> ChromeDriver </tag>
             
             <tag> MySQL </tag>
+            
+            <tag> JavaScript </tag>
             
             <tag> Python </tag>
             
@@ -1427,9 +1427,9 @@
       
         <tags>
             
-            <tag> JavaScript </tag>
-            
             <tag> ECMAScript </tag>
+            
+            <tag> JavaScript </tag>
             
             <tag> TypeScript </tag>
             
@@ -1488,9 +1488,9 @@
       
         <tags>
             
-            <tag> ECMAScript </tag>
-            
             <tag> ES6 </tag>
+            
+            <tag> ECMAScript </tag>
             
         </tags>
       
