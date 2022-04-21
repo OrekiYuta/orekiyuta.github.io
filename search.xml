@@ -115,9 +115,9 @@
       
         <tags>
             
-            <tag> Docker </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Docker </tag>
             
             <tag> Podman </tag>
             
@@ -325,9 +325,9 @@
       
         <tags>
             
-            <tag> Docker </tag>
-            
             <tag> Windows </tag>
+            
+            <tag> Docker </tag>
             
         </tags>
       
@@ -346,9 +346,9 @@
       
         <tags>
             
-            <tag> Docker </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> Docker </tag>
             
             <tag> Selfhost </tag>
             
@@ -449,9 +449,9 @@
       
         <tags>
             
-            <tag> Python </tag>
-            
             <tag> Flask </tag>
+            
+            <tag> Python </tag>
             
             <tag> Github </tag>
             
@@ -687,11 +687,11 @@
       
         <tags>
             
-            <tag> Docker </tag>
-            
             <tag> Linux </tag>
             
             <tag> Windows </tag>
+            
+            <tag> Docker </tag>
             
             <tag> Selfhost </tag>
             
@@ -868,9 +868,9 @@
       
         <tags>
             
-            <tag> Django </tag>
-            
             <tag> Python </tag>
+            
+            <tag> Django </tag>
             
         </tags>
       
@@ -981,13 +981,13 @@
             
             <tag> MySQL </tag>
             
-            <tag> Python </tag>
-            
             <tag> Flask </tag>
             
-            <tag> Mariadb </tag>
+            <tag> Python </tag>
             
             <tag> Chromium </tag>
+            
+            <tag> Mariadb </tag>
             
             <tag> BeautifulSoup </tag>
             
@@ -1035,9 +1035,9 @@
       
         <tags>
             
-            <tag> Python </tag>
-            
             <tag> Flask </tag>
+            
+            <tag> Python </tag>
             
         </tags>
       
@@ -1488,9 +1488,9 @@
       
         <tags>
             
-            <tag> ES6 </tag>
-            
             <tag> ECMAScript </tag>
+            
+            <tag> ES6 </tag>
             
         </tags>
       
