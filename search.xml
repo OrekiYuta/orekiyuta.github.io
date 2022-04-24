@@ -115,9 +115,9 @@
       
         <tags>
             
-            <tag> CentOS </tag>
-            
             <tag> Docker </tag>
+            
+            <tag> CentOS </tag>
             
             <tag> Podman </tag>
             
@@ -325,9 +325,9 @@
       
         <tags>
             
-            <tag> Windows </tag>
-            
             <tag> Docker </tag>
+            
+            <tag> Windows </tag>
             
         </tags>
       
@@ -346,9 +346,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> Docker </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Selfhost </tag>
             
@@ -407,9 +407,9 @@
       
         <tags>
             
-            <tag> Network </tag>
-            
             <tag> LAN </tag>
+            
+            <tag> Network </tag>
             
         </tags>
       
@@ -422,7 +422,7 @@
       <link href="/archives/githubUnsupportPassWordAuthentication/"/>
       <url>/archives/githubUnsupportPassWordAuthentication/</url>
       
-        <content type="html"><![CDATA[<h2 id="Sence"><a href="#Sence" class="headerlink" title="Sence"></a>Sence</h2><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="SHELL"><figure class="iseeu highlight /shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.</span><br><span class="line">remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.</span><br><span class="line">fatal: unable to access 'https://github.com/xxx/xxx.github.io.git/': The requested URL returned error: 403</span><br><span class="line">[41mFATAL[49m Something's wrong. Maybe you can find the solution here: [4mhttp://hexo.io/docs/troubleshooting.html[24m</span><br></pre></td></tr></table></figure></div><h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><ul><li><p>Hexo =&gt; _config.yaml</p>  <div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="YAML"><figure class="iseeu highlight /yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="attr">    type:</span> <span class="string">git</span></span><br><span class="line">    <span class="comment"># repo: https://github.com/OrekiYuta/OrekiYuta.github.io.git</span></span><br><span class="line"><span class="attr">    repo:</span> <span class="string">git@github.com:OrekiYuta/orekiyuta.github.io.git</span></span><br><span class="line"><span class="attr">    branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure></div></li><li><p>👉 <a href="https://www.orekiyuta.cn/archives/Hexo-Install-Migrate/">Github SSH</a></p></li></ul>]]></content>
+        <content type="html"><![CDATA[<h2 id="Sence"><a href="#Sence" class="headerlink" title="Sence"></a>Sence</h2><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="SHELL"><figure class="iseeu highlight /shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.</span><br><span class="line">remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.</span><br><span class="line">fatal: unable to access 'https://github.com/xxx/xxx.github.io.git/': The requested URL returned error: 403</span><br><span class="line">[41mFATAL[49m Something's wrong. Maybe you can find the solution here: [4mhttp://hexo.io/docs/troubleshooting.html[24m</span><br></pre></td></tr></table></figure></div><h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><ul><li><p>Hexo =&gt; _config.yaml</p>  <div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="YAML"><figure class="iseeu highlight /yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="attr">    type:</span> <span class="string">git</span></span><br><span class="line">    <span class="comment"># repo: https://github.com/OrekiYuta/OrekiYuta.github.io.git</span></span><br><span class="line"><span class="attr">    repo:</span> <span class="string">git@github.com:OrekiYuta/orekiyuta.github.io.git</span></span><br><span class="line"><span class="attr">    branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure></div></li><li><p>👉 <a href="https://www.orekiyuta.cn/archives/Hexo-Install-Migrate/" target="_blank" rel="noopener">Github SSH</a></p></li></ul>]]></content>
       
       
       
@@ -554,9 +554,9 @@
       
         <tags>
             
-            <tag> Hexo </tag>
-            
             <tag> Git </tag>
+            
+            <tag> Hexo </tag>
             
         </tags>
       
@@ -588,9 +588,9 @@
       
         <tags>
             
-            <tag> Ajax </tag>
-            
             <tag> Network </tag>
+            
+            <tag> Ajax </tag>
             
         </tags>
       
@@ -687,11 +687,11 @@
       
         <tags>
             
+            <tag> Docker </tag>
+            
             <tag> Linux </tag>
             
             <tag> Windows </tag>
-            
-            <tag> Docker </tag>
             
             <tag> Selfhost </tag>
             
@@ -973,11 +973,11 @@
             
             <tag> Nginx </tag>
             
-            <tag> JavaScript </tag>
-            
             <tag> Selenium </tag>
             
             <tag> ChromeDriver </tag>
+            
+            <tag> JavaScript </tag>
             
             <tag> MySQL </tag>
             
@@ -985,9 +985,9 @@
             
             <tag> Flask </tag>
             
-            <tag> Mariadb </tag>
-            
             <tag> Chromium </tag>
+            
+            <tag> Mariadb </tag>
             
             <tag> BeautifulSoup </tag>
             
@@ -1585,9 +1585,9 @@
       
         <tags>
             
-            <tag> Hexo </tag>
-            
             <tag> Git </tag>
+            
+            <tag> Hexo </tag>
             
         </tags>
       
