@@ -260,9 +260,9 @@
       
         <tags>
             
-            <tag> Certificate </tag>
-            
             <tag> Alibaba </tag>
+            
+            <tag> Certificate </tag>
             
         </tags>
       
@@ -407,9 +407,9 @@
       
         <tags>
             
-            <tag> LAN </tag>
-            
             <tag> Network </tag>
+            
+            <tag> LAN </tag>
             
         </tags>
       
@@ -493,9 +493,9 @@
       
         <tags>
             
-            <tag> Microsoft </tag>
-            
             <tag> Certificate </tag>
+            
+            <tag> Microsoft </tag>
             
         </tags>
       
@@ -588,9 +588,9 @@
       
         <tags>
             
-            <tag> Network </tag>
-            
             <tag> Ajax </tag>
+            
+            <tag> Network </tag>
             
         </tags>
       
@@ -973,13 +973,13 @@
             
             <tag> Nginx </tag>
             
+            <tag> JavaScript </tag>
+            
             <tag> Selenium </tag>
             
             <tag> ChromeDriver </tag>
             
             <tag> MySQL </tag>
-            
-            <tag> JavaScript </tag>
             
             <tag> Python </tag>
             
@@ -1427,9 +1427,9 @@
       
         <tags>
             
-            <tag> ECMAScript </tag>
-            
             <tag> JavaScript </tag>
+            
+            <tag> ECMAScript </tag>
             
             <tag> TypeScript </tag>
             
