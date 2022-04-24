@@ -5,9 +5,9 @@
   <subtitle>「ろくでなし」</subtitle>
   <link href="/rss.xml" rel="self"/>
   
-  <link href="http://www.orekiyuta.cn/"/>
+  <link href="http://canoe.orekiyuta.cn/"/>
   <updated>2022-03-15T14:53:21.369Z</updated>
-  <id>http://www.orekiyuta.cn/</id>
+  <id>http://canoe.orekiyuta.cn/</id>
   
   <author>
     <name>Orekiyuta</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>LightCVM and DB in Tencent Cloud</title>
-    <link href="http://www.orekiyuta.cn/archives/lightCVMAndDBinTencentCloud/"/>
-    <id>http://www.orekiyuta.cn/archives/lightCVMAndDBinTencentCloud/</id>
+    <link href="http://canoe.orekiyuta.cn/archives/lightCVMAndDBinTencentCloud/"/>
+    <id>http://canoe.orekiyuta.cn/archives/lightCVMAndDBinTencentCloud/</id>
     <published>2022-03-05T08:30:55.000Z</published>
     <updated>2022-03-15T14:53:21.369Z</updated>
     
@@ -35,14 +35,14 @@
     
     
     
-      <category term="CloudServer" scheme="http://www.orekiyuta.cn/tags/CloudServer/"/>
+      <category term="CloudServer" scheme="http://canoe.orekiyuta.cn/tags/CloudServer/"/>
     
   </entry>
   
   <entry>
     <title>Something About VMware</title>
-    <link href="http://www.orekiyuta.cn/archives/somethingAboutVmware/"/>
-    <id>http://www.orekiyuta.cn/archives/somethingAboutVmware/</id>
+    <link href="http://canoe.orekiyuta.cn/archives/somethingAboutVmware/"/>
+    <id>http://canoe.orekiyuta.cn/archives/somethingAboutVmware/</id>
     <published>2022-01-01T14:35:16.000Z</published>
     <updated>2022-01-03T07:34:46.227Z</updated>
     
@@ -58,14 +58,14 @@
     
     
     
-      <category term="VMware" scheme="http://www.orekiyuta.cn/tags/VMware/"/>
+      <category term="VMware" scheme="http://canoe.orekiyuta.cn/tags/VMware/"/>
     
   </entry>
   
   <entry>
     <title>Fiddler About Phone Proxy</title>
-    <link href="http://www.orekiyuta.cn/archives/fiddlerAboutPhoneProxy/"/>
-    <id>http://www.orekiyuta.cn/archives/fiddlerAboutPhoneProxy/</id>
+    <link href="http://canoe.orekiyuta.cn/archives/fiddlerAboutPhoneProxy/"/>
+    <id>http://canoe.orekiyuta.cn/archives/fiddlerAboutPhoneProxy/</id>
     <published>2021-12-20T14:13:40.000Z</published>
     <updated>2021-12-20T14:45:37.095Z</updated>
     
@@ -83,16 +83,16 @@
     
     
     
-      <category term="Fiddler" scheme="http://www.orekiyuta.cn/tags/Fiddler/"/>
+      <category term="Fiddler" scheme="http://canoe.orekiyuta.cn/tags/Fiddler/"/>
     
-      <category term="Proxy" scheme="http://www.orekiyuta.cn/tags/Proxy/"/>
+      <category term="Proxy" scheme="http://canoe.orekiyuta.cn/tags/Proxy/"/>
     
   </entry>
   
   <entry>
     <title>RoboCopy In Win10 Task About(0x1/0x10)</title>
-    <link href="http://www.orekiyuta.cn/archives/roboCopyInWin10TaskAbout/"/>
-    <id>http://www.orekiyuta.cn/archives/roboCopyInWin10TaskAbout/</id>
+    <link href="http://canoe.orekiyuta.cn/archives/roboCopyInWin10TaskAbout/"/>
+    <id>http://canoe.orekiyuta.cn/archives/roboCopyInWin10TaskAbout/</id>
     <published>2021-12-18T10:58:13.000Z</published>
     <updated>2021-12-18T11:06:00.772Z</updated>
     
@@ -116,16 +116,16 @@
     
     
     
-      <category term="Windows" scheme="http://www.orekiyuta.cn/tags/Windows/"/>
+      <category term="Windows" scheme="http://canoe.orekiyuta.cn/tags/Windows/"/>
     
-      <category term="RoboCopy" scheme="http://www.orekiyuta.cn/tags/RoboCopy/"/>
+      <category term="RoboCopy" scheme="http://canoe.orekiyuta.cn/tags/RoboCopy/"/>
     
   </entry>
   
   <entry>
     <title>Use ArchiveBox For Daily</title>
-    <link href="http://www.orekiyuta.cn/archives/useArchiveBoxForDaily/"/>
-    <id>http://www.orekiyuta.cn/archives/useArchiveBoxForDaily/</id>
+    <link href="http://canoe.orekiyuta.cn/archives/useArchiveBoxForDaily/"/>
+    <id>http://canoe.orekiyuta.cn/archives/useArchiveBoxForDaily/</id>
     <published>2021-12-11T19:20:46.000Z</published>
     <updated>2021-12-12T09:42:46.290Z</updated>
     
@@ -143,16 +143,16 @@
     
     
     
-      <category term="Docker" scheme="http://www.orekiyuta.cn/tags/Docker/"/>
+      <category term="Docker" scheme="http://canoe.orekiyuta.cn/tags/Docker/"/>
     
-      <category term="ArchiveBox" scheme="http://www.orekiyuta.cn/tags/ArchiveBox/"/>
+      <category term="ArchiveBox" scheme="http://canoe.orekiyuta.cn/tags/ArchiveBox/"/>
     
   </entry>
   
   <entry>
     <title>CentOS8 About Docker</title>
-    <link href="http://www.orekiyuta.cn/archives/centos8AboutDocker/"/>
-    <id>http://www.orekiyuta.cn/archives/centos8AboutDocker/</id>
+    <link href="http://canoe.orekiyuta.cn/archives/centos8AboutDocker/"/>
+    <id>http://canoe.orekiyuta.cn/archives/centos8AboutDocker/</id>
     <published>2021-12-11T19:03:25.000Z</published>
     <updated>2021-12-11T19:38:39.922Z</updated>
     
@@ -170,18 +170,18 @@
     
     
     
-      <category term="CentOS" scheme="http://www.orekiyuta.cn/tags/CentOS/"/>
+      <category term="Docker" scheme="http://canoe.orekiyuta.cn/tags/Docker/"/>
     
-      <category term="Docker" scheme="http://www.orekiyuta.cn/tags/Docker/"/>
+      <category term="CentOS" scheme="http://canoe.orekiyuta.cn/tags/CentOS/"/>
     
-      <category term="Podman" scheme="http://www.orekiyuta.cn/tags/Podman/"/>
+      <category term="Podman" scheme="http://canoe.orekiyuta.cn/tags/Podman/"/>
     
   </entry>
   
   <entry>
     <title>Apache Log4j2 Fixbug</title>
-    <link href="http://www.orekiyuta.cn/archives/log4j2Fixbug/"/>
-    <id>http://www.orekiyuta.cn/archives/log4j2Fixbug/</id>
+    <link href="http://canoe.orekiyuta.cn/archives/log4j2Fixbug/"/>
+    <id>http://canoe.orekiyuta.cn/archives/log4j2Fixbug/</id>
     <published>2021-12-11T14:25:22.000Z</published>
     <updated>2021-12-11T14:41:21.633Z</updated>
     
@@ -198,16 +198,16 @@
     
     
     
-      <category term="Java" scheme="http://www.orekiyuta.cn/tags/Java/"/>
+      <category term="Java" scheme="http://canoe.orekiyuta.cn/tags/Java/"/>
     
-      <category term="SRC" scheme="http://www.orekiyuta.cn/tags/SRC/"/>
+      <category term="SRC" scheme="http://canoe.orekiyuta.cn/tags/SRC/"/>
     
   </entry>
   
   <entry>
     <title>Raw Github Connection Refused</title>
-    <link href="http://www.orekiyuta.cn/archives/rawGithubConnectionRefused/"/>
-    <id>http://www.orekiyuta.cn/archives/rawGithubConnectionRefused/</id>
+    <link href="http://canoe.orekiyuta.cn/archives/rawGithubConnectionRefused/"/>
+    <id>http://canoe.orekiyuta.cn/archives/rawGithubConnectionRefused/</id>
     <published>2021-12-11T09:38:53.000Z</published>
     <updated>2021-12-11T15:05:22.487Z</updated>
     
@@ -224,14 +224,14 @@
     
     
     
-      <category term="Github" scheme="http://www.orekiyuta.cn/tags/Github/"/>
+      <category term="Github" scheme="http://canoe.orekiyuta.cn/tags/Github/"/>
     
   </entry>
   
   <entry>
     <title>Git Reset Commit Without Change Code</title>
-    <link href="http://www.orekiyuta.cn/archives/gitResetCommitWithoutChangeCode/"/>
-    <id>http://www.orekiyuta.cn/archives/gitResetCommitWithoutChangeCode/</id>
+    <link href="http://canoe.orekiyuta.cn/archives/gitResetCommitWithoutChangeCode/"/>
+    <id>http://canoe.orekiyuta.cn/archives/gitResetCommitWithoutChangeCode/</id>
     <published>2021-12-10T18:56:21.000Z</published>
     <updated>2021-12-10T19:07:05.953Z</updated>
     
@@ -250,16 +250,16 @@
     
     
     
-      <category term="Git" scheme="http://www.orekiyuta.cn/tags/Git/"/>
+      <category term="Git" scheme="http://canoe.orekiyuta.cn/tags/Git/"/>
     
-      <category term="Github" scheme="http://www.orekiyuta.cn/tags/Github/"/>
+      <category term="Github" scheme="http://canoe.orekiyuta.cn/tags/Github/"/>
     
   </entry>
   
   <entry>
     <title>Yarn Connetion Retrying</title>
-    <link href="http://www.orekiyuta.cn/archives/yarnConnetionRetrying/"/>
-    <id>http://www.orekiyuta.cn/archives/yarnConnetionRetrying/</id>
+    <link href="http://canoe.orekiyuta.cn/archives/yarnConnetionRetrying/"/>
+    <id>http://canoe.orekiyuta.cn/archives/yarnConnetionRetrying/</id>
     <published>2021-12-09T17:06:16.000Z</published>
     <updated>2021-12-11T15:08:30.206Z</updated>
     
@@ -276,11 +276,11 @@
     
     
     
-      <category term="Quasar" scheme="http://www.orekiyuta.cn/tags/Quasar/"/>
+      <category term="Quasar" scheme="http://canoe.orekiyuta.cn/tags/Quasar/"/>
     
-      <category term="vue.js" scheme="http://www.orekiyuta.cn/tags/vue-js/"/>
+      <category term="vue.js" scheme="http://canoe.orekiyuta.cn/tags/vue-js/"/>
     
-      <category term="Yarn" scheme="http://www.orekiyuta.cn/tags/Yarn/"/>
+      <category term="Yarn" scheme="http://canoe.orekiyuta.cn/tags/Yarn/"/>
     
   </entry>
   
