@@ -11,5 +11,5 @@ Disallow: /fonts/
 Disallow: /vendors/
 Disallow: /fancybox/
 
-Sitemap: http://www.orekiyuta.cn/sitemap.xml
-Sitemap: http://www.orekiyuta.cn/baidusitemap.xml
+Sitemap: http://canoe.orekiyuta.cn/sitemap.xml
+Sitemap: http://canoe.orekiyuta.cn/baidusitemap.xml
