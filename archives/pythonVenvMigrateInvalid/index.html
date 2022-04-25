@@ -993,7 +993,7 @@ function show_date_time(){
     e_minsold=(e_hrsold-hrsold)*60;
     minsold=setzero(Math.floor((e_hrsold-hrsold)*60));
     seconds=setzero(Math.floor((e_minsold-minsold)*60));
-    document.getElementById('days').innerHTML="Run -> "+daysold+" dd :"+hrsold+" hh :"+minsold+" mm :"+seconds+" ss";
+    document.getElementById('days').innerHTML="Run -> "+daysold+" DD :"+hrsold+" hh :"+minsold+" mm :"+seconds+" ss";
 }
 function setzero(i) {
     if (i<10) {
