@@ -325,9 +325,9 @@
       
         <tags>
             
-            <tag> Docker </tag>
-            
             <tag> Windows </tag>
+            
+            <tag> Docker </tag>
             
         </tags>
       
@@ -689,9 +689,9 @@
             
             <tag> Linux </tag>
             
-            <tag> Docker </tag>
-            
             <tag> Windows </tag>
+            
+            <tag> Docker </tag>
             
             <tag> Selfhost </tag>
             
@@ -969,11 +969,11 @@
             
             <tag> Linux </tag>
             
+            <tag> JavaScript </tag>
+            
             <tag> RaspberryPi </tag>
             
             <tag> Nginx </tag>
-            
-            <tag> JavaScript </tag>
             
             <tag> Selenium </tag>
             
