@@ -98,7 +98,7 @@
 <meta property="og:site_name" content="Canoe">
 <meta property="og:description" content="Scene 当磁盘不够用,或者想转移当前目录文件存储的时候,又不能改变当前文件结构的情况 Winodws 提供了文件路径映射功能。">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2021-10-23T22:36:22.746Z">
+<meta property="og:updated_time" content="2022-06-05T14:48:02.257Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Mklink in Win">
 <meta name="twitter:description" content="Scene 当磁盘不够用,或者想转移当前目录文件存储的时候,又不能改变当前文件结构的情况 Winodws 提供了文件路径映射功能。">
@@ -227,12 +227,12 @@
         </li>
       
         
-        <li class="menu-item menu-item-elib">
-          <a href="https://elib.orekiyuta.cn" rel="section">
+        <li class="menu-item menu-item-c24's">
+          <a href="https://www.orekiyuta.cn/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-book"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br>
             
-            Elib
+            c24's
           </a>
         </li>
       
@@ -398,7 +398,7 @@
 <h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="PLAIN"><figure class="iseeu highlight /plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">MKLINK [[/D] | [/H] | [/J]] Link Target</span><br><span class="line"></span><br><span class="line">        /D      创建目录符号链接。默认为文件</span><br><span class="line">                符号链接。</span><br><span class="line">        /H      创建硬链接而非符号链接。</span><br><span class="line">        /J      创建目录联接。</span><br><span class="line">        Link    指定新的符号链接名称。</span><br><span class="line">        Target  指定新链接引用的路径</span><br><span class="line">                (相对或绝对)。</span><br></pre></td></tr></table></figure></div>
 <ul>
 <li>用法：<code>mklink /j &quot;映射到这个目录&quot; &quot;想要映射过来的路径&quot;</code> =&gt; <code>mklink /J &quot;e:\test&quot; &quot;f:\test&quot;</code></li>
-<li>需要注意的是, <code>mklink /j &quot;目标路径&quot; &quot;源路径&quot;</code>, 目标路径实现不能存在,因为会创建该路径造成冲突,无法创建</li>
+<li>需要注意的是, <code>mklink /j &quot;目标路径&quot; &quot;源路径&quot;</code>, 目标路径事先不能存在,因为会创建该路径造成冲突,无法创建</li>
 <li><p>总之,常用的如下</p>
 <ul>
 <li><code>mklink /d &quot;d:\target&quot; &quot;d:\origin&quot;</code></li>

@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://canoe.orekiyuta.cn/archives/mklinkInWin/</loc>
+    
+    <lastmod>2022-06-05T14:48:02.257Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://canoe.orekiyuta.cn/archives/githubUnsupportPassWordAuthentication/</loc>
     
     <lastmod>2022-05-23T07:43:19.251Z</lastmod>
@@ -145,13 +152,6 @@
     <loc>http://canoe.orekiyuta.cn/archives/selfhostPhotoPrism/</loc>
     
     <lastmod>2021-10-24T13:53:05.370Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://canoe.orekiyuta.cn/archives/mklinkInWin/</loc>
-    
-    <lastmod>2021-10-23T22:36:22.746Z</lastmod>
     
   </url>
   
@@ -387,14 +387,14 @@
   </url>
   
   <url>
-    <loc>http://canoe.orekiyuta.cn/archives/JavaNotes/</loc>
+    <loc>http://canoe.orekiyuta.cn/archives/JavaGenericTypes/</loc>
     
     <lastmod>2021-08-19T20:21:17.797Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://canoe.orekiyuta.cn/archives/JavaGenericTypes/</loc>
+    <loc>http://canoe.orekiyuta.cn/archives/JavaNotes/</loc>
     
     <lastmod>2021-08-19T20:21:17.797Z</lastmod>
     
@@ -443,14 +443,14 @@
   </url>
   
   <url>
-    <loc>http://canoe.orekiyuta.cn/archives/Hexo-Install-Migrate/</loc>
+    <loc>http://canoe.orekiyuta.cn/archives/HeadFirstJava/</loc>
     
     <lastmod>2021-08-19T20:21:17.537Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://canoe.orekiyuta.cn/archives/HeadFirstJava/</loc>
+    <loc>http://canoe.orekiyuta.cn/archives/Hexo-Install-Migrate/</loc>
     
     <lastmod>2021-08-19T20:21:17.537Z</lastmod>
     
@@ -506,13 +506,6 @@
   </url>
   
   <url>
-    <loc>http://canoe.orekiyuta.cn/archives/djangoRun/</loc>
-    
-    <lastmod>2021-08-19T20:21:17.285Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://canoe.orekiyuta.cn/archives/corsOptionsRequest/</loc>
     
     <lastmod>2021-08-19T20:21:17.285Z</lastmod>
@@ -520,14 +513,21 @@
   </url>
   
   <url>
-    <loc>http://canoe.orekiyuta.cn/archives/CSS3KnowledegePoint/</loc>
+    <loc>http://canoe.orekiyuta.cn/archives/djangoRun/</loc>
+    
+    <lastmod>2021-08-19T20:21:17.285Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://canoe.orekiyuta.cn/archives/CSSFiveClassicLayouts/</loc>
     
     <lastmod>2021-08-19T20:21:17.284Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://canoe.orekiyuta.cn/archives/CSSFiveClassicLayouts/</loc>
+    <loc>http://canoe.orekiyuta.cn/archives/CSS3KnowledegePoint/</loc>
     
     <lastmod>2021-08-19T20:21:17.284Z</lastmod>
     
