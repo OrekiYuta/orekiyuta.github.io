@@ -115,9 +115,9 @@
       
         <tags>
             
-            <tag> CentOS </tag>
-            
             <tag> Docker </tag>
+            
+            <tag> CentOS </tag>
             
             <tag> Podman </tag>
             
@@ -260,9 +260,9 @@
       
         <tags>
             
-            <tag> Alibaba </tag>
-            
             <tag> Certificate </tag>
+            
+            <tag> Alibaba </tag>
             
         </tags>
       
@@ -346,9 +346,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> Docker </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Selfhost </tag>
             
@@ -451,9 +451,9 @@
             
             <tag> Python </tag>
             
-            <tag> Flask </tag>
-            
             <tag> Github </tag>
+            
+            <tag> Flask </tag>
             
         </tags>
       
@@ -493,9 +493,9 @@
       
         <tags>
             
-            <tag> Certificate </tag>
-            
             <tag> Microsoft </tag>
+            
+            <tag> Certificate </tag>
             
         </tags>
       
@@ -554,9 +554,9 @@
       
         <tags>
             
-            <tag> Git </tag>
-            
             <tag> Hexo </tag>
+            
+            <tag> Git </tag>
             
         </tags>
       
@@ -588,9 +588,9 @@
       
         <tags>
             
-            <tag> Ajax </tag>
-            
             <tag> Network </tag>
+            
+            <tag> Ajax </tag>
             
         </tags>
       
@@ -687,9 +687,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> Docker </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Windows </tag>
             
@@ -969,17 +969,17 @@
             
             <tag> Linux </tag>
             
-            <tag> RaspberryPi </tag>
-            
-            <tag> Nginx </tag>
-            
-            <tag> JavaScript </tag>
-            
             <tag> Selenium </tag>
             
             <tag> ChromeDriver </tag>
             
+            <tag> RaspberryPi </tag>
+            
+            <tag> Nginx </tag>
+            
             <tag> MySQL </tag>
+            
+            <tag> JavaScript </tag>
             
             <tag> Python </tag>
             
@@ -1585,9 +1585,9 @@
       
         <tags>
             
-            <tag> Git </tag>
-            
             <tag> Hexo </tag>
+            
+            <tag> Git </tag>
             
         </tags>
       
