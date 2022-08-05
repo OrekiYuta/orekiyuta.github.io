@@ -115,9 +115,9 @@
       
         <tags>
             
-            <tag> Docker </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Docker </tag>
             
             <tag> Podman </tag>
             
@@ -260,9 +260,9 @@
       
         <tags>
             
-            <tag> Certificate </tag>
-            
             <tag> Alibaba </tag>
+            
+            <tag> Certificate </tag>
             
         </tags>
       
@@ -325,9 +325,9 @@
       
         <tags>
             
-            <tag> Docker </tag>
-            
             <tag> Windows </tag>
+            
+            <tag> Docker </tag>
             
         </tags>
       
@@ -346,9 +346,9 @@
       
         <tags>
             
-            <tag> Docker </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> Docker </tag>
             
             <tag> Selfhost </tag>
             
@@ -493,9 +493,9 @@
       
         <tags>
             
-            <tag> Microsoft </tag>
-            
             <tag> Certificate </tag>
+            
+            <tag> Microsoft </tag>
             
         </tags>
       
@@ -687,11 +687,11 @@
       
         <tags>
             
-            <tag> Docker </tag>
-            
             <tag> Linux </tag>
             
             <tag> Windows </tag>
+            
+            <tag> Docker </tag>
             
             <tag> Selfhost </tag>
             
@@ -969,13 +969,13 @@
             
             <tag> Linux </tag>
             
-            <tag> RaspberryPi </tag>
-            
-            <tag> Nginx </tag>
-            
             <tag> Selenium </tag>
             
             <tag> ChromeDriver </tag>
+            
+            <tag> RaspberryPi </tag>
+            
+            <tag> Nginx </tag>
             
             <tag> JavaScript </tag>
             
@@ -1488,9 +1488,9 @@
       
         <tags>
             
-            <tag> ECMAScript </tag>
-            
             <tag> ES6 </tag>
+            
+            <tag> ECMAScript </tag>
             
         </tags>
       
