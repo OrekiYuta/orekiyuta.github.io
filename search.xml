@@ -260,9 +260,9 @@
       
         <tags>
             
-            <tag> Alibaba </tag>
-            
             <tag> Certificate </tag>
+            
+            <tag> Alibaba </tag>
             
         </tags>
       
@@ -493,9 +493,9 @@
       
         <tags>
             
-            <tag> Certificate </tag>
-            
             <tag> Microsoft </tag>
+            
+            <tag> Certificate </tag>
             
         </tags>
       
@@ -554,9 +554,9 @@
       
         <tags>
             
-            <tag> Hexo </tag>
-            
             <tag> Git </tag>
+            
+            <tag> Hexo </tag>
             
         </tags>
       
@@ -969,8 +969,6 @@
             
             <tag> Linux </tag>
             
-            <tag> JavaScript </tag>
-            
             <tag> Selenium </tag>
             
             <tag> ChromeDriver </tag>
@@ -978,6 +976,8 @@
             <tag> RaspberryPi </tag>
             
             <tag> Nginx </tag>
+            
+            <tag> JavaScript </tag>
             
             <tag> MySQL </tag>
             
@@ -1585,9 +1585,9 @@
       
         <tags>
             
-            <tag> Hexo </tag>
-            
             <tag> Git </tag>
+            
+            <tag> Hexo </tag>
             
         </tags>
       
