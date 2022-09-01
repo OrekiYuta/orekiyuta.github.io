@@ -449,11 +449,11 @@
       
         <tags>
             
-            <tag> Flask </tag>
-            
             <tag> Python </tag>
             
             <tag> Github </tag>
+            
+            <tag> Flask </tag>
             
         </tags>
       
@@ -588,9 +588,9 @@
       
         <tags>
             
-            <tag> Network </tag>
-            
             <tag> Ajax </tag>
+            
+            <tag> Network </tag>
             
         </tags>
       
@@ -868,9 +868,9 @@
       
         <tags>
             
-            <tag> Python </tag>
-            
             <tag> Django </tag>
+            
+            <tag> Python </tag>
             
         </tags>
       
@@ -981,13 +981,13 @@
             
             <tag> MySQL </tag>
             
-            <tag> Flask </tag>
-            
             <tag> Python </tag>
             
-            <tag> Chromium </tag>
+            <tag> Flask </tag>
             
             <tag> Mariadb </tag>
+            
+            <tag> Chromium </tag>
             
             <tag> BeautifulSoup </tag>
             
@@ -1035,9 +1035,9 @@
       
         <tags>
             
-            <tag> Flask </tag>
-            
             <tag> Python </tag>
+            
+            <tag> Flask </tag>
             
         </tags>
       
@@ -1488,9 +1488,9 @@
       
         <tags>
             
-            <tag> ECMAScript </tag>
-            
             <tag> ES6 </tag>
+            
+            <tag> ECMAScript </tag>
             
         </tags>
       
