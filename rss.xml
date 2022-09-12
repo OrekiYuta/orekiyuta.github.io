@@ -198,9 +198,9 @@
     
     
     
-      <category term="Docker" scheme="http://canoe.orekiyuta.cn/tags/Docker/"/>
-    
       <category term="CentOS" scheme="http://canoe.orekiyuta.cn/tags/CentOS/"/>
+    
+      <category term="Docker" scheme="http://canoe.orekiyuta.cn/tags/Docker/"/>
     
       <category term="Podman" scheme="http://canoe.orekiyuta.cn/tags/Podman/"/>
     
