@@ -472,9 +472,9 @@
             
             <tag> Python </tag>
             
-            <tag> Flask </tag>
-            
             <tag> Github </tag>
+            
+            <tag> Flask </tag>
             
         </tags>
       
@@ -609,9 +609,9 @@
       
         <tags>
             
-            <tag> Network </tag>
-            
             <tag> Ajax </tag>
+            
+            <tag> Network </tag>
             
         </tags>
       
@@ -990,8 +990,6 @@
             
             <tag> Linux </tag>
             
-            <tag> JavaScript </tag>
-            
             <tag> RaspberryPi </tag>
             
             <tag> Nginx </tag>
@@ -999,6 +997,8 @@
             <tag> Selenium </tag>
             
             <tag> ChromeDriver </tag>
+            
+            <tag> JavaScript </tag>
             
             <tag> MySQL </tag>
             
