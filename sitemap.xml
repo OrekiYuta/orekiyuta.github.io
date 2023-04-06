@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://canoe.orekiyuta.cn/archives/pythonDependencySeparation/</loc>
+    
+    <lastmod>2023-04-05T16:45:38.847Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://canoe.orekiyuta.cn/archives/IgotaRaspberryPi/</loc>
     
     <lastmod>2023-03-29T19:42:15.293Z</lastmod>
@@ -387,13 +394,6 @@
   </url>
   
   <url>
-    <loc>http://canoe.orekiyuta.cn/archives/pythonGetFunctionFromString/</loc>
-    
-    <lastmod>2021-08-19T20:21:18.187Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://canoe.orekiyuta.cn/archives/pythonVenvMigrateInvalid/</loc>
     
     <lastmod>2021-08-19T20:21:18.187Z</lastmod>
@@ -401,9 +401,9 @@
   </url>
   
   <url>
-    <loc>http://canoe.orekiyuta.cn/archives/pythonDependencySeparation/</loc>
+    <loc>http://canoe.orekiyuta.cn/archives/pythonGetFunctionFromString/</loc>
     
-    <lastmod>2021-08-19T20:21:18.186Z</lastmod>
+    <lastmod>2021-08-19T20:21:18.187Z</lastmod>
     
   </url>
   
@@ -562,14 +562,14 @@
   </url>
   
   <url>
-    <loc>http://canoe.orekiyuta.cn/archives/CSS3KnowledegePoint/</loc>
+    <loc>http://canoe.orekiyuta.cn/archives/CSSFiveClassicLayouts/</loc>
     
     <lastmod>2021-08-19T20:21:17.284Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://canoe.orekiyuta.cn/archives/CSSFiveClassicLayouts/</loc>
+    <loc>http://canoe.orekiyuta.cn/archives/CSS3KnowledegePoint/</loc>
     
     <lastmod>2021-08-19T20:21:17.284Z</lastmod>
     
