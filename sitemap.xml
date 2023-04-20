@@ -499,13 +499,6 @@
   </url>
   
   <url>
-    <loc>http://canoe.orekiyuta.cn/archives/JavaGenericTypes/</loc>
-    
-    <lastmod>2021-08-19T20:21:17.797Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://canoe.orekiyuta.cn/archives/JavaNotes/</loc>
     
     <lastmod>2021-08-19T20:21:17.797Z</lastmod>
@@ -514,6 +507,13 @@
   
   <url>
     <loc>http://canoe.orekiyuta.cn/archives/JavaReview/</loc>
+    
+    <lastmod>2021-08-19T20:21:17.797Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://canoe.orekiyuta.cn/archives/JavaGenericTypes/</loc>
     
     <lastmod>2021-08-19T20:21:17.797Z</lastmod>
     
