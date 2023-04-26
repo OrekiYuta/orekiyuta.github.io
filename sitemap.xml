@@ -2,13 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://canoe.orekiyuta.cn/20230414.html</loc>
-    
-    <lastmod>2023-04-14T10:25:36.674Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://canoe.orekiyuta.cn/archives/mysqlMigrate8-0-18to5-6-28/</loc>
     
     <lastmod>2023-04-08T13:31:45.886Z</lastmod>
@@ -499,14 +492,14 @@
   </url>
   
   <url>
-    <loc>http://canoe.orekiyuta.cn/archives/JavaGenericTypes/</loc>
+    <loc>http://canoe.orekiyuta.cn/archives/JavaNotes/</loc>
     
     <lastmod>2021-08-19T20:21:17.797Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://canoe.orekiyuta.cn/archives/JavaNotes/</loc>
+    <loc>http://canoe.orekiyuta.cn/archives/JavaGenericTypes/</loc>
     
     <lastmod>2021-08-19T20:21:17.797Z</lastmod>
     
