@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://canoe.orekiyuta.cn/archives/WindowsSetting/</loc>
+    <lastmod>2023-05-04</lastmod>
+  </url>  <url>
+    <loc>http://canoe.orekiyuta.cn/archives/corsOptionsRequest/</loc>
+    <lastmod>2023-05-04</lastmod>
+  </url>  <url>
     <loc>http://canoe.orekiyuta.cn/archives/mysqlMigrate8-0-18to5-6-28/</loc>
     <lastmod>2023-04-08</lastmod>
   </url>  <url>
@@ -49,13 +55,7 @@
     <loc>http://canoe.orekiyuta.cn/archives/flaskRun/</loc>
     <lastmod>2023-03-12</lastmod>
   </url>  <url>
-    <loc>http://canoe.orekiyuta.cn/archives/FieldworkDaily/</loc>
-    <lastmod>2023-03-12</lastmod>
-  </url>  <url>
     <loc>http://canoe.orekiyuta.cn/archives/batchNote/</loc>
-    <lastmod>2023-03-12</lastmod>
-  </url>  <url>
-    <loc>http://canoe.orekiyuta.cn/archives/CrackRefrain/</loc>
     <lastmod>2023-03-12</lastmod>
   </url>  <url>
     <loc>http://canoe.orekiyuta.cn/archives/bitwardenOnDocker/</loc>
@@ -63,9 +63,6 @@
   </url>  <url>
     <loc>http://canoe.orekiyuta.cn/archives/acerBiosResetPW/</loc>
     <lastmod>2023-03-12</lastmod>
-  </url>  <url>
-    <loc>http://canoe.orekiyuta.cn/archives/WindowsSetting/</loc>
-    <lastmod>2023-03-04</lastmod>
   </url>  <url>
     <loc>http://canoe.orekiyuta.cn/archives/markdownAttachBase64Pic/</loc>
     <lastmod>2022-09-03</lastmod>
@@ -208,10 +205,10 @@
     <loc>http://canoe.orekiyuta.cn/archives/javastartrun/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
-    <loc>http://canoe.orekiyuta.cn/archives/JavaGenericTypes/</loc>
+    <loc>http://canoe.orekiyuta.cn/archives/JavaNotes/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
-    <loc>http://canoe.orekiyuta.cn/archives/JavaNotes/</loc>
+    <loc>http://canoe.orekiyuta.cn/archives/JavaGenericTypes/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
     <loc>http://canoe.orekiyuta.cn/archives/JavaReview/</loc>
@@ -235,9 +232,6 @@
     <loc>http://canoe.orekiyuta.cn/archives/DockerNote/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
-    <loc>http://canoe.orekiyuta.cn/archives/corsOptionsRequest/</loc>
-    <lastmod>2021-08-19</lastmod>
-  </url>  <url>
     <loc>http://canoe.orekiyuta.cn/archives/CSSFiveClassicLayouts/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
@@ -251,9 +245,6 @@
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
     <loc>http://canoe.orekiyuta.cn/archives/CentOS-SVNConfigure/</loc>
-    <lastmod>2021-08-19</lastmod>
-  </url>  <url>
-    <loc>http://canoe.orekiyuta.cn/archives/AzureLaneCrack/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
     <loc>http://canoe.orekiyuta.cn/archives/Ark-exploit-log/</loc>
