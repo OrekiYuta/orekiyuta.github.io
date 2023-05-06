@@ -1,0 +1,156 @@
+
+// Custom styles.
+// 主页文章添加阴影效果
+/*
+.post {
+   margin-top: 10px;
+   margin-bottom: 5px;
+   padding: 25px;
+   -webkit-box-shadow: 0 0 10px rgba(202, 203, 203, .5);
+   -moz-box-shadow: 0 0 10px rgba(202, 203, 204, .5);
+}
+.post-block{
+    background:#e1dede7a;
+    padding: 10px;
+}
+.collection-title.post.post-type-normal{
+  margin: 0px 0px 5px 0px;
+  padding: 1px 25px 15px 0px;
+}
+*/
+//分页导航
+/*
+.pagination{
+   background-color: #8b8989c2;
+}
+*/
+//标题属性字体
+.posts-expand .post-meta {
+    color: #000000b5;
+}
+
+/*更好的侧边滚动条*/
+::-webkit-scrollbar {
+  width: 20px;
+  height: 10px;
+  
+}
+::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+}
+::-webkit-scrollbar-button:start:increment,::-webkit-scrollbar-button:end:decrement {
+  display: none;
+}
+::-webkit-scrollbar-corner {
+  display: block;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: rgba(0,0,0,.2);
+}
+::-webkit-scrollbar-thumb:hover {
+  border-radius: 8px;
+  background-color: rgba(0,0,0,.5);
+}
+::-webkit-scrollbar-track,::-webkit-scrollbar-thumb {
+  border-right: 1px solid transparent;
+  border-left: 1px solid transparent;
+}
+::-webkit-scrollbar-track:hover {
+  background-color: rgba(0,0,0,.15);
+}
+::-webkit-scrollbar-button:start {
+  width: 20px;
+  height: 80px;
+  background: url(../images/boll.png) ; /*可以添加滚动条样式*/
+}
+
+//back-to-top 小箭头去掉
+.fa-arrow-up:before {
+    content: "";
+}
+// 页面进度百分比
+#scrollpercent{
+  position: absolute;
+  top: 0;
+  right: calc(-85px);
+  font-size: xx-large;
+}
+
+/*back-to-top按钮*/
+.back-to-top.back-to-top-on {
+    bottom: unset;
+    top: calc(100vh - 1300px - 200px);
+}
+
+.back-to-top {
+
+    width: 70px;
+    height: 900px;
+    top: -900px;
+    bottom: unset;
+    transition: all 0.5s ease-in-out;
+    background: url("/images/uploads/scroll.png");
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 1050;
+    padding: 0 6px;
+    font-size: 12px;
+    opacity: 1;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+
+/* rocket
+  position:fixed;
+
+	z-index:1050;
+	width:131px;
+	height:150px;
+  top: 500px;
+  color: #fff;
+  cursor: pointer;
+	background-image:url("/images/uploads/rocket.png");
+	background-repeat:no-repeat;
+	animation-name:rocket;
+	animation-duration:0.5s;
+	animation-fill-mode:forwards;
+	animation-iteration-count:infinite;
+	animation-timing-function:steps(5); 
+*/
+}
+/*
+@-webkit-keyframes rocket {
+	100% {
+	background-position-x:-750px
+}
+}
+@-moz-keyframes rocket {
+	100% {
+	background-position-x:-750px
+}
+}
+@-ms-keyframes rocket {
+	100% {
+	background-position-x:-750px
+}
+}
+@-o-keyframes rocket {
+	100% {
+	background-position-x:-750px
+}
+}
+@keyframes rocket {
+	100% {
+	background-position-x:-750px
+}
+}
+*/
+.sidebar-toggle{
+    left:30px;
+    top: 60px
+}
+.sidebar{
+    left:0;
+}
