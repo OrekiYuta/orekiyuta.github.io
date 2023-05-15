@@ -2,6 +2,41 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://canoe.orekiyuta.cn/archives/javastartrun/</loc>
+    
+    <lastmod>2023-05-15T09:48:53.773Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://canoe.orekiyuta.cn/archives/PreliminaryUseMongodb/</loc>
+    
+    <lastmod>2023-05-15T09:47:59.547Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://canoe.orekiyuta.cn/archives/SortOutJSESTS/</loc>
+    
+    <lastmod>2023-05-15T09:47:58.667Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://canoe.orekiyuta.cn/archives/useGithubApiCommit/</loc>
+    
+    <lastmod>2023-05-15T09:47:57.431Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://canoe.orekiyuta.cn/archives/Thefriendlyinteractiveshell/</loc>
+    
+    <lastmod>2023-05-15T09:47:45.527Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://canoe.orekiyuta.cn/archives/ThinkingShift/</loc>
     
     <lastmod>2023-05-15T02:25:06.816Z</lastmod>
@@ -359,13 +394,6 @@
   </url>
   
   <url>
-    <loc>http://canoe.orekiyuta.cn/archives/useGithubApiCommit/</loc>
-    
-    <lastmod>2021-08-19T20:21:18.401Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://canoe.orekiyuta.cn/archives/TmuxManual/</loc>
     
     <lastmod>2021-08-19T20:21:18.383Z</lastmod>
@@ -376,13 +404,6 @@
     <loc>http://canoe.orekiyuta.cn/archives/vritualDiskMapping/</loc>
     
     <lastmod>2021-08-19T20:21:18.383Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://canoe.orekiyuta.cn/archives/Thefriendlyinteractiveshell/</loc>
-    
-    <lastmod>2021-08-19T20:21:18.355Z</lastmod>
     
   </url>
   
@@ -401,23 +422,9 @@
   </url>
   
   <url>
-    <loc>http://canoe.orekiyuta.cn/archives/SortOutJSESTS/</loc>
-    
-    <lastmod>2021-08-19T20:21:18.189Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://canoe.orekiyuta.cn/archives/pythonGetFunctionFromString/</loc>
     
     <lastmod>2021-08-19T20:21:18.187Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://canoe.orekiyuta.cn/archives/PreliminaryUseMongodb/</loc>
-    
-    <lastmod>2021-08-19T20:21:18.178Z</lastmod>
     
   </url>
   
@@ -481,13 +488,6 @@
     <loc>http://canoe.orekiyuta.cn/archives/jnote/</loc>
     
     <lastmod>2021-08-19T20:21:18.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://canoe.orekiyuta.cn/archives/javastartrun/</loc>
-    
-    <lastmod>2021-08-19T20:21:17.886Z</lastmod>
     
   </url>
   
