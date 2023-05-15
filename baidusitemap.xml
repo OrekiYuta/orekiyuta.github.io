@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://canoe.orekiyuta.cn/archives/ThinkingShift/</loc>
+    <lastmod>2023-05-15</lastmod>
+  </url>  <url>
+    <loc>http://canoe.orekiyuta.cn/archives/CentOS-SVNConfigure/</loc>
+    <lastmod>2023-05-15</lastmod>
+  </url>  <url>
     <loc>http://canoe.orekiyuta.cn/archives/WindowsSetting/</loc>
     <lastmod>2023-05-04</lastmod>
   </url>  <url>
@@ -154,9 +160,6 @@
     <loc>http://canoe.orekiyuta.cn/archives/vritualDiskMapping/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
-    <loc>http://canoe.orekiyuta.cn/archives/ThinkingShift/</loc>
-    <lastmod>2021-08-19</lastmod>
-  </url>  <url>
     <loc>http://canoe.orekiyuta.cn/archives/Thefriendlyinteractiveshell/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
@@ -205,10 +208,10 @@
     <loc>http://canoe.orekiyuta.cn/archives/javastartrun/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
-    <loc>http://canoe.orekiyuta.cn/archives/JavaNotes/</loc>
+    <loc>http://canoe.orekiyuta.cn/archives/JavaGenericTypes/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
-    <loc>http://canoe.orekiyuta.cn/archives/JavaGenericTypes/</loc>
+    <loc>http://canoe.orekiyuta.cn/archives/JavaNotes/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
     <loc>http://canoe.orekiyuta.cn/archives/JavaReview/</loc>
@@ -242,9 +245,6 @@
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
     <loc>http://canoe.orekiyuta.cn/archives/css-margin-auto/</loc>
-    <lastmod>2021-08-19</lastmod>
-  </url>  <url>
-    <loc>http://canoe.orekiyuta.cn/archives/CentOS-SVNConfigure/</loc>
     <lastmod>2021-08-19</lastmod>
   </url>  <url>
     <loc>http://canoe.orekiyuta.cn/archives/Ark-exploit-log/</loc>
