@@ -136,9 +136,9 @@
       
         <tags>
             
-            <tag> CentOS </tag>
-            
             <tag> Docker </tag>
+            
+            <tag> CentOS </tag>
             
             <tag> Podman </tag>
             
@@ -367,9 +367,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> Docker </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Selfhost </tag>
             
@@ -472,9 +472,9 @@
             
             <tag> Python </tag>
             
-            <tag> Flask </tag>
-            
             <tag> Github </tag>
+            
+            <tag> Flask </tag>
             
         </tags>
       
@@ -575,9 +575,9 @@
       
         <tags>
             
-            <tag> Hexo </tag>
-            
             <tag> Git </tag>
+            
+            <tag> Hexo </tag>
             
         </tags>
       
@@ -708,9 +708,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> Docker </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Windows </tag>
             
@@ -994,11 +994,11 @@
             
             <tag> Nginx </tag>
             
-            <tag> JavaScript </tag>
-            
             <tag> Selenium </tag>
             
             <tag> ChromeDriver </tag>
+            
+            <tag> JavaScript </tag>
             
             <tag> MySQL </tag>
             
@@ -1509,9 +1509,9 @@
       
         <tags>
             
-            <tag> ES6 </tag>
-            
             <tag> ECMAScript </tag>
+            
+            <tag> ES6 </tag>
             
         </tags>
       
@@ -1606,9 +1606,9 @@
       
         <tags>
             
-            <tag> Hexo </tag>
-            
             <tag> Git </tag>
+            
+            <tag> Hexo </tag>
             
         </tags>
       
