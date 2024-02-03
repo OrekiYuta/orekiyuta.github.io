@@ -136,9 +136,9 @@
       
         <tags>
             
-            <tag> Docker </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Docker </tag>
             
             <tag> Podman </tag>
             
@@ -367,9 +367,9 @@
       
         <tags>
             
-            <tag> Docker </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> Docker </tag>
             
             <tag> Selfhost </tag>
             
@@ -708,9 +708,9 @@
       
         <tags>
             
-            <tag> Docker </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> Docker </tag>
             
             <tag> Windows </tag>
             
@@ -990,17 +990,17 @@
             
             <tag> Linux </tag>
             
+            <tag> JavaScript </tag>
+            
             <tag> RaspberryPi </tag>
             
             <tag> Nginx </tag>
             
+            <tag> MySQL </tag>
+            
             <tag> Selenium </tag>
             
             <tag> ChromeDriver </tag>
-            
-            <tag> JavaScript </tag>
-            
-            <tag> MySQL </tag>
             
             <tag> Python </tag>
             
