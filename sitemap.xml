@@ -436,14 +436,14 @@
   </url>
   
   <url>
-    <loc>http://canoe.orekiyuta.cn/archives/mysqlSplitStringByProcedure/</loc>
+    <loc>http://canoe.orekiyuta.cn/archives/mysqlSyncToMariadb/</loc>
     
     <lastmod>2021-08-19T20:21:18.019Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://canoe.orekiyuta.cn/archives/mysqlSyncToMariadb/</loc>
+    <loc>http://canoe.orekiyuta.cn/archives/mysqlSplitStringByProcedure/</loc>
     
     <lastmod>2021-08-19T20:21:18.019Z</lastmod>
     
@@ -457,14 +457,14 @@
   </url>
   
   <url>
-    <loc>http://canoe.orekiyuta.cn/archives/JSgetter-setter/</loc>
+    <loc>http://canoe.orekiyuta.cn/archives/LearnToUseVue/</loc>
     
     <lastmod>2021-08-19T20:21:18.017Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://canoe.orekiyuta.cn/archives/LearnToUseVue/</loc>
+    <loc>http://canoe.orekiyuta.cn/archives/JSgetter-setter/</loc>
     
     <lastmod>2021-08-19T20:21:18.017Z</lastmod>
     
@@ -492,6 +492,13 @@
   </url>
   
   <url>
+    <loc>http://canoe.orekiyuta.cn/archives/JavaGenericTypes/</loc>
+    
+    <lastmod>2021-08-19T20:21:17.797Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://canoe.orekiyuta.cn/archives/JavaNotes/</loc>
     
     <lastmod>2021-08-19T20:21:17.797Z</lastmod>
@@ -500,13 +507,6 @@
   
   <url>
     <loc>http://canoe.orekiyuta.cn/archives/JavaReview/</loc>
-    
-    <lastmod>2021-08-19T20:21:17.797Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://canoe.orekiyuta.cn/archives/JavaGenericTypes/</loc>
     
     <lastmod>2021-08-19T20:21:17.797Z</lastmod>
     
