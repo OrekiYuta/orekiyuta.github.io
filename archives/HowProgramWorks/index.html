@@ -1,0 +1,1885 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-corner-indicator.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/uploads/favicon.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/uploads/favicon.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/uploads/favicon.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/uploads/favicon.png?v=5.1.4" color="#222">
+
+
+  <link rel="manifest" href="/images/uploads/favicon.a">
+
+
+
+
+  <meta name="keywords" content="OS,">
+
+
+
+
+
+  <link rel="alternate" href="/rss.xml" title="Canoe" type="application/atom+xml">
+
+
+
+
+
+
+<meta name="description" content="CPU CPU(Central Processing Unit)[寄存器、控制器、运算器、时钟]     寄存器：暂存指令、数据  控制器：把内存上的指令、数据读入寄存器，并根据结果控制计算机  运算器：运算从内存读入寄存器的数据  时钟：发起计时  程序运行的过程:程序启动后,时钟开始计时,控制器从内存中读取指令和数据,运算器计算数据,控制器根据结果控制计算器">
+<meta name="keywords" content="OS">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How Program Works &#x2F; After reading">
+<meta property="og:url" content="http://canoe.orekiyuta.cn/archives/HowProgramWorks/index.html">
+<meta property="og:site_name" content="Canoe">
+<meta property="og:description" content="CPU CPU(Central Processing Unit)[寄存器、控制器、运算器、时钟]     寄存器：暂存指令、数据  控制器：把内存上的指令、数据读入寄存器，并根据结果控制计算机  运算器：运算从内存读入寄存器的数据  时钟：发起计时  程序运行的过程:程序启动后,时钟开始计时,控制器从内存中读取指令和数据,运算器计算数据,控制器根据结果控制计算器">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="http://canoe.orekiyuta.cn/images/HowProgramWorks/01.png">
+<meta property="og:image" content="http://canoe.orekiyuta.cn/images/HowProgramWorks/02.png">
+<meta property="og:image" content="http://canoe.orekiyuta.cn/images/HowProgramWorks/03.png">
+<meta property="og:image" content="http://canoe.orekiyuta.cn/images/HowProgramWorks/04.png">
+<meta property="og:image" content="http://canoe.orekiyuta.cn/images/HowProgramWorks/05.png">
+<meta property="og:image" content="http://canoe.orekiyuta.cn/images/HowProgramWorks/06.png">
+<meta property="og:image" content="http://canoe.orekiyuta.cn/images/HowProgramWorks/07.png">
+<meta property="og:image" content="http://canoe.orekiyuta.cn/images/HowProgramWorks/08.png">
+<meta property="og:image" content="http://canoe.orekiyuta.cn/images/HowProgramWorks/09.png">
+<meta property="og:image" content="http://canoe.orekiyuta.cn/images/HowProgramWorks/10.png">
+<meta property="og:image" content="http://canoe.orekiyuta.cn/images/HowProgramWorks/11.png">
+<meta property="og:image" content="http://canoe.orekiyuta.cn/images/HowProgramWorks/12.png">
+<meta property="og:image" content="http://canoe.orekiyuta.cn/images/HowProgramWorks/13.png">
+<meta property="og:image" content="http://canoe.orekiyuta.cn/images/HowProgramWorks/14.png">
+<meta property="og:image" content="http://canoe.orekiyuta.cn/images/HowProgramWorks/15.png">
+<meta property="og:image" content="http://canoe.orekiyuta.cn/images/HowProgramWorks/16.png">
+<meta property="og:image" content="http://canoe.orekiyuta.cn/images/HowProgramWorks/17.png">
+<meta property="og:image" content="http://canoe.orekiyuta.cn/images/HowProgramWorks/18.png">
+<meta property="og:image" content="http://canoe.orekiyuta.cn/images/HowProgramWorks/19.png">
+<meta property="og:image" content="http://canoe.orekiyuta.cn/images/HowProgramWorks/20.png">
+<meta property="og:image" content="http://canoe.orekiyuta.cn/images/HowProgramWorks/21.png">
+<meta property="og:image" content="http://canoe.orekiyuta.cn/images/HowProgramWorks/22.png">
+<meta property="og:image" content="http://canoe.orekiyuta.cn/images/HowProgramWorks/23.png">
+<meta property="og:image" content="http://canoe.orekiyuta.cn/images/HowProgramWorks/24.png">
+<meta property="og:image" content="http://canoe.orekiyuta.cn/images/HowProgramWorks/25.png">
+<meta property="og:image" content="http://canoe.orekiyuta.cn/images/HowProgramWorks/26.png">
+<meta property="og:image" content="http://canoe.orekiyuta.cn/images/HowProgramWorks/27.png">
+<meta property="og:image" content="http://canoe.orekiyuta.cn/images/HowProgramWorks/28.png">
+<meta property="og:image" content="http://canoe.orekiyuta.cn/images/HowProgramWorks/29.png">
+<meta property="og:image" content="http://canoe.orekiyuta.cn/images/HowProgramWorks/30.png">
+<meta property="og:image" content="http://canoe.orekiyuta.cn/images/HowProgramWorks/31.png">
+<meta property="og:image" content="http://canoe.orekiyuta.cn/images/HowProgramWorks/32.png">
+<meta property="og:image" content="http://canoe.orekiyuta.cn/images/HowProgramWorks/33.png">
+<meta property="og:image" content="http://canoe.orekiyuta.cn/images/HowProgramWorks/34.png">
+<meta property="og:image" content="http://canoe.orekiyuta.cn/images/HowProgramWorks/35.png">
+<meta property="og:image" content="http://canoe.orekiyuta.cn/images/HowProgramWorks/36.png">
+<meta property="og:image" content="http://canoe.orekiyuta.cn/images/HowProgramWorks/37.png">
+<meta property="og:image" content="http://canoe.orekiyuta.cn/images/HowProgramWorks/38.png">
+<meta property="og:image" content="http://canoe.orekiyuta.cn/images/HowProgramWorks/39.png">
+<meta property="og:image" content="http://canoe.orekiyuta.cn/images/HowProgramWorks/40.png">
+<meta property="og:image" content="http://canoe.orekiyuta.cn/images/HowProgramWorks/41.png">
+<meta property="og:image" content="http://canoe.orekiyuta.cn/images/HowProgramWorks/42.png">
+<meta property="og:image" content="http://canoe.orekiyuta.cn/images/HowProgramWorks/43.png">
+<meta property="og:image" content="http://canoe.orekiyuta.cn/images/HowProgramWorks/44.png">
+<meta property="og:image" content="http://canoe.orekiyuta.cn/images/HowProgramWorks/45.png">
+<meta property="og:image" content="http://canoe.orekiyuta.cn/images/HowProgramWorks/46.png">
+<meta property="og:image" content="http://canoe.orekiyuta.cn/images/HowProgramWorks/47.png">
+<meta property="og:image" content="http://canoe.orekiyuta.cn/images/HowProgramWorks/48.png">
+<meta property="og:image" content="http://canoe.orekiyuta.cn/images/HowProgramWorks/49.png">
+<meta property="og:image" content="http://canoe.orekiyuta.cn/images/HowProgramWorks/50.png">
+<meta property="og:image" content="http://canoe.orekiyuta.cn/images/HowProgramWorks/51.png">
+<meta property="og:image" content="http://canoe.orekiyuta.cn/images/HowProgramWorks/52.png">
+<meta property="og:image" content="http://canoe.orekiyuta.cn/images/HowProgramWorks/53.png">
+<meta property="og:image" content="http://canoe.orekiyuta.cn/images/HowProgramWorks/54.png">
+<meta property="og:image" content="http://canoe.orekiyuta.cn/images/HowProgramWorks/55.png">
+<meta property="og:image" content="http://canoe.orekiyuta.cn/images/HowProgramWorks/56.png">
+<meta property="og:image" content="http://canoe.orekiyuta.cn/images/HowProgramWorks/57.png">
+<meta property="og:image" content="http://canoe.orekiyuta.cn/images/HowProgramWorks/58.png">
+<meta property="og:image" content="http://canoe.orekiyuta.cn/images/HowProgramWorks/59.png">
+<meta property="og:image" content="http://canoe.orekiyuta.cn/images/HowProgramWorks/60.png">
+<meta property="og:image" content="http://canoe.orekiyuta.cn/images/HowProgramWorks/61.png">
+<meta property="og:image" content="http://canoe.orekiyuta.cn/images/HowProgramWorks/62.png">
+<meta property="og:image" content="http://canoe.orekiyuta.cn/images/HowProgramWorks/63.png">
+<meta property="og:updated_time" content="2023-03-12T11:20:29.870Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="How Program Works &#x2F; After reading">
+<meta name="twitter:description" content="CPU CPU(Central Processing Unit)[寄存器、控制器、运算器、时钟]     寄存器：暂存指令、数据  控制器：把内存上的指令、数据读入寄存器，并根据结果控制计算机  运算器：运算从内存读入寄存器的数据  时钟：发起计时  程序运行的过程:程序启动后,时钟开始计时,控制器从内存中读取指令和数据,运算器计算数据,控制器根据结果控制计算器">
+<meta name="twitter:image" content="http://canoe.orekiyuta.cn/images/HowProgramWorks/01.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://canoe.orekiyuta.cn/archives/HowProgramWorks/">
+
+
+
+<meta name="baidu-site-verification" content="aNZ4sAxC7g">
+<meta name="google-site-verification" content="UVhJF4cXYZJhCM6uaJWsNQktr-Y59XRhX_AIGiqUv3E">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <title>How Program Works / After reading | Canoe</title>
+  
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="default">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+      <a href="https://github.com/OrekiYuta" class="github-corner" aria-label="View source on GitHub" style><svg width="80" height="80" viewbox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Canoe</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">Try to leave where you have been , No body was there to tell you it'll be a long way.</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+           
+  </div>
+
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-c24's">
+          <a href="https://c24s.orekiyuta.cn/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br>
+            
+            c24's
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            Search
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="Searching..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ 
+      </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://canoe.orekiyuta.cn/archives/HowProgramWorks/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Orekiyuta">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Canoe">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">How Program Works / After reading</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-06-05T21:02:26+08:00">
+                2020-06-05 => 21:02:26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                  <span class="post-meta-divider">|</span>
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                
+                <span title="Words count in article">
+                  3.8k
+                </span>
+              
+
+              
+
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="CPU"><a href="#CPU" class="headerlink" title="CPU"></a><center>CPU</center></h2><ul>
+<li>CPU(Central Processing Unit)[寄存器、控制器、运算器、时钟]</li>
+</ul>
+<p><img src="/images/HowProgramWorks/01.png" alt> </p>
+<ul>
+<li><p>寄存器：暂存指令、数据</p>
+</li>
+<li><p>控制器：把内存上的指令、数据读入寄存器，并根据结果控制计算机</p>
+</li>
+<li><p>运算器：运算从内存读入寄存器的数据</p>
+</li>
+<li><p>时钟：发起计时</p>
+</li>
+<li><p>程序运行的过程:程序启动后,时钟开始计时,控制器从内存中读取指令和数据,运算器计算数据,控制器根据结果控制计算器</p>
+<a id="more"></a>
+<p><img src="/images/HowProgramWorks/02.png" alt> </p>
+</li>
+<li><p>程序把寄存器作为对象来描述</p>
+</li>
+<li>汇编：将汇编语言转成机器语言;反汇编则反之</li>
+<li>数据分为“用于运算的数据”和“表示内存地址的数据”</li>
+<li>累加寄存器存放“用于运算的数据”</li>
+<li>基址寄存器、变址寄存器存放“表示内存地址的数据”</li>
+</ul>
+<p><img src="/images/HowProgramWorks/03.png" alt> </p>
+<ul>
+<li>程序计数器、累加寄存器、标志寄存器、指令寄存器和栈寄存器都只有一个，其他寄存器一般有多个</li>
+<li>CPU是寄存器的集合体</li>
+</ul>
+<p><img src="/images/HowProgramWorks/04.png" alt> </p>
+<ul>
+<li>程序的流程由标志寄存器控制，标志寄存器保存当前流程执行的结果，然后选择路径（跳转指令）</li>
+</ul>
+<p><img src="/images/HowProgramWorks/05.png" alt> </p>
+<p><img src="/images/HowProgramWorks/06.png" alt> </p>
+<p><img src="/images/HowProgramWorks/07.png" alt> </p>
+<ul>
+<li>函数调用（call指令）；return指令讲先前保存到栈中的地址设定到程序计数器中（这样函数就能返回开始调用时的位置）</li>
+</ul>
+<p><img src="/images/HowProgramWorks/08.png" alt> </p>
+<ul>
+<li>通过基址寄存器和变址寄存器来划分内存上的特定区域</li>
+</ul>
+<p><img src="/images/HowProgramWorks/09.png" alt> </p>
+<ul>
+<li>机器语言指令主要类型:数据传送、运算、跳转、call/return</li>
+</ul>
+<h2 id="二进制表示数据"><a href="#二进制表示数据" class="headerlink" title="二进制表示数据"></a><center>二进制表示数据</center></h2><ul>
+<li>8位=1字节</li>
+<li>集成电路（IC）所有引脚，只有直流电压0V或5V两个状态；所以IC一个引脚只能表示两个状态，决定了计算机数据只能采用二进制01来处理。</li>
+<li>最小单位（bit）相当于二进制中的一位；bit（binary digit）</li>
+</ul>
+<p><img src="/images/HowProgramWorks/10.png" alt> </p>
+<ul>
+<li>二进制的位数一般是8的倍数，8位二进制数=1个字节</li>
+<li>字节是最基本的信息计量单位，位是最小单位，字节是基本单位</li>
+<li>内存和磁盘都使用字节单位来存储和读写数据，使用位单位则无法读写数据。因此，字节是信息的基本单位</li>
+<li>二进制 → 十进制</li>
+</ul>
+<p><img src="/images/HowProgramWorks/11.png" alt> </p>
+<ul>
+<li>移位运算：&lt;&lt; 左移低位补0 ；</li>
+</ul>
+<p><img src="/images/HowProgramWorks/12.png" alt> </p>
+<ul>
+<li>移位操作使最高位或最低位溢出的数字，直接丢弃</li>
+</ul>
+<p><img src="/images/HowProgramWorks/13.png" alt> </p>
+<ul>
+<li>移位运算：&gt;&gt; 右移（逻辑、算数）[右移要区分逻辑位移和算术位移]</li>
+<li>二进制表示负数：最高位为符号位；0正1负</li>
+<li>1 二进制为 00000001 ；-1 二进制为 1111111</li>
+<li>表示负数要用“二进制的补数”，补数：用正数来表示负数[比如：1-1 可以换种形式 1+（-1）]</li>
+<li>获得补数：将二进制数位的数值全部取反，再加1</li>
+</ul>
+<p><img src="/images/HowProgramWorks/14.png" alt> </p>
+<ul>
+<li>溢出的位，计算机直接忽略掉</li>
+</ul>
+<p><img src="/images/HowProgramWorks/15.png" alt> </p>
+<p><img src="/images/HowProgramWorks/16.png" alt> </p>
+<ul>
+<li>0 划分为正数 ，所以负数要比正数多一个；各种数据类型都是负数多一个(比如 short -32768~32767)</li>
+<li>逻辑右移：当二进制数的值表示图形模式的时候，移位后需要在最高位补0</li>
+<li>算数右移：当二进制数作为带符号的数值进行运算的时候，移位后要在最高位填充移位前符号位的值（0或1）</li>
+</ul>
+<p><img src="/images/HowProgramWorks/17.png" alt></p>
+<ul>
+<li>符号扩充：保持值不变的前提下将其转换成 16 位和 32 位的二进制数</li>
+</ul>
+<p><img src="/images/HowProgramWorks/18.png" alt></p>
+<ul>
+<li>非：0变1，1变9，取反</li>
+<li>与：两个都为1，结果为1，其他情况为0</li>
+<li>或：只要有1，结果就为1</li>
+<li>异或：两个数不同，结果为1，其他0</li>
+<li>0 false ; 1 true</li>
+</ul>
+<h2 id="小数运算出错的原因"><a href="#小数运算出错的原因" class="headerlink" title="小数运算出错的原因"></a><center>小数运算出错的原因</center></h2><ul>
+<li>0.1累加100次不等于10，结果为10.000002</li>
+<li>原因是有一些十进制的小数无法转换成二进制数（和0.3333···的三倍无法得出1是一个道理）</li>
+<li>原因：（1）采用浮点数来处理小数；（2）位溢出</li>
+</ul>
+<p><img src="/images/HowProgramWorks/19.png" alt></p>
+<ul>
+<li>计算机无法直接处理循环小数</li>
+<li>双精度浮点数类型64位，单精度浮点数类型用32位</li>
+</ul>
+<p><img src="/images/HowProgramWorks/20.png" alt></p>
+<ul>
+<li>回避策略：（1）无视，微小误差可以忽略；（2）把小数转成整数计算 </li>
+</ul>
+<h2 id="内存"><a href="#内存" class="headerlink" title="内存"></a><center>内存</center></h2><ul>
+<li>内存是 名为 内存集成电路 的电子元件</li>
+</ul>
+<p><img src="/images/HowProgramWorks/21.png" alt></p>
+<ul>
+<li>1K = 1024</li>
+<li>+5V直流电压表示1，0V表示0</li>
+<li>D0~D7共八个，表示一次可以输入输出8位（1字节）数据</li>
+<li>A0~A9共十个，表示可以指定0000000000～1111111111（1024）地址</li>
+<li>可以得出这个内存集成电路（IC）可以存储1024个1字节的数据，所以该内存IC的容量为1KB</li>
+<li>现实中我们的内存IC会有更多的信号引脚，这样就能在一个内存IC中存储更多数据</li>
+<li>内存IC的物理读写机制</li>
+</ul>
+<p><img src="/images/HowProgramWorks/22.png" alt></p>
+<ul>
+<li>内存逻辑模型</li>
+</ul>
+<p><img src="/images/HowProgramWorks/23.png" alt></p>
+<ul>
+<li>变量占用内存大小</li>
+</ul>
+<p><img src="/images/HowProgramWorks/24.png" alt></p>
+<ul>
+<li>指针</li>
+</ul>
+<p><img src="/images/HowProgramWorks/25.png" alt></p>
+<ul>
+<li>数组占用内存大小</li>
+</ul>
+<p><img src="/images/HowProgramWorks/26.png" alt></p>
+<h2 id="磁盘"><a href="#磁盘" class="headerlink" title="磁盘"></a><center>磁盘</center></h2><ul>
+<li>存储程序方式：程序保存在存储设备（磁盘、内存）中，通过有序地被读取出来实现运行</li>
+</ul>
+<p><img src="/images/HowProgramWorks/27.png" alt></p>
+<ul>
+<li>磁盘缓存，把已经在磁盘读取过的数据保存到内存，下次读取同样的数据就会从内存读取</li>
+</ul>
+<p><img src="/images/HowProgramWorks/28.png" alt></p>
+<ul>
+<li>把低素设备的数据保存在高速设备中，需要时可以直接从告诉设备中读取</li>
+<li>Web浏览器也用到了此缓存方式，把从网络获取的数据暂时保存在磁盘中，需要时再读取</li>
+<li>磁盘缓存：把内存的一部分当作磁盘使用（实际用的是内存）</li>
+<li>虚拟内存：把磁盘的一部分当作内存使用（实际用的是磁盘）</li>
+<li>CPU只能执行加载到内存中的程序</li>
+<li>虚拟内存虽说把磁盘当内存使用，但是实际正在运行的程序，这个时间点是必须存在于内存中的</li>
+<li>所以为了实现虚拟内存，需要把 磁盘的虚拟内存里的内容 与 实际内存里的内容 进行置换</li>
+<li>虚拟内存的方法：（1）分页式[Windows]（2）分段式</li>
+<li>分页式，把运行的程序按照一定大小的页(windows一般情况为 4KB )进行分割；以页为单位再磁盘和内存中置换，从磁盘读入内存（Page In）,反之（Page Out）</li>
+</ul>
+<p><img src="/images/HowProgramWorks/29.png" alt></p>
+<ul>
+<li>虚拟内存可以避免因内存不足导致的应用无法启动问题，从根本上解决还是要增加内存容量</li>
+<li>exe (executable)可执行，DLL （Dynamic Link Library）动态链接库</li>
+</ul>
+<h2 id="压缩数据"><a href="#压缩数据" class="headerlink" title="压缩数据"></a><center>压缩数据</center></h2><ul>
+<li>文件是字节数据的集合，在任何情况下，文件的字节数据都是连续的</li>
+</ul>
+<p><img src="/images/HowProgramWorks/30.png" alt></p>
+<ul>
+<li>RLE算法（Run Length Encoding） [ 数据 X 重复次数 ]</li>
+</ul>
+<p><img src="/images/HowProgramWorks/31.png" alt></p>
+<ul>
+<li>哈夫曼算法 “出现频率高的字符用尽量少的位数编码来表示”</li>
+<li>能够还原到压缩前状态的压缩成为可逆压缩，反之，非可逆压缩</li>
+</ul>
+<p><img src="/images/HowProgramWorks/32.png" alt></p>
+<h2 id="运行环境"><a href="#运行环境" class="headerlink" title="运行环境"></a><center>运行环境</center></h2><ul>
+<li>运行环境 = 操作系统 + 硬件</li>
+<li>CPU只能解释其自身固有的机器语言</li>
+<li>不同的CPU能解释的机器语言的种类不同，例如：x86、MIPS、SPARC、PowerPC</li>
+<li>转换成 机器语言的程序 称为 本地代码</li>
+<li>文本文件（源代码）在任何环境都能显示和编辑</li>
+<li>源代码 → 编译 → 本地代码（本机CPU可解释的机器语言）</li>
+</ul>
+<p><img src="/images/HowProgramWorks/33.png" alt></p>
+<ul>
+<li>MS-DOS（Microsoft Disk Operating System） → Windows</li>
+<li>Windows 克服了大多数的硬件差异问题</li>
+</ul>
+<p><img src="/images/HowProgramWorks/34.png" alt></p>
+<p><img src="/images/HowProgramWorks/35.png" alt></p>
+<ul>
+<li><p>应用软件必须根据操作系统类型来开发，因为操作系统类型不同，应用程序向操作系统传递指令的途径（API [Application Programming interface]）不同</p>
+</li>
+<li><p>移植：根据不同的运行环境来重新调整程序</p>
+</li>
+<li>Java → 编译 → 字节码 → 运行 → Java虚拟机 → 转换 → 本地代码</li>
+</ul>
+<p><img src="/images/HowProgramWorks/36.png" alt></p>
+<ul>
+<li>从操作系统方面来看，Java虚拟机是一个应用</li>
+<li>从Java应用方面来看，Java虚拟机是运行环境</li>
+<li>不同的Java虚拟机之间无法完整互换</li>
+<li>Java程序运行速度慢，因为Java虚拟机每次运行都需要把字节码转换成本地代码</li>
+<li>BIOS (Basic Input/Output System) , 启动 “引导程序”</li>
+<li>引导程序 把在硬盘等记录的操作系统加载到内存中运行</li>
+</ul>
+<h2 id="编译过程"><a href="#编译过程" class="headerlink" title="编译过程"></a><center>编译过程</center></h2><p><img src="/images/HowProgramWorks/37.png" alt></p>
+<ul>
+<li>Windows中exe文件的程序内容，使用的就是本地代码</li>
+</ul>
+<p><img src="/images/HowProgramWorks/38.png" alt></p>
+<ul>
+<li>Dump：把文件的内容，每个字节用2位十六进制数来表示</li>
+</ul>
+<p><img src="/images/HowProgramWorks/39.png" alt></p>
+<ul>
+<li>编译器：将高级语言写的源代码转换成本地代码的程序</li>
+<li>每个高级语言都有它专用的编译器，C语言 —— C编译器</li>
+<li>CPU类型不同，本地代码的类型也不同；因此，编译器和 编程语言种类、CPU类型相关</li>
+<li>例如：Pentium等x86系统CPU用的C编译器，和PowerPC的CPU用的C编译器是不同的</li>
+</ul>
+<p><img src="/images/HowProgramWorks/40.png" alt></p>
+<ul>
+<li>交叉编译器：生成和运行环境中的CPU不同的CPU所使用的本地代码；也就是说可以生成不同于本机CPU类型的本地代码</li>
+</ul>
+<p><img src="/images/HowProgramWorks/41.png" alt></p>
+<ul>
+<li>本地代码是无法直接运行的，需要得到可运行的exe文件，所以编译后还需要进行“链接”处理</li>
+<li>把多个目标文件（.obj）结合，生成1个exe文件的处理就是链接</li>
+<li>运行链接的程序 就称为 链接器</li>
+<li>库文件:把多个目标文件集成到一个文件</li>
+</ul>
+<p><img src="/images/HowProgramWorks/42.png" alt></p>
+<ul>
+<li>内存泄漏：如果没有在程序中释放堆的内存空间，该内存空间会一直残留</li>
+<li><p>内存泄漏如果一直存在，就有可能会造成内存不足从而导致宕机</p>
+</li>
+<li><p>编译器：在运行前对源代码进行解释处理</p>
+</li>
+<li>解释器：在运行时对源代码内容一行一行的进行解释处理</li>
+<li>分割编译：将整个程序分成多个源代码来编写，然后分别进行编译，最后链接成一个exe文件</li>
+</ul>
+<h2 id="操作系统与应用"><a href="#操作系统与应用" class="headerlink" title="操作系统与应用"></a><center>操作系统与应用</center></h2><ul>
+<li>仅具有加载和运行功能的监控程序，是操作系统的原型</li>
+</ul>
+<p><img src="/images/HowProgramWorks/43.png" alt></p>
+<ul>
+<li>随着时代发展，渐渐的把同样处理的程序集成到监控程序中</li>
+</ul>
+<p><img src="/images/HowProgramWorks/44.png" alt></p>
+<ul>
+<li>操作系统可以说是多个程序的集合体 </li>
+</ul>
+<p><img src="/images/HowProgramWorks/45.png" alt></p>
+<ul>
+<li>各种应用只是在利用操作系统的功能而已</li>
+<li>在操作系统诞生后，就不需要再编写直接控制硬件的程序了</li>
+<li>这样制作软件应用逐渐与硬件分离，也就解耦了；无需再考虑硬件问题，硬件问题交给操作系统去处理</li>
+</ul>
+<p><img src="/images/HowProgramWorks/46.png" alt></p>
+<ul>
+<li>高级语言不依赖特定的操作系统，使用独自的函数名，然后在编译时将其转换成相应操作系统的系统调用</li>
+</ul>
+<p><img src="/images/HowProgramWorks/47.png" alt></p>
+<ul>
+<li>操作系统和高级语言能够使硬件抽象化</li>
+<li>文件是操作系统对磁盘媒介空间的抽象化</li>
+</ul>
+<p><img src="/images/HowProgramWorks/48.png" alt></p>
+<ul>
+<li>时钟分割：短时间间隔内，多个程序切换运行的方式；Windsows通过这种方式实现多任务功能</li>
+</ul>
+<p><img src="/images/HowProgramWorks/49.png" alt></p>
+<ul>
+<li>中间件：处于操作系统和应用的中间</li>
+<li>系统软件：操作系统和中间件合合在一起</li>
+</ul>
+<p><img src="/images/HowProgramWorks/50.png" alt></p>
+<h2 id="汇编"><a href="#汇编" class="headerlink" title="汇编"></a><center>汇编</center></h2><ul>
+<li>汇编语言的源文件 .asm （assembler）</li>
+<li>汇编语言：使用助记符的编程语言</li>
+<li>汇编语言源代码 → 用汇编器转换 → 本地代码</li>
+<li>在将源代码转换成本地代码这个功能上，汇编器和编译器是同样的</li>
+<li>汇编语言的编写的源代码，和本地代码一一对应</li>
+</ul>
+<p><img src="/images/HowProgramWorks/51.png" alt></p>
+<ul>
+<li>C语言源代码 → 编译 → 本地代码 → 反汇编 → 汇编源代码</li>
+<li>可以通过以上反汇编的方式，分析其代码内容；一般的逆向工程</li>
+<li>汇编语言的源代码：由 （1）转换成本地代码的指令（2）针对汇编器的伪指令 构成</li>
+<li>伪指令负责把程序的构造和汇编的方法指示给汇编器；伪指令本身是无法汇编转换成本地代码的</li>
+</ul>
+<p><img src="/images/HowProgramWorks/52.png" alt></p>
+<p><img src="/images/HowProgramWorks/53.png" alt></p>
+<ul>
+<li>由伪指令 segment 和 ends 围起来的部分，是给构成程序的命令和数据的集合体加上一个名字而得到的，称为 段定义</li>
+<li>在程序中，段定义指的是命令和数据等程序的集合体的意思</li>
+<li>段定义是一个连续的内存空间</li>
+<li>一个程序由多个段定义构成</li>
+<li>源代码的开始位置，定义了 3 个名称分别为 _TEXT、_DATA、_BSS的段定义</li>
+<li>_TEXT 是指令的段定义</li>
+<li>_DATA 是被初始化（有初始值）的数据的段定义</li>
+<li>_BSS 是尚未初始化的数据的段定义</li>
+<li>group这一伪指令，表示的是把_BSS 和 _DATA 这两个段定义汇总为名为 DGROUP 的组</li>
+<li>group 指的是将源代码中不同的段定义在本地代码程序中整合为一个</li>
+<li>围起 _AddNum 和 _MyFun 的 _TEXT segment 和 _TEXT ends，表示 _AddNum 和 _MyFunc 是属于 _TEXT 这一段定义的</li>
+<li>_AddNum proc 和 _AddNum endp 围起来的部分，以及 _MyFunc proc 和 MyFunc endp 围 起来的部分，分别表示 AddNum 函数和 MyFunc 函数的范围</li>
+<li>伪指令 proc 和 endp 围起来的部分，表示的是 过程（procedure）的范围；在汇编语言中，这种相当于 C 语言的函数的形式称为过程</li>
+<li>末尾的 end 伪指令，表示的是源代码的结束</li>
+<li>在汇编语言中，一行表示对CPU的一个指令</li>
+<li>汇编语言指令的语法结构是操作码 + 操作数 （也存在只有操作码没有操作数的指令）</li>
+<li>操作码表示的是指令动作，操作数表示的是指令对象</li>
+<li>能够使用何种形式的操作码，是由 CPU 的种类决定的</li>
+<li>32 位 x86 系列 CPU 用的操作码</li>
+</ul>
+<p><img src="/images/HowProgramWorks/54.png" alt></p>
+<ul>
+<li>本地代码加载到内存后才能运行；内存中存储着构成本地代码的指令和数据</li>
+<li>CPU从内存中把指令和数据读出，然后由存储在CPU内部的寄存器来处理</li>
+</ul>
+<p><img src="/images/HowProgramWorks/55.png" alt></p>
+<ul>
+<li>寄存器不仅有存储指令和数据的功能，也有运算的功能</li>
+</ul>
+<p><img src="/images/HowProgramWorks/56.png" alt></p>
+<ul>
+<li>LIFO （Last In First Out）; push 入栈 ， pop 出栈</li>
+</ul>
+<p><img src="/images/HowProgramWorks/57.png" alt></p>
+<h2 id="硬件控制"><a href="#硬件控制" class="headerlink" title="硬件控制"></a><center>硬件控制</center></h2><ul>
+<li>应用通过系统调用间接控制硬件</li>
+</ul>
+<p><img src="/images/HowProgramWorks/58.png" alt></p>
+<ul>
+<li>计算机主机中附带了用来连接外部设备的连接器，各个连接器内部都有用来交换主机和外设之间电流特性的IC,这些IC（集成电路）统称为 I/O 控制器</li>
+<li>由于电压不同，数字信号和模拟信号的电流特征不同，主机和外设无法直接连接，I/O 控制器就是用来解决此类问题的</li>
+<li>I/O 控制器中有用于临时保存输入输出数据的内存，这个内存就是 端口 ，也称为 寄存器</li>
+<li>I/O 寄存器主要是用来临时存储数据的，CPU内部的寄存器是用来进行运算处理的</li>
+<li>各端口之间通过 端口号 区分，也称为 I/O 地址</li>
+</ul>
+<p><img src="/images/HowProgramWorks/59.png" alt></p>
+<ul>
+<li>IRQ(Interrupt Request) 中断请求</li>
+<li>IRQ 是用来暂停当前正在运行的程序，并跳转到其他程序运行的必要机制，该机制称为中断处理</li>
+</ul>
+<p><img src="/images/HowProgramWorks/60.png" alt></p>
+<p><img src="/images/HowProgramWorks/61.png" alt></p>
+<ul>
+<li>DMA(Direct Memory Access):在不通过CPU的情况下，外围设备直接和主内存进行数据传送</li>
+</ul>
+<p><img src="/images/HowProgramWorks/62.png" alt></p>
+<ul>
+<li>VRAM(Video RAM):显示器中呈现的内容信息一直存储在某内存中</li>
+</ul>
+<p><img src="/images/HowProgramWorks/63.png" alt></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>Post author:</strong>
+    Orekiyuta
+  </li>
+  <li class="post-copyright-link">
+    <strong>Post link:</strong>
+    <a href="http://canoe.orekiyuta.cn/archives/HowProgramWorks/" title="How Program Works / After reading">http://canoe.orekiyuta.cn/archives/HowProgramWorks/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice: </strong>
+    All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> unless stating additionally.
+  </li>
+</ul>
+
+      </div>
+    
+     <div>
+      
+        <div>
+    
+        <div style="text-align:center;color: black;font-size:15px;margin-top:30px">< - あの日途切れてしまった言葉を 繋ぎ留めたいだけ - ></div>
+    
+</div>
+      
+     </div>
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/OS/" rel="tag"><i class="fa fa-tag"></i> OS</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/archives/PreliminaryUseMongodb/" rel="next" title="Preliminary use Mongodb">
+                <i class="fa fa-chevron-left"></i> Preliminary use Mongodb
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/archives/HeadFirstJava/" rel="prev" title="Head First Java / After reading">
+                Head First Java / After reading <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+          <div id="scrollpercent"><span>0</span>%</div>
+      
+
+      <div style>
+  <canvas id="canvas" style="width:60%;">当前浏览器不支持canvas，请更换浏览器后再试</canvas>
+</div>
+<script>
+(function(){
+
+   var digit=
+    [
+        [
+            [0,0,1,1,1,0,0],
+            [0,1,1,0,1,1,0],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,0,1,1,0],
+            [0,0,1,1,1,0,0]
+        ],//0
+        [
+            [0,0,0,1,1,0,0],
+            [0,1,1,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [1,1,1,1,1,1,1]
+        ],//1
+        [
+            [0,1,1,1,1,1,0],
+            [1,1,0,0,0,1,1],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,1,1,0],
+            [0,0,0,1,1,0,0],
+            [0,0,1,1,0,0,0],
+            [0,1,1,0,0,0,0],
+            [1,1,0,0,0,0,0],
+            [1,1,0,0,0,1,1],
+            [1,1,1,1,1,1,1]
+        ],//2
+        [
+            [1,1,1,1,1,1,1],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,1,1,0],
+            [0,0,0,1,1,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,0,0,1,1,0],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,1,1,1,0]
+        ],//3
+        [
+            [0,0,0,0,1,1,0],
+            [0,0,0,1,1,1,0],
+            [0,0,1,1,1,1,0],
+            [0,1,1,0,1,1,0],
+            [1,1,0,0,1,1,0],
+            [1,1,1,1,1,1,1],
+            [0,0,0,0,1,1,0],
+            [0,0,0,0,1,1,0],
+            [0,0,0,0,1,1,0],
+            [0,0,0,1,1,1,1]
+        ],//4
+        [
+            [1,1,1,1,1,1,1],
+            [1,1,0,0,0,0,0],
+            [1,1,0,0,0,0,0],
+            [1,1,1,1,1,1,0],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,1,1,1,0]
+        ],//5
+        [
+            [0,0,0,0,1,1,0],
+            [0,0,1,1,0,0,0],
+            [0,1,1,0,0,0,0],
+            [1,1,0,0,0,0,0],
+            [1,1,0,1,1,1,0],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,1,1,1,0]
+        ],//6
+        [
+            [1,1,1,1,1,1,1],
+            [1,1,0,0,0,1,1],
+            [0,0,0,0,1,1,0],
+            [0,0,0,0,1,1,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,1,1,0,0,0],
+            [0,0,1,1,0,0,0],
+            [0,0,1,1,0,0,0],
+            [0,0,1,1,0,0,0]
+        ],//7
+        [
+            [0,1,1,1,1,1,0],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,1,1,1,0],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,1,1,1,0]
+        ],//8
+        [
+            [0,1,1,1,1,1,0],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,1,0,1,1],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,1,1,0],
+            [0,0,0,1,1,0,0],
+            [0,1,1,0,0,0,0]
+        ],//9
+        [
+            [0,0,0,0,0,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,0,0,0,0,0],
+            [0,0,0,0,0,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,0,0,0,0,0]
+        ]//:
+    ];
+
+var canvas = document.getElementById('canvas');
+
+if(canvas.getContext){
+    var cxt = canvas.getContext('2d');
+    //声明canvas的宽高
+    var H = 100,W = 700;
+    canvas.height = H;
+    canvas.width = W;
+    cxt.fillStyle = '#f00';
+    cxt.fillRect(10,10,50,50);
+
+    //存储时间数据
+    var data = [];
+    //存储运动的小球
+    var balls = [];
+    //设置粒子半径
+    var R = canvas.height/20-1;
+    (function(){
+        var temp = /(\d)(\d):(\d)(\d):(\d)(\d)/.exec(new Date());
+        //存储时间数字，由十位小时、个位小时、冒号、十位分钟、个位分钟、冒号、十位秒钟、个位秒钟这7个数字组成
+        data.push(temp[1],temp[2],10,temp[3],temp[4],10,temp[5],temp[6]);
+    })();
+
+    /*生成点阵数字*/
+    function renderDigit(index,num){
+        for(var i = 0; i < digit[num].length; i++){
+            for(var j = 0; j < digit[num][i].length; j++){
+                if(digit[num][i][j] == 1){
+                    cxt.beginPath();
+                    cxt.arc(14*(R+2)*index + j*2*(R+1)+(R+1),i*2*(R+1)+(R+1),R,0,2*Math.PI);
+                    cxt.closePath();
+                    cxt.fill();
+                }
+            }
+        }
+    }
+
+    /*更新时钟*/
+    function updateDigitTime(){
+        var changeNumArray = [];
+        var temp = /(\d)(\d):(\d)(\d):(\d)(\d)/.exec(new Date());
+        var NewData = [];
+        NewData.push(temp[1],temp[2],10,temp[3],temp[4],10,temp[5],temp[6]);
+        for(var i = data.length-1; i >=0 ; i--){
+            //时间发生变化
+            if(NewData[i] !== data[i]){
+                //将变化的数字值和在data数组中的索引存储在changeNumArray数组中
+                changeNumArray.push(i+'_'+(Number(data[i])+1)%10);
+            }
+        }
+        //增加小球
+        for(var i = 0; i< changeNumArray.length; i++){
+            addBalls.apply(this,changeNumArray[i].split('_'));
+        }
+        data = NewData.concat();
+    }
+
+    /*更新小球状态*/
+    function updateBalls(){
+        for(var i = 0; i < balls.length; i++){
+            balls[i].stepY += balls[i].disY;
+            balls[i].x += balls[i].stepX;
+            balls[i].y += balls[i].stepY;
+            if(balls[i].x > W + R || balls[i].y > H + R){
+                balls.splice(i,1);
+                i--;
+            }
+        }
+    }
+
+    /*增加要运动的小球*/
+    function addBalls(index,num){
+        var numArray = [1,2,3];
+        var colorArray =  ["#3BE","#09C","#A6C","#93C","#9C0","#690","#FB3","#F80","#F44","#C00"];
+        for(var i = 0; i < digit[num].length; i++){
+            for(var j = 0; j < digit[num][i].length; j++){
+                if(digit[num][i][j] == 1){
+                    var ball = {
+                        x:14*(R+2)*index + j*2*(R+1)+(R+1),
+                        y:i*2*(R+1)+(R+1),
+                        stepX:Math.floor(Math.random() * 4 -2),
+                        stepY:-2*numArray[Math.floor(Math.random()*numArray.length)],
+                        color:colorArray[Math.floor(Math.random()*colorArray.length)],
+                        disY:1
+                    };
+                    balls.push(ball);
+                }
+            }
+        }
+    }
+
+    /*渲染*/
+    function render(){
+        //重置画布宽度，达到清空画布的效果
+        canvas.height = 100;
+        //渲染时钟
+        for(var i = 0; i < data.length; i++){
+            renderDigit(i,data[i]);
+        }
+        //渲染小球
+        for(var i = 0; i < balls.length; i++){
+            cxt.beginPath();
+            cxt.arc(balls[i].x,balls[i].y,R,0,2*Math.PI);
+            cxt.fillStyle = balls[i].color;
+            cxt.closePath();
+            cxt.fill();
+        }
+    }
+
+    clearInterval(oTimer);
+    var oTimer = setInterval(function(){
+        //更新时钟
+        updateDigitTime();
+        //更新小球状态
+        updateBalls();
+        //渲染
+        render();
+    },50);
+}
+
+})();
+</script>
+
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+            
+              <a href="/">
+                <img class="site-author-image" itemprop="image" src="/images/uploads/avatar.png" alt="Orekiyuta">
+              </a>
+            
+              <p class="site-author-name" itemprop="name">Orekiyuta</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">83</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">68</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/rss.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/OrekiYuta" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:orekiyuta@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#CPU"><span class="nav-number">1.</span> <span class="nav-text">CPU</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二进制表示数据"><span class="nav-number">2.</span> <span class="nav-text">二进制表示数据</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#小数运算出错的原因"><span class="nav-number">3.</span> <span class="nav-text">小数运算出错的原因</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#内存"><span class="nav-number">4.</span> <span class="nav-text">内存</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#磁盘"><span class="nav-number">5.</span> <span class="nav-text">磁盘</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#压缩数据"><span class="nav-number">6.</span> <span class="nav-text">压缩数据</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#运行环境"><span class="nav-number">7.</span> <span class="nav-text">运行环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#编译过程"><span class="nav-number">8.</span> <span class="nav-text">编译过程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#操作系统与应用"><span class="nav-number">9.</span> <span class="nav-text">操作系统与应用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#汇编"><span class="nav-number">10.</span> <span class="nav-text">汇编</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#硬件控制"><span class="nav-number">11.</span> <span class="nav-text">硬件控制</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2025</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Orekiyuta</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">97.7k</span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+<!--添加网站的运行时间-->
+
+<div>
+<a href="https://beian.miit.gov.cn/" target="_blank">京ICP备2021002172号-1</a>
+&nbsp;
+<i class="fa fa-cog fa-spin"></i>&nbsp;&nbsp;
+<span id="days"></span>
+</div>
+<script>
+function show_date_time(){
+    window.setTimeout("show_date_time()", 1000);
+    BirthDay=new Date("11/12/2018 00:00:00");
+    today=new Date();
+    timeold=(today.getTime()-BirthDay.getTime());
+    sectimeold=timeold/1000
+    secondsold=Math.floor(sectimeold);
+    msPerDay=24*60*60*1000
+    e_daysold=timeold/msPerDay
+    daysold=Math.floor(e_daysold);
+    e_hrsold=(e_daysold-daysold)*24;
+    hrsold=setzero(Math.floor(e_hrsold));
+    e_minsold=(e_hrsold-hrsold)*60;
+    minsold=setzero(Math.floor((e_hrsold-hrsold)*60));
+    seconds=setzero(Math.floor((e_minsold-minsold)*60));
+    document.getElementById('days').innerHTML="Run -> "+daysold+" DD :"+hrsold+" hh :"+minsold+" mm :"+seconds+" ss";
+}
+function setzero(i) {
+    if (i<10) {
+        i="0" + i
+    };
+    return i;
+}
+show_date_time();
+</script>
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top"></div>
+    
+
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  <script type="text/javascript" src="/js/src/js.cookie.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/js/src/scroll-cookie.js?v=5.1.4"></script>
+
+
+  
+
+  
+
+  <script src="/js/src/activate-power-mode.min.js"></script>
+  <script>
+    POWERMODE.colorful = true;
+    POWERMODE.shake = false;
+    document.body.addEventListener('input', POWERMODE);
+  </script>
+
+  
+  
+   <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;"></canvas> 
+   <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+   <script type="text/javascript" src="/js/src/fireworks.js"></script>
+  
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"scale":0.4,"hHeadPos":0,"vHeadPos":0,"jsonPath":"/live2dw/assets/tororo.model.json"},"display":{"superSample":2,"width":200,"height":200,"position":"left","hOffset":0,"vOffset":0},"mobile":{"show":false,"scale":0.4},"react":{"opacityDefault":0.7,"opacityOnHover":0.2},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>
