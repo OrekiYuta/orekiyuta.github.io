@@ -7,5 +7,5 @@ public/
 .deploy*/
 package-lock.json
 .obsidian/
-source/.obsidian/
-source/.trash/
+.trash/
+.idea/
