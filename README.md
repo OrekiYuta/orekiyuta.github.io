@@ -4,7 +4,7 @@
 - build code
 - for hexo default deploy , daily integration by auto script.
 
-## source
+## source branch
 - source code
 - for generic commit / push
 - for downstream to fork and deploy to other server.
