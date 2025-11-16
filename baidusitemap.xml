@@ -4,10 +4,13 @@
     <loc>http://canoe.orekiyuta.cn/archives/vritualDiskMapping/</loc>
     <lastmod>2025-11-14</lastmod>
   </url>  <url>
+    <loc>http://canoe.orekiyuta.cn/archives/win10TurnsBlueScreenWhenOpeningAndroidEmulator/</loc>
+    <lastmod>2025-11-14</lastmod>
+  </url>  <url>
     <loc>http://canoe.orekiyuta.cn/archives/yarnConnetionRetrying/</loc>
     <lastmod>2025-11-14</lastmod>
   </url>  <url>
-    <loc>http://canoe.orekiyuta.cn/archives/win10TurnsBlueScreenWhenOpeningAndroidEmulator/</loc>
+    <loc>http://canoe.orekiyuta.cn/archives/useArchiveBoxForDaily/</loc>
     <lastmod>2025-11-14</lastmod>
   </url>  <url>
     <loc>http://canoe.orekiyuta.cn/archives/useGithubApiCommit/</loc>
@@ -16,25 +19,22 @@
     <loc>http://canoe.orekiyuta.cn/archives/usejsdeliverLoadStaticResources/</loc>
     <lastmod>2025-11-14</lastmod>
   </url>  <url>
-    <loc>http://canoe.orekiyuta.cn/archives/useArchiveBoxForDaily/</loc>
-    <lastmod>2025-11-14</lastmod>
-  </url>  <url>
     <loc>http://canoe.orekiyuta.cn/archives/syncOverRoboCopy/</loc>
     <lastmod>2025-11-14</lastmod>
   </url>  <url>
     <loc>http://canoe.orekiyuta.cn/archives/tryFlutter/</loc>
     <lastmod>2025-11-14</lastmod>
   </url>  <url>
-    <loc>http://canoe.orekiyuta.cn/archives/stepIntoScrapy/</loc>
-    <lastmod>2025-11-14</lastmod>
-  </url>  <url>
     <loc>http://canoe.orekiyuta.cn/archives/somethingAboutVmware/</loc>
     <lastmod>2025-11-14</lastmod>
   </url>  <url>
-    <loc>http://canoe.orekiyuta.cn/archives/setupSeafile/</loc>
+    <loc>http://canoe.orekiyuta.cn/archives/stepIntoScrapy/</loc>
     <lastmod>2025-11-14</lastmod>
   </url>  <url>
     <loc>http://canoe.orekiyuta.cn/archives/selfhostPhotoPrism/</loc>
+    <lastmod>2025-11-14</lastmod>
+  </url>  <url>
+    <loc>http://canoe.orekiyuta.cn/archives/setupSeafile/</loc>
     <lastmod>2025-11-14</lastmod>
   </url>  <url>
     <loc>http://canoe.orekiyuta.cn/archives/securityGroupOnTencentCVM/</loc>
@@ -58,19 +58,19 @@
     <loc>http://canoe.orekiyuta.cn/archives/pythonVenvMigrateInvalid/</loc>
     <lastmod>2025-11-14</lastmod>
   </url>  <url>
-    <loc>http://canoe.orekiyuta.cn/archives/mysqlSyncToMariadb/</loc>
-    <lastmod>2025-11-14</lastmod>
-  </url>  <url>
     <loc>http://canoe.orekiyuta.cn/archives/pythonDependencySeparation/</loc>
     <lastmod>2025-11-14</lastmod>
   </url>  <url>
-    <loc>http://canoe.orekiyuta.cn/archives/mysqlSplitStringByProcedure/</loc>
+    <loc>http://canoe.orekiyuta.cn/archives/mysqlSyncToMariadb/</loc>
     <lastmod>2025-11-14</lastmod>
   </url>  <url>
     <loc>http://canoe.orekiyuta.cn/archives/mklinkInWin/</loc>
     <lastmod>2025-11-14</lastmod>
   </url>  <url>
     <loc>http://canoe.orekiyuta.cn/archives/mysqlMigrate8-0-18to5-6-28/</loc>
+    <lastmod>2025-11-14</lastmod>
+  </url>  <url>
+    <loc>http://canoe.orekiyuta.cn/archives/mysqlSplitStringByProcedure/</loc>
     <lastmod>2025-11-14</lastmod>
   </url>  <url>
     <loc>http://canoe.orekiyuta.cn/archives/markdownAttachBase64Pic/</loc>
@@ -82,13 +82,13 @@
     <loc>http://canoe.orekiyuta.cn/archives/log4j2Fixbug/</loc>
     <lastmod>2025-11-14</lastmod>
   </url>  <url>
+    <loc>http://canoe.orekiyuta.cn/archives/localAnywhereAndCORS/</loc>
+    <lastmod>2025-11-14</lastmod>
+  </url>  <url>
     <loc>http://canoe.orekiyuta.cn/archives/jnote/</loc>
     <lastmod>2025-11-14</lastmod>
   </url>  <url>
     <loc>http://canoe.orekiyuta.cn/archives/lightCVMAndDBinTencentCloud/</loc>
-    <lastmod>2025-11-14</lastmod>
-  </url>  <url>
-    <loc>http://canoe.orekiyuta.cn/archives/localAnywhereAndCORS/</loc>
     <lastmod>2025-11-14</lastmod>
   </url>  <url>
     <loc>http://canoe.orekiyuta.cn/archives/inJupyterNotebook/</loc>
@@ -100,13 +100,13 @@
     <loc>http://canoe.orekiyuta.cn/archives/javastartrun/</loc>
     <lastmod>2025-11-14</lastmod>
   </url>  <url>
+    <loc>http://canoe.orekiyuta.cn/archives/ieAjaxAlwaysErrorCallback/</loc>
+    <lastmod>2025-11-14</lastmod>
+  </url>  <url>
     <loc>http://canoe.orekiyuta.cn/archives/githubUnsupportPassWordAuthentication/</loc>
     <lastmod>2025-11-14</lastmod>
   </url>  <url>
     <loc>http://canoe.orekiyuta.cn/archives/gitkrakenAccountSwitch/</loc>
-    <lastmod>2025-11-14</lastmod>
-  </url>  <url>
-    <loc>http://canoe.orekiyuta.cn/archives/ieAjaxAlwaysErrorCallback/</loc>
     <lastmod>2025-11-14</lastmod>
   </url>  <url>
     <loc>http://canoe.orekiyuta.cn/archives/githubCommitAccountAbout/</loc>
@@ -130,19 +130,19 @@
     <loc>http://canoe.orekiyuta.cn/archives/fileSharingOnWin/</loc>
     <lastmod>2025-11-14</lastmod>
   </url>  <url>
-    <loc>http://canoe.orekiyuta.cn/archives/enableHyper-Vservice/</loc>
+    <loc>http://canoe.orekiyuta.cn/archives/fiddlerAboutPhoneProxy/</loc>
     <lastmod>2025-11-14</lastmod>
   </url>  <url>
-    <loc>http://canoe.orekiyuta.cn/archives/fiddlerAboutPhoneProxy/</loc>
+    <loc>http://canoe.orekiyuta.cn/archives/enableHyper-Vservice/</loc>
     <lastmod>2025-11-14</lastmod>
   </url>  <url>
     <loc>http://canoe.orekiyuta.cn/archives/disableWindowsUpdate/</loc>
     <lastmod>2025-11-14</lastmod>
   </url>  <url>
-    <loc>http://canoe.orekiyuta.cn/archives/disableWindowsDefender/</loc>
+    <loc>http://canoe.orekiyuta.cn/archives/djangoRun/</loc>
     <lastmod>2025-11-14</lastmod>
   </url>  <url>
-    <loc>http://canoe.orekiyuta.cn/archives/djangoRun/</loc>
+    <loc>http://canoe.orekiyuta.cn/archives/disableWindowsDefender/</loc>
     <lastmod>2025-11-14</lastmod>
   </url>  <url>
     <loc>http://canoe.orekiyuta.cn/archives/css-margin-auto/</loc>
@@ -163,10 +163,10 @@
     <loc>http://canoe.orekiyuta.cn/archives/bitwardenOnDocker/</loc>
     <lastmod>2025-11-14</lastmod>
   </url>  <url>
-    <loc>http://canoe.orekiyuta.cn/archives/USBWebserverForDev/</loc>
+    <loc>http://canoe.orekiyuta.cn/archives/acerBiosResetPW/</loc>
     <lastmod>2025-11-14</lastmod>
   </url>  <url>
-    <loc>http://canoe.orekiyuta.cn/archives/acerBiosResetPW/</loc>
+    <loc>http://canoe.orekiyuta.cn/archives/USBWebserverForDev/</loc>
     <lastmod>2025-11-14</lastmod>
   </url>  <url>
     <loc>http://canoe.orekiyuta.cn/archives/WindowsSetting/</loc>
@@ -178,40 +178,40 @@
     <loc>http://canoe.orekiyuta.cn/archives/TmuxManual/</loc>
     <lastmod>2025-11-14</lastmod>
   </url>  <url>
-    <loc>http://canoe.orekiyuta.cn/archives/SortOutJSESTS/</loc>
-    <lastmod>2025-11-14</lastmod>
-  </url>  <url>
     <loc>http://canoe.orekiyuta.cn/archives/Thefriendlyinteractiveshell/</loc>
     <lastmod>2025-11-14</lastmod>
   </url>  <url>
     <loc>http://canoe.orekiyuta.cn/archives/SwitchToES6/</loc>
     <lastmod>2025-11-14</lastmod>
   </url>  <url>
-    <loc>http://canoe.orekiyuta.cn/archives/NiceToUseVue/</loc>
+    <loc>http://canoe.orekiyuta.cn/archives/SortOutJSESTS/</loc>
     <lastmod>2025-11-14</lastmod>
   </url>  <url>
     <loc>http://canoe.orekiyuta.cn/archives/PreliminaryUseMongodb/</loc>
     <lastmod>2025-11-14</lastmod>
   </url>  <url>
-    <loc>http://canoe.orekiyuta.cn/archives/SSHPortMapping/</loc>
+    <loc>http://canoe.orekiyuta.cn/archives/NiceToUseVue/</loc>
     <lastmod>2025-11-14</lastmod>
   </url>  <url>
-    <loc>http://canoe.orekiyuta.cn/archives/MySQLCrashCourse/</loc>
+    <loc>http://canoe.orekiyuta.cn/archives/SSHPortMapping/</loc>
     <lastmod>2025-11-14</lastmod>
   </url>  <url>
     <loc>http://canoe.orekiyuta.cn/archives/LearnToUseVue/</loc>
     <lastmod>2025-11-14</lastmod>
   </url>  <url>
-    <loc>http://canoe.orekiyuta.cn/archives/JavaReview/</loc>
+    <loc>http://canoe.orekiyuta.cn/archives/MySQLCrashCourse/</loc>
     <lastmod>2025-11-14</lastmod>
   </url>  <url>
     <loc>http://canoe.orekiyuta.cn/archives/JavaNotes/</loc>
     <lastmod>2025-11-14</lastmod>
   </url>  <url>
-    <loc>http://canoe.orekiyuta.cn/archives/Java-ArtificialSimulation/</loc>
+    <loc>http://canoe.orekiyuta.cn/archives/JavaReview/</loc>
     <lastmod>2025-11-14</lastmod>
   </url>  <url>
     <loc>http://canoe.orekiyuta.cn/archives/JavaGenericTypes/</loc>
+    <lastmod>2025-11-14</lastmod>
+  </url>  <url>
+    <loc>http://canoe.orekiyuta.cn/archives/Java-ArtificialSimulation/</loc>
     <lastmod>2025-11-14</lastmod>
   </url>  <url>
     <loc>http://canoe.orekiyuta.cn/archives/IgotaRaspberryPi/</loc>
