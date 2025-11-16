@@ -16,6 +16,13 @@
   </url>
   
   <url>
+    <loc>http://canoe.orekiyuta.cn/archives/win10TurnsBlueScreenWhenOpeningAndroidEmulator/</loc>
+    
+    <lastmod>2025-11-14T21:38:22.436Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://canoe.orekiyuta.cn/archives/yarnConnetionRetrying/</loc>
     
     <lastmod>2025-11-14T21:38:22.436Z</lastmod>
@@ -23,9 +30,9 @@
   </url>
   
   <url>
-    <loc>http://canoe.orekiyuta.cn/archives/win10TurnsBlueScreenWhenOpeningAndroidEmulator/</loc>
+    <loc>http://canoe.orekiyuta.cn/archives/useArchiveBoxForDaily/</loc>
     
-    <lastmod>2025-11-14T21:38:22.436Z</lastmod>
+    <lastmod>2025-11-14T21:38:22.435Z</lastmod>
     
   </url>
   
@@ -38,13 +45,6 @@
   
   <url>
     <loc>http://canoe.orekiyuta.cn/archives/usejsdeliverLoadStaticResources/</loc>
-    
-    <lastmod>2025-11-14T21:38:22.435Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://canoe.orekiyuta.cn/archives/useArchiveBoxForDaily/</loc>
     
     <lastmod>2025-11-14T21:38:22.435Z</lastmod>
     
@@ -65,13 +65,6 @@
   </url>
   
   <url>
-    <loc>http://canoe.orekiyuta.cn/archives/stepIntoScrapy/</loc>
-    
-    <lastmod>2025-11-14T21:38:22.429Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://canoe.orekiyuta.cn/archives/somethingAboutVmware/</loc>
     
     <lastmod>2025-11-14T21:38:22.429Z</lastmod>
@@ -79,14 +72,21 @@
   </url>
   
   <url>
-    <loc>http://canoe.orekiyuta.cn/archives/setupSeafile/</loc>
+    <loc>http://canoe.orekiyuta.cn/archives/stepIntoScrapy/</loc>
+    
+    <lastmod>2025-11-14T21:38:22.429Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://canoe.orekiyuta.cn/archives/selfhostPhotoPrism/</loc>
     
     <lastmod>2025-11-14T21:38:22.428Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://canoe.orekiyuta.cn/archives/selfhostPhotoPrism/</loc>
+    <loc>http://canoe.orekiyuta.cn/archives/setupSeafile/</loc>
     
     <lastmod>2025-11-14T21:38:22.428Z</lastmod>
     
@@ -142,13 +142,6 @@
   </url>
   
   <url>
-    <loc>http://canoe.orekiyuta.cn/archives/mysqlSyncToMariadb/</loc>
-    
-    <lastmod>2025-11-14T21:38:22.422Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://canoe.orekiyuta.cn/archives/pythonDependencySeparation/</loc>
     
     <lastmod>2025-11-14T21:38:22.422Z</lastmod>
@@ -156,9 +149,9 @@
   </url>
   
   <url>
-    <loc>http://canoe.orekiyuta.cn/archives/mysqlSplitStringByProcedure/</loc>
+    <loc>http://canoe.orekiyuta.cn/archives/mysqlSyncToMariadb/</loc>
     
-    <lastmod>2025-11-14T21:38:22.421Z</lastmod>
+    <lastmod>2025-11-14T21:38:22.422Z</lastmod>
     
   </url>
   
@@ -171,6 +164,13 @@
   
   <url>
     <loc>http://canoe.orekiyuta.cn/archives/mysqlMigrate8-0-18to5-6-28/</loc>
+    
+    <lastmod>2025-11-14T21:38:22.421Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://canoe.orekiyuta.cn/archives/mysqlSplitStringByProcedure/</loc>
     
     <lastmod>2025-11-14T21:38:22.421Z</lastmod>
     
@@ -198,6 +198,13 @@
   </url>
   
   <url>
+    <loc>http://canoe.orekiyuta.cn/archives/localAnywhereAndCORS/</loc>
+    
+    <lastmod>2025-11-14T21:38:22.418Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://canoe.orekiyuta.cn/archives/jnote/</loc>
     
     <lastmod>2025-11-14T21:38:22.418Z</lastmod>
@@ -206,13 +213,6 @@
   
   <url>
     <loc>http://canoe.orekiyuta.cn/archives/lightCVMAndDBinTencentCloud/</loc>
-    
-    <lastmod>2025-11-14T21:38:22.418Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://canoe.orekiyuta.cn/archives/localAnywhereAndCORS/</loc>
     
     <lastmod>2025-11-14T21:38:22.418Z</lastmod>
     
@@ -240,6 +240,13 @@
   </url>
   
   <url>
+    <loc>http://canoe.orekiyuta.cn/archives/ieAjaxAlwaysErrorCallback/</loc>
+    
+    <lastmod>2025-11-14T21:38:22.416Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://canoe.orekiyuta.cn/archives/githubUnsupportPassWordAuthentication/</loc>
     
     <lastmod>2025-11-14T21:38:22.416Z</lastmod>
@@ -248,13 +255,6 @@
   
   <url>
     <loc>http://canoe.orekiyuta.cn/archives/gitkrakenAccountSwitch/</loc>
-    
-    <lastmod>2025-11-14T21:38:22.416Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://canoe.orekiyuta.cn/archives/ieAjaxAlwaysErrorCallback/</loc>
     
     <lastmod>2025-11-14T21:38:22.416Z</lastmod>
     
@@ -310,14 +310,14 @@
   </url>
   
   <url>
-    <loc>http://canoe.orekiyuta.cn/archives/enableHyper-Vservice/</loc>
+    <loc>http://canoe.orekiyuta.cn/archives/fiddlerAboutPhoneProxy/</loc>
     
     <lastmod>2025-11-14T21:38:22.410Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://canoe.orekiyuta.cn/archives/fiddlerAboutPhoneProxy/</loc>
+    <loc>http://canoe.orekiyuta.cn/archives/enableHyper-Vservice/</loc>
     
     <lastmod>2025-11-14T21:38:22.410Z</lastmod>
     
@@ -331,14 +331,14 @@
   </url>
   
   <url>
-    <loc>http://canoe.orekiyuta.cn/archives/disableWindowsDefender/</loc>
+    <loc>http://canoe.orekiyuta.cn/archives/djangoRun/</loc>
     
     <lastmod>2025-11-14T21:38:22.409Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://canoe.orekiyuta.cn/archives/djangoRun/</loc>
+    <loc>http://canoe.orekiyuta.cn/archives/disableWindowsDefender/</loc>
     
     <lastmod>2025-11-14T21:38:22.409Z</lastmod>
     
@@ -387,14 +387,14 @@
   </url>
   
   <url>
-    <loc>http://canoe.orekiyuta.cn/archives/USBWebserverForDev/</loc>
+    <loc>http://canoe.orekiyuta.cn/archives/acerBiosResetPW/</loc>
     
     <lastmod>2025-11-14T21:38:22.403Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://canoe.orekiyuta.cn/archives/acerBiosResetPW/</loc>
+    <loc>http://canoe.orekiyuta.cn/archives/USBWebserverForDev/</loc>
     
     <lastmod>2025-11-14T21:38:22.403Z</lastmod>
     
@@ -422,13 +422,6 @@
   </url>
   
   <url>
-    <loc>http://canoe.orekiyuta.cn/archives/SortOutJSESTS/</loc>
-    
-    <lastmod>2025-11-14T21:38:22.401Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://canoe.orekiyuta.cn/archives/Thefriendlyinteractiveshell/</loc>
     
     <lastmod>2025-11-14T21:38:22.401Z</lastmod>
@@ -443,14 +436,21 @@
   </url>
   
   <url>
-    <loc>http://canoe.orekiyuta.cn/archives/NiceToUseVue/</loc>
+    <loc>http://canoe.orekiyuta.cn/archives/SortOutJSESTS/</loc>
+    
+    <lastmod>2025-11-14T21:38:22.401Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://canoe.orekiyuta.cn/archives/PreliminaryUseMongodb/</loc>
     
     <lastmod>2025-11-14T21:38:22.400Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://canoe.orekiyuta.cn/archives/PreliminaryUseMongodb/</loc>
+    <loc>http://canoe.orekiyuta.cn/archives/NiceToUseVue/</loc>
     
     <lastmod>2025-11-14T21:38:22.400Z</lastmod>
     
@@ -464,13 +464,6 @@
   </url>
   
   <url>
-    <loc>http://canoe.orekiyuta.cn/archives/MySQLCrashCourse/</loc>
-    
-    <lastmod>2025-11-14T21:38:22.399Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://canoe.orekiyuta.cn/archives/LearnToUseVue/</loc>
     
     <lastmod>2025-11-14T21:38:22.399Z</lastmod>
@@ -478,9 +471,9 @@
   </url>
   
   <url>
-    <loc>http://canoe.orekiyuta.cn/archives/JavaReview/</loc>
+    <loc>http://canoe.orekiyuta.cn/archives/MySQLCrashCourse/</loc>
     
-    <lastmod>2025-11-14T21:38:22.398Z</lastmod>
+    <lastmod>2025-11-14T21:38:22.399Z</lastmod>
     
   </url>
   
@@ -492,14 +485,21 @@
   </url>
   
   <url>
-    <loc>http://canoe.orekiyuta.cn/archives/Java-ArtificialSimulation/</loc>
+    <loc>http://canoe.orekiyuta.cn/archives/JavaReview/</loc>
+    
+    <lastmod>2025-11-14T21:38:22.398Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://canoe.orekiyuta.cn/archives/JavaGenericTypes/</loc>
     
     <lastmod>2025-11-14T21:38:22.397Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://canoe.orekiyuta.cn/archives/JavaGenericTypes/</loc>
+    <loc>http://canoe.orekiyuta.cn/archives/Java-ArtificialSimulation/</loc>
     
     <lastmod>2025-11-14T21:38:22.397Z</lastmod>
     
