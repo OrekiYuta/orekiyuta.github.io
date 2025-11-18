@@ -7,13 +7,13 @@
     <loc>http://canoe.orekiyuta.cn/archives/yarnConnetionRetrying/</loc>
     <lastmod>2025-11-16</lastmod>
   </url>  <url>
+    <loc>http://canoe.orekiyuta.cn/archives/vritualDiskMapping/</loc>
+    <lastmod>2025-11-16</lastmod>
+  </url>  <url>
     <loc>http://canoe.orekiyuta.cn/archives/useGithubApiCommit/</loc>
     <lastmod>2025-11-16</lastmod>
   </url>  <url>
     <loc>http://canoe.orekiyuta.cn/archives/usejsdeliverLoadStaticResources/</loc>
-    <lastmod>2025-11-16</lastmod>
-  </url>  <url>
-    <loc>http://canoe.orekiyuta.cn/archives/vritualDiskMapping/</loc>
     <lastmod>2025-11-16</lastmod>
   </url>  <url>
     <loc>http://canoe.orekiyuta.cn/archives/tryFlutter/</loc>
@@ -28,13 +28,13 @@
     <loc>http://canoe.orekiyuta.cn/archives/syncOverRoboCopy/</loc>
     <lastmod>2025-11-16</lastmod>
   </url>  <url>
-    <loc>http://canoe.orekiyuta.cn/archives/somethingAboutVmware/</loc>
-    <lastmod>2025-11-16</lastmod>
-  </url>  <url>
     <loc>http://canoe.orekiyuta.cn/archives/selfhostPhotoPrism/</loc>
     <lastmod>2025-11-16</lastmod>
   </url>  <url>
     <loc>http://canoe.orekiyuta.cn/archives/setupSeafile/</loc>
+    <lastmod>2025-11-16</lastmod>
+  </url>  <url>
+    <loc>http://canoe.orekiyuta.cn/archives/somethingAboutVmware/</loc>
     <lastmod>2025-11-16</lastmod>
   </url>  <url>
     <loc>http://canoe.orekiyuta.cn/archives/securityGroupOnTencentCVM/</loc>
@@ -55,22 +55,22 @@
     <loc>http://canoe.orekiyuta.cn/archives/pythonVenvMigrateInvalid/</loc>
     <lastmod>2025-11-16</lastmod>
   </url>  <url>
-    <loc>http://canoe.orekiyuta.cn/archives/pythonGetFunctionFromString/</loc>
-    <lastmod>2025-11-16</lastmod>
-  </url>  <url>
     <loc>http://canoe.orekiyuta.cn/archives/mysqlSyncToMariadb/</loc>
     <lastmod>2025-11-16</lastmod>
   </url>  <url>
     <loc>http://canoe.orekiyuta.cn/archives/pythonDependencySeparation/</loc>
     <lastmod>2025-11-16</lastmod>
   </url>  <url>
-    <loc>http://canoe.orekiyuta.cn/archives/mysqlSplitStringByProcedure/</loc>
+    <loc>http://canoe.orekiyuta.cn/archives/pythonGetFunctionFromString/</loc>
     <lastmod>2025-11-16</lastmod>
   </url>  <url>
     <loc>http://canoe.orekiyuta.cn/archives/mklinkInWin/</loc>
     <lastmod>2025-11-16</lastmod>
   </url>  <url>
     <loc>http://canoe.orekiyuta.cn/archives/mysqlMigrate8-0-18to5-6-28/</loc>
+    <lastmod>2025-11-16</lastmod>
+  </url>  <url>
+    <loc>http://canoe.orekiyuta.cn/archives/mysqlSplitStringByProcedure/</loc>
     <lastmod>2025-11-16</lastmod>
   </url>  <url>
     <loc>http://canoe.orekiyuta.cn/archives/markdownAttachBase64Pic/</loc>
@@ -91,10 +91,10 @@
     <loc>http://canoe.orekiyuta.cn/archives/lightCVMAndDBinTencentCloud/</loc>
     <lastmod>2025-11-16</lastmod>
   </url>  <url>
-    <loc>http://canoe.orekiyuta.cn/archives/jQueryLoopClone/</loc>
+    <loc>http://canoe.orekiyuta.cn/archives/inJupyterNotebook/</loc>
     <lastmod>2025-11-16</lastmod>
   </url>  <url>
-    <loc>http://canoe.orekiyuta.cn/archives/inJupyterNotebook/</loc>
+    <loc>http://canoe.orekiyuta.cn/archives/jQueryLoopClone/</loc>
     <lastmod>2025-11-16</lastmod>
   </url>  <url>
     <loc>http://canoe.orekiyuta.cn/archives/javastartrun/</loc>
@@ -130,28 +130,28 @@
     <loc>http://canoe.orekiyuta.cn/archives/getACPCertification/</loc>
     <lastmod>2025-11-16</lastmod>
   </url>  <url>
-    <loc>http://canoe.orekiyuta.cn/archives/fiddlerAboutPhoneProxy/</loc>
-    <lastmod>2025-11-16</lastmod>
-  </url>  <url>
     <loc>http://canoe.orekiyuta.cn/archives/enableHyper-Vservice/</loc>
     <lastmod>2025-11-16</lastmod>
   </url>  <url>
-    <loc>http://canoe.orekiyuta.cn/archives/djangoRun/</loc>
+    <loc>http://canoe.orekiyuta.cn/archives/fiddlerAboutPhoneProxy/</loc>
     <lastmod>2025-11-16</lastmod>
   </url>  <url>
     <loc>http://canoe.orekiyuta.cn/archives/disableWindowsUpdate/</loc>
     <lastmod>2025-11-16</lastmod>
   </url>  <url>
+    <loc>http://canoe.orekiyuta.cn/archives/djangoRun/</loc>
+    <lastmod>2025-11-16</lastmod>
+  </url>  <url>
     <loc>http://canoe.orekiyuta.cn/archives/disableWindowsDefender/</loc>
+    <lastmod>2025-11-16</lastmod>
+  </url>  <url>
+    <loc>http://canoe.orekiyuta.cn/archives/corsOptionsRequest/</loc>
     <lastmod>2025-11-16</lastmod>
   </url>  <url>
     <loc>http://canoe.orekiyuta.cn/archives/css-margin-auto/</loc>
     <lastmod>2025-11-16</lastmod>
   </url>  <url>
     <loc>http://canoe.orekiyuta.cn/archives/daemonBat/</loc>
-    <lastmod>2025-11-16</lastmod>
-  </url>  <url>
-    <loc>http://canoe.orekiyuta.cn/archives/corsOptionsRequest/</loc>
     <lastmod>2025-11-16</lastmod>
   </url>  <url>
     <loc>http://canoe.orekiyuta.cn/archives/centos8AboutDocker/</loc>
@@ -172,16 +172,16 @@
     <loc>http://canoe.orekiyuta.cn/archives/USBWebserverForDev/</loc>
     <lastmod>2025-11-16</lastmod>
   </url>  <url>
-    <loc>http://canoe.orekiyuta.cn/archives/TmuxManual/</loc>
-    <lastmod>2025-11-16</lastmod>
-  </url>  <url>
     <loc>http://canoe.orekiyuta.cn/archives/ThinkingShift/</loc>
     <lastmod>2025-11-16</lastmod>
   </url>  <url>
-    <loc>http://canoe.orekiyuta.cn/archives/SwitchToES6/</loc>
+    <loc>http://canoe.orekiyuta.cn/archives/TmuxManual/</loc>
     <lastmod>2025-11-16</lastmod>
   </url>  <url>
     <loc>http://canoe.orekiyuta.cn/archives/Thefriendlyinteractiveshell/</loc>
+    <lastmod>2025-11-16</lastmod>
+  </url>  <url>
+    <loc>http://canoe.orekiyuta.cn/archives/SwitchToES6/</loc>
     <lastmod>2025-11-16</lastmod>
   </url>  <url>
     <loc>http://canoe.orekiyuta.cn/archives/SSHPortMapping/</loc>
@@ -190,10 +190,10 @@
     <loc>http://canoe.orekiyuta.cn/archives/SortOutJSESTS/</loc>
     <lastmod>2025-11-16</lastmod>
   </url>  <url>
-    <loc>http://canoe.orekiyuta.cn/archives/PreliminaryUseMongodb/</loc>
+    <loc>http://canoe.orekiyuta.cn/archives/NiceToUseVue/</loc>
     <lastmod>2025-11-16</lastmod>
   </url>  <url>
-    <loc>http://canoe.orekiyuta.cn/archives/NiceToUseVue/</loc>
+    <loc>http://canoe.orekiyuta.cn/archives/PreliminaryUseMongodb/</loc>
     <lastmod>2025-11-16</lastmod>
   </url>  <url>
     <loc>http://canoe.orekiyuta.cn/archives/MySQLCrashCourse/</loc>
@@ -208,13 +208,13 @@
     <loc>http://canoe.orekiyuta.cn/archives/JavaReview/</loc>
     <lastmod>2025-11-16</lastmod>
   </url>  <url>
-    <loc>http://canoe.orekiyuta.cn/archives/Java-ArtificialSimulation/</loc>
+    <loc>http://canoe.orekiyuta.cn/archives/JSgetter-setter/</loc>
     <lastmod>2025-11-16</lastmod>
   </url>  <url>
     <loc>http://canoe.orekiyuta.cn/archives/JavaGenericTypes/</loc>
     <lastmod>2025-11-16</lastmod>
   </url>  <url>
-    <loc>http://canoe.orekiyuta.cn/archives/JSgetter-setter/</loc>
+    <loc>http://canoe.orekiyuta.cn/archives/Java-ArtificialSimulation/</loc>
     <lastmod>2025-11-16</lastmod>
   </url>  <url>
     <loc>http://canoe.orekiyuta.cn/archives/IgotaRaspberryPi/</loc>
@@ -235,10 +235,10 @@
     <loc>http://canoe.orekiyuta.cn/archives/Git-flow/</loc>
     <lastmod>2025-11-16</lastmod>
   </url>  <url>
-    <loc>http://canoe.orekiyuta.cn/archives/CentOS-SVNConfigure/</loc>
+    <loc>http://canoe.orekiyuta.cn/archives/CSSFiveClassicLayouts/</loc>
     <lastmod>2025-11-16</lastmod>
   </url>  <url>
-    <loc>http://canoe.orekiyuta.cn/archives/CSSFiveClassicLayouts/</loc>
+    <loc>http://canoe.orekiyuta.cn/archives/CentOS-SVNConfigure/</loc>
     <lastmod>2025-11-16</lastmod>
   </url>  <url>
     <loc>http://canoe.orekiyuta.cn/archives/DockerNote/</loc>
