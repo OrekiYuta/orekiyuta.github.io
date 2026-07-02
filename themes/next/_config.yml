@@ -51,7 +51,7 @@ footer:
   icon: user
 
   # If not defined, will be used `author` from Hexo main config.
-  copyright: 
+  copyright:
   # -------------------------------------------------------------
   # Hexo link (Powered by Hexo).
   powered: false
@@ -100,8 +100,8 @@ menu:
   # schedule: /schedule/ || calendar
   # sitemap: /sitemap.xml || sitemap
   # commonweal: /404/ || heartbeat
-  c24's: https://c24s.orekiyuta.cn/ || sitemap
-  
+  Inari: https://orekiyuta.cn/ || sitemap
+
 
 # Enable/Disable menu icons.
 menu_icons:
@@ -832,7 +832,7 @@ carousel:
     },
     {
       'link': '',
-      'img': 'https://ark.cn-bj.ufileos.com/61ec9c88-4f3d-4e42-931d-1a245dedbf7a.png?UCloudPublicKey=TOKEN_ad6e85ae-f493-4774-b326-e3d9cea9f843&Signature=tYe6f3EwkZRmePAleMGnmctFhfg%3D&Expires=1890648266'      
+      'img': 'https://ark.cn-bj.ufileos.com/61ec9c88-4f3d-4e42-931d-1a245dedbf7a.png?UCloudPublicKey=TOKEN_ad6e85ae-f493-4774-b326-e3d9cea9f843&Signature=tYe6f3EwkZRmePAleMGnmctFhfg%3D&Expires=1890648266'
     },
     {
       'link': '',
@@ -844,4 +844,4 @@ carousel:
 typing_effect:
   enabled: true
   colorful: true  # 礼花
-  shake: false  # 震动  
+  shake: false  # 震动
