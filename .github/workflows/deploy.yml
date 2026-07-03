@@ -1,0 +1,46 @@
+name: Deploy Hexo to master
+
+# 当 push 到 source 分支时触发；也可在 Actions 页面手动触发
+on:
+  push:
+    branches:
+      - source
+  workflow_dispatch:
+
+permissions:
+  contents: write   # 允许用 GITHUB_TOKEN 推送到 master 分支
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source branch
+        uses: actions/checkout@v4
+        with:
+          ref: source
+          submodules: false
+
+      - name: Setup Node.js 14
+        uses: actions/setup-node@v4
+        with:
+          node-version: '14'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Hexo clean & generate
+        run: |
+          npx hexo clean
+          npx hexo generate
+
+      - name: Deploy public/ to master branch
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          publish_branch: master
+          # 用有意义的提交信息，保留完整历史（force 覆盖 master）
+          full_commit_message: "Site updated by CI: ${{ github.sha }}"
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
