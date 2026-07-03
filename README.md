@@ -8,15 +8,56 @@ Personal blog built with Hexo and the NexT theme.
 npm install
 ```
 
-> Note: This project uses an old Hexo 3.9. On newer Node.js (e.g. v24) it needs
-> two patches under `node_modules` to build/deploy correctly. Re-apply them if
-> `npm install` overwrites them:
-> - `hexo-front-matter/lib/front_matter.js`: replace `util.isDate` with `util.types.isDate`
->   (otherwise parsing posts fails with `isDate is not a function`)
-> - `hexo-fs/lib/fs.js`: force `copyFile`'s `flags` to `undefined` when it is not a number
->   (otherwise deploy fails with `mode must be int32 or null/undefined`)
+### Bundled Node.js 16 (recommended)
+
+This project uses an old Hexo 3.9 that does **not** work on modern Node.js
+(e.g. v24) — `hexo generate` runs "successfully" but writes a `public/` folder
+full of 0-byte empty files. To avoid version headaches, a portable **Node.js
+16.20.2 (Windows x64)** is bundled in `vendor/node16/`.
+
+Prepend it to `PATH` for the current terminal session, then use `node` / `npm`
+/ `npx` as usual:
+
+```powershell
+# Windows PowerShell (run once per terminal session, from the repo root)
+$env:Path = "$PWD\vendor\node16;" + $env:Path
+node -v   # should print v16.20.2
+```
+
+```bash
+# Git Bash / WSL
+export PATH="$PWD/vendor/node16:$PATH"
+node -v   # should print v16.20.2
+```
+
+> If you prefer using your own Node, install a version manager (e.g.
+> [nvm-windows](https://github.com/coreybutler/nvm-windows)) and switch to
+> Node 16 instead. The bundled copy is just a zero-setup convenience.
+
+### Required patches under `node_modules`
+
+On top of Node 16, this project needs a few patches under `node_modules` to
+build/deploy correctly. Re-apply them if `npm install` overwrites them:
+
+- `hexo/lib/plugins/console/generate.js`: `CacheStream.prototype.destroy`
+  must **not** clear `_cache`. Modern Node auto-calls the built-in stream
+  `destroy()` when a pipe finishes, which wipes the buffered content before it
+  is written — producing 0-byte files. Make `destroy()` a no-op and clear the
+  cache from a separate method (e.g. `clearCache()`) called in `.finally()`.
+- `hexo-front-matter/lib/front_matter.js`: replace `util.isDate` with `util.types.isDate`
+  (otherwise parsing posts fails with `isDate is not a function`)
+- `hexo-fs/lib/fs.js`: force `copyFile`'s `flags` to `undefined` when it is not a number
+  (otherwise deploy fails with `mode must be int32 or null/undefined`)
 
 ## Local Development
+
+First activate the bundled Node (see Setup above):
+
+```powershell
+$env:Path = "$PWD\vendor\node16;" + $env:Path
+```
+
+Then:
 
 ```bash
 npx hexo clean       # clear cache and the public folder
