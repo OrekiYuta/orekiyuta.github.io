@@ -34,13 +34,21 @@ jobs:
           npx hexo clean
           npx hexo generate
 
+      - name: Verify generated output is not empty
+        run: |
+          echo "index.html size:"
+          stat -c %s public/index.html
+          echo "non-empty html count:"
+          find public -name '*.html' -size +0c | wc -l
+
       - name: Deploy public/ to master branch
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
           publish_branch: master
-          # 用有意义的提交信息，保留完整历史（force 覆盖 master）
+          # 强制重建 master：每次都用全新内容覆盖，避免误判“无变化”而跳过推送
+          force_orphan: true
           full_commit_message: "Site updated by CI: ${{ github.sha }}"
           user_name: 'github-actions[bot]'
           user_email: 'github-actions[bot]@users.noreply.github.com'
